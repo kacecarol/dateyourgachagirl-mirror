@@ -40,7 +40,9 @@
 
 ## 3. 使用
 
-打开 `https://dateyourgachagirl-mirror.onrender.com`，账号 `asus` / 密码 `asus1234`（**上线后请尽快改密码**），用法与原版一致。
+打开 `https://dateyourgachagirl-mirror.onrender.com`，**用户名和口令与主站相同**（用户名 `asus`；口令见 `../local-runtime/test_accounts.txt`）。用法与原版一致。
+
+> 口令由云端环境变量 `ADMIN_PASSWORD` 提供（本仓库公开，代码里不写口令）。改口令：在 Render 后台改 `ADMIN_PASSWORD` 的值即可，下次部署生效。
 
 ## 目录说明
 - `server.js`：云端大脑

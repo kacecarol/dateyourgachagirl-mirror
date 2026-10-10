@@ -24,6 +24,9 @@ const LEASE_MS = 180_000;
 const ONLINE_MS = 90_000;
 const IMAGE_LIMIT = 16 * 1024 * 1024;
 const DB_PATH = process.env.DATEHER_DB || path.join(__dirname, 'relay.sqlite3');
+// 镜像站首个账号（asus）的密码，**必须通过环境变量 ADMIN_PASSWORD 注入**
+//（本仓库是公开的，绝不能把口令写进代码）。未设置时随机生成、只在启动日志里打印一次。
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '';
 
 // ---------- 数据库 ----------
 // 使用 Node 内置 node:sqlite，避免原生模块（better-sqlite3）在 Render 等平台编译失败。
@@ -85,18 +88,22 @@ CREATE TABLE IF NOT EXISTS credit_ledger (
 );
 `);
 
-// 首次启动：种入 asus 账号（镜像用，密码可改），并授予初始积分
+// 首次启动：种入 asus 账号（与主站同一个账号），并授予初始积分。
+// 口令来自环境变量 ADMIN_PASSWORD；没配就随机生成并打印一次（本地开发用）。
 function seedAccount() {
   const existing = db.prepare('SELECT id FROM users WHERE username=?').get('asus');
   if (!existing) {
+    const pwd = ADMIN_PASSWORD || crypto.randomBytes(12).toString('hex');
     const salt = crypto.randomBytes(16).toString('hex');
-    const hash = derivePasswordSync('asus1234', salt);
+    const hash = derivePasswordSync(pwd, salt);
     const id = crypto.randomUUID();
     db.prepare('INSERT INTO users(id,username,password_salt,password_hash) VALUES(?,?,?,?)').run(id, 'asus', salt, hash);
     db.prepare('INSERT INTO credit_wallets(account_id,balance) VALUES(?,1000)').run(id);
     db.prepare("INSERT INTO credit_ledger(account_id,operation,request_id,resource_id,fingerprint,delta,created_at) VALUES(?,?,?,?,?,?,?)")
       .run(id, 'test_grant', 'initial_1000', 'initial_1000', 'initial_1000', 1000, Date.now());
-    console.log('[seed] 已创建镜像账号 asus / 密码 asus1234（请上线后尽快改密码）');
+    console.log(ADMIN_PASSWORD
+      ? '[seed] 已创建账号 asus（密码取自 ADMIN_PASSWORD 环境变量）'
+      : '[seed] 已创建账号 asus，临时随机口令：' + pwd + '（请设置 ADMIN_PASSWORD 环境变量固定下来）');
   }
 }
 seedAccount();
