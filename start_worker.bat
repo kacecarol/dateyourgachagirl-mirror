@@ -24,6 +24,18 @@ if not exist worker.env (
   exit /b 1
 )
 
+REM 旧版出图程序（worker.py）会占用 8790，与本程序冲突，先提醒用户关闭
+netstat -ano | findstr ":8790" | findstr "LISTENING" >nul
+if not errorlevel 1 (
+  echo [提示] 检测到旧的出图程序仍在运行（占用了 8790）。
+  echo        请先关闭那个旧的命令行窗口（或在其中按 Ctrl+C），
+  echo        否则 Cloudflare 原站的取图通道会与它冲突。
+  echo.
+  echo        如果你确定只用 Render 镜像、不需要原站，也可以直接继续。
+  echo.
+  pause
+)
+
 echo [启动] 正在连出到云端，并把画图请求交给本机 ComfyUI...
 echo 保持此窗口开着；关闭它 = 停止出图。
 echo.

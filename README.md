@@ -28,14 +28,15 @@
 
 **零依赖**：使用 Node 22+ 内置的 WebSocket，**不需要 `npm install`**。
 
-配置密钥（只需一次）：编辑项目根目录的 `worker.env`（不入版本库），至少填入：
-```
-RENDER_TOKEN=你的Render服务WORKER_TOKEN
-```
-想让 Cloudflare 原站也能出图，再填 `RELAY_TOKEN`（与 Cloudflare 项目里的 `RELAY_WORKER_TOKEN` 一致）。
-模板见 `worker.env.example`。
+配置密钥：本项目根目录的 `worker.env`（不入版本库）已预填好两个口令：
+- `RENDER_TOKEN`：连 Render 镜像用。
+- `RELAY_TOKEN`：连 Cloudflare 原站用（取自本机加密凭据 `WORKER_access.xml`）。
+
+> 换电脑时，把 `worker.env` 一起拷过去，或参照 `worker.env.example` 自行填写。
 
 启动：**双击 `start_worker.bat`**。窗口里出现“已连出到云端”即成功；保持窗口开着，关闭即停止。
+
+> ⚠️ 若你原来那个出图程序（`worker.py` / `start_local_relay.cmd`）还开着，请**先关掉它**再运行本程序——两者会争抢同一个取图端口（8790）。脚本检测到冲突时会给出提示。
 
 ## 3. 使用
 
