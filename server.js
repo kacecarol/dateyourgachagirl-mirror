@@ -385,6 +385,22 @@ app.post('/api/auth/logout', (req, res) => {
   return ok(res, {});
 });
 app.get('/api/credits', (req, res) => ok(res, { policy: creditPolicy(), balance: creditBalance(req.user.id) }));
+// 提交前的积分预检：前端在 batch 提交前必调，缺失会直接 404 → 前端显示“请求失败，请重试”。
+app.post('/api/credits/quote', (req, res) => {
+  try {
+    const ids = (req.body || {}).request_ids;
+    if (!Array.isArray(ids) || ids.length < 1 || ids.length > 20 || !ids.every(isUuid) || new Set(ids).size !== ids.length) throw { status: 400, message: 'Invalid credit quote' };
+    let required = 0;
+    for (const id of ids) {
+      const key = req.user.id === 'legacy' ? id : req.user.id + ':' + id;
+      const paid = db.prepare("SELECT request_id FROM credit_ledger WHERE account_id=? AND operation='batch_submit' AND request_id=?").get(req.user.id, key);
+      if (!paid) required++;
+    }
+    const balance = creditBalance(req.user.id);
+    if (!(balance === null || balance >= required)) throw { status: 402, message: 'Insufficient points' };
+    return ok(res, { balance, required: CREDITS_ENABLED ? required : 0 });
+  } catch (e) { return apiError(res, e.status || 400, e.message); }
+});
 app.get('/api/workflows', (req, res) => ok(res, workflowList(Date.now())));
 app.get('/api/status', (req, res) => {
   const now = Date.now();
