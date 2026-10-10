@@ -654,6 +654,7 @@ wss.on('connection', (ws, req) => {
         VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ready=excluded.ready,workflows=excluded.workflows,last_seen=excluded.last_seen,image_url='',queue_waiting=excluded.queue_waiting,queue_running=excluded.queue_running`)
         .run(workerId, msg.ready ? 1 : 0, JSON.stringify(workflows), Date.now(), '', msg.queue_waiting ?? null, msg.queue_running ?? null);
       workerSockets.set(workerId, ws);
+      try { ws.send(JSON.stringify({ type: 'hello_ack', ts: Date.now() })); } catch {}
       console.log('[ws] worker 连入:', workerId, 'workflows:', workflows.map(w => w.id).join(','));
     } else if (workerId) {
       handleWorkerMessage(workerId, data.toString());

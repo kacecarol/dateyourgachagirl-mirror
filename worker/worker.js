@@ -265,19 +265,46 @@ function ensureSink() {
 }
 
 // ================= Render 侧：反向 WebSocket =================
-let ws = null, reconnectTimer = null, lastHeartbeat = 0;
+let ws = null, reconnectTimer = null, lastHeartbeat = 0, lastAck = 0, connStartAt = 0;
 function send(wsObj, msg) { if (wsObj && wsObj.readyState === 1) wsObj.send(JSON.stringify(msg)); }
 function manifest() {
   return WORKFLOWS.map(w => ({ id: w.id, name: w.name, parameters: w.adapter === 'dateher' ? DATEHER_NAMES : PARAM_NAMES }));
 }
 function connectRender() {
+  connStartAt = Date.now();
   ws = new WebSocket(RENDER_WS + '?token=' + encodeURIComponent(RENDER_TOKEN));
-  ws.addEventListener('open', () => { console.log('[render] 已连出到云端', RENDER_WS); heartbeatRender(); });
+  ws.addEventListener('open', () => { console.log('[render] 已连出到云端', RENDER_WS); lastAck = Date.now(); heartbeatRender(); });
   ws.addEventListener('message', (ev) => { const d = ev.data; handleRenderMessage(typeof d === 'string' ? d : Buffer.from(d).toString('utf-8')); });
   ws.addEventListener('close', () => { console.log('[render] 断开，3 秒后重连'); scheduleReconnect(); });
-  ws.addEventListener('error', () => { console.log('[render] 连接错误'); });
+  ws.addEventListener('error', () => { console.log('[render] 连接错误'); scheduleReconnect(); });
 }
-function scheduleReconnect() { if (!reconnectTimer) reconnectTimer = setTimeout(() => { reconnectTimer = null; connectRender(); }, 3000); }
+function scheduleReconnect() {
+  if (reconnectTimer) return;
+  if (ws && ws.readyState === 1) return;   // 已连上就不重复连
+  reconnectTimer = setTimeout(() => { reconnectTimer = null; connectRender(); }, 3000);
+}
+function forceReconnect(reason) {
+  console.log('[render] ' + reason + '，强制重连');
+  try { if (ws) ws.close(); } catch {}
+  ws = null;
+  reconnectTimer = null;
+  scheduleReconnect();
+}
+// 心跳保活 + 僵尸连接自愈：
+//  - 云端每次 hello 都会回 hello_ack，长时间收不到应答说明这条 TCP 已经死了（例如云端重新部署）
+//  - 连接长时间停在“连接中”也说明链路卡死
+// 两种情况都必须强制重连，否则会永远卡住（这是之前“重部署后云端显示离线”的根因）。
+function watchdog() {
+  const st = ws ? ws.readyState : -1;
+  const now = Date.now();
+  if (st === 1) {
+    if (lastAck && now - lastAck > 45000) { forceReconnect('心跳超时（45 秒无应答）'); return; }
+    if (now - lastHeartbeat > 10000) heartbeatRender();
+    return;
+  }
+  if (st === 0 && now - connStartAt < 15000) return;   // 还在连接中，再等等
+  forceReconnect(st === 0 ? '连接长时间无进展' : '连接已断开');
+}
 async function heartbeatRender() {
   const ready = await comfyReady();
   send(ws, { type: 'hello', worker_id: WORKER_ID, ready, workflows: manifest(), queue_waiting: 0, queue_running: state ? 1 : 0 });
@@ -285,6 +312,7 @@ async function heartbeatRender() {
 }
 async function handleRenderMessage(str) {
   let msg; try { msg = JSON.parse(str); } catch { return; }
+  if (msg.type === 'hello_ack') { lastAck = Date.now(); return; }
   if (msg.msg_id && msg.type === 'submit') {
     try {
       const job = msg.job;
@@ -418,7 +446,7 @@ if (fs.existsSync(journalPath)) { try { state = JSON.parse(fs.readFileSync(journ
 
 if (ENABLE_RENDER) {
   connectRender();
-  setInterval(() => { if (ws && ws.readyState === 1 && Date.now() - lastHeartbeat > 10000) heartbeatRender(); }, 10000);
+  setInterval(watchdog, 10000);
   setInterval(async () => { if (state && state.cloud === 'render') { ensureSink(); await processJob().catch(e => console.error('[render] processJob', e.message)); } }, POLL);
   console.log('[render] 模块已启用，连出至', RENDER_WS);
 } else {
