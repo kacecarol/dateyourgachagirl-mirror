@@ -257,12 +257,12 @@ const workerSockets = new Map(); // worker_id -> ws
 const pendingFetch = new Map();  // msgId -> {resolve,reject,timer}
 let wsMsgId = 0;
 
-function sendToWorker(workerId, msg) {
+function sendToWorker(workerId, msg, timeoutMs = 25000) {
   const ws = workerSockets.get(workerId);
   if (!ws || ws.readyState !== 1) throw { status: 503, message: '本机取图通道尚未连接' };
   return new Promise((resolve, reject) => {
     const id = ++wsMsgId;
-    const timer = setTimeout(() => { pendingFetch.delete(id); reject({ status: 504, message: '本机响应超时' }); }, 25000);
+    const timer = setTimeout(() => { pendingFetch.delete(id); reject({ status: 504, message: '本机响应超时' }); }, timeoutMs);
     pendingFetch.set(id, { resolve, reject, timer });
     ws.send(JSON.stringify({ ...msg, msg_id: id }));
   });
@@ -287,13 +287,11 @@ function workerMarkComplete(workerId, msg) {
   if (!job || job.status !== 'running' || job.worker_id !== workerId) return;
   const cnt = db.prepare('SELECT COUNT(*) AS c FROM results WHERE job_id=?').get(msg.job_id).c;
   if (cnt > 0) db.prepare("UPDATE jobs SET status='succeeded',updated_at=? WHERE id=?").run(Date.now(), msg.job_id);
-  pumpDispatch();
 }
 function workerMarkFail(workerId, msg) {
   const job = db.prepare('SELECT * FROM jobs WHERE id=?').get(msg.job_id);
   if (!job || job.status !== 'running' || job.worker_id !== workerId) return;
   db.prepare("UPDATE jobs SET status='failed',error=?,updated_at=? WHERE id=?").run(String(msg.error || 'generation failed').slice(0, 1000), Date.now(), msg.job_id);
-  pumpDispatch();
 }
 function workerStoreResults(workerId, msg) {
   const job = db.prepare('SELECT * FROM jobs WHERE id=?').get(msg.job_id);
@@ -307,11 +305,16 @@ function workerStoreResults(workerId, msg) {
   });
 }
 function workerLoadResult(workerId, msg) {
-  for (const item of (msg.jobs || [])) {
+  applyLoadResult(workerId, msg.jobs || []);
+}
+// 原站 §3.2：载入时按返回的元数据把任务置为 succeeded（没画完的不会被返回，保持 running 等下次载入），
+// 后端明确报执行错误的才置为 failed。
+function applyLoadResult(workerId, items) {
+  for (const item of (Array.isArray(items) ? items : [])) {
     const job = db.prepare('SELECT * FROM jobs WHERE id=?').get(item.id);
     if (!job || job.status !== 'running' || job.worker_id !== workerId) continue;
     if (item.error) { db.prepare("UPDATE jobs SET status='failed',error=?,updated_at=? WHERE id=?").run(String(item.error).slice(0, 1000), Date.now(), item.id); continue; }
-    if (!Array.isArray(item.results)) continue;
+    if (!Array.isArray(item.results) || item.results.length < 1 || item.results.length > 8) continue;
     tx(() => {
       for (const r of item.results) {
         if (r.index >= 8 || !['image/png', 'image/jpeg', 'image/webp'].includes(r.content_type) || r.size <= 0 || r.size > IMAGE_LIMIT || !/^[0-9a-f]{64}$/.test(r.sha256) || r.object_key !== item.id + '_' + r.index) continue;
@@ -321,7 +324,6 @@ function workerLoadResult(workerId, msg) {
       db.prepare("UPDATE jobs SET status='succeeded',updated_at=? WHERE id=? AND status='running'").run(Date.now(), item.id);
     });
   }
-  pumpDispatch();
 }
 
 // ---------- Express ----------
@@ -414,8 +416,8 @@ app.get('/api/status', (req, res) => {
 });
 
 // 会话
-app.get('/api/session', (req, res) => {
-  if (REQUEST_ONLY && new URL(req.url, 'http://x').searchParams.get('load') === '1') loadSession(req.user);
+app.get('/api/session', async (req, res) => {
+  if (REQUEST_ONLY && new URL(req.url, 'http://x').searchParams.get('load') === '1') { try { await loadSession(req.user); } catch { /* 本机离线或超时：保持 running */ } }
   return ok(res, sessionView(req.user));
 });
 app.post('/api/session', (req, res) => {
@@ -480,14 +482,23 @@ function sessionView(user) {
   return { balance: creditBalance(user.id), credit_policy: creditPolicy(), ...(REQUEST_ONLY ? { request_only: true } : {}),
     session_id: active?.session_id ?? null, config: active ? JSON.parse(active.config) : null, has_images: hasImages, jobs: jobs.map(publicJob) };
 }
-function loadSession(user) {
+// 原站 §3.2：用户点「载入/刷新」时，云端找出该账号当前可见且 running 的任务，**按 worker 分组调用本机 /load**。
+// 本机读一次 ComfyUI /history 快照；还没画完的不会被返回，云端保持 running 等下次载入（不建立完成轮询）。
+async function loadSession(user) {
   const running = db.prepare("SELECT * FROM jobs WHERE owner_id=? AND visible=1 AND status='running'").all(user.id);
   if (!running.length) return;
-  const w = localOnline();
-  try {
-    const reply = sendToWorker(w.id, { type: 'load', jobs: running.map(j => ({ ...j, parameters: JSON.parse(j.parameters), owner_username: user.username })) });
-    // 同步等待（WS 已改为 await 时返回 Promise）
-  } catch { /* 超时或离线 */ }
+  const groups = new Map();
+  for (const job of running) {
+    if (!job.worker_id) continue;
+    if (!groups.has(job.worker_id)) groups.set(job.worker_id, []);
+    groups.get(job.worker_id).push(job);
+  }
+  for (const [workerId, pending] of groups) {
+    try {
+      const reply = await sendToWorker(workerId, { type: 'load', jobs: pending.map(j => ({ ...j, parameters: JSON.parse(j.parameters), owner_username: user.username })) }, 40000);
+      if (reply && Array.isArray(reply.jobs)) applyLoadResult(workerId, reply.jobs);
+    } catch { /* 超时或离线：保持 running，等用户下次载入 */ }
+  }
 }
 
 // 任务
@@ -499,15 +510,14 @@ app.post('/api/jobs', (req, res) => createJob(req, res));
 app.get('/api/jobs/:id', (req, res) => {
   try { return ok(res, { job: jobDetail(req.params.id, req.user.id) }); } catch (e) { return apiError(res, e.status || 404, e.message); }
 });
-app.post('/api/jobs/:id/forward', (req, res) => {
+app.post('/api/jobs/:id/forward', async (req, res) => {
   try {
     const job = db.prepare('SELECT * FROM jobs WHERE id=?').get(req.params.id);
     if (!job || (job.status !== 'queued' && job.status !== 'running')) throw { status: 409, message: 'Task is no longer pending' };
     const p = JSON.parse(job.parameters);
     if (p.art_style === 'real' && req.user.username !== 'asus') throw { status: 403, message: 'Real-person style is available only to asus.' };
     if (CREDITS_ENABLED) charge(req.user.id, 'batch_submit', job.request_id, job.id, JSON.stringify([job.workflow_id, p]));
-    forwardJob(job, req.user);
-    pumpDispatch();
+    if (job.status === 'queued') await forwardJob(job, req.user);
     return ok(res, { job: jobDetail(req.params.id, req.user.id) });
   } catch (e) { return apiError(res, e.status || 503, e.message); }
 });
@@ -562,7 +572,7 @@ async function fetchImage(req, res, download) {
   } catch (e) { return apiError(res, e.status || 503, e.message); }
 }
 
-// 创建任务（只入队，不派发）。派发交给 pumpDispatch() 逐条串行推进。
+// 创建任务（只登记+扣分，不转发）。转发由调用方在整批/单条提交处一次完成。
 function createJobCore(input, user) {
   const now = Date.now();
   if (!isUuid(input.request_id || '')) throw { status: 400, message: 'request_id 须为 UUID' };
@@ -605,20 +615,29 @@ function createJobCore(input, user) {
 function createJob(req, res) {
   try {
     const { job, status } = createJobCore(req.body || {}, req.user);
-    pumpDispatch();
+    // 单条提交：登记并扣分后立刻转发这一条，不等出图。
+    if (job.status === 'queued') forwardJob(job, req.user).catch(() => {});
     return ok(res, { job, balance: creditBalance(req.user.id) }, status);
   } catch (e) { return apiError(res, e.status || 400, e.message); }
 }
 
-// 批量提交（前端 REQUEST_ONLY 模式下走这里）：逐条入队后立即返回，由 pumpDispatch 串行出图。
-app.post('/api/jobs/batch', (req, res) => {
+// 批量提交（前端在 REQUEST_ONLY 模式下走这里）。对齐原站 cloudflare/lib/relay.js 的 /api/jobs/batch：
+// 逐条登记并扣分 → **一次把整批待转发任务发给本机** → 本机逐项以 ≥50ms 间隔交给 ComfyUI 并立刻回 prompt_id
+// → 有 prompt_id 的置为 running（可能在 Comfy 排队，也可能已画完未读取）。**不等待出图**，GPU 顺序由 Comfy 队列决定。
+app.post('/api/jobs/batch', async (req, res) => {
   try {
     const input = req.body || {};
     if (!Array.isArray(input.requests) || input.requests.length < 1 || input.requests.length > 20) throw { status: 400, message: 'Invalid batch' };
     const jobs = [];
     for (const item of input.requests) jobs.push(createJobCore(item, req.user).job);
-    pumpDispatch();
-    return ok(res, { jobs, balance: creditBalance(req.user.id) });
+    // 待转发的＝本次新建的，或之前转发失败后仍处于 queued 的重试（原站同样只转发 queued 的）
+    const pending = [];
+    for (const job of jobs) {
+      const row = db.prepare('SELECT * FROM jobs WHERE id=?').get(job.id);
+      if (row && row.status === 'queued') pending.push(row);
+    }
+    if (pending.length) await forwardJobs(pending, req.user);
+    return ok(res, { jobs: jobs.map(j => { try { return jobDetail(j.id, req.user.id); } catch { return j; } }), balance: creditBalance(req.user.id) });
   } catch (e) { return apiError(res, e.status || 400, e.message); }
 });
 
@@ -630,43 +649,45 @@ function gateSession(userId, input) {
       .run(Date.now(), userId, sid);
   }
 }
+
+// ---------- 转发给本机（对齐原站 forwardJob / 批量 /submit） ----------
+function markRunning(jobId, workerId, promptId) {
+  db.prepare("UPDATE jobs SET status='running',worker_id=?,prompt_id=?,lease_token=?,lease_expires_at=?,updated_at=MAX(updated_at+1,?) WHERE id=? AND status='queued'")
+    .run(workerId, promptId, crypto.randomUUID(), 8640000000000000, Date.now(), jobId);
+}
+function markSubmitFailed(jobId, message) {
+  db.prepare("UPDATE jobs SET status='failed',error=?,updated_at=MAX(updated_at+1,?) WHERE id=? AND status='queued'")
+    .run(String(message).slice(0, 1000), Date.now(), jobId);
+}
+// 单条转发。
 async function forwardJob(job, user) {
   if (!REQUEST_ONLY || job.status !== 'queued') return;
   const w = localOnline();
-  try {
-    const reply = await sendToWorker(w.id, { type: 'submit', job: { ...job, parameters: JSON.parse(job.parameters), owner_username: user.username } });
-    if (!reply || typeof reply.prompt_id !== 'string' || !reply.prompt_id || reply.prompt_id.length > 128) return;
-    db.prepare("UPDATE jobs SET status='running',worker_id=?,prompt_id=?,lease_token=?,lease_expires_at=?,updated_at=MAX(updated_at+1,?) WHERE id=? AND status='queued'")
-      .run(w.id, reply.prompt_id, crypto.randomUUID(), Date.now() + LEASE_MS, Date.now(), job.id);
-  } catch (e) { console.error('forwardJob failed', e.message || e); }
+  const reply = await sendToWorker(w.id, { type: 'submit', job: { ...job, parameters: JSON.parse(job.parameters), owner_username: user.username } });
+  const item = reply && Array.isArray(reply.results) ? reply.results[0] : null;
+  if (item && item.error) { markSubmitFailed(job.id, '本机提交失败：' + item.error); throw { status: 502, message: '本机提交失败，请检查本机程序与 ComfyUI' }; }
+  const promptId = item && item.prompt_id;
+  if (typeof promptId !== 'string' || !promptId || promptId.length > 128) throw { status: 502, message: 'Invalid submission acknowledgement' };
+  markRunning(job.id, w.id, promptId);
 }
-
-// ---------- 串行派发器 ----------
-// 本机 worker 的 WS 通道一次只处理一个任务（收到第二个会回 "worker busy"）。
-// 所以云端不能把整批任务一次推给 worker，而要“有任务在跑就不派、否则派最早的一条”。
-let dispatching = false;
-function pumpDispatch() {
-  if (!REQUEST_ONLY || dispatching) return;
-  const w = db.prepare('SELECT * FROM workers WHERE ready=1 ORDER BY last_seen DESC LIMIT 1').get();
-  if (!w || w.last_seen <= Date.now() - 300_000) return;
-  if ((w.queue_running ?? 0) > 0) return;
-  if (db.prepare("SELECT COUNT(*) AS c FROM jobs WHERE status='running'").get().c > 0) return;
-  const job = db.prepare("SELECT * FROM jobs WHERE status='queued' AND visible=1 ORDER BY updated_at ASC,id ASC LIMIT 1").get();
-  if (!job) return;
-  const owner = db.prepare('SELECT * FROM users WHERE id=?').get(job.owner_id);
-  dispatching = true;
-  Promise.resolve()
-    .then(() => forwardJob(job, { id: job.owner_id, username: owner ? owner.username : 'asus' }))
-    .then(() => {
-      // 派发成功（任务已 running）就释放锁，等 worker 回报 complete/fail 再派下一条；
-      // 没派出去（worker 忙/通道超时）则稍后重试。
-      const cur = db.prepare('SELECT status FROM jobs WHERE id=?').get(job.id);
-      if (cur && cur.status === 'running') { dispatching = false; }
-      else { setTimeout(() => { dispatching = false; pumpDispatch(); }, 2000); }
-    })
-    .catch(() => { setTimeout(() => { dispatching = false; pumpDispatch(); }, 2000); });
+// 整批一次转发：**一次消息发出整批**，本机自己按序提交给 ComfyUI。
+async function forwardJobs(jobs, user) {
+  if (!REQUEST_ONLY || !jobs.length) return;
+  const w = localOnline();
+  const payload = jobs.map(j => ({ ...j, parameters: JSON.parse(j.parameters), owner_username: user.username }));
+  const timeout = Math.max(25000, 8000 + payload.length * 4000);
+  const reply = await sendToWorker(w.id, { type: 'submit', jobs: payload }, timeout);
+  const items = reply && Array.isArray(reply.results) ? reply.results : null;
+  if (!items) throw { status: 502, message: 'Invalid submission acknowledgement' };
+  let bad = 0;
+  for (const item of items) {
+    if (!jobs.some(j => j.id === item.id)) throw { status: 502, message: 'Unexpected task acknowledgement' };
+    if (item.error) { bad++; markSubmitFailed(item.id, '本机提交失败：' + item.error); continue; }
+    if (typeof item.prompt_id !== 'string' || !item.prompt_id || item.prompt_id.length > 128) throw { status: 502, message: 'Invalid submission acknowledgement' };
+    markRunning(item.id, w.id, item.prompt_id);
+  }
+  if (bad || items.length !== jobs.length) throw { status: 503, message: 'Some tasks were not acknowledged; retry the same batch and check local monitor' };
 }
-setInterval(() => { try { pumpDispatch(); } catch { /* ignore */ } }, 5000);
 
 // 本机 worker 心跳（WS 连入时也会更新；这里保留 REST 以兼容旧逻辑）
 app.post('/api/worker/heartbeat', (req, res) => {

@@ -373,31 +373,39 @@ function watchdog() {
 }
 async function heartbeatRender() {
   const ready = await comfyReady();
-  send(ws, { type: 'hello', worker_id: WORKER_ID, ready, workflows: manifest(), queue_waiting: 0, queue_running: state ? 1 : 0 });
+  // 与原站一致：只上报 ComfyUI 队列数量（queue_pending / queue_running），不读 /history、不收集完成图片。
+  let waiting = 0, running = 0;
+  if (ready) {
+    try {
+      const q = await comfyRequest('GET', '/queue');
+      waiting = Array.isArray(q && q.queue_pending) ? q.queue_pending.length : 0;
+      running = Array.isArray(q && q.queue_running) ? q.queue_running.length : 0;
+    } catch { /* 读不到就报 0 */ }
+  }
+  send(ws, { type: 'hello', worker_id: WORKER_ID, ready, workflows: manifest(), queue_waiting: waiting, queue_running: running });
   lastHeartbeat = Date.now();
 }
 async function handleRenderMessage(str) {
   let msg; try { msg = JSON.parse(str); } catch { return; }
   if (msg.type === 'hello_ack') { lastAck = Date.now(); return; }
   if (msg.msg_id && msg.type === 'submit') {
+    // 与原站一致：云端**一次把整批待转发的任务**发过来（msg.jobs），本机逐项提交给 ComfyUI，
+    // 立刻回 prompt_id，不等出图。云端按回执把任务置为 running（可能在 Comfy 排队，也可能已画完未读取）。
     try {
-      const job = msg.job;
-      if (state) { send(ws, { msg_id: msg.msg_id, type: 'submit_ack', job_id: job.id, error: 'worker busy' }); return; }
-      state = { job, phase: job.prompt_id ? 'running' : 'claimed', prompt_id: job.prompt_id || null, deadline: Date.now() + JOB_TIMEOUT, cloud: 'render', msgId: msg.msg_id };
-      state.sink = makeRenderSink(job, msg.msg_id);
-      saveState();
-      try { await processJob(); } catch (e) { try { send(ws, { type: 'fail', job_id: job.id, error: String(e.message).slice(0, 1000) }); } catch {} clearState(); }
-    } catch (e) { send(ws, { msg_id: msg.msg_id, type: 'submit_ack', job_id: msg.job?.id, error: e.message }); }
+      const list = Array.isArray(msg.jobs) ? msg.jobs : (msg.job ? [msg.job] : []);
+      const results = await submitMany(list);
+      send(ws, { msg_id: msg.msg_id, type: 'submit_ack', results });
+    } catch (e) {
+      send(ws, { msg_id: msg.msg_id, type: 'submit_ack', results: [], error: String(e.message || e) });
+    }
     return;
   }
-  if (msg.type === 'load') {
-    const jobs = [];
-    for (const j of (msg.jobs || [])) {
-      const results = [];
-      for (let i = 0; i < 8; i++) { const f = path.join(imageDir, j.id + '_' + i + '.json'); if (fs.existsSync(f)) { try { results.push(JSON.parse(fs.readFileSync(f, 'utf-8'))); } catch {} } }
-      jobs.push({ id: j.id, results });
-    }
-    send(ws, { type: 'load_result', jobs });
+  if (msg.msg_id && msg.type === 'load') {
+    // 与原站一致：云端找出该账号当前可见且 running 的任务，按 worker 分组一次调用本机 /load。
+    // 本机读一次 ComfyUI /history 快照，按已保存的 prompt_id 找结果；没画完的保持 running 等下次载入，
+    // 后端明确报执行错误的本机才登记为失败。
+    const jobs = await loadJobs(msg.jobs || []);
+    send(ws, { msg_id: msg.msg_id, type: 'load_result', jobs });
     return;
   }
   if (msg.type === 'fetch_image') {
@@ -505,14 +513,19 @@ async function submitOne(job) {
   const reply = await comfyRequest('POST', '/prompt', { prompt: graph, client_id: WORKER_ID });
   if (!reply || typeof reply.prompt_id !== 'string' || !reply.prompt_id || hasPromptErrors(reply)) throw new Error('Backend did not acknowledge submission' + (reply && hasPromptErrors(reply) ? ': ' + JSON.stringify(reply.node_errors).slice(0, 400) : ''));
   writeDispatch(job.id, { job, phase: 'submitted', prompt_id: reply.prompt_id, submitted_at: Date.now() });
-  console.log('[cloudflare] 已提交出图:', job.id, '→ prompt_id', reply.prompt_id);
+  console.log('[worker] 已提交出图:', job.id, '→ prompt_id', reply.prompt_id);
   return { prompt_id: reply.prompt_id };
 }
+// 整批提交：逐项套用工作流并交给 ComfyUI，**不等待上一张出图**，
+// 相邻两次 /prompt 之间至少间隔 50ms（原站手册 §3.1 第 6 条：这是限速下限）。
+// GPU 的执行顺序由 ComfyUI 自己的队列决定，云端拿到 prompt_id 后任务即进入 running。
 async function submitMany(jobs) {
   const results = [];
-  for (const job of jobs) {
+  for (let i = 0; i < jobs.length; i++) {
+    const job = jobs[i];
     try { results.push({ id: job && job.id, ...(await submitOne(job)) }); }
     catch (e) { results.push({ id: job && job.id, error: String(e.message || e) }); }
+    if (i < jobs.length - 1) await new Promise(r => setTimeout(r, 50));
   }
   return results;
 }
@@ -694,13 +707,20 @@ async function cloudflareLoop() {
 }
 
 // ================= 启动 =================
-// 恢复未完成日志
-if (fs.existsSync(journalPath)) { try { state = JSON.parse(fs.readFileSync(journalPath, 'utf-8')); console.log('[worker] 恢复未完成任务', state?.job?.id, '（云端:', state?.cloud, '）'); } catch {} }
+// 恢复未完成日志（仅 Cloudflare 拉取模式需要；Render 侧已改为“整批提交 + 手动载入”，不再占 state）
+if (fs.existsSync(journalPath)) {
+  try {
+    const saved = JSON.parse(fs.readFileSync(journalPath, 'utf-8'));
+    if (saved && saved.cloud === 'render') {
+      fs.unlinkSync(journalPath);
+      console.log('[worker] 丢弃旧的 Render 单任务日志（该模式已按原站契约改为整批提交）');
+    } else { state = saved; console.log('[worker] 恢复未完成任务', state?.job?.id, '（云端:', state?.cloud, '）'); }
+  } catch {}
+}
 
 if (ENABLE_RENDER) {
   connectRender();
   setInterval(watchdog, 10000);
-  setInterval(async () => { if (state && state.cloud === 'render') { ensureSink(); await processJob().catch(e => console.error('[render] processJob', e.message)); } }, POLL);
   console.log('[render] 模块已启用，连出至', RENDER_WS);
 } else {
   console.log('[render] 未配置 RENDER_TOKEN，跳过 Render 连接');
