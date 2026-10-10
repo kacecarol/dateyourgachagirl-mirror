@@ -333,7 +333,8 @@ app.post('/api/auth/login', (req, res) => {
     const now = Date.now();
     db.prepare('DELETE FROM login_attempts WHERE attempted_at<=?').run(now - 900000);
     const ip = req.headers['x-forwarded-for'] || 'unknown';
-    const keys = [sha256hex('username:' + uname), sha256hex('ip:' + ip)];
+    const userKey = sha256hex('username:' + uname);
+    const keys = [userKey, sha256hex('ip:' + ip)];
     for (const k of keys) {
       const n = db.prepare('SELECT COUNT(*) AS n FROM login_attempts WHERE key_hash=? AND attempted_at>?').get(k, now - 900000).n;
       if (n >= 5) return apiError(res, 429, '登录尝试过多，请稍后重试');
@@ -343,7 +344,7 @@ app.post('/api/auth/login', (req, res) => {
     const hash = derivePasswordSync(password, salt);
     if (!user || hash !== user.password_hash) {
       db.prepare('INSERT INTO login_attempts(key_hash,attempted_at) SELECT ?,? WHERE (SELECT COUNT(*) FROM login_attempts WHERE key_hash=? AND attempted_at>?)<5')
-        .run(k, now, k, now - 900000);
+        .run(userKey, now, userKey, now - 900000);
       return apiError(res, 401, '用户名或密码错误');
     }
     const token = crypto.randomBytes(32).toString('hex');
