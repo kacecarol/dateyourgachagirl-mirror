@@ -10,3 +10,5 @@ _e2e.js
 _smoketest.js
 .env
 .DS_Store
+
+_itest.js
