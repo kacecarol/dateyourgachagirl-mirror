@@ -332,6 +332,9 @@ function ensureSink() {
 
 // ================= Render 侧：反向 WebSocket =================
 let ws = null, reconnectTimer = null, lastHeartbeat = 0, lastAck = 0, connStartAt = 0;
+// 状态上报节流：/queue 是原站允许的唯一后台队列查询，且不得超过每 120 秒一次（手册 §3.4）。
+// 保活 hello 可以更频繁，但队列数字沿用上次查询结果，不额外查询 ComfyUI —— 中转不做任何轮询。
+let lastQueueQuery = 0, cachedWaiting = null, cachedRunning = null;
 function send(wsObj, msg) { if (wsObj && wsObj.readyState === 1) wsObj.send(JSON.stringify(msg)); }
 function manifest() {
   return WORKFLOWS.map(w => ({ id: w.id, name: w.name, parameters: w.adapter === 'dateher' ? DATEHER_NAMES : PARAM_NAMES }));
@@ -373,17 +376,20 @@ function watchdog() {
 }
 async function heartbeatRender() {
   const ready = await comfyReady();
-  // 与原站一致：只上报 ComfyUI 队列数量（queue_pending / queue_running），不读 /history、不收集完成图片。
-  let waiting = 0, running = 0;
-  if (ready) {
+  const now = Date.now();
+  // 与原站 §3.4 一致：只上报 ComfyUI 队列数量（queue_pending / queue_running），不读 /history、不收集完成图片；
+  // 且 /queue 是"允许的唯一后台队列查询"，节流为每 120 秒最多一次（首次连接立即查一次）。
+  // 其余保活 hello 只沿用缓存值，不额外查询 ComfyUI —— 中转侧不建立任何轮询。
+  if (ready && now - lastQueueQuery >= 120000) {
     try {
       const q = await comfyRequest('GET', '/queue');
-      waiting = Array.isArray(q && q.queue_pending) ? q.queue_pending.length : 0;
-      running = Array.isArray(q && q.queue_running) ? q.queue_running.length : 0;
-    } catch { /* 读不到就报 0 */ }
+      cachedWaiting = Array.isArray(q && q.queue_pending) ? q.queue_pending.length : 0;
+      cachedRunning = Array.isArray(q && q.queue_running) ? q.queue_running.length : 0;
+      lastQueueQuery = now;
+    } catch { /* 读不到就沿用上次的缓存值，不重试、不轮询 */ }
   }
-  send(ws, { type: 'hello', worker_id: WORKER_ID, ready, workflows: manifest(), queue_waiting: waiting, queue_running: running });
-  lastHeartbeat = Date.now();
+  send(ws, { type: 'hello', worker_id: WORKER_ID, ready, workflows: manifest(), queue_waiting: cachedWaiting, queue_running: cachedRunning });
+  lastHeartbeat = now;
 }
 async function handleRenderMessage(str) {
   let msg; try { msg = JSON.parse(str); } catch { return; }
