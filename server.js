@@ -286,11 +286,13 @@ function workerMarkComplete(workerId, msg) {
   if (!job || job.status !== 'running' || job.worker_id !== workerId) return;
   const cnt = db.prepare('SELECT COUNT(*) AS c FROM results WHERE job_id=?').get(msg.job_id).c;
   if (cnt > 0) db.prepare("UPDATE jobs SET status='succeeded',updated_at=? WHERE id=?").run(Date.now(), msg.job_id);
+  pumpDispatch();
 }
 function workerMarkFail(workerId, msg) {
   const job = db.prepare('SELECT * FROM jobs WHERE id=?').get(msg.job_id);
   if (!job || job.status !== 'running' || job.worker_id !== workerId) return;
   db.prepare("UPDATE jobs SET status='failed',error=?,updated_at=? WHERE id=?").run(String(msg.error || 'generation failed').slice(0, 1000), Date.now(), msg.job_id);
+  pumpDispatch();
 }
 function workerStoreResults(workerId, msg) {
   const job = db.prepare('SELECT * FROM jobs WHERE id=?').get(msg.job_id);
@@ -318,6 +320,7 @@ function workerLoadResult(workerId, msg) {
       db.prepare("UPDATE jobs SET status='succeeded',updated_at=? WHERE id=? AND status='running'").run(Date.now(), item.id);
     });
   }
+  pumpDispatch();
 }
 
 // ---------- Express ----------
@@ -450,6 +453,7 @@ app.post('/api/jobs/:id/forward', (req, res) => {
     if (p.art_style === 'real' && req.user.username !== 'asus') throw { status: 403, message: 'Real-person style is available only to asus.' };
     if (CREDITS_ENABLED) charge(req.user.id, 'batch_submit', job.request_id, job.id, JSON.stringify([job.workflow_id, p]));
     forwardJob(job, req.user);
+    pumpDispatch();
     return ok(res, { job: jobDetail(req.params.id, req.user.id) });
   } catch (e) { return apiError(res, e.status || 503, e.message); }
 });
@@ -504,49 +508,65 @@ async function fetchImage(req, res, download) {
   } catch (e) { return apiError(res, e.status || 503, e.message); }
 }
 
+// 创建任务（只入队，不派发）。派发交给 pumpDispatch() 逐条串行推进。
+function createJobCore(input, user) {
+  const now = Date.now();
+  if (!isUuid(input.request_id || '')) throw { status: 400, message: 'request_id 须为 UUID' };
+  if (!isName(input.workflow_id || '')) throw { status: 400, message: '工作流 ID 错误' };
+  const requestKey = user.id === 'legacy' ? input.request_id : user.id + ':' + input.request_id;
+  const validated = parameters(input.parameters, input.workflow_id === 'dateher_full');
+  if (validated.art_style === 'real' && user.username !== 'asus') throw { status: 403, message: 'Real-person style is available only to asus.' };
+  // 会话门控：替换非当前会话的可见任务
+  gateSession(user.id, input);
+  const existing = db.prepare('SELECT * FROM jobs WHERE request_id=?').get(requestKey);
+  if (existing) {
+    const stored = canonical(JSON.parse(existing.parameters));
+    const retry = canonical(Object.fromEntries(Object.keys(stored).map(k => [k, validated[k]])));
+    if (!(existing.visible === 1 && existing.owner_id === user.id && existing.workflow_id === input.workflow_id &&
+      Object.keys(input.parameters).every(k => k in stored) && JSON.stringify(stored) === JSON.stringify(retry))) throw { status: 409, message: '重复请求的参数不同或会话已替换' };
+    if (REQUEST_ONLY && existing.status === 'queued') localOnline();
+    if (CREDITS_ENABLED) charge(user.id, 'batch_submit', existing.request_id, existing.id, JSON.stringify([existing.workflow_id, JSON.parse(existing.parameters)]));
+    return { job: jobDetail(existing.id, user.id), status: 200 };
+  }
+  const catalog = workflowList(now);
+  const wf = catalog.workflows.find(w => w.id === input.workflow_id);
+  if (!wf) throw { status: 409, message: '工作流尚未登记，请先启动本机程序' };
+  for (const k of Object.keys(input.parameters)) if (!wf.parameters.includes(k)) throw { status: 400, message: `此工作流不支持 ${k}` };
+  const params = canonical(Object.fromEntries((input.workflow_id === 'dateher_full' ? DATEHER_NAMES : PARAM_NAMES)
+    .filter(k => wf.parameters.includes(k) && validated[k] !== undefined).map(k => [k, validated[k]])));
+  if (REQUEST_ONLY) localOnline();
+  if (CREDITS_ENABLED && creditBalance(user.id) < 1) throw { status: 402, message: 'Insufficient points' };
+  const id = crypto.randomUUID();
+  db.prepare(`INSERT INTO jobs(id,request_id,workflow_id,parameters,status,created_at,updated_at,owner_id)
+    SELECT ?,?,?,?,'queued',?,MAX(?,COALESCE((SELECT MAX(updated_at)+1 FROM jobs),0)),?
+    WHERE (SELECT COUNT(*) FROM jobs WHERE owner_id=? AND status IN ('queued','running'))<100 ON CONFLICT(request_id) DO NOTHING`)
+    .run(id, requestKey, input.workflow_id, JSON.stringify(params), now, now, user.id, user.id);
+  const inserted = db.prepare('SELECT * FROM jobs WHERE request_id=?').get(requestKey);
+  if (!inserted) throw { status: 429, message: '队列已满，请等任务完成' };
+  if (!(inserted.visible === 1 && inserted.owner_id === user.id && inserted.workflow_id === input.workflow_id && inserted.parameters === JSON.stringify(params))) throw { status: 409, message: '重复请求的参数不同' };
+  if (CREDITS_ENABLED) charge(user.id, 'batch_submit', inserted.request_id, inserted.id, JSON.stringify([inserted.workflow_id, params]));
+  return { job: jobDetail(inserted.id, user.id), status: inserted.id === id ? 201 : 200 };
+}
+
 function createJob(req, res) {
   try {
-    const now = Date.now();
-    const input = req.body || {};
-    if (!isUuid(input.request_id || '')) throw { status: 400, message: 'request_id 须为 UUID' };
-    if (!isName(input.workflow_id || '')) throw { status: 400, message: '工作流 ID 错误' };
-    const requestKey = req.user.id === 'legacy' ? input.request_id : req.user.id + ':' + input.request_id;
-    const validated = parameters(input.parameters, input.workflow_id === 'dateher_full');
-    if (validated.art_style === 'real' && req.user.username !== 'asus') throw { status: 403, message: 'Real-person style is available only to asus.' };
-    // 会话门控：替换非当前会话的可见任务
-    gateSession(req.user.id, input);
-    const existing = db.prepare('SELECT * FROM jobs WHERE request_id=?').get(requestKey);
-    if (existing) {
-      const stored = canonical(JSON.parse(existing.parameters));
-      const retry = canonical(Object.fromEntries(Object.keys(stored).map(k => [k, validated[k]])));
-      if (!(existing.visible === 1 && existing.owner_id === req.user.id && existing.workflow_id === input.workflow_id &&
-        Object.keys(input.parameters).every(k => k in stored) && JSON.stringify(stored) === JSON.stringify(retry))) throw { status: 409, message: '重复请求的参数不同或会话已替换' };
-      if (REQUEST_ONLY && existing.status === 'queued') localOnline();
-      if (CREDITS_ENABLED) charge(req.user.id, 'batch_submit', existing.request_id, existing.id, JSON.stringify([existing.workflow_id, JSON.parse(existing.parameters)]));
-      forwardJob(existing, req.user);
-      return ok(res, { job: jobDetail(existing.id, req.user.id), balance: creditBalance(req.user.id) });
-    }
-    const catalog = workflowList(now);
-    const wf = catalog.workflows.find(w => w.id === input.workflow_id);
-    if (!wf) throw { status: 409, message: '工作流尚未登记，请先启动本机程序' };
-    for (const k of Object.keys(input.parameters)) if (!wf.parameters.includes(k)) throw { status: 400, message: `此工作流不支持 ${k}` };
-    const params = canonical(Object.fromEntries((input.workflow_id === 'dateher_full' ? DATEHER_NAMES : PARAM_NAMES)
-      .filter(k => wf.parameters.includes(k) && validated[k] !== undefined).map(k => [k, validated[k]])));
-    if (REQUEST_ONLY) localOnline();
-    if (CREDITS_ENABLED && creditBalance(req.user.id) < 1) throw { status: 402, message: 'Insufficient points' };
-    const id = crypto.randomUUID();
-    const ins = db.prepare(`INSERT INTO jobs(id,request_id,workflow_id,parameters,status,created_at,updated_at,owner_id)
-      SELECT ?,?,?,?,'queued',?,MAX(?,COALESCE((SELECT MAX(updated_at)+1 FROM jobs),0)),?
-      WHERE (SELECT COUNT(*) FROM jobs WHERE owner_id=? AND status IN ('queued','running'))<100 ON CONFLICT(request_id) DO NOTHING`)
-      .run(id, requestKey, input.workflow_id, JSON.stringify(params), now, now, req.user.id, req.user.id);
-    const inserted = db.prepare('SELECT * FROM jobs WHERE request_id=?').get(requestKey);
-    if (!inserted) throw { status: 429, message: '队列已满，请等任务完成' };
-    if (!(inserted.visible === 1 && inserted.owner_id === req.user.id && inserted.workflow_id === input.workflow_id && inserted.parameters === JSON.stringify(params))) throw { status: 409, message: '重复请求的参数不同' };
-    if (CREDITS_ENABLED) charge(req.user.id, 'batch_submit', inserted.request_id, inserted.id, JSON.stringify([inserted.workflow_id, params]));
-    forwardJob(inserted, req.user);
-    return ok(res, { job: jobDetail(inserted.id, req.user.id), balance: creditBalance(req.user.id) }, inserted.id === id ? 201 : 200);
+    const { job, status } = createJobCore(req.body || {}, req.user);
+    pumpDispatch();
+    return ok(res, { job, balance: creditBalance(req.user.id) }, status);
   } catch (e) { return apiError(res, e.status || 400, e.message); }
 }
+
+// 批量提交（前端 REQUEST_ONLY 模式下走这里）：逐条入队后立即返回，由 pumpDispatch 串行出图。
+app.post('/api/jobs/batch', (req, res) => {
+  try {
+    const input = req.body || {};
+    if (!Array.isArray(input.requests) || input.requests.length < 1 || input.requests.length > 20) throw { status: 400, message: 'Invalid batch' };
+    const jobs = [];
+    for (const item of input.requests) jobs.push(createJobCore(item, req.user).job);
+    pumpDispatch();
+    return ok(res, { jobs, balance: creditBalance(req.user.id) });
+  } catch (e) { return apiError(res, e.status || 400, e.message); }
+});
 
 function gateSession(userId, input) {
   const active = db.prepare('SELECT * FROM active_sessions WHERE owner_id=?').get(userId);
@@ -566,6 +586,33 @@ async function forwardJob(job, user) {
       .run(w.id, reply.prompt_id, crypto.randomUUID(), Date.now() + LEASE_MS, Date.now(), job.id);
   } catch (e) { console.error('forwardJob failed', e.message || e); }
 }
+
+// ---------- 串行派发器 ----------
+// 本机 worker 的 WS 通道一次只处理一个任务（收到第二个会回 "worker busy"）。
+// 所以云端不能把整批任务一次推给 worker，而要“有任务在跑就不派、否则派最早的一条”。
+let dispatching = false;
+function pumpDispatch() {
+  if (!REQUEST_ONLY || dispatching) return;
+  const w = db.prepare('SELECT * FROM workers WHERE ready=1 ORDER BY last_seen DESC LIMIT 1').get();
+  if (!w || w.last_seen <= Date.now() - 300_000) return;
+  if ((w.queue_running ?? 0) > 0) return;
+  if (db.prepare("SELECT COUNT(*) AS c FROM jobs WHERE status='running'").get().c > 0) return;
+  const job = db.prepare("SELECT * FROM jobs WHERE status='queued' AND visible=1 ORDER BY updated_at ASC,id ASC LIMIT 1").get();
+  if (!job) return;
+  const owner = db.prepare('SELECT * FROM users WHERE id=?').get(job.owner_id);
+  dispatching = true;
+  Promise.resolve()
+    .then(() => forwardJob(job, { id: job.owner_id, username: owner ? owner.username : 'asus' }))
+    .then(() => {
+      // 派发成功（任务已 running）就释放锁，等 worker 回报 complete/fail 再派下一条；
+      // 没派出去（worker 忙/通道超时）则稍后重试。
+      const cur = db.prepare('SELECT status FROM jobs WHERE id=?').get(job.id);
+      if (cur && cur.status === 'running') { dispatching = false; }
+      else { setTimeout(() => { dispatching = false; pumpDispatch(); }, 2000); }
+    })
+    .catch(() => { setTimeout(() => { dispatching = false; pumpDispatch(); }, 2000); });
+}
+setInterval(() => { try { pumpDispatch(); } catch { /* ignore */ } }, 5000);
 
 // 本机 worker 心跳（WS 连入时也会更新；这里保留 REST 以兼容旧逻辑）
 app.post('/api/worker/heartbeat', (req, res) => {
