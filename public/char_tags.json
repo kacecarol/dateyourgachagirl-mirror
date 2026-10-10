@@ -1,0 +1,5619 @@
+{
+  "Acheron": {
+    "charTags": "acheron_(honkai_star_rail), very long hair, blue hair, violet eyes,",
+    "headwear": "",
+    "appearance_a": "black jacket, crop top, black shorts, fingerless gloves, belt, choker, asymmetrical clothes, single bare shoulder,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "黄泉",
+    "japanese": "黄泉",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Acheron",
+      "zh-cn": "黄泉",
+      "ja": "黄泉"
+    },
+    "name_source": {
+      "english": "Acheron",
+      "chinese": "黄泉"
+    }
+  },
+  "Aemeath": {
+    "charTags": "aemeath, halo, hairclip, mole on shoulder,",
+    "headwear": "heart on chest, detached collar, detached sleeves, elbow gloves, thigh strap, single thighhigh, white heels,",
+    "appearance_a": "aemeath \\(young\\), short twintails, hair ornament, necklace, fur trim, white dress, white boots,",
+    "appearance_b": "aemeath, aged down, aemeath \\(young\\), ahoge, brown eyes, symbol-shaped pupils, short twintails, two side up, twintails, head ornament, hair ornament, beads necklace, hair ornament, fur trim, toes, fur-trimmed boots, fur-trimmed sleeves, beads ornament, puffy long sleeves, ribbon, long sleeves, toeless footwear, chinese clothes, white footwear, knee boots, sandals, short dress, straight-on, tassel,",
+    "appearance_c": "aemeath, aemeath \\(student\\), high ponytail, brown eyes, hair ornament, pink hair, symbol-shaped pupils, loafers, black footwear, collared shirt, purple jacket, black shirt, yellow bowtie, white kneehighs, white dress, long sleeves, open jacket, yellow ribbon, school uniform, blue jacket,",
+    "appearance_d": "1other, mecha, mechanical wings,",
+    "holding": "1other, mecha, mechanical wings,",
+    "animalFeatured": false,
+    "chinese": "爱弥斯",
+    "japanese": "エイメス",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Aemeath",
+      "zh-cn": "爱弥斯",
+      "ja": "エイメス"
+    },
+    "name_source": {
+      "english": "Aemeath",
+      "chinese": "爱弥斯"
+    }
+  },
+  "Aglaea": {
+    "charTags": "aglaea \\(honkai star rail\\), blonde hair, green eyes, hair ornament, short hair, hair flower, laurel crown, colored inner hair, multicolored hair, chest tattoo,",
+    "headwear": "",
+    "appearance_a": "thigh strap,dress,high heels,white dress,flower,sandals,weapon,sword,medium hair,jewelry,detached sleeves,bracelet,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "阿格莱雅",
+    "japanese": "アグライア",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Aglaea",
+      "zh-cn": "阿格莱雅",
+      "ja": "アグライア"
+    },
+    "name_source": {
+      "english": "Aglaea",
+      "chinese": "阿格莱雅"
+    }
+  },
+  "Aino": {
+    "charTags": "EBAino, 1girl, small breasts, very long hair, hair ornament, blue eyes, pink hair, hairclip, heart hair ornament, bangs pinned back, x hair ornament, forehead, huge ahoge, sidelocks, thick eyebrows, antenna hair, screw hair ornament,",
+    "headwear": "",
+    "appearance_a": "sleeves past fingers, open coat, white coat, slippers, white belt, loose socks, bandaid on knee, green coat, very long sleeves, black dress, purple socks, bloomers, front slit, green dress, halter dress, halterneck, off shoulder, sleeveless dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "爱诺",
+    "japanese": "アイノ",
+    "bodyType": 5,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Aino",
+      "zh-cn": "爱诺",
+      "ja": "アイノ"
+    },
+    "name_source": {
+      "english": "Aino",
+      "chinese": "爱诺"
+    }
+  },
+  "Akane Rin": {
+    "charTags": "akanente, long blonde hair, side ponytail, ahoge, red eyes, hair ornament, hairband,",
+    "headwear": "",
+    "appearance_a": "black jacket, cropped jacket, open jacket, red necktie, black choker, fingerless gloves, black gloves, shoulder cutout, red skirt, black belt, thighhighs, boots, black footwear,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "明音凛",
+    "japanese": "アカネ・リン",
+    "bodyType": 2,
+    "personalityTone": "tsundere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Rin",
+      "zh-cn": "明音凛",
+      "ja": "アカネ・リン"
+    },
+    "name_source": {
+      "english": "Akane Rin",
+      "chinese": "明音凛"
+    }
+  },
+  "Akekuri": {
+    "charTags": "akekuri_(arknights), blue eyes, red hair, long hair, blunt bangs, thick eyebrows, hair bell, dog ears, dog tail,",
+    "headwear": "",
+    "appearance_a": "fingerless gloves, red ascot,  leotard_over_bodysuit,cropped jacket,   black bodysuit ,      white footwear,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "秋栗",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Akekuri",
+      "zh-cn": "秋栗",
+      "ja": "アケクリ"
+    },
+    "name_source": {
+      "english": "Akekuri",
+      "chinese": "秋栗"
+    }
+  },
+  "Alexandrina Sebastiane": {
+    "charTags": "alexandrina sebastiane, grey hair, long hair, low-tied long hair, very long hair, red eyes, hair between eyes, maid, maid headdress,",
+    "headwear": "",
+    "appearance_a": "apron, black gloves, bow, bowtie, gloves, juliet sleeves, long sleeves, puffy sleeves, waist apron, white apron, white bow, white bowtie,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "亚历山德丽娜·莎芭丝缇安 / 丽娜",
+    "japanese": "アレクサンドリナ・セバスチャン",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Alexandrina",
+      "zh-cn": "亚历山德丽娜·莎芭丝缇安",
+      "ja": "アレクサンドリナ・セバスチャン"
+    },
+    "name_source": {
+      "english": "Alexandrina Sebastiane",
+      "chinese": "亚历山德丽娜·莎芭丝缇安 / 丽娜"
+    }
+  },
+  "Alice Thymefield": {
+    "charTags": "alice thymefield,blonde hair, hair ornament, heterochromia, red bow, very long hair, twintails, animal ears, low twintails, rabbit tail,",
+    "headwear": "",
+    "appearance_a": "bowtie, skirt,fingerless gloves, shirt, pantyhose, white shirt, pleated skirt, long sleeves, black gloves, black pantyhose,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "爱丽丝·泰姆菲尔德",
+    "japanese": "アリス・タイムフィールド",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Alice",
+      "zh-cn": "爱丽丝·泰姆菲尔德",
+      "ja": "アリス・タイムフィールド"
+    },
+    "name_source": {
+      "english": "Alice Thymefield",
+      "chinese": "爱丽丝·泰姆菲尔德 / 爱丽丝"
+    }
+  },
+  "Amber": {
+    "charTags": "amber_(genshin_impact), very long hair, brown hair, yellow eyes,red hairband,",
+    "headwear": "",
+    "appearance_a": "corset, shorts, thighhighs, gloves, long sleeves, goggles around neck, pouch, belt,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "安柏",
+    "japanese": "アンバー",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Amber",
+      "zh-cn": "安柏",
+      "ja": "アンバー"
+    },
+    "name_source": {
+      "english": "Amber",
+      "chinese": "安柏"
+    }
+  },
+  "Anastasya Feodorovna Snezhnaya": {
+    "charTags": "anastasyadef, white hair, long hair, long sidelocks, hair between eyes, braid, blue eyes, bright pupils, symbol-shaped pupils, pointy ears, earrings, tiara, snowflake hair ornament, hair bow, gem,",
+    "headwear": "",
+    "appearance_a": "white gloves, blue dress, bare shoulders, fur trim, detached collar, detached sleeves, white thighhighs,",
+    "holding": "holding staff,",
+    "animalFeatured": false,
+    "chinese": "安娜丝塔夏·费奥多罗夫娜·雪奈茨娜娅",
+    "japanese": "アナスターシャ・フョードロヴナ・スネージナヤ",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Anastasya",
+      "zh-cn": "安娜丝塔夏·费奥多罗夫娜·雪奈茨娜娅",
+      "ja": "アナスターシャ・フョードロヴナ・スネージナヤ"
+    },
+    "name_source": {
+      "english": "Anastasya Feodorovna Snezhnaya",
+      "chinese": "安娜丝塔夏·费奥多罗夫娜·雪奈茨娜娅"
+    }
+  },
+  "Anby Demara": {
+    "charTags": "anby demara, orange eyes, short hair, white hair,",
+    "headwear": "",
+    "appearance_a": "bare shoulders, black gloves, black skirt, black thighhighs, fingerless gloves, gloves, green jacket, headphones, jacket, navel, skirt, stomach, thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "安比·德玛拉 / 安比",
+    "japanese": "アンビー・デマラ",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Anby",
+      "zh-cn": "安比·德玛拉",
+      "ja": "アンビー・デマラ"
+    },
+    "name_source": {
+      "english": "Anby Demara",
+      "chinese": "安比·德玛拉 / 安比"
+    }
+  },
+  "Arcane": {
+    "charTags": "arcane (arknights), aqua hair, bird girl, black gloves, black jacket, black shoes, blue eyes, eyeliner, facial mark, forehead mark, head wings, very long hair, makeup, red eyeliner,",
+    "headwear": "",
+    "appearance_a": "gloves,jacket,shoe,wings,red long boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "诀",
+    "japanese": "オクギ",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Arcane",
+      "zh-cn": "诀",
+      "ja": "オクギ"
+    },
+    "name_source": {
+      "english": "Arcane",
+      "chinese": "诀"
+    }
+  },
+  "Arclight": {
+    "charTags": "arclight_(arknights), blue eyes, dark skin, white hair, multicolored hair, twin braids, horse ears, horse tail,",
+    "headwear": "",
+    "appearance_a": "forehead jewel,    crop top , midriff  , black cropped hoodie, single glove , multiple belts,  baggy pants,hip vent, harem pants,  black boots,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "弧光",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Arclight",
+      "zh-cn": "弧光",
+      "ja": "アークライト"
+    },
+    "name_source": {
+      "english": "Arclight",
+      "chinese": "弧光"
+    }
+  },
+  "Ardelia": {
+    "charTags": "endfield style, Ardelia, brown hair, side ponytail, ahoge, blue red hairpins, sheep ears, sheep horns, red eyes, white pupils, sideburns, side braid,",
+    "headwear": "",
+    "appearance_a": "purple dress, detached sleeves, shoulder cut, white sleeves, fingerless gloves, white and red gloves, purple sleeve frills, brown fluffy dress hemline, white jacket around waist, jacket sleeves, zipper, red tassels, red thigh straps, thigh highs, white shoes, red shoe decorations, pink back ribbon,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "艾尔黛拉",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Ardelia",
+      "zh-cn": "艾尔黛拉",
+      "ja": "アルデリア"
+    },
+    "name_source": {
+      "english": "Ardelia",
+      "chinese": "艾尔黛拉"
+    }
+  },
+  "Aria": {
+    "charTags": "aria \\(zenless zone zero\\),pink hair, blue hair, aqua hair, heart, multicolored hair, streaked hair, blue eyes, twintails, symbol-shaped pupils, long hair,",
+    "headwear": "headphones, ",
+    "appearance_a": "center frills, wings, dress, white dress, short sleeves, frills, skirt, puffy sleeves, puffy short sleeves, mechanical wings, bow, ",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "爱芮",
+    "japanese": "アリア",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Aria",
+      "zh-cn": "爱芮",
+      "ja": "アリア"
+    },
+    "name_source": {
+      "english": "Aria",
+      "chinese": "爱芮"
+    }
+  },
+  "Arlecchino": {
+    "charTags": "arlecchino (genshin impact), multicolored hair, black hair, bangs, white hair, low ponytail, symbol-shaped pupils, streaked hair, hair between eyes, x-shaped pupils, short hair, black eyes, red pupils, two-tone hair,",
+    "headwear": "",
+    "appearance_a": "coat, grey coat, grey vest, jewelry, shirt, long sleeves, frills, black gloves, black pants,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "阿蕾奇诺",
+    "japanese": "アルレッキーノ",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Arlecchino",
+      "zh-cn": "阿蕾奇诺",
+      "ja": "アルレッキーノ"
+    },
+    "name_source": {
+      "english": "Arlecchino",
+      "chinese": "阿蕾奇诺"
+    }
+  },
+  "Asta": {
+    "charTags": "asta_(honkai_star_rail), pink hair, blue eyes, medium hair,",
+    "headwear": "",
+    "appearance_a": "white shirt, sleeveless shirt, black skirt, pleated skirt, detached sleeves, black bowtie, lanyard, id card,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "艾丝妲",
+    "japanese": "アスター",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Asta",
+      "zh-cn": "艾丝妲",
+      "ja": "アスター"
+    },
+    "name_source": {
+      "english": "Asta",
+      "chinese": "艾丝妲"
+    }
+  },
+  "Astra Yao": {
+    "charTags": "astra yao, red eyes, very long hair, hairband, black hair, earrings, necklace,",
+    "headwear": "",
+    "appearance_a": "jewelry,long sleeves,white dress,red jacket,",
+    "holding": "holding staff",
+    "animalFeatured": false,
+    "chinese": "耀嘉音",
+    "japanese": "アストラ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Astra",
+      "zh-cn": "耀嘉音",
+      "ja": "アストラ"
+    },
+    "name_source": {
+      "english": "Astra Yao",
+      "chinese": "耀嘉音"
+    }
+  },
+  "Augusta": {
+    "charTags": "augusta \\(wuthering waves\\), long hair, earrings, jewelry, red hair, red eyes, hair between eyes, star \\(symbol\\),",
+    "headwear": "",
+    "appearance_a": "bracer,armor,ambraces,white dress,dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "奥古斯塔",
+    "japanese": "オーガスタ",
+    "bodyType": 2,
+    "personalityTone": "earnest",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Augusta",
+      "zh-cn": "奥古斯塔",
+      "ja": "オーガスタ"
+    },
+    "name_source": {
+      "english": "Augusta",
+      "chinese": "奥古斯塔"
+    }
+  },
+  "Aurelia": {
+    "charTags": "aurelia_neverness_to_everness, pink hair, pink eyes, long hair,",
+    "headwear": "",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "海月",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "NevernessToEverness",
+    "_disabled": true,
+    "display_names": {
+      "en": "Aurelia",
+      "zh-cn": "海月",
+      "ja": "海月（みつき）"
+    },
+    "name_source": {
+      "english": "Aurelia",
+      "chinese": "海月"
+    }
+  },
+  "Avywenna": {
+    "charTags": "avywenna_(arknights),  blue eyes, light brown hair,  short hair,  rabbit ears,  rabbit tail, black headgear,  ",
+    "headwear": "",
+    "appearance_a": "bare shoulders , sleeveless shirt, detached sleeves, floating rings device, black dress, black bodysuit, black gloves,  armor, vambraces,  pleated skirt,  kneepads, harness, trailing ribbons,  arrows ornament,   armored boots,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "艾维文娜",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "gyaru",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Avywenna",
+      "zh-cn": "艾维文娜",
+      "ja": "アイビーエナ"
+    },
+    "name_source": {
+      "english": "Avywenna",
+      "chinese": "艾维文娜"
+    }
+  },
+  "Bailu": {
+    "charTags": "bailu_(honkai_star_rail), tail, dragon tail, very long hair, purple hair, green eyes,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, blue dress, detached sleeves, wide sleeves, long sleeves,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "白露",
+    "japanese": "白露",
+    "bodyType": 5,
+    "personalityTone": "genki",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Bailu",
+      "zh-cn": "白露",
+      "ja": "白露"
+    },
+    "name_source": {
+      "english": "Bailu",
+      "chinese": "白露"
+    }
+  },
+  "Baizhi": {
+    "charTags": "baizhi \\(wuthering waves\\), green eyes, black hair, long hair, hair ornament,",
+    "headwear": "",
+    "appearance_a": "gloves, black gloves, thigh strap, detached sleeves, dress, clothing cutout, chinese clothes,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "白芷",
+    "japanese": "白芷",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Baizhi",
+      "zh-cn": "白芷",
+      "ja": "白芷"
+    },
+    "name_source": {
+      "english": "Baizhi",
+      "chinese": "白芷"
+    }
+  },
+  "Barbara": {
+    "charTags": "barbara_(genshin_impact), blonde hair, blue eyes, long hair,",
+    "headwear": "hat,",
+    "appearance_a": "white dress, strapless dress, layered skirt, frilled dress, detached sleeves, detached collar, white pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "芭芭拉",
+    "japanese": "バーバラ",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Barbara",
+      "zh-cn": "芭芭拉",
+      "ja": "バーバラ"
+    },
+    "name_source": {
+      "english": "Barbara",
+      "chinese": "芭芭拉"
+    }
+  },
+  "Beidou": {
+    "charTags": "beidou_(genshin_impact), very long hair, brown hair, (hair ornament), red eyes,",
+    "headwear": "eyepatch,",
+    "appearance_a": "red dress, chinese clothes, pelvic curtain, fingerless gloves, black gloves, thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "北斗",
+    "japanese": "北斗",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Beidou",
+      "zh-cn": "北斗",
+      "ja": "北斗"
+    },
+    "name_source": {
+      "english": "Beidou",
+      "chinese": "北斗"
+    }
+  },
+  "Belle": {
+    "charTags": "belle \\(delicate sunlight\\) \\(zenless zone zero\\), green eyes, blue hair, short hair, hair ornament, ahoge, hair between eyes, earrings,",
+    "headwear": "",
+    "appearance_a": "orange dress, white pantyhose, long sleeves, dress, jacket,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "铃",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Belle",
+      "zh-cn": "铃",
+      "ja": "—"
+    },
+    "name_source": {
+      "english": "Belle",
+      "chinese": "铃"
+    }
+  },
+  "Black Swan": {
+    "charTags": "BlkSwnHSR, purple eyes, yellow eyes, gradient eyes, purple hair, long hair, purple veil,",
+    "headwear": "",
+    "appearance_a": "BlkSwnDefault, purple eyes, yellow eyes, gradient eyes, purple hair, long hair, purple veil, heart choker, lace choker, halterneck, purple dress, detached sleeves, black gloves, cleavage, see-through navel, high-waist pantyhose, black shorts, thigh boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "黑天鹅",
+    "japanese": "ブラックスワン",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Black Swan",
+      "zh-cn": "黑天鹅",
+      "ja": "ブラックスワン"
+    },
+    "name_source": {
+      "english": "Black Swan",
+      "chinese": "黑天鹅"
+    }
+  },
+  "Bronya": {
+    "charTags": "bronya_(honkai_star_rail), very long hair, grey hair, grey eyes,",
+    "headwear": "",
+    "appearance_a": "white dress, detached sleeves, black elbow gloves, black pantyhose, black thigh boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "布洛妮娅",
+    "japanese": "ブローニャ",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Bronya",
+      "zh-cn": "布洛妮娅",
+      "ja": "ブローニャ"
+    },
+    "name_source": {
+      "english": "Bronya",
+      "chinese": "布洛妮娅"
+    }
+  },
+  "Buling": {
+    "charTags": "buling \\(wuthering waves\\), yellow eyes, blue hair, headphones, braid, long hair, hair between eyes,",
+    "headwear": "",
+    "appearance_a": "talisman, black skirt, skirt, ofuda, black footwear, jacket, detached sleeves, black sleeves, shirt, white shirt, socks, detached sleeves, boots, black sleeves, tassel,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "卜灵",
+    "japanese": "卜霊（ボクレイ）",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Buling",
+      "zh-cn": "卜灵",
+      "ja": "卜霊（ボクレイ）"
+    },
+    "name_source": {
+      "english": "Buling",
+      "chinese": "卜灵"
+    }
+  },
+  "Burnice": {
+    "charTags": "burnice, burnice white, blonde hair, red eyes, twintails, short hair,",
+    "headwear": "",
+    "appearance_a": "belt, black gloves, black jacket, black skirt, black tube top, crop top, eyewear on head, fingerless gloves, high-waist skirt, leather, leather jacket, long sleeves, miniskirt, pleated skirt, red-tinted eyewear, spiked belt, spiked jacket, stomach, strapless, sunglasses, thigh belt, thigh strap, zettai ryouiki,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "柏妮思·怀特",
+    "japanese": "バーニス",
+    "bodyType": 4,
+    "personalityTone": "gyaru",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Burnice",
+      "zh-cn": "柏妮思·怀特",
+      "ja": "バーニス"
+    },
+    "name_source": {
+      "english": "Burnice",
+      "chinese": "柏妮思·怀特 / 柏妮思"
+    }
+  },
+  "Caesar King": {
+    "charTags": "caesar king \\(zenless zone zero\\), long hair, green hair, hair ornament, yellow eyes, hair intakes, horns,",
+    "headwear": "",
+    "appearance_a": "thighhighs, gloves, black thighhighs, belt, jacket, black gloves, garter straps, fur trim, black jacket, cleavage cutout,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "凯撒·金 / 凯撒",
+    "japanese": "シーザー",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Caesar",
+      "zh-cn": "凯撒·金",
+      "ja": "シーザー"
+    },
+    "name_source": {
+      "english": "Caesar King",
+      "chinese": "凯撒·金 / 凯撒"
+    }
+  },
+  "Camellya": {
+    "charTags": "camellya \\(wuthering waves\\), hair ornament, twintails,",
+    "headwear": "",
+    "appearance_a": "dress, white dress, clothing cutout, asymmetrical clothes,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "椿",
+    "japanese": "ツバキ",
+    "bodyType": 4,
+    "personalityTone": "yandere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Camellya",
+      "zh-cn": "椿",
+      "ja": "ツバキ"
+    },
+    "name_source": {
+      "english": "Camellya",
+      "chinese": "椿"
+    }
+  },
+  "Candace": {
+    "charTags": "candace_(genshin_impact), dark blue hair, blue eyes, short hair,",
+    "headwear": "",
+    "appearance_a": "egyptian clothes, detached sleeves, short shorts, pelvic curtain, thighlet, neck ring, gold trim,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "坎蒂丝",
+    "japanese": "キャンディス",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Candace",
+      "zh-cn": "坎蒂丝",
+      "ja": "キャンディス"
+    },
+    "name_source": {
+      "english": "Candace",
+      "chinese": "坎蒂丝"
+    }
+  },
+  "Cantarella": {
+    "charTags": "cantarella \\(wuthering waves\\), long hair, mole, hair ornament, earrings, hair flower, hair between eyes, nail polish, large breasts,",
+    "headwear": "",
+    "appearance_a": "dress, white dress, thighhighs, jewelry, cleavage, white thighhighs,  single thighhigh,clothing cutout,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "坎特蕾拉",
+    "japanese": "カンタレラ",
+    "bodyType": 2,
+    "personalityTone": "gyaru",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Cantarella",
+      "zh-cn": "坎特蕾拉",
+      "ja": "カンタレラ"
+    },
+    "name_source": {
+      "english": "Cantarella",
+      "chinese": "坎特蕾拉"
+    }
+  },
+  "Carlotta": {
+    "charTags": "carlotta \\(splashing summer\\) \\(wuthering waves\\), white hair, green eyes, white flower, parted bangs, very long hair, hair flower, hair ornament, ahoge, hair bow,",
+    "headwear": "",
+    "appearance_a": "red one-piece swimsuit, one-piece swimsuit, swimsuit, jewelry,  necklace, bare shoulders, bow, frills, bracelet,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "珂莱塔",
+    "japanese": "カルロッタ",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Carlotta",
+      "zh-cn": "珂莱塔",
+      "ja": "カルロッタ"
+    },
+    "name_source": {
+      "english": "Carlotta",
+      "chinese": "珂莱塔"
+    }
+  },
+  "Cartethyia": {
+    "charTags": "cartethyia, multicolored eyes, bright pupils, blonde hair, long hair, loosely tucked bangs, hair behind ear, parted bangs, sidelocks, crown of thorns, multiple earrings, blue earrings, tacet mark, braid,",
+    "headwear": "",
+    "appearance_a": "undersuit, stole, detached sleeves, bracelet, strappy heels, single anklet, toe ring,",
+    "appearance_b": "undersuit, stole, high-low skirt, single anklet, bare feet, single pauldron, single vambrace, single gauntlet, black hands, colored extremities,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "卡提希娅",
+    "japanese": "カルテジア",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "wuwa",
+    "charTags_b": "fleurdelys, multicolored eyes, bright pupils, colored inner hair, gradient hair, blonde hair, aqua hair, long hair, wavy hair, hair over eyes, eyes visible through hair, single horn, tacet mark, spiked halo, multiple earrings, floating earring,",
+    "display_names": {
+      "en": "Cartethyia",
+      "zh-cn": "卡提希娅",
+      "ja": "カルテジア"
+    },
+    "name_source": {
+      "english": "Cartethyia",
+      "chinese": "卡提希娅"
+    }
+  },
+  "Castorice": {
+    "charTags": "castorice, hair ornament,",
+    "headwear": "",
+    "appearance_a": "butterfly arm ribbon, asymmetrical gloves, white legwear, white footwear,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "遐蝶",
+    "japanese": "キャストリス",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Castorice",
+      "zh-cn": "遐蝶",
+      "ja": "キャストリス"
+    },
+    "name_source": {
+      "english": "Castorice",
+      "chinese": "遐蝶"
+    }
+  },
+  "Cerydra": {
+    "charTags": "cerydra \\(honkai star rail\\), blue hair, blue eyes, hair print, white hair, very long hair, braid, mini crown,",
+    "headwear": "",
+    "appearance_a": "wings, dress, detached sleeves, bare shoulders, bowtie, shirt,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "刻律德菈",
+    "japanese": "ケリュドラ",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Cerydra",
+      "zh-cn": "刻律德菈",
+      "ja": "ケリュドラ"
+    },
+    "name_source": {
+      "english": "Cerydra",
+      "chinese": "刻律德菈"
+    }
+  },
+  "Changli": {
+    "charTags": "changli \\(wuthering waves\\), pink hair, yellow eyes, hair ornament, multicolored hair, ponytail, braid, short hair with long locks, long hair,",
+    "headwear": "",
+    "appearance_a": "dress,gloves, black thighhighs,white dress,bare shoulders,thigh strap,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "长离",
+    "japanese": "長離",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Changli",
+      "zh-cn": "长离",
+      "ja": "長離"
+    },
+    "name_source": {
+      "english": "Changli",
+      "chinese": "长离"
+    }
+  },
+  "Charlotte": {
+    "charTags": "charlotte, charlotte (genshin impact), short hair, pink hair, medium hair, aqua eyes, hat,",
+    "headwear": "",
+    "appearance_a": "shirt, skirt, long sleeves, gloves, jewelry, bare shoulders, white shirt, detached sleeves, puffy sleeves, belt, white gloves, thigh strap, sideboob, suspenders, gem, brooch, red headwear, vision (genshin impact), cabbie hat, hat feather, white belt, blue gemstone, monocle, red sleeves, puffy detached sleeves, blue brooch,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "夏洛蒂",
+    "japanese": "シャルロット",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Charlotte",
+      "zh-cn": "夏洛蒂",
+      "ja": "シャルロット"
+    },
+    "name_source": {
+      "english": "Charlotte",
+      "chinese": "夏洛蒂"
+    }
+  },
+  "Chasca": {
+    "charTags": "chasca \\(genshin impact\\), pointy ears, blue eyes, red hair, long hair, braid, red nails, nail polish, earrings, hat, black headwear, cowboy hat,",
+    "headwear": "",
+    "appearance_a": "pants,black pants,jewelry,cleavage,gloves,high heels,red scarf,brown gloves,fingerless gloves,bare shoulders,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "恰斯卡",
+    "japanese": "チャスカ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Chasca",
+      "zh-cn": "恰斯卡",
+      "ja": "チャスカ"
+    },
+    "name_source": {
+      "english": "Chasca",
+      "chinese": "恰斯卡"
+    }
+  },
+  "Chen Qianyu": {
+    "charTags": "chen_qianyu_\\(arknights\\), brown eyes, black hair, dragon horns, dragon tail, twintails,",
+    "headwear": "",
+    "appearance_a": "white dress,black gloves,cropped jacket,thigh boots ,blue jacket,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "陈千语",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Qianyu",
+      "zh-cn": "陈千语",
+      "ja": "チェン・センユー"
+    },
+    "name_source": {
+      "english": "Chen Qianyu",
+      "chinese": "陈千语"
+    }
+  },
+  "Chevreuse": {
+    "charTags": "chevreuse, chevreuse (genshin impact), long hair, bangs, hair between eyes, purple eyes, purple hair, hat, eyepatch,",
+    "headwear": "",
+    "appearance_a": "gloves, dress, bare shoulders, detached sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "夏沃蕾",
+    "japanese": "シュヴルーズ",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Chevreuse",
+      "zh-cn": "夏沃蕾",
+      "ja": "シュヴルーズ"
+    },
+    "name_source": {
+      "english": "Chevreuse",
+      "chinese": "夏沃蕾"
+    }
+  },
+  "Chiori": {
+    "charTags": "chiori_(genshin_impact), side_ponytail, very long hair, brown hair, red eyes,",
+    "headwear": "",
+    "appearance_a": "kimono, haori, yellow skirt, pleated skirt, sash, obi, black gloves, black pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "千织",
+    "japanese": "千織",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Chiori",
+      "zh-cn": "千织",
+      "ja": "千織"
+    },
+    "name_source": {
+      "english": "Chiori",
+      "chinese": "千织"
+    }
+  },
+  "Chisa": {
+    "charTags": "chisadef, black hair, very long hair, bangs, blunt bangs, red eyes, hair ribbon, red ribbon, single mole under eye,",
+    "headwear": "",
+    "appearance_a": "black school uniform, black shirt, white sailor collar, choker, black pleated skirt, miniskirt, black jacket, open jacket, long sleeves, navel, single thigh strap, black serafuku, midriff peek,",
+    "appearance_b": "white hairband, white headwear, frilled choker, pink bikini, pink choker, plaid bikini, criss-cross halter, see-through skirt, micro pink belt, bikini skirt, frilled bikini, multi-strapped bikini, navel, bare shoulders, single thigh strap,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "千咲",
+    "japanese": "千咲",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "wuwa",
+    "charTags_b": "chisapeach, black hair, very long hair, sidelocks, bangs, blunt bangs, red eyes, mole under eye, earrings, multiple color bracelets, hair ornament, hair ribbon, soft pink ribbon, hair flower,",
+    "display_names": {
+      "en": "Chisa",
+      "zh-cn": "千咲",
+      "ja": "千咲"
+    },
+    "name_source": {
+      "english": "Chisa",
+      "chinese": "千咲"
+    }
+  },
+  "Chixia": {
+    "charTags": "cxia, red hair, multicolored hair, forehead, single braid, red eyes, freckles, stomach tattoo, hair bow, black bow,",
+    "headwear": "",
+    "appearance_a": "detached collar, harness, red sarashi, white jacket, single detached sleeve, asymmetrical gloves, red gloves, black gloves, fingerless gloves, red shorts, short shorts, clothes around waist, black thighhighs, single thighhigh, black boots，,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "炽霞",
+    "japanese": "熾霞",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Chixia",
+      "zh-cn": "炽霞",
+      "ja": "熾霞"
+    },
+    "name_source": {
+      "english": "Chixia",
+      "chinese": "炽霞"
+    }
+  },
+  "Chiz": {
+    "charTags": "chiz_neverness_to_everness, pink hair, pink eyes, medium hair,",
+    "headwear": "",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "小吱",
+    "japanese": "ちぃちゃん",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "NevernessToEverness",
+    "_disabled": true,
+    "display_names": {
+      "en": "Chiz",
+      "zh-cn": "小吱",
+      "ja": "ちぃちゃん"
+    },
+    "name_source": {
+      "english": "Chiz",
+      "chinese": "小吱"
+    }
+  },
+  "Ciaccona": {
+    "charTags": "Ciaccona, green eyes, pointy ears, red hair, short hair, asymmetrical horns, hair ornament, side ponytail,",
+    "headwear": "",
+    "appearance_a": "short dress, frilled wrist cuffs, white wrist cuffs, white dress, multicolored dress, teal dress, gem, off-shoulder dress, bare shoulders, teal sleeves, short sleeves, wide sleeves, see-through sleeves, layered sleeves, clothing cutout, thigh boots, frilled footwear, gradient boots, gradient skirt, white skirt, frilled skirt, teal skirt, black shorts, short shorts, shorts under skirt, white belt, jewelry, halterneck, black choker,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "夏空",
+    "japanese": "シャコンヌ",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Ciaccona",
+      "zh-cn": "夏空",
+      "ja": "シャコンヌ"
+    },
+    "name_source": {
+      "english": "Ciaccona",
+      "chinese": "夏空"
+    }
+  },
+  "Cipher": {
+    "charTags": "cipher \\(honkai star rail\\), grey hair, blue eyes, animal ears, cat ears, cat girl, braid, medium hair, tail, hood, cat tail, hood up, animal hood, cat hood,",
+    "headwear": "",
+    "appearance_a": "gloves, black gloves, fingerless gloves, shorts, cleavage, long sleeves, thighhighs, thigh strap,  clothing cutout, cleavage cutout,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "赛飞儿",
+    "japanese": "サフェル",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Cipher",
+      "zh-cn": "赛飞儿",
+      "ja": "サフェル"
+    },
+    "name_source": {
+      "english": "Cipher",
+      "chinese": "赛飞儿"
+    }
+  },
+  "Cissia": {
+    "charTags": "cissia \\(zenless zone zero\\), blonde hair, red eyes, long hair, one side up, hair ornament, ahoge, tail, demon tail,",
+    "headwear": "",
+    "appearance_a": "underboob, bow, leotard, frills, detached sleeves, shirt, black choker,black skirt,black thighhighs,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "希希芙",
+    "japanese": "シーシィア",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Cissia",
+      "zh-cn": "希希芙",
+      "ja": "シーシィア"
+    },
+    "name_source": {
+      "english": "Cissia",
+      "chinese": "希希芙"
+    }
+  },
+  "Citlali": {
+    "charTags": "citlali \\(genshin impact\\), pink hair, long hair, braid, parted bangs,",
+    "headwear": "",
+    "appearance_a": "leotard, black leotard, bare shoulders, gloves, jewelry,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "茜特菈莉",
+    "japanese": "シトラリ",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Citlali",
+      "zh-cn": "茜特菈莉",
+      "ja": "シトラリ"
+    },
+    "name_source": {
+      "english": "Citlali",
+      "chinese": "茜特菈莉"
+    }
+  },
+  "Clara": {
+    "charTags": "clara_(honkai_star_rail), very long hair, white hair, red eyes,",
+    "headwear": "",
+    "appearance_a": "red coat, red jacket, white dress, white shirt, sweater, long sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "克拉拉",
+    "japanese": "クラーラ",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Clara",
+      "zh-cn": "克拉拉",
+      "ja": "クラーラ"
+    },
+    "name_source": {
+      "english": "Clara",
+      "chinese": "克拉拉"
+    }
+  },
+  "Claret Flint": {
+    "charTags": "claretdef, blonde hair, multicolored hair, streaked hair, long hair, twintails, red eyes, symbol-shaped pupils, white pupils, skull hair ornament, red nails,",
+    "headwear": "",
+    "appearance_a": "black choker, black dress, black shirt, white halterneck, crop top,  bare shoulders, detached sleeves, navel, clothing cutout, white cuffs, miniskirt, black skirt, pleated skirt, mask on hip, studded belt, red belt, butt cape, white thighhighs, thighhighs bat print, garter straps,platform boots, cross-laced footwear,",
+    "holding": "huge weapon, holding axe,",
+    "animalFeatured": false,
+    "chinese": "克拉蕾·弗林特 / 克拉蕾",
+    "japanese": "クラレッタ・フリンツ",
+    "bodyType": 2,
+    "personalityTone": "tsundere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Claret",
+      "zh-cn": "克拉蕾·弗林特",
+      "ja": "クラレッタ・フリンツ"
+    },
+    "name_source": {
+      "english": "Claret Flint",
+      "chinese": "克拉蕾·弗林特 / 克拉蕾"
+    }
+  },
+  "Clorinde": {
+    "charTags": "clorinde_(genshin_impact), purple hair, purple eyes, very long hair,",
+    "headwear": "tricorne,hat,",
+    "appearance_a": "white shirt, black skirt, pencil skirt, corset, ascot, blue cape, white gloves, black pantyhose, thigh strap,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "克洛琳德",
+    "japanese": "クロリンデ",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Clorinde",
+      "zh-cn": "克洛琳德",
+      "ja": "クロリンデ"
+    },
+    "name_source": {
+      "english": "Clorinde",
+      "chinese": "克洛琳德"
+    }
+  },
+  "Collei": {
+    "charTags": "collei_(genshin_impact), green hair, purple eyes, medium hair,",
+    "headwear": "",
+    "appearance_a": "black dress, beige crop top, capelet, detached sleeves, puffy long sleeves, black belt, thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "柯莱",
+    "japanese": "コレイ",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Collei",
+      "zh-cn": "柯莱",
+      "ja": "コレイ"
+    },
+    "name_source": {
+      "english": "Collei",
+      "chinese": "柯莱"
+    }
+  },
+  "Columbina": {
+    "charTags": "columbina, columbina (genshin impact), long hair, black hair, hair ornament, pink hair, multicolored hair, wings, gradient hair, head wings, wing hair ornament, eye mask, white mask, closed eyes,",
+    "headwear": "",
+    "appearance_a": "long sleeves, dress, wide sleeves, white dress, off-shoulder, bare shoulders, detached collar, white bowtie,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "哥伦比娅",
+    "japanese": "コロンビーナ",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Columbina",
+      "zh-cn": "哥伦比娅",
+      "ja": "コロンビーナ"
+    },
+    "name_source": {
+      "english": "Columbina",
+      "chinese": "哥伦比娅"
+    }
+  },
+  "Corin Wickes": {
+    "charTags": "corin wickes, green hair, purple eyes, maid headdress, twintails, long hair, ribbon,",
+    "headwear": "",
+    "appearance_a": "apron, maid, boots, short sleeves, dress, maid apron, black dress, black footwear, puffy sleeves, puffy short sleeves, white apron, frills,frilled dress, cross-laced footwear, bow,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "可琳·威克斯 / 可琳",
+    "japanese": "カリン",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Corin",
+      "zh-cn": "可琳·威克斯",
+      "ja": "カリン"
+    },
+    "name_source": {
+      "english": "Corin Wickes",
+      "chinese": "可琳·威克斯 / 可琳"
+    }
+  },
+  "Cyrene": {
+    "charTags": "cyrene_\\(ripples_of_past_reverie\\), purple eyes, pink hair, gradient hair, multicolored hair, pointy ears, diamond-shaped pupils, hair flower, hair ornament, earrings,",
+    "headwear": "",
+    "appearance_a": "sleeveless dress,bare shoulders ,jewelry ,elf ,bracelet, white_high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "昔涟",
+    "japanese": "キュレネ",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Cyrene",
+      "zh-cn": "昔涟",
+      "ja": "キュレネ"
+    },
+    "name_source": {
+      "english": "Cyrene",
+      "chinese": "昔涟"
+    }
+  },
+  "Daffodill": {
+    "charTags": "D4ffodill, hair over left eye, grey eyes, black short hair, blue streaks, long ponytail, hair behind back,",
+    "headwear": "",
+    "appearance_a": "blue necktie, neck ornament blue tassel, black coat,black pants,white gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "达芙蒂尔",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Daffodill",
+      "zh-cn": "达芙蒂尔",
+      "ja": "ダフォディール"
+    },
+    "name_source": {
+      "english": "Daffodill",
+      "chinese": "达芙蒂尔"
+    }
+  },
+  "Danjin": {
+    "charTags": "danjin \\(wuthering waves\\), blue eyes, red hair, hair intakes, hair ornament, braid, short hair, earrings,",
+    "headwear": "",
+    "appearance_a": "jewelry, detached sleeves, clothing cutout, red dress, thigh strap,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "丹瑾",
+    "japanese": "丹瑾",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Danjin",
+      "zh-cn": "丹瑾",
+      "ja": "丹瑾"
+    },
+    "name_source": {
+      "english": "Danjin",
+      "chinese": "丹瑾"
+    }
+  },
+  "Dehya": {
+    "charTags": "dehya_(genshin_impact), brown hair, blue eyes, very long hair,",
+    "headwear": "",
+    "appearance_a": "halter top, criss-cross halter, shoulder armor, arm armor, fingerless gloves, black pants, black belt, thigh boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "迪希雅",
+    "japanese": "ディシア",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Dehya",
+      "zh-cn": "迪希雅",
+      "ja": "ディシア"
+    },
+    "name_source": {
+      "english": "Dehya",
+      "chinese": "迪希雅"
+    }
+  },
+  "Denia": {
+    "charTags": "denia \\(wuthering waves\\), long hair, pink hair, colored inner hair, multicolored hair, purple eyes, drill hair, blue hair, black hairband, hair bun, hair intakes, hair ornament, hairband,",
+    "headwear": "",
+    "appearance_a": "dress, gloves, blue gloves, detached sleeves, jewelry, white dress, bare shoulders,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "达妮亚",
+    "japanese": "ダーニャ",
+    "bodyType": 4,
+    "personalityTone": "curious",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Denia",
+      "zh-cn": "达妮亚",
+      "ja": "ダーニャ"
+    },
+    "name_source": {
+      "english": "Denia",
+      "chinese": "达妮亚"
+    }
+  },
+  "Dialyn": {
+    "charTags": "dialynzzz, twin braids, braid, black hair, white hair, double bun, looking at viewer, two-tone hair, hair ornament, split-color hair, blunt bangs, yellow eyes, breasts, twintails, streaked hair, blue nails,",
+    "headwear": "",
+    "appearance_a": "jewelry, earrings, bare shoulders, detached sleeves, white dress, white sleeves, long sleeves, sleeveless, white thighhighs, platform footwear, black footwear, sneakers, shoe soles, pom pom (clothes), black gloves, black shorts, thigh strap, fingerless gloves, tassel, side slit, frills, pelvic curtain,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "琉音",
+    "japanese": "ダイアリン",
+    "bodyType": 4,
+    "personalityTone": "yandere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Dialyn",
+      "zh-cn": "琉音",
+      "ja": "ダイアリン"
+    },
+    "name_source": {
+      "english": "Dialyn",
+      "chinese": "琉音"
+    }
+  },
+  "Dila": {
+    "charTags": "dila ananta, heterochromia, orange eyes, purple eyes, white hair, hair over one eye, diamond hair ornament,",
+    "headwear": "",
+    "appearance_a": "bodysuit, detached sleeves, black gloves, high collar, choker,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "狄菈",
+    "japanese": "—",
+    "bodyType": 4,
+    "gameId": "ananta",
+    "display_names": {
+      "en": "Dila",
+      "zh-cn": "狄菈",
+      "ja": "—"
+    },
+    "name_source": {
+      "english": "Dila",
+      "chinese": "狄菈"
+    }
+  },
+  "Diona": {
+    "charTags": "diona_(genshin_impact), cat girl,cat tail, cat_ears, pink hair, green eyes, short hair,",
+    "headwear": "",
+    "appearance_a": "detached sleeves, shorts, puffy shorts, black shorts, gloves, paw print,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "迪奥娜",
+    "japanese": "ディオナ",
+    "bodyType": 5,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Diona",
+      "zh-cn": "迪奥娜",
+      "ja": "ディオナ"
+    },
+    "name_source": {
+      "english": "Diona",
+      "chinese": "迪奥娜"
+    }
+  },
+  "Dori": {
+    "charTags": "dori, dori (genshin impact), hair ornament, hair between eyes, yellow eyes, pink hair, ahoge, sidelocks, symbol-shaped pupils, sunglasses, short hair with long locks,",
+    "headwear": "",
+    "appearance_a": "shirt, long sleeves, hair ornament, hat, jewelry, bare shoulders, detached sleeves, sleeveless, pants, puffy sleeves, midriff, stomach, bracelet, crop top, black shirt, sleeveless shirt, sunglasses, ring, puffy long sleeves, white sleeves, tinted eyewear, purple headwear, multiple rings, pince-nez, purple pants, puffy detached sleeves, arabian clothes, puffy pants, harem pants,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "多莉",
+    "japanese": "ドリー",
+    "bodyType": 5,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Dori",
+      "zh-cn": "多莉",
+      "ja": "ドリー"
+    },
+    "name_source": {
+      "english": "Dori",
+      "chinese": "多莉"
+    }
+  },
+  "Ellen Joe": {
+    "charTags": "EBEllen, short hair, black hair, red eyes, multicolored hair, red hair, two-tone hair, mole under eye, ear piercing, colored inner hair, red nails, earrings, shark girl, shark tail, hairclip,",
+    "headwear": "",
+    "appearance_a": "frills, puffy sleeves, black dress, puffy short sleeves, black pantyhose, wrist cuffs, maid, maid headdress, white apron, fishnet pantyhose,",
+    "appearance_b": "long sleeves, sleeves rolled up, white shirt, pleated skirt, collared shirt, black skirt, miniskirt, brown pantyhose, black choker, belt,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "艾莲·乔 / 艾莲",
+    "japanese": "エレン・ジョー",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Ellen",
+      "zh-cn": "艾莲·乔",
+      "ja": "エレン・ジョー"
+    },
+    "name_source": {
+      "english": "Ellen Joe",
+      "chinese": "艾莲·乔 / 艾莲"
+    }
+  },
+  "Ember": {
+    "charTags": "endfield style, Ember enfield, long hair, red hair, blue highlights, black metal halo, ahoge, hair between eyes, multicolored eyes, yellow eyes, purple eyes, slit pupils,",
+    "headwear": "",
+    "appearance_a": "black collar, metal pendant, black bodysuit, metal bodysuit decorations, see-through cleavage, black upper-arm sleeves, white forearm sleeves, white gloves, arm straps, arm combat gear, metal combat gear, silver crotch cover, white tassel, see-through hips, thonged bodysuit, green pants, black armored legs, black high heels, leg side covers, metal side covers, ligh-blue leds, leg straps, armored hips, yellow lower-back tassels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "余烬",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Ember",
+      "zh-cn": "余烬",
+      "ja": "エンバー"
+    },
+    "name_source": {
+      "english": "Ember",
+      "chinese": "余烬"
+    }
+  },
+  "Emilie": {
+    "charTags": "emilie \\(genshin impact\\), glasses, short hair, green headwear, hat, flower,",
+    "headwear": "",
+    "appearance_a": "gloves, black gloves, detached sleeves, green skirt, skirt, long sleeves, thigh strap, frills, dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "艾梅莉埃",
+    "japanese": "エミリエ",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Emilie",
+      "zh-cn": "艾梅莉埃",
+      "ja": "エミリエ"
+    },
+    "name_source": {
+      "english": "Emilie",
+      "chinese": "艾梅莉埃"
+    }
+  },
+  "Encore": {
+    "charTags": "encore \\(wuthering waves\\), long hair, symbol-shaped pupils, ahoge, hair bow, pink bow, virtual youtuber, hair ornament,",
+    "headwear": "",
+    "appearance_a": "socks,black footwear,bow,solo,stuffed toy,skirt,pink skirt,black gloves, fingerless gloves, gloves, black socks,shoes,long sleeves,detached sleeves,stuffed animal,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "安可",
+    "japanese": "アンコ",
+    "bodyType": 5,
+    "personalityTone": "genki",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Encore",
+      "zh-cn": "安可",
+      "ja": "アンコ"
+    },
+    "name_source": {
+      "english": "Encore",
+      "chinese": "安可"
+    }
+  },
+  "Endministrator": {
+    "charTags": "endministrator_\\(arknights_endfield\\), blue eyes, grey hair, short hair,",
+    "headwear": "",
+    "appearance_a": "open jacket  ,black pantyhose,open jacket ,ribbed sweater,turtleneck,shorts,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "管理员",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Endministrator",
+      "zh-cn": "管理员",
+      "ja": "管理人（かんりにん）"
+    },
+    "name_source": {
+      "english": "Endministrator",
+      "chinese": "管理员"
+    }
+  },
+  "Escoffier": {
+    "charTags": "escoffier \\(genshin impact\\), 1girl, green eyes, orange hair, x hair ornament, hair ornament, ahoge, very long hair, chef hat, hat, white headwear, tail,",
+    "headwear": "",
+    "appearance_a": "thighhighs, white thighhighs, wrist cuffs, striped thighhighs, striped, sleeveless, bow, skirt,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "爱可菲",
+    "japanese": "エスコフィエ",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Escoffier",
+      "zh-cn": "爱可菲",
+      "ja": "エスコフィエ"
+    },
+    "name_source": {
+      "english": "Escoffier",
+      "chinese": "爱可菲"
+    }
+  },
+  "Estella": {
+    "charTags": "estella, ears through headwear, white hair, cat ears, medium hair, blue eyes, bandaid on face,fox tail,white tail,",
+    "headwear": "",
+    "appearance_a": "white beanie, zettai ryouiki, white shrug, black bodysuit, single armlet, belt, belt pouch, cat tail, fingerless gloves, single thigh holster, white socks, white ankle boots, bandaid on leg,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "埃特拉",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Estella",
+      "zh-cn": "埃特拉",
+      "ja": "エステーラ"
+    },
+    "name_source": {
+      "english": "Estella",
+      "chinese": "埃特拉"
+    }
+  },
+  "Eula": {
+    "charTags": "eula_(genshin_impact), blue hair, purple eyes, hairband,short hair,",
+    "headwear": "",
+    "appearance_a": "white shirt, blue necktie, black vest, dark blue cape, black leotard, black gloves, thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "优菈",
+    "japanese": "エウルア",
+    "bodyType": 2,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Eula",
+      "zh-cn": "优菈",
+      "ja": "エウルア"
+    },
+    "name_source": {
+      "english": "Eula",
+      "chinese": "优菈"
+    }
+  },
+  "Evanescia": {
+    "charTags": "evanescia \\(honkai: star rail\\), animal ears, hair between eyes, pink hair, hair between eyes, fox ears, ponytail, purple eyes, hair flower, red bow,",
+    "headwear": "",
+    "appearance_a": "pantyhose, pleated skirt, black choker, shirt, skirt, jacket, long sleeves, white shirt, black gloves, bowtie, fingerless gloves, thighhighs, bow, white shirt, boots, high heels, high heel boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "绯英",
+    "japanese": "緋英",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Evanescia",
+      "zh-cn": "绯英",
+      "ja": "緋英"
+    },
+    "name_source": {
+      "english": "Evanescia",
+      "chinese": "绯英"
+    }
+  },
+  "Evelyn Chevalier": {
+    "charTags": "evelyn chevalier, purple eyes, blonde hair, sidelocks, medium hair, bangs, ring ornament, hair ornament,",
+    "headwear": "",
+    "appearance_a": "collared shirt, sleeveless shirt, see-through cleavage, black choker, yellow necktie, chest harness, black pants, high-waist pants, tight pants, black gloves, single elbow glove, partially fingerless glove, arm strap, black jacket, jacket on shoulders, black footwear, high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "伊芙琳·舒瓦利耶",
+    "japanese": "イヴリン",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Evelyn",
+      "zh-cn": "伊芙琳·舒瓦利耶",
+      "ja": "イヴリン"
+    },
+    "name_source": {
+      "english": "Evelyn Chevalier",
+      "chinese": "伊芙琳·舒瓦利耶 / 伊芙琳"
+    }
+  },
+  "Evernight": {
+    "charTags": "evernighthsr, pink hair, hair between eyes, hair ornament, hair flower, black flower, red eyes, long hair, single earring, hairclip,",
+    "headwear": "",
+    "appearance_a": "black jacket, white shirt, black skirt, asymmetrical sleeves,  mismatched sleeves, long sleeves, black gloves,  half gloves, frilled dress, uneven sleeves, black sleeves, black dress,  single bare shoulder, black footwear, high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "长夜月",
+    "japanese": "長夜月（ながよづき）",
+    "bodyType": 4,
+    "personalityTone": "yandere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Evernight",
+      "zh-cn": "长夜月",
+      "ja": "長夜月（ながよづき）"
+    },
+    "name_source": {
+      "english": "Evernight",
+      "chinese": "长夜月"
+    }
+  },
+  "Fadia": {
+    "charTags": "fadiante, long hair, multicolored hair, streaked hair, purple hair, blonde hair, purple eyes,",
+    "headwear": "glasses,",
+    "appearance_a": "black jacket, white shirt, black skirt, black footwear, belt, underbust, thigh boots, strapless shirt, tube top, high-waist skirt, miniskirt, thigh boots, black skirt, bare shoulders, bare arms, black footwear,",
+    "appearance_b": "elbow gloves, black dress, garter straps, black gloves, cleavage, detached collar, grey thighhighs, sleeveless dress, glasses, belt, strapless, cross, white collar, bare shoulders, side slit, black belt, high heels, toes, holding weapon, huge weapon,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "法帝娅",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "yandere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Fadia",
+      "zh-cn": "法帝娅",
+      "ja": "ファルディーヤ"
+    },
+    "name_source": {
+      "english": "Fadia",
+      "chinese": "法帝娅"
+    }
+  },
+  "Faruzan": {
+    "charTags": "faruzan_(genshin_impact), turquoise hair, blue eyes, very long hair, twintails,",
+    "headwear": "",
+    "appearance_a": "white dress, side cape, puffy short sleeves, bracelet, thighlet,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "珐露珊",
+    "japanese": "ファルザン",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Faruzan",
+      "zh-cn": "珐露珊",
+      "ja": "ファルザン"
+    },
+    "name_source": {
+      "english": "Faruzan",
+      "chinese": "珐露珊"
+    }
+  },
+  "Feixiao": {
+    "charTags": "feixiao \\(honkai star rail\\), animal ears, long hair, jewelry, fox ears, animal ear fluff, ponytail, fox girl, earrings,",
+    "headwear": "",
+    "appearance_a": "belt,chinese clothes,jacket,long sleeves,open clothes,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "飞霄",
+    "japanese": "フェイシャオ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Feixiao",
+      "zh-cn": "飞霄",
+      "ja": "フェイシャオ"
+    },
+    "name_source": {
+      "english": "Feixiao",
+      "chinese": "飞霄"
+    }
+  },
+  "Firefly": {
+    "charTags": "firefly_(honkai_star_rail), very long hair, grey hair, blue eyes,hairband,hair ornament,",
+    "headwear": "",
+    "appearance_a": "brown capelet, white blouse, green skirt, frilled collar, long sleeves, gradient thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "流萤",
+    "japanese": "ホタル",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Firefly",
+      "zh-cn": "流萤",
+      "ja": "ホタル"
+    },
+    "name_source": {
+      "english": "Firefly",
+      "chinese": "流萤"
+    }
+  },
+  "Fischl": {
+    "charTags": "fischl_(genshin_impact), very long hair, blonde hair, green eyes,two_side_up,",
+    "headwear": "eyepatch,",
+    "appearance_a": "black dress, detached sleeves, elbow gloves, black gloves, asymmetrical legwear, black thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "菲谢尔",
+    "japanese": "フィッシュル",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Fischl",
+      "zh-cn": "菲谢尔",
+      "ja": "フィッシュル"
+    },
+    "name_source": {
+      "english": "Fischl",
+      "chinese": "菲谢尔"
+    }
+  },
+  "Fluorite": {
+    "charTags": "Fluorite, green hair, ponytail, hair between eyes, green eyes, tail pouch, green tail, hood,",
+    "headwear": "",
+    "appearance_a": "crop jacket, white jacket, puffy sleeves, yellow accents, black fingerless gloves, grey skintight, textured bodysuit, chest harness, hip harness, thigh straps, holsters, white footwear, ankle boots,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "萤石",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "yandere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Fluorite",
+      "zh-cn": "萤石",
+      "ja": "フローライト"
+    },
+    "name_source": {
+      "english": "Fluorite",
+      "chinese": "萤石"
+    }
+  },
+  "Fu Xuan": {
+    "charTags": "fu_xuan_(honkai_star_rail), very long hair, pink hair, purple eyes, medium hair, bangs, white hair, horns, gradient hair, hair over one eye, pointy ears, layered iris, multi-ring iris, tail,",
+    "headwear": "",
+    "appearance_a": "detached sleeves, strapless dress, white pantyhose, thigh strap, high heels,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "符玄",
+    "japanese": "フー・シュアン",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Xuan",
+      "zh-cn": "符玄",
+      "ja": "フー・シュアン"
+    },
+    "name_source": {
+      "english": "Fu Xuan",
+      "chinese": "符玄"
+    }
+  },
+  "Fugue": {
+    "charTags": "fugue \\(honkai star rail\\), animal ears, hair ornament,brown hair, fox ears,very long hair, fox girl, hair between eyes, fox tail,",
+    "headwear": "",
+    "appearance_a": "bare shoulders,flower,japanese clothes,wide sleeves,off shoulder,kimono,thighs,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "忘归人",
+    "japanese": "帰忘の流離人（きぼうのさすらいびと）",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Fugue",
+      "zh-cn": "忘归人",
+      "ja": "帰忘の流離人（きぼうのさすらいびと）"
+    },
+    "name_source": {
+      "english": "Fugue",
+      "chinese": "忘归人"
+    }
+  },
+  "Furina": {
+    "charTags": "furina_(genshin_impact), white hair, blue eyes, long hair,",
+    "headwear": "hat,",
+    "appearance_a": "blue jacket, white shorts, white gloves, asymmetrical gloves, thigh strap, long sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "芙宁娜",
+    "japanese": "フリーナ",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Furina",
+      "zh-cn": "芙宁娜",
+      "ja": "フリーナ"
+    },
+    "name_source": {
+      "english": "Furina",
+      "chinese": "芙宁娜"
+    }
+  },
+  "Galbrena": {
+    "charTags": "galbrenaww, hair intakes, medium hair, blue hair, hair between eyes, multicolored hair, grey hair, colored inner hair, streaked hair, short hair with long locks, two-tone hair, asymmetrical hair, toned stomach, collarbone, purple eyes, jewelry, earrings, ear piercing,",
+    "headwear": "",
+    "appearance_a": "navel, cleavage,gold choker, necklace, multiple rings, claw ring,black jacket, cropped jacket, open jacket, long sleeves, puffy sleeves, juliet sleeves, fur trim, feathers, feather trim, criss-cross halter, crop top, blue bra, black shorts, short shorts, black gloves, half gloves, ammunition belt, belt, thigh strap, single earring, high heel boots, boots, black footwear, thighhighs, black thighhighs, single thighhigh, asymmetrical legwear, pantyhose, black pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "嘉贝莉娜",
+    "japanese": "(Unreleased)",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Galbrena",
+      "zh-cn": "嘉贝莉娜",
+      "ja": "ガルブレーナ"
+    },
+    "name_source": {
+      "english": "Galbrena",
+      "chinese": "嘉贝莉娜"
+    }
+  },
+  "Ganyu": {
+    "charTags": "ganyu_(genshin_impact), blue hair, purple eyes, very long hair,",
+    "headwear": "",
+    "appearance_a": "bodysuit, detached sleeves, black gloves, black pantyhose, thighhighs,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "甘雨",
+    "japanese": "甘雨",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Ganyu",
+      "zh-cn": "甘雨",
+      "ja": "甘雨"
+    },
+    "name_source": {
+      "english": "Ganyu",
+      "chinese": "甘雨"
+    }
+  },
+  "Gilberta": {
+    "charTags": "endfield style, Gilberta, brown hair, bangs, sideburns, twin ponytails, hair ringlets, dog ears, metal ponytail holders, red eyes, brown dog tail,",
+    "headwear": "",
+    "appearance_a": "black collar, black mini dress, dress straps, long red jacket, side chest module, long chest module, white and black tabard, metal chest module, shoulder cut, free shoulder,  black jacket fold, black gloves, metal wristbands, thigh straps, thighhighs, black shoes, high heels,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "洁尔佩塔",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Gilberta",
+      "zh-cn": "洁尔佩塔",
+      "ja": "ギルベルタ"
+    },
+    "name_source": {
+      "english": "Gilberta",
+      "chinese": "洁尔佩塔"
+    }
+  },
+  "Grace Howard": {
+    "charTags": "Grace Howard, black hair, sideburns, short ponytail, red eyes,",
+    "headwear": "",
+    "appearance_a": "black and red googles, choker, black tank top, shoulder cut, detached sleeves, gloves, belts, black pants, one kneepad, white waist cape, red gadgets, black boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "格莉丝·霍华德",
+    "japanese": "グレース",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Grace",
+      "zh-cn": "格莉丝·霍华德",
+      "ja": "グレース"
+    },
+    "name_source": {
+      "english": "Grace Howard",
+      "chinese": "格莉丝·霍华德 / 格莉丝"
+    }
+  },
+  "Guinaifen": {
+    "charTags": "guinaifen_(honkai_star_rail), side ponytail, very long hair, orange hair, golden eyes,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, red dress, detached sleeves, black gloves, black pantyhose, thigh strap,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "桂乃芬",
+    "japanese": "ギナイフェン",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Guinaifen",
+      "zh-cn": "桂乃芬",
+      "ja": "ギナイフェン"
+    },
+    "name_source": {
+      "english": "Guinaifen",
+      "chinese": "桂乃芬"
+    }
+  },
+  "Haniel": {
+    "charTags": "HanielCute, owl ears, hair flaps, short hair, hair between eyes, multicolored hair, streaked hair, x hair ornament, hairclip, multicolored eyes, small breasts, owl hair ornament,",
+    "headwear": "",
+    "appearance_a": "black shirt, bike shorts, black shorts, oversized shirt, multicolored shirt, print shirt, t-shirt, short sleeves, arm warmers, striped leg warmers, fishnet thighhighs, black footwear,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "哈尼娅",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Haniel",
+      "zh-cn": "哈尼娅",
+      "ja": "ハニア"
+    },
+    "name_source": {
+      "english": "Haniel",
+      "chinese": "哈尼娅"
+    }
+  },
+  "Hathor": {
+    "charTags": "hathornte, grey eyes, long hair, white hair, multicolored hair, streaked hair, blonde hair,",
+    "headwear": "",
+    "appearance_a": "black jacket, thigh boots, black gloves, shorts, single small wing,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "哈索尔",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Hathor",
+      "zh-cn": "哈索尔",
+      "ja": "ハソール"
+    },
+    "name_source": {
+      "english": "Hathor",
+      "chinese": "哈索尔"
+    }
+  },
+  "Herta": {
+    "charTags": "the herta, the herta (honkai: star rail), brown hair, long hair, purple eyes, witch hat, black hat, hat, hat flower, hat ornament,",
+    "headwear": "",
+    "appearance_a": "bare shoulders, black dress, detached sleeves, long sleeves, pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "黑塔",
+    "japanese": "ヘルタ",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Herta",
+      "zh-cn": "黑塔",
+      "ja": "ヘルタ"
+    },
+    "name_source": {
+      "english": "Herta",
+      "chinese": "黑塔"
+    }
+  },
+  "Himeko": {
+    "charTags": "himeko_(honkai_star_rail), very long hair, red hair, golden eyes,",
+    "headwear": "",
+    "appearance_a": "white dress, black coat, long sleeves, single glove, gold trim,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "姬子",
+    "japanese": "ヒメコ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Himeko",
+      "zh-cn": "姬子",
+      "ja": "ヒメコ"
+    },
+    "name_source": {
+      "english": "Himeko",
+      "chinese": "姬子"
+    }
+  },
+  "Hiyuki": {
+    "charTags": "hiyuki \\(wuthering waves\\), red eyes, mole under eye, white hair, mole, long hair, hair ornament, ponytail,",
+    "headwear": "",
+    "appearance_a": "japanese clothes, necklace, kimono,  jewelry, collarbone, off shoulder, areola slip, bare shoulders,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "绯雪",
+    "japanese": "緋雪",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Hiyuki",
+      "zh-cn": "绯雪",
+      "ja": "緋雪"
+    },
+    "name_source": {
+      "english": "Hiyuki",
+      "chinese": "绯雪"
+    }
+  },
+  "Hook": {
+    "charTags": "hookhsr, hat,",
+    "headwear": "",
+    "appearance_a": "fur-trimmed jacket,frilled collar,gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "虎克",
+    "japanese": "フック",
+    "bodyType": 5,
+    "personalityTone": "koakuma",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Hook",
+      "zh-cn": "虎克",
+      "ja": "フック"
+    },
+    "name_source": {
+      "english": "Hook",
+      "chinese": "虎克"
+    }
+  },
+  "Hoshimi Miyabi": {
+    "charTags": "hsmyb, animal ears, animal ear fluff, red eyes, white pupils, bright pupils, black hair, very long hair, blunt bangs, sidelocks, half up braid, long hair,",
+    "headwear": "",
+    "appearance_a": "green jacket, open jacket, wide sleeves, chest strap, id card, white collared shirt, black necktie, arm strap, high-waist skirt, black skirt, long skirt, pleated skirt, belt, tassel, black pantyhose, black boots, high heel boots, single fingerless glove, black gloves, single mechanical arm,holding sword, katana,",
+    "holding": "holding sword",
+    "animalFeatured": true,
+    "chinese": "星见雅",
+    "japanese": "星見雅",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Miyabi",
+      "zh-cn": "星见雅",
+      "ja": "星見雅"
+    },
+    "name_source": {
+      "english": "Hoshimi Miyabi",
+      "chinese": "星见雅"
+    }
+  },
+  "Hotori": {
+    "charTags": "hotarinte, very long hair, black hair, red eyes, makeup,",
+    "headwear": "",
+    "appearance_a": "japanese clothes, printed kimono, black kimono, wide sleeves, obi, white thigh highs,",
+    "appearance_b": "black pantyhose, black footwear, black gloves, red jacket, white dress, thigh strap, high heels, elbow gloves, short dress, frills,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "浔",
+    "japanese": "潯",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Hotori",
+      "zh-cn": "浔",
+      "ja": "潯"
+    },
+    "name_source": {
+      "english": "Hotori",
+      "chinese": "浔"
+    }
+  },
+  "Hsin": {
+    "charTags": "hsin (wuthering waves), very long hair, white hair, fox ears, forehead mark, red eyes, makeup, red eyeliner, tattoo, foxtail,",
+    "headwear": "",
+    "appearance_a": "cleavage, black dress, white dress, two-tone dress, pelvic curtain, detached sleeves, blue gem, ring, bracelet,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "心 / 心月狐",
+    "japanese": "心",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Hsin",
+      "zh-cn": "心",
+      "ja": "心"
+    },
+    "name_source": {
+      "english": "Hsin",
+      "chinese": "心 / 心月狐"
+    }
+  },
+  "Hu Tao": {
+    "charTags": "hu_tao_(genshin_impact), brown hair, red eyes, very long hair,twintails, green eyes,",
+    "headwear": "hat,",
+    "appearance_a": "chinese clothes, black shorts, long sleeves, black socks,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "胡桃",
+    "japanese": "胡桃",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Tao",
+      "zh-cn": "胡桃",
+      "ja": "胡桃"
+    },
+    "name_source": {
+      "english": "Hu Tao",
+      "chinese": "胡桃"
+    }
+  },
+  "Huohuo": {
+    "charTags": "huohuo_(honkai_star_rail), very long hair, green hair, teal eyes,",
+    "headwear": "hat,",
+    "appearance_a": "chinese clothes, sleeveless shirt, detached sleeves, brown shorts, loose socks,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "藿藿",
+    "japanese": "フォフォ",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Huohuo",
+      "zh-cn": "藿藿",
+      "ja": "フォフォ"
+    },
+    "name_source": {
+      "english": "Huohuo",
+      "chinese": "藿藿"
+    }
+  },
+  "Hyacine": {
+    "charTags": "hyacine \\(honkai star rail\\), pink hair, twintails, bow, long hair, drill hair, red headwear, hat,",
+    "headwear": "",
+    "appearance_a": "red dress,puffy long sleeves, dress, long sleeves,",
+    "holding": "bow",
+    "animalFeatured": false,
+    "chinese": "风堇",
+    "japanese": "ヒアンシー",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Hyacine",
+      "zh-cn": "风堇",
+      "ja": "ヒアンシー"
+    },
+    "name_source": {
+      "english": "Hyacine",
+      "chinese": "风堇"
+    }
+  },
+  "Hysilens": {
+    "charTags": "hysilens \\(honkai star rail\\), black hair, blue eyes, x hair ornament, hair ornament, very long hair, earrings,",
+    "headwear": "",
+    "appearance_a": "jewelry, gloves, dress, black thighhighs,thighhighs, ",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "海瑟音",
+    "japanese": "セイレンス",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Hysilens",
+      "zh-cn": "海瑟音",
+      "ja": "セイレンス"
+    },
+    "name_source": {
+      "english": "Hysilens",
+      "chinese": "海瑟音"
+    }
+  },
+  "Iansan": {
+    "charTags": "iansan \\(genshin impact\\), mask, earrings, bandaid on face, mask on head, long hair, very long hair, pointy ears,",
+    "headwear": "",
+    "appearance_a": "single thighhigh, bandaid, thighhighs, jewelry, black thighhighs, asymmetrical legwear,fur trim,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "伊安珊",
+    "japanese": "イアンサ",
+    "bodyType": 5,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Iansan",
+      "zh-cn": "伊安珊",
+      "ja": "イアンサ"
+    },
+    "name_source": {
+      "english": "Iansan",
+      "chinese": "伊安珊"
+    }
+  },
+  "Ineffa": {
+    "charTags": "ineffa, blue eyes, short hair, robot joints, joints, android, blue hair, braid, double hair bun, hat,",
+    "headwear": "",
+    "appearance_a": "red cape,high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "伊涅芙",
+    "japanese": "イネファ",
+    "bodyType": 4,
+    "personalityTone": "android",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Ineffa",
+      "zh-cn": "伊涅芙",
+      "ja": "イネファ"
+    },
+    "name_source": {
+      "english": "Ineffa",
+      "chinese": "伊涅芙"
+    }
+  },
+  "Iroi": {
+    "charTags": "iroi, curled horns, green hair, very long hair, animal ears, purple eyes, ahoge, white tail, black halo,",
+    "headwear": "",
+    "appearance_a": "white bridal gauntlets, white dress, black choker, jacket on shoulders, sleeveless dress,garter straps, white thighhighs, toeless legwear,  black tie on ankle,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "伊洛伊",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "yandere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Iroi",
+      "zh-cn": "伊洛伊",
+      "ja": "イロヒ"
+    },
+    "name_source": {
+      "english": "Iroi",
+      "chinese": "伊洛伊"
+    }
+  },
+  "Iuno": {
+    "charTags": "iuno \\(wuthering waves\\), blue hair, blue eyes, twintails, solo, long hair, very long hair, ahoge, hair ornament,",
+    "headwear": "",
+    "appearance_a": "white dress, bridal gauntlets, jewelry, dress, thighlet, bare shoulders, bracelet,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "尤诺",
+    "japanese": "ユーノ",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Iuno",
+      "zh-cn": "尤诺",
+      "ja": "ユーノ"
+    },
+    "name_source": {
+      "english": "Iuno",
+      "chinese": "尤诺"
+    }
+  },
+  "Jade": {
+    "charTags": "JadeHSR, pink hair, grey eyes,",
+    "headwear": "",
+    "appearance_a": "two-tone dress, black headwear, detached sleeves, bracelet,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "翡翠",
+    "japanese": "ジェイド",
+    "bodyType": 2,
+    "personalityTone": "gyaru",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Jade",
+      "zh-cn": "翡翠",
+      "ja": "ジェイド"
+    },
+    "name_source": {
+      "english": "Jade",
+      "chinese": "翡翠"
+    }
+  },
+  "Jahoda": {
+    "charTags": "genimjahda, yellow eyes, blue eyes, pink eyes, brown eyes, star-shaped pupils, multicolored eyes, light brown hair, braided hair rings, crossed bangs, cat hat, eyewear on head, gold-framed eyewear, pink-tinted eyewear, round eyewear,",
+    "headwear": "",
+    "appearance_a": "bare shoulders, black cape, white sleeveless leotard, two-tone cape, wing cape, pink cape, black halter shirt, center opening, crop top, cross-laced leotard, gold trim, leotard toggles, black belt, black micro shorts, belt compass, white compass, multiple belts, torn shorts, black elbow gloves, detached sleeves, wide sleeves, single fingerless glove, red bandana, red bandana around arm, black mechanical hand, single mechanical arm, black beanie, blue arrow pendant, brown necklace, horseshoe ornament, black scarf, asymmetrical legwear, black single thighhigh, black leg strap, torn thighhighs, red single sock, white leg warmers, black leg warmers,black platform shoes,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "雅珂达",
+    "japanese": "ヤフォダ",
+    "bodyType": 4,
+    "personalityTone": "curious",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Jahoda",
+      "zh-cn": "雅珂达",
+      "ja": "ヤフォダ"
+    },
+    "name_source": {
+      "english": "Jahoda",
+      "chinese": "雅珂达"
+    }
+  },
+  "Jane Doe": {
+    "charTags": "Jane Doe, black hair, bangs, low ponytail, red ponytail hair, blue eyes, rat ears, ear piercings, red nails, tail,",
+    "headwear": "",
+    "appearance_a": "grey jacket, straps, fingerless gloves, black and red tie, see-through blouse, midriff, black shorts, belts, ripped thigh highs, grey boots, red boot details, asymmetrical legwear, fur trim,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "简·杜 / 简",
+    "japanese": "ジェーン",
+    "bodyType": 2,
+    "personalityTone": "koakuma",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Jane",
+      "zh-cn": "简·杜",
+      "ja": "ジェーン"
+    },
+    "name_source": {
+      "english": "Jane Doe",
+      "chinese": "简·杜 / 简"
+    }
+  },
+  "Jean": {
+    "charTags": "jean_(genshin_impact), blonde hair, blue eyes, medium hair,high ponytail,",
+    "headwear": "",
+    "appearance_a": "white shirt, blue jacket, capelet, gloves, pants, belt,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "琴",
+    "japanese": "ジン",
+    "bodyType": 2,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Jean",
+      "zh-cn": "琴",
+      "ja": "ジン"
+    },
+    "name_source": {
+      "english": "Jean",
+      "chinese": "琴"
+    }
+  },
+  "Jianxin": {
+    "charTags": "jianxin \\(wuthering waves\\), ahoge, earrings, very long hair, tassel earrings,",
+    "headwear": "",
+    "appearance_a": "gloves, shorts, jewelry, black gloves, black shorts, short shorts, white gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "鉴心",
+    "japanese": "鑑心",
+    "bodyType": 2,
+    "personalityTone": "curious",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Jianxin",
+      "zh-cn": "鉴心",
+      "ja": "鑑心"
+    },
+    "name_source": {
+      "english": "Jianxin",
+      "chinese": "鉴心"
+    }
+  },
+  "Jingliu": {
+    "charTags": "jingliu_(honkai_star_rail), very long hair, white hair, magenta eyes,",
+    "headwear": "blindfold,",
+    "appearance_a": "blue dress, detached sleeves, black gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "镜流",
+    "japanese": "鏡流",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Jingliu",
+      "zh-cn": "镜流",
+      "ja": "鏡流"
+    },
+    "name_source": {
+      "english": "Jingliu",
+      "chinese": "镜流"
+    }
+  },
+  "Jinhsi": {
+    "charTags": "jinhsi \\(wuthering waves\\), white hair, very long hair, earrings, twintails, hair ornament, blunt bangs, hair rings, hair ribbon,",
+    "headwear": "",
+    "appearance_a": "thighhighs, jewelry, dress,  white thighhighs, cleavage, black dress,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "今汐",
+    "japanese": "今汐",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Jinhsi",
+      "zh-cn": "今汐",
+      "ja": "今汐"
+    },
+    "name_source": {
+      "english": "Jinhsi",
+      "chinese": "今汐"
+    }
+  },
+  "Jiuyuan": {
+    "charTags": "jiuyuannte, very long hair, grey hair, purple eyes,",
+    "headwear": "black headwear,",
+    "appearance_a": "black jacket, white pants, high heels, white footwear,",
+    "appearance_b": "white beret, purple choker, off shoulder, navel, tied shirt, white shirt, black pants, sandals, white footwear,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "九原",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Jiuyuan",
+      "zh-cn": "九原",
+      "ja": "九原（じょえん）"
+    },
+    "name_source": {
+      "english": "Jiuyuan",
+      "chinese": "九原"
+    }
+  },
+  "Ju Fufu": {
+    "charTags": "ju fufu, animal ears, blonde hair, green eyes, tail, tiger tail, tiger ears, tail ornament, tiger girl, long hair, short eyebrows, very long hair, tail bow, animal ear fluff,",
+    "headwear": "",
+    "appearance_a": "shorts, jacket, black shorts, bow, yellow jacket, sleeves past wrists, shirt, long sleeves, black shirt, open clothes, open jacket,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "橘福福",
+    "japanese": "橘福福",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Fufu",
+      "zh-cn": "橘福福",
+      "ja": "橘福福"
+    },
+    "name_source": {
+      "english": "Ju Fufu",
+      "chinese": "橘福福"
+    }
+  },
+  "Kachina": {
+    "charTags": "kachina \\(genshin impact\\), animal ears, tail, braid, long hair, thick eyebrows, ponytail, animal ears, ponytail, yellow headwear, visor cap,",
+    "headwear": "",
+    "appearance_a": "bandaid on leg, bandaid, bandaid on knee, gloves, black shorts, puffy shorts, fur trim,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "卡齐娜",
+    "japanese": "カチーナ",
+    "bodyType": 5,
+    "personalityTone": "curious",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Kachina",
+      "zh-cn": "卡齐娜",
+      "ja": "カチーナ"
+    },
+    "name_source": {
+      "english": "Kachina",
+      "chinese": "卡齐娜"
+    }
+  },
+  "Kafka": {
+    "charTags": "kafka_(honkai_star_rail), magenta hair, magenta eyes, ponytail,",
+    "headwear": "",
+    "appearance_a": "black coat, collared shirt, chest harness, high-waist shorts, purple pantyhose, high heel boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "卡芙卡",
+    "japanese": "カフカ",
+    "bodyType": 2,
+    "personalityTone": "yandere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Kafka",
+      "zh-cn": "卡芙卡",
+      "ja": "カフカ"
+    },
+    "name_source": {
+      "english": "Kafka",
+      "chinese": "卡芙卡"
+    }
+  },
+  "Kamisato Ayaka": {
+    "charTags": "kamisato_ayaka_(genshin_impact), very long hair, straight hair, blue hair, blue eyes,",
+    "headwear": "",
+    "appearance_a": "arm guards, armored dress, breastplate, japanese armor, japanese clothes, blue jacket, dark blue hakama, hakama skirt, bridal gauntlets, tabi,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "神里绫华",
+    "japanese": "神里綾華",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Ayaka",
+      "zh-cn": "神里绫华",
+      "ja": "神里綾華"
+    },
+    "name_source": {
+      "english": "Kamisato Ayaka",
+      "chinese": "神里绫华"
+    }
+  },
+  "Keqing": {
+    "charTags": "keqing_(genshin_impact), very long hair, cone_hair_bun, purple hair, purple eyes,twintails,",
+    "headwear": "",
+    "appearance_a": "purple dress, detached sleeves, black pantyhose, thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "刻晴",
+    "japanese": "刻晴",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Keqing",
+      "zh-cn": "刻晴",
+      "ja": "刻晴"
+    },
+    "name_source": {
+      "english": "Keqing",
+      "chinese": "刻晴"
+    }
+  },
+  "Kirara": {
+    "charTags": "kirara_(genshin_impact), very long hair, two tails, cat tail, ahoge, hair ornament, animal ears, cat girl,",
+    "headwear": "",
+    "appearance_a": "skirt, long sleeves, bare shoulders, pleated skirt, detached sleeves, choker, midriff, miniskirt, vest, crop top, blue skirt, black choker, black tank top, sleeveless coat,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "绮良良",
+    "japanese": "キララ",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Kirara",
+      "zh-cn": "绮良良",
+      "ja": "キララ"
+    },
+    "name_source": {
+      "english": "Kirara",
+      "chinese": "绮良良"
+    }
+  },
+  "Klee": {
+    "charTags": "klee_(genshin_impact), blonde hair, orange eyes, medium hair,",
+    "headwear": "red headwear,",
+    "appearance_a": "red dress, long sleeves, white collar, white pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "可莉",
+    "japanese": "クレー",
+    "bodyType": 5,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Klee",
+      "zh-cn": "可莉",
+      "ja": "クレー"
+    },
+    "name_source": {
+      "english": "Klee",
+      "chinese": "可莉"
+    }
+  },
+  "Koleda Belobog": {
+    "charTags": "koleda belobog, eyepatch, bear ears, twintails, animal ears, long hair, hair between eyes, ahoge, one eye covered,",
+    "headwear": "",
+    "appearance_a": "gloves, flame print, fingerless gloves, black gloves,pants, crop top, elbow gloves, baggy pants, navel, sleeveless, bare shoulders, white pants, sleeveless shirt, single elbow glove, belt, uneven gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "珂蕾妲·贝洛伯格",
+    "japanese": "クレタ",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Koleda",
+      "zh-cn": "珂蕾妲·贝洛伯格",
+      "ja": "クレタ"
+    },
+    "name_source": {
+      "english": "Koleda Belobog",
+      "chinese": "珂蕾妲·贝洛伯格 / 珂蕾妲"
+    }
+  },
+  "Kujou Sara": {
+    "charTags": "kujou_sara_(genshin_impact), dark blue hair, golden eyes, short hair,",
+    "headwear": "(mask_on_head),",
+    "appearance_a": "japanese clothes, leotard, detached sleeves, gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "九条裟罗",
+    "japanese": "九条裟羅",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Sara",
+      "zh-cn": "九条裟罗",
+      "ja": "九条裟羅"
+    },
+    "name_source": {
+      "english": "Kujou Sara",
+      "chinese": "九条裟罗"
+    }
+  },
+  "Kuki Shinobu": {
+    "charTags": "kuki_shinobu_(genshin_impact), green hair, purple eyes, short hair,",
+    "headwear": "black mask,",
+    "appearance_a": "cropped jacket, fishnet top, short shorts, shoulder armor, fingerless gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "久岐忍",
+    "japanese": "久岐忍",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Shinobu",
+      "zh-cn": "久岐忍",
+      "ja": "久岐忍"
+    },
+    "name_source": {
+      "english": "Kuki Shinobu",
+      "chinese": "久岐忍"
+    }
+  },
+  "Lacrimosa": {
+    "charTags": "Lacrimosa, red eyes, long hair, twintails, ahoge, split-color hair, black hair, white hair, streaked hair, hair ribbon, hair ornament, heart hair ornament, x hair ornament, red eyeliner, facial mark,",
+    "headwear": "",
+    "appearance_a": "collar,white shirt,cross tie,red jacket,underbust,black skirt,layered skirt,pleated skirt,pantyhose,sneakers,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "安魂曲",
+    "japanese": "レクイエム",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Lacrimosa",
+      "zh-cn": "安魂曲",
+      "ja": "レクイエム"
+    },
+    "name_source": {
+      "english": "Lacrimosa",
+      "chinese": "安魂曲"
+    }
+  },
+  "Laevatain": {
+    "charTags": "Laevatain_\\(arknights_endfield\\), purple eyes, red hair, demon horns,",
+    "headwear": "",
+    "appearance_a": "black gloves, detached collar,thigh strap ,high heel boots,elbow gloves ,detached sleeves,chest strap,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "莱万汀",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Laevatain",
+      "zh-cn": "莱万汀",
+      "ja": "レーヴァテイン"
+    },
+    "name_source": {
+      "english": "Laevatain",
+      "chinese": "莱万汀"
+    }
+  },
+  "Lan Yan": {
+    "charTags": "lan yan \\(genshin impact\\), very long hair, hair ornament,",
+    "headwear": "",
+    "appearance_a": "high heels, thigh strap, dress, bare shoulders, bracelet, jewelry, detached sleeves, wide sleeves, black footwear, green dress, leg ribbon,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "蓝砚",
+    "japanese": "藍硏",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Yan",
+      "zh-cn": "蓝砚",
+      "ja": "藍硏"
+    },
+    "name_source": {
+      "english": "Lan Yan",
+      "chinese": "蓝砚"
+    }
+  },
+  "Last Rite": {
+    "charTags": "LastRite, blue hair, long hair, blunt bangs, pointy ears, amber eyes, hair extension, tail, white headwear,",
+    "headwear": "",
+    "appearance_a": "white top, skintight top, bare shoulders, detached sleeves, white sleeves, sleeve straps, hanging straps, blue gloves, black wrist cuffs, upper arm armors, black straps, purple chest attachment, tabard, hip cutout, navel cutout, blue leggings, skintight leggings, blue footwear, heeled footwear,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "别礼",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Last Rite",
+      "zh-cn": "别礼",
+      "ja": "ラストライト"
+    },
+    "name_source": {
+      "english": "Last Rite",
+      "chinese": "别礼"
+    }
+  },
+  "Lauma": {
+    "charTags": "laumagenshin, hair intakes, pointy ears, long hair, hair over one eye, antlers, purple hair, bangs, hair ornament, blue eyes, blue nails, nail polish, ear piercing,",
+    "headwear": "",
+    "appearance_a": "ring, aqua dress, bracelet, armlet, anklet, cleavage cutout, cleavage, bare shoulders, pelvic curtain, high heels, sandals, strappy heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "菈乌玛",
+    "japanese": "ラウマ",
+    "bodyType": 2,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Lauma",
+      "zh-cn": "菈乌玛",
+      "ja": "ラウマ"
+    },
+    "name_source": {
+      "english": "Lauma",
+      "chinese": "菈乌玛"
+    }
+  },
+  "Layla": {
+    "charTags": "layla_(genshin_impact), very long hair, blue hair, golden eyes,",
+    "headwear": "veil,",
+    "appearance_a": "blue dress, detached sleeves, long sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "莱依拉",
+    "japanese": "レイラ",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Layla",
+      "zh-cn": "莱依拉",
+      "ja": "レイラ"
+    },
+    "name_source": {
+      "english": "Layla",
+      "chinese": "莱依拉"
+    }
+  },
+  "Liino": {
+    "charTags": "liinodef, pointy ears, demon girl, very long hair, bangs, purple eyes, horns, blonde hair, black-purple hairband, bow hairband ornament, heart earrings, star hair ornament, demon tail,",
+    "headwear": "",
+    "appearance_a": "blue gloves, fingerless gloves, black-blue dress, puffy sleeves, see-through sleeves, frilled dress, purple heart bag, long sleeves, white thigh strap, black thighhighs,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "梨诺",
+    "japanese": "リノ",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Liino",
+      "zh-cn": "梨诺",
+      "ja": "リーノ"
+    },
+    "name_source": {
+      "english": "Liino",
+      "chinese": "梨诺"
+    }
+  },
+  "Lingsha": {
+    "charTags": "lingsha \\(honkai star rail\\), very long hair, hair ornament, brown hair, blunt bangs, pointy ears, ahoge,",
+    "headwear": "",
+    "appearance_a": "long sleeves, chinese clothes, gloves, dress, high heels, black footwear, bare shoulders, detached sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "灵砂",
+    "japanese": "リンシャ",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Lingsha",
+      "zh-cn": "灵砂",
+      "ja": "リンシャ"
+    },
+    "name_source": {
+      "english": "Lingsha",
+      "chinese": "灵砂"
+    }
+  },
+  "Linko": {
+    "charTags": "linkonte, short pink hair, lightning ahoge, hair over one eye, aqua eyes,",
+    "headwear": "",
+    "appearance_a": "aqua jacket, hooded jacket, open jacket, hood down, black shirt, print shirt, short over long sleeves, denim shorts, short shorts, belt, headphones, thigh strap, loose socks, pink socks, sneakers,",
+    "holding": "backpack, bag,",
+    "animalFeatured": false,
+    "chinese": "灵可",
+    "japanese": "リンコ",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Linko",
+      "zh-cn": "灵可",
+      "ja": "リンコ"
+    },
+    "name_source": {
+      "english": "Linko",
+      "chinese": "灵可"
+    }
+  },
+  "Linnea": {
+    "charTags": "linnea (genshin impact), pink hair, pink eyes, heart-shaped pupils, short hair with long locks, crossed bangs, sidelocks, pointy ears, head wings, wing hair ornament,",
+    "headwear": "",
+    "appearance_a": "detached collar, black necktie, bare shoulders, red dress, black corset, red skirt, white coat, open coat, coattails, detached sleeves, long sleeves,red socks, black footwear, ankle boots,",
+    "holding": "bag, book,",
+    "animalFeatured": false,
+    "chinese": "莉奈娅",
+    "japanese": "リンネア",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Linnea",
+      "zh-cn": "莉奈娅",
+      "ja": "リンネア"
+    },
+    "name_source": {
+      "english": "Linnea",
+      "chinese": "莉奈娅"
+    }
+  },
+  "Lisa": {
+    "charTags": "lisa_(genshin_impact), brown hair, green eyes, very long hair,",
+    "headwear": "witch hat,",
+    "appearance_a": "purple dress, capelet, gloves, long sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "丽莎",
+    "japanese": "リサ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Lisa",
+      "zh-cn": "丽莎",
+      "ja": "リサ"
+    },
+    "name_source": {
+      "english": "Lisa",
+      "chinese": "丽莎"
+    }
+  },
+  "Lucia Elowen": {
+    "charTags": "lc1a, horns, animal ears, pointy ears, two-tone eyes, yellow eyes, blue eyes, horizontal pupils, blue hair, crossed bangs, long hair, low twin braids, purple eyes, purple hair, multicolored hair, black headwear,",
+    "headwear": "black headwear,",
+    "appearance_a": "green cape, black vest, hooded vest, cropped vest, open vest, mandarin collar, green shirt, underboob cutout, single sleeve, black sleeves, single vambrace, single glove, black gloves, high-waist shorts, black shorts,holding scepter,holding book, open book,",
+    "holding": "holding scepter, holding book",
+    "animalFeatured": true,
+    "chinese": "卢西娅·艾洛温 / 卢西娅",
+    "japanese": "リュシア・エロウェン",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Lucia",
+      "zh-cn": "卢西娅·艾洛温",
+      "ja": "リュシア・エロウェン"
+    },
+    "name_source": {
+      "english": "Lucia Elowen",
+      "chinese": "卢西娅·艾洛温 / 卢西娅"
+    }
+  },
+  "Luciana de Montefio": {
+    "charTags": "luciana de montefio, blonde hair, long hair, red eyes, side ponytail, hat, helmet,",
+    "headwear": "",
+    "appearance_a": "shorts, gloves, jacket, navel, crop top, boots, black gloves, short shorts, midriff,  black jacket, cutoffs, holding, denim, denim shorts, mask, thighs, weapon,",
+    "holding": "holding",
+    "animalFeatured": false,
+    "chinese": "露西亚娜·奥克希斯·提奥多·德·蒙特夫 / 露西",
+    "japanese": "ルーシー",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Luciana",
+      "zh-cn": "露西亚娜·奥克希斯·提奥多·德·蒙特夫",
+      "ja": "ルーシー"
+    },
+    "name_source": {
+      "english": "Luciana de Montefio",
+      "chinese": "露西亚娜·奥克希斯·提奥多·德·蒙特夫 / 露西"
+    }
+  },
+  "Lucilla": {
+    "charTags": "lucilla (wuthering waves), long hair, blue hair, purple eyes, purple hair, multicolored hair, hoop earrings,",
+    "headwear": "",
+    "appearance_a": "black headwear, white jacket, yellow bow, fingerless gloves, black gloves, black skirt, long skirt, side slit, black footwear, high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "洛瑟菈",
+    "japanese": "ルシラー",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Lucilla",
+      "zh-cn": "洛瑟菈",
+      "ja": "ルシラー"
+    },
+    "name_source": {
+      "english": "Lucilla",
+      "chinese": "洛瑟菈"
+    }
+  },
+  "Lumi": {
+    "charTags": "lumi \\(wuthering waves\\), red eyes, brown hair, solo, tail, twin braids, mouse tail, animal ears, hairband,",
+    "headwear": "",
+    "appearance_a": "jacket, pink jacket, bodysuit, covered navel, open clothes, open jacket, chinese zodiac, thighhighs,fur trim,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "灯灯",
+    "japanese": "灯灯",
+    "bodyType": 5,
+    "personalityTone": "genki",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Lumi",
+      "zh-cn": "灯灯",
+      "ja": "灯灯"
+    },
+    "name_source": {
+      "english": "Lumi",
+      "chinese": "灯灯"
+    }
+  },
+  "Lumine": {
+    "charTags": "lumine_(genshin_impact), hair ornament, hair flower, short hair, blonde hair, yellow eyes, red eyes, ",
+    "headwear": "",
+    "appearance_a": "white dress, detached sleeves, white scarf, black gloves, thigh strap, boots,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "荧",
+    "japanese": "荧",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Lumine",
+      "zh-cn": "荧",
+      "ja": "荧"
+    },
+    "name_source": {
+      "english": "Lumine",
+      "chinese": "荧"
+    }
+  },
+  "Lupa": {
+    "charTags": "lupa \\(wuthering waves\\), pink hair, orange eyes, hairband, twintails, tail, earrings, long hair, hair between eyes, two side up,",
+    "headwear": "",
+    "appearance_a": "red cape, black leotard, jewelry, high heels,boots,thigh boots,leotard,high heel boots,thighhighs,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "露帕",
+    "japanese": "ルパ",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Lupa",
+      "zh-cn": "露帕",
+      "ja": "ルパ"
+    },
+    "name_source": {
+      "english": "Lupa",
+      "chinese": "露帕"
+    }
+  },
+  "Lykaia": {
+    "charTags": "lykaia reign, wolf girl, wolf tail, long hair, purple hair, multicolored hair, streaked hair, purple eyes, animal ears, animal ear fluff,",
+    "headwear": "peaked cap, multicolored hat, black hat, white hat, tilted headwear,",
+    "appearance_a": "zipper, zipper pull tab, blue necktie, collared cape, blue cape, black jacket, cropped jacket, high collar, purple dress, chain belt, black bikini, bikini under clothes, open dress, dark  dress, single elbow pad, black bracelet, black gloves, asymmetrical gloves, half gloves,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "莱卡娅",
+    "japanese": "—",
+    "bodyType": 2,
+    "gameId": "ananta",
+    "display_names": {
+      "en": "Lykaia",
+      "zh-cn": "莱卡娅",
+      "ja": "—"
+    },
+    "name_source": {
+      "english": "Lykaia",
+      "chinese": "莱卡娅"
+    }
+  },
+  "Lynae": {
+    "charTags": "lynaedef, blonde hair, long hair, purple eyes, green hair, braid, multicolored hair, very long hair, skull hair ornament, star earrings, ring, headphones around neck,",
+    "headwear": "",
+    "appearance_a": "skirt, white shirt, pleated skirt, shirt, id card, thigh strap, necktie,",
+    "appearance_b": "white shirt, front-tie top, see-through, short sleeves, navel, blue bikini, highleg bikini, denim shorts, open shorts, single thigh strap, blue thigh strap, utility holder on leg, thigh pouch, bandaid on leg,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "琳奈",
+    "japanese": "(Unreleased)",
+    "bodyType": 2,
+    "personalityTone": "gyaru",
+    "gameId": "wuwa",
+    "charTags_b": "lynaeppm, very long hair, purple eyes, blonde hair, green hair, braid, low twintails, duck hair ornament, hair clip, lemon earrings, shell choker, hair flower, necklace, nail polish, bracelet, bead bracelet,",
+    "display_names": {
+      "en": "Lynae",
+      "zh-cn": "琳奈",
+      "ja": "リンネー"
+    },
+    "name_source": {
+      "english": "Lynae",
+      "chinese": "琳奈"
+    }
+  },
+  "Lynette": {
+    "charTags": "lynette_(genshin_impact), cat tail, cat ears, cat girl,very long hair,low ponytail,bow, purple eyes,",
+    "headwear": "",
+    "appearance_a": "leotard, miniskirt, long sleeves, pantyhose,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "琳妮特",
+    "japanese": "リネット",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Lynette",
+      "zh-cn": "琳妮特",
+      "ja": "リネット"
+    },
+    "name_source": {
+      "english": "Lynette",
+      "chinese": "琳妮特"
+    }
+  },
+  "March 7th": {
+    "charTags": "march 7th \\(hunt\\) \\(honkai star rail\\), bell, hair intakes, hair ornament, hair bun, ribbon, hair between eyes,",
+    "headwear": "",
+    "appearance_a": "gloves, thighhighs, black gloves, long sleeves, fingerless gloves, white thighhighs, jacket, red jacket, chinese clothes,  garter straps, dress,",
+    "holding": "bell",
+    "animalFeatured": false,
+    "chinese": "三月七",
+    "japanese": "三月なのか",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "March 7th",
+      "zh-cn": "三月七",
+      "ja": "三月なのか"
+    },
+    "name_source": {
+      "english": "March 7th",
+      "chinese": "三月七"
+    }
+  },
+  "March 7th (The Hunt)": {
+    "charTags": "march 7th \\(hunt\\) \\(honkai star rail\\), bell, hair intakes, hair ornament, hair bun, ribbon, hair between eyes, short hair, pink hair, blue eyes,",
+    "headwear": "",
+    "appearance_a": "gloves, thighhighs, black gloves, long sleeves, fingerless gloves, white thighhighs, jacket, red jacket, chinese clothes, garter straps, dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "三月七·巡猎",
+    "japanese": "三月なのか・巡狩",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "March 7th (The Hunt)",
+      "zh-cn": "三月七·巡猎",
+      "ja": "三月なのか・巡狩"
+    },
+    "name_source": {
+      "english": "March 7th (The Hunt)",
+      "chinese": "三月七·巡猎"
+    }
+  },
+  "Mavuika": {
+    "charTags": "mavuika \\(genshin impact\\), very long hair, red eyes, symbol-shaped pupils, hair between eyes, ahoge,",
+    "headwear": "",
+    "appearance_a": "bodysuit, gloves, black bodysuit, black gloves, clothing cutout, long sleeves, jewelry,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "玛薇卡",
+    "japanese": "マーヴィカ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Mavuika",
+      "zh-cn": "玛薇卡",
+      "ja": "マーヴィカ"
+    },
+    "name_source": {
+      "english": "Mavuika",
+      "chinese": "玛薇卡"
+    }
+  },
+  "Mechanika": {
+    "charTags": "zzMechanika, red eyes, blue hair, ahoge, twin braids, long hair, bangs, hair between eyes, hair ornament, symbol-shaped pupils, neck bell,",
+    "headwear": "",
+    "appearance_a": "white tank top, bare shoulders, yellow overalls, off shoulder, collarbone,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "梅卡妮卡",
+    "japanese": "—",
+    "bodyType": 4,
+    "gameId": "ananta",
+    "display_names": {
+      "en": "Mechanika",
+      "zh-cn": "梅卡妮卡",
+      "ja": "—"
+    },
+    "name_source": {
+      "english": "Mechanika",
+      "chinese": "梅卡妮卡"
+    }
+  },
+  "Mi Fu": {
+    "charTags": "Mi_Fu, medium hair, bangs, white hair, pink hair, horns, gradient hair, hair over one eye, pointy ears, layered iris, multi-ring iris, mole under right eye mole on breast, tail,",
+    "headwear": "",
+    "appearance_a": "cleavage, detached sleeve, short dress, open jacket, long sleeves, armband, fingerless gloves, belt, handcuff pouch, waist cape, black skirt, see-through,  armor, thigh strap, thighhigh, green boots,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "弭弗",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Fu",
+      "zh-cn": "弭弗",
+      "ja": "ミフ"
+    },
+    "name_source": {
+      "english": "Mi Fu",
+      "chinese": "弭弗"
+    }
+  },
+  "Mint": {
+    "charTags": "mint \\(neverness to everness\\), blue hair, cat girl, symbol-shaped pupils, very long hair,straight hair,braid, two-tone hair, streaked hair, pink eyes, ahoge, cat ears, animal ear fluff, cat tail, tail,",
+    "headwear": "",
+    "appearance_a": "underboob,black hairband,black shorts,white thighhighs,clothing cutout,black skirt,black clothes,thigh strap,black ribbon,short sleeves,bowtie,black gloves,black boots,underboob cutout,skindentation,belt,capelet,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "薄荷",
+    "japanese": "ミント",
+    "bodyType": 2,
+    "personalityTone": "curious",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Mint",
+      "zh-cn": "薄荷",
+      "ja": "ミント"
+    },
+    "name_source": {
+      "english": "Mint",
+      "chinese": "薄荷"
+    }
+  },
+  "Mona": {
+    "charTags": "mona_(genshin_impact), very long hair, black hair, green eyes,twintails,",
+    "headwear": "witch hat,",
+    "appearance_a": "blue leotard, detached sleeves, gloves, black pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "莫娜",
+    "japanese": "モナ",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Mona",
+      "zh-cn": "莫娜",
+      "ja": "モナ"
+    },
+    "name_source": {
+      "english": "Mona",
+      "chinese": "莫娜"
+    }
+  },
+  "Mornye": {
+    "charTags": "mornye, halo, hair over one eye, colored eyelashes, triangle earrings, triangle hairclip, see-through legs, leg tattoo,",
+    "headwear": "",
+    "appearance_a": "bracelet, finger rings, white coat, high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "莫宁",
+    "japanese": "モーニエ",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Mornye",
+      "zh-cn": "莫宁",
+      "ja": "モーニエ"
+    },
+    "name_source": {
+      "english": "Mornye",
+      "chinese": "莫宁"
+    }
+  },
+  "Mualani": {
+    "charTags": "EBMualani, red eyes, very long hair, blue hair, white hair, multicolored hair, blue hairband, streaked hair, low twin braids, dark-skinned female, body markings, bright pupils, tanlines,",
+    "headwear": "",
+    "appearance_a": "skirt, navel, bare shoulders, swimsuit, black gloves, midriff, stomach, fingerless gloves, white bikini, indian style, white gloves, crop top,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "玛拉妮",
+    "japanese": "ムアラニ",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Mualani",
+      "zh-cn": "玛拉妮",
+      "ja": "ムアラニ"
+    },
+    "name_source": {
+      "english": "Mualani",
+      "chinese": "玛拉妮"
+    }
+  },
+  "Nahida": {
+    "charTags": "nahida_(genshin_impact), hair ornament, side ponytail, white hair, green eyes,",
+    "headwear": "",
+    "appearance_a": "white dress, detached sleeves, sleeveless dress, cape, bracelet,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "纳西妲",
+    "japanese": "ナヒーダ",
+    "bodyType": 5,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Nahida",
+      "zh-cn": "纳西妲",
+      "ja": "ナヒーダ"
+    },
+    "name_source": {
+      "english": "Nahida",
+      "chinese": "纳西妲"
+    }
+  },
+  "Nanally Colucci": {
+    "charTags": "Nanally, red eyes, crimson red hai, long hair, bangs, side bangs, side strands, cat hair clip, round glasses, cat ears, fluffy tail,",
+    "headwear": "round glasses, choker with cat decoration,",
+    "appearance_a": "mini pink plushie on the chest, black jacket, decorated jacket, white shirt, black tie, belt, pink pleated skirt,",
+    "appearance_b": "sailor collar, oversized sweater, cable-knit sweater, cream-colored sweater, pink bow, gold star brooch, pleated skirt, black skirt, black socks, ankle socks,",
+    "appearance_c": "black cat hood, black pom-poms, white dress, sleeveless dress, ruffled dress, black bow, star brooch, bell choker, fingerless gloves, paw gloves, thigh-high stockings, black thigh-high stockings,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "娜娜莉・柯林斯",
+    "japanese": "ナナリ・コリンス",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "NevernessToEverness",
+    "charTags_b": "Nanally, red eyes, red hair, long hair, two pigtails, stray strand, bangs, side bangs, cat ears, fluffy tail, black headband, hair clip,",
+    "charTags_c": "Nanally, red eyes, red hair, twin braids, long braids, bangs, side bangs, paw print hair clip, star hair accessory, cat ears, fluffy tail,",
+    "display_names": {
+      "en": "Nanally",
+      "zh-cn": "娜娜莉・柯林斯",
+      "ja": "ナナリ・コリンス"
+    },
+    "name_source": {
+      "english": "Nanally Colucci",
+      "chinese": "娜娜莉・柯林斯"
+    }
+  },
+  "Nangong Yu": {
+    "charTags": "nangong yu, black hair, bow, hair bow, multicolored hair, green bow, halo, virtual youtuber, red bow, red eyes, twintails, two-tone hair, red hair, hair bow, blunt bangs,",
+    "headwear": "",
+    "appearance_a": "navel cutout, detached sleeves, dress, choker, clothing cutout, white dress, black choker, detached collar, long sleeves, necktie,wings,",
+    "holding": "bow",
+    "animalFeatured": false,
+    "chinese": "南宫羽",
+    "japanese": "南宮羽",
+    "bodyType": 4,
+    "personalityTone": "haughty",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Yu",
+      "zh-cn": "南宫羽",
+      "ja": "南宮羽"
+    },
+    "name_source": {
+      "english": "Nangong Yu",
+      "chinese": "南宫羽 / 羽"
+    }
+  },
+  "Natasha": {
+    "charTags": "hsrnt, dark blue hair, hair between eyes, long hair, low ponytail, purple eyes, mole under mouth, hair bow,",
+    "headwear": "",
+    "appearance_a": "necklace, white coat, short sleeves, black bodysuit, red armband, black glove, single elbow glove, single glove, blue skirt, high-waist skirt, brown belt, pantyhose,",
+    "holding": "holding stuffed toy",
+    "animalFeatured": false,
+    "chinese": "娜塔莎",
+    "japanese": "ナターシャ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Natasha",
+      "zh-cn": "娜塔莎",
+      "ja": "ナターシャ"
+    },
+    "name_source": {
+      "english": "Natasha",
+      "chinese": "娜塔莎"
+    }
+  },
+  "Navia": {
+    "charTags": "navia_(genshin_impact), very long hair, blonde hair, blue eyes,",
+    "headwear": "hat,hat flower,hat feather,",
+    "appearance_a": "dress, strapless dress, detached sleeves, gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "娜维娅",
+    "japanese": "ナヴィア",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Navia",
+      "zh-cn": "娜维娅",
+      "ja": "ナヴィア"
+    },
+    "name_source": {
+      "english": "Navia",
+      "chinese": "娜维娅"
+    }
+  },
+  "Nefer": {
+    "charTags": "EBNefer, green eyes, multicolored hair, earrings, green hair, medium hair, hair between eyes, multicolored eyes, two-tone eyes, mechanical ears, pale skin,",
+    "headwear": "",
+    "appearance_a": "jewelry, black gloves, elbow gloves, cape, bracelet, bare legs, thigh strap, sideboob, white skirt, thighlet, claws, Egyptian clothes, dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "奈芙尔",
+    "japanese": "ネフェル",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Nefer",
+      "zh-cn": "奈芙尔",
+      "ja": "ネフェル"
+    },
+    "name_source": {
+      "english": "Nefer",
+      "chinese": "奈芙尔"
+    }
+  },
+  "Nekomiya Mana": {
+    "charTags": "Nekomiya Mana, forehead tattoo, cat ears, red hair band, black hair, ponytail, red ponytail lace, red eyes, tail fluff, two tails,",
+    "headwear": "",
+    "appearance_a": "choker, catbell, black mesh, white top, red sash, detached sleeves, red sleeves, white sleeve laces, fingerless gloves, black shorts, black thigh highs, futuristic shin covers, red metallic boots, high heels, cat paw boots,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "猫宫又奈 / 猫又",
+    "japanese": "猫又",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Mana",
+      "zh-cn": "猫宫又奈",
+      "ja": "猫又"
+    },
+    "name_source": {
+      "english": "Nekomiya Mana",
+      "chinese": "猫宫又奈 / 猫又"
+    }
+  },
+  "Nicole Demara": {
+    "charTags": "nicole demara \\(cunning cutie\\), green eyes, pink hair, long hair, two side up, hair ornament, mole, hair ribbon, hairclip,",
+    "headwear": "",
+    "appearance_a": "shorts, tail, crop top, midriff, cutoffs, ribbon, thigh strap, gloves, tube top, thighs, short shorts, strapless, white gloves, fur-trimmed shorts, belt, cutoffs,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "妮可·德玛拉 / 妮可",
+    "japanese": "ニコ",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Nicole",
+      "zh-cn": "妮可·德玛拉",
+      "ja": "ニコ"
+    },
+    "name_source": {
+      "english": "Nicole Demara",
+      "chinese": "妮可·德玛拉 / 妮可"
+    }
+  },
+  "Nicole Reeyn": {
+    "charTags": "Nicole (character), blue eyes, gradient_eyes, pink eyes, blonde hair, very long hair, symbol in eye, black star (symbol), pointy ears, ears ornament, facial mark, forehead mark,",
+    "headwear": "white beret,",
+    "appearance_a": "def (outfit), white dress, side slit, multicolored dress, blue dress, detached sleeves, shoulder ornaments, high collar, chest bow, asymmetrical skirt, white pantyhose, white ankle heels, gold trims,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "尼可·莱恩",
+    "japanese": "ニコ・リヤン",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Nicole",
+      "zh-cn": "尼可·莱恩",
+      "ja": "ニコ・リヤン"
+    },
+    "name_source": {
+      "english": "Nicole Reeyn",
+      "chinese": "尼可·莱恩"
+    }
+  },
+  "Nilou": {
+    "charTags": "nilou_(genshin_impact), very long hair, red hair, blue eyes,low twintails,",
+    "headwear": "(veil),horns,",
+    "appearance_a": "white dress, blue skirt, detached sleeves, white sleeves, puffy long sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "妮露",
+    "japanese": "ニィロウ",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Nilou",
+      "zh-cn": "妮露",
+      "ja": "ニィロウ"
+    },
+    "name_source": {
+      "english": "Nilou",
+      "chinese": "妮露"
+    }
+  },
+  "Ningguang": {
+    "charTags": "ningguang_(genshin_impact), very long hair, blonde hair, red eyes,hair ornament,",
+    "headwear": "",
+    "appearance_a": "white dress, chinese clothes, detached sleeves, black gloves, side slit,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "凝光",
+    "japanese": "凝光",
+    "bodyType": 2,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Ningguang",
+      "zh-cn": "凝光",
+      "ja": "凝光"
+    },
+    "name_source": {
+      "english": "Ningguang",
+      "chinese": "凝光"
+    }
+  },
+  "Noelle": {
+    "charTags": "noelle_(genshin_impact), grey hair, green eyes, very long hair,",
+    "headwear": "tiara,",
+    "appearance_a": "maid apron, shoulder armor, breastplate, gauntlets, armored boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "诺艾尔",
+    "japanese": "ノエル",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Noelle",
+      "zh-cn": "诺艾尔",
+      "ja": "ノエル"
+    },
+    "name_source": {
+      "english": "Noelle",
+      "chinese": "诺艾尔"
+    }
+  },
+  "Norma Hollowell": {
+    "charTags": "norma \\(zenless zone zero\\), blunt bangs, blonde hair, very long hair, colored eyes, white headwear,",
+    "headwear": "white headwear",
+    "appearance_a": "blue dress,white gloves,wide sleeves,white thighhighs,coat,white boots,short dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "诺姆・霍洛维尔",
+    "japanese": "ノルムー・ホローウェル",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Norma",
+      "zh-cn": "诺姆・霍洛维尔",
+      "ja": "ノルムー・ホローウェル"
+    },
+    "name_source": {
+      "english": "Norma Hollowell",
+      "chinese": "诺姆・霍洛维尔"
+    }
+  },
+  "Odette": {
+    "charTags": "odette \\(genshin impact\\), blue hair, ahoge, purple eyes, hair ornament,",
+    "headwear": "",
+    "appearance_a": "blue glove,asymmetrical gloves,blue dress,tutu,single elbow glove,white glove,white pantyhose,gold high heels,bare shoulders,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "奥黛塔",
+    "japanese": "オデット",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Odette",
+      "zh-cn": "奥黛塔",
+      "ja": "オデット"
+    },
+    "name_source": {
+      "english": "Odette",
+      "chinese": "奥黛塔"
+    }
+  },
+  "Orpheus": {
+    "charTags": "0rph3us, curled horns, mechanical tail, multicolored tail, black tail, red tail, pointy ears, multicolored eyes, green eyes, orange eyes, yellow eyes, orange hair, hair between eyes, hair intakes, very long hair, twintails,",
+    "headwear": "black beret,",
+    "appearance_a": "black hooded shrug, o-ring top, puffy long sleeves, o-ring arm strap, two-tone dress, black dress, grey dress, turtleneck dress, pencil dress, chest belt, utility belt, underbust, zipper dress, garter straps, black thighhighs, asymmetrical gloves, single fingerless glove, black gloves, yellow gloves,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "奥菲丝与「鬼火」",
+    "japanese": "オルペウス＆鬼火",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Orpheus",
+      "zh-cn": "奥菲丝与「鬼火」",
+      "ja": "オルペウス＆鬼火"
+    },
+    "name_source": {
+      "english": "Orpheus",
+      "chinese": "奥菲丝与「鬼火」"
+    }
+  },
+  "Pela": {
+    "charTags": "pela_(honkai_star_rail), very long hair,round eyewear, dark blue hair, blue eyes,",
+    "headwear": "headwear,",
+    "appearance_a": "black skirt, pleated skirt, black gloves, pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "佩拉",
+    "japanese": "ペラ",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Pela",
+      "zh-cn": "佩拉",
+      "ja": "ペラ"
+    },
+    "name_source": {
+      "english": "Pela",
+      "chinese": "佩拉"
+    }
+  },
+  "Perlica": {
+    "charTags": "perlica_\\(arknights_endfield\\), blue eyes, grey hair,",
+    "headwear": "",
+    "appearance_a": "open jacket  ,sleeveless dress,black gloves,black pantyhose,high heels,belt,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "佩丽卡",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Perlica",
+      "zh-cn": "佩丽卡",
+      "ja": "ペリカ"
+    },
+    "name_source": {
+      "english": "Perlica",
+      "chinese": "佩丽卡"
+    }
+  },
+  "Phoebe": {
+    "charTags": "phoebe \\(wuthering waves\\), very long hair, official alternate costume, hair ornament, hair ornament, jewelry, one side up, hat, white headwear, sun hat,",
+    "headwear": "",
+    "appearance_a": "gloves, black gloves, dress, white dress, white pantyhose,pantyhose, long sleeves, ribbon,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "菲比",
+    "japanese": "フィビー",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Phoebe",
+      "zh-cn": "菲比",
+      "ja": "フィビー"
+    },
+    "name_source": {
+      "english": "Phoebe",
+      "chinese": "菲比"
+    }
+  },
+  "Phoenix Reffaella": {
+    "charTags": "phoenixdef, blonde hair, very long hair, low twintails, ahoge, yellow eyes, white pupils, hair ornament,",
+    "headwear": "",
+    "appearance_a": "white elbow gloves, white dress, white sleeves, collar, short sleeves, detached sleeves, puffy sleeves, showgirl skirt, white shirt, white thighhighs, garter straps, low mini wings, red metal wings, fiery wings,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "菲欧妮·蕾法爱菈",
+    "japanese": "フィオニー・レファエラ",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Phoenix",
+      "zh-cn": "菲欧妮·蕾法爱菈",
+      "ja": "フィオニー・レファエラ"
+    },
+    "name_source": {
+      "english": "Phoenix Reffaella",
+      "chinese": "菲欧妮·蕾法爱菈"
+    }
+  },
+  "Phrolova": {
+    "charTags": "phrolova \\(wuthering waves\\), very long hair, earrings, jewelry, braid, bandage over one eye, bandaged head,",
+    "headwear": "",
+    "appearance_a": "detached collar, bandages, bare shoulders, pantyhose, bandaged arm, red nails, red dress, dress, black pantyhose, collarbone, ribbon, official alternate costume,",
+    "appearance_b": "phrolova alter, black single earring, black lace eyepatch, arm tattoo, single detached sleeve, black arm ribbon, thigh strap, gold leg strap, black pantyhose, black heels,",
+    "appearance_c": "phrolova lily, purple eyes, low single braid, hair ribbon, white frilled dress, half gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "弗洛洛",
+    "japanese": "フローヴァ",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Phrolova",
+      "zh-cn": "弗洛洛",
+      "ja": "フローヴァ"
+    },
+    "name_source": {
+      "english": "Phrolova",
+      "chinese": "弗洛洛"
+    }
+  },
+  "Piper Wheel": {
+    "charTags": "piper wheel, green eyes, blonde hair, long hair, hair bun, hair ornament,",
+    "headwear": "",
+    "appearance_a": "gloves, shorts, goggles around neck, goggles, mask around neck, detached sleeves, bare shoulders, crop top, bandaged arm, shorts, bandages, brown gloves, black shorts, boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "派派",
+    "japanese": "パイパー",
+    "bodyType": 5,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Piper",
+      "zh-cn": "派派",
+      "ja": "パイパー"
+    },
+    "name_source": {
+      "english": "Piper Wheel",
+      "chinese": "派派"
+    }
+  },
+  "Promeia": {
+    "charTags": "PromeiaZzz, blue hair, asymmetrical bangs, very long hair, long braid, purple eyes,",
+    "headwear": "",
+    "appearance_a": "black bodysuit, cutout bodysuit, sheer fabric, tight clothes, highleg, cleavage, underboob, choker, collar, arm cuffs, thigh straps, metallic accessories,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "普罗米娅",
+    "japanese": "プロメイア",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Promeia",
+      "zh-cn": "普罗米娅",
+      "ja": "プロメイア"
+    },
+    "name_source": {
+      "english": "Promeia",
+      "chinese": "普罗米娅"
+    }
+  },
+  "Prune": {
+    "charTags": "Prune\\(genshin impact)\\, purple hair, short hair, bob cut, side ponytail, pink hair ribbon, purple eyes, hairclip,",
+    "headwear": "",
+    "appearance_a": "layered back panels, short dress, shoulder piece,detached sleeves, black gloves,fingerless gloves, asymmetrical legwear, single thighhigh, lace-up boots,black boots, metal ornaments, back ribbon, layered dress,decorative straps,short shorts,choker,blue gem for the Vision at back,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "布伦妮",
+    "japanese": "プルーネ",
+    "bodyType": 5,
+    "personalityTone": "haughty",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Prune",
+      "zh-cn": "布伦妮",
+      "ja": "プルーネ"
+    },
+    "name_source": {
+      "english": "Prune",
+      "chinese": "布伦妮"
+    }
+  },
+  "Qingque": {
+    "charTags": "qingque_(honkai_star_rail),twintails,hair ornament, beige hair, green eyes, very long hair, blue hair, blue eyes, horns,",
+    "headwear": "",
+    "appearance_a": "black and green dress, white skirt, detached sleeves, turtleneck,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "青雀",
+    "japanese": "チンチュ",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Qingque",
+      "zh-cn": "青雀",
+      "ja": "チンチュ"
+    },
+    "name_source": {
+      "english": "Qingque",
+      "chinese": "青雀"
+    }
+  },
+  "Qingxiao": {
+    "charTags": "qingxiao (wuthering waves), very long hair, blue hair, blue eyes, horns, forehead mark,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, china dress, white dress, detached sleeves, bare shoulders,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "清宵",
+    "japanese": "清宵",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Qingxiao",
+      "zh-cn": "清宵",
+      "ja": "清宵"
+    },
+    "name_source": {
+      "english": "Qingxiao",
+      "chinese": "清宵"
+    }
+  },
+  "Qingyi": {
+    "charTags": "q1ngyi, robot joints, long hair, green hair, blunt bangs, twintails, twin braids, hair ornament, green eyes,",
+    "headwear": "",
+    "appearance_a": "tactical clothes, crop top, badge, arm strap, black gloves, elbow gloves, fingerless gloves, black shorts, short shorts, knee pads, black choker, stomach, navel,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "青衣",
+    "japanese": "青衣",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Qingyi",
+      "zh-cn": "青衣",
+      "ja": "青衣"
+    },
+    "name_source": {
+      "english": "Qingyi",
+      "chinese": "青衣"
+    }
+  },
+  "Qiqi": {
+    "charTags": "qiqi_(genshin_impact), purple hair, magenta eyes, short hair,",
+    "headwear": "hat,",
+    "appearance_a": "chinese clothes, dress, wide sleeves, long sleeves, white thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "七七",
+    "japanese": "七七",
+    "bodyType": 5,
+    "personalityTone": "shy",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Qiqi",
+      "zh-cn": "七七",
+      "ja": "七七"
+    },
+    "name_source": {
+      "english": "Qiqi",
+      "chinese": "七七"
+    }
+  },
+  "Raiden Shogun": {
+    "charTags": "raiden_shogun_(genshin_impact), very long hair, braid, hair ornament, purple hair, purple eyes,",
+    "headwear": "",
+    "appearance_a": "kimono, japanese clothes, long sleeves, obi, obiage, obijime, shoulder armor,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "雷电将军",
+    "japanese": "雷電将軍",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Raiden Shogun",
+      "zh-cn": "雷电将军",
+      "ja": "雷電将軍"
+    },
+    "name_source": {
+      "english": "Raiden Shogun",
+      "chinese": "雷电将军"
+    }
+  },
+  "Rappa": {
+    "charTags": "rappa \\(honkai star rail\\), ponytail, long hair, baseball cap, hat,",
+    "headwear": "",
+    "appearance_a": "navel, shorts, thighs, shirt, stomach, short shorts, jacket, white shirt, crop top, black shorts, socks, open jacket, open clothes, belt, red jacket, cropped jacket, fishnets,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "乱破",
+    "japanese": "乱破（ラッパ）",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Rappa",
+      "zh-cn": "乱破",
+      "ja": "乱破（ラッパ）"
+    },
+    "name_source": {
+      "english": "Rappa",
+      "chinese": "乱破"
+    }
+  },
+  "Remielle Dan": {
+    "charTags": "Remielle Dan, white pupils, pink hair, pink eyes, hair ornament, ahoge, colored eyes, black wings,",
+    "headwear": "",
+    "appearance_a": "white dress,detached sleeves,white thighhighs,high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "蕾米埃尔・丹",
+    "japanese": "レミエール・ダン",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Remielle",
+      "zh-cn": "蕾米埃尔・丹",
+      "ja": "レミエール・ダン"
+    },
+    "name_source": {
+      "english": "Remielle Dan",
+      "chinese": "蕾米埃尔・丹"
+    }
+  },
+  "Robin": {
+    "charTags": "robin_\\(honkai_star_rail\\), green eyes, blue hair, earrings, head wings, halo, feathered wings,",
+    "headwear": "",
+    "appearance_a": "white gloves,strapless dress,detached sleeves ,high heels,detached collar,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "知更鸟",
+    "japanese": "ロビン",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Robin",
+      "zh-cn": "知更鸟",
+      "ja": "ロビン"
+    },
+    "name_source": {
+      "english": "Robin",
+      "chinese": "知更鸟"
+    }
+  },
+  "Roccia": {
+    "charTags": "roccia \\(wuthering waves\\), heterochromia, x-shaped pupils, solo, twintails, long hair, hair ornament, hat,",
+    "headwear": "",
+    "appearance_a": "long sleeves, skirt, wrist scrunchie, thigh strap, blue jacket,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "洛可可",
+    "japanese": "ロココ",
+    "bodyType": 5,
+    "personalityTone": "dandere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Roccia",
+      "zh-cn": "洛可可",
+      "ja": "ロココ"
+    },
+    "name_source": {
+      "english": "Roccia",
+      "chinese": "洛可可"
+    }
+  },
+  "Rosaria": {
+    "charTags": "rosaria_(genshin_impact), maroon hair, magenta eyes, medium hair,",
+    "headwear": "veil,",
+    "appearance_a": "nun, black dress, gloves, fishnet pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "罗莎莉亚",
+    "japanese": "ロサリア",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Rosaria",
+      "zh-cn": "罗莎莉亚",
+      "ja": "ロサリア"
+    },
+    "name_source": {
+      "english": "Rosaria",
+      "chinese": "罗莎莉亚"
+    }
+  },
+  "Rossi": {
+    "charTags": "rossi (arknights), animal ears, hood up, blonde hair, yellow eyes, low twintails, tail, hooded cape,",
+    "headwear": "",
+    "appearance_a": "fingerless gloves, boots,socks,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "洛茜",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Rossi",
+      "zh-cn": "洛茜",
+      "ja": "ロッシ"
+    },
+    "name_source": {
+      "english": "Rossi",
+      "chinese": "洛茜"
+    }
+  },
+  "Roxy Ifrita Pryce": {
+    "charTags": "roxy \\(zenless zone zero\\), green hair, red eyes, pointy ears, ",
+    "headwear": "black-framed eyewear,",
+    "appearance_a": "red nails, thigh strap, black shorts, torn clothes, short shorts, black sleeves, ankle boots, black boots, white socks, detached sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "洛克茜·伊芙莉塔·普莱斯 / 洛克茜",
+    "japanese": "ロクシー・イフリータ・プライス",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Roxy",
+      "zh-cn": "洛克茜·伊芙莉塔·普莱斯",
+      "ja": "ロクシー・イフリータ・プライス"
+    },
+    "name_source": {
+      "english": "Roxy Ifrita Pryce",
+      "chinese": "洛克茜·伊芙莉塔·普莱斯 / 洛克茜"
+    }
+  },
+  "Ruan Mei": {
+    "charTags": "ruan_mei_(honkai_star_rail), very long hair,hair bun, black hair, turquoise eyes, blue hair, purple eyes,",
+    "headwear": "",
+    "appearance_a": "dress, detached sleeves, long sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "阮梅",
+    "japanese": "ルアン・メェイ",
+    "bodyType": 2,
+    "personalityTone": "dandere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Mei",
+      "zh-cn": "阮梅",
+      "ja": "ルアン・メェイ"
+    },
+    "name_source": {
+      "english": "Ruan Mei",
+      "chinese": "阮梅"
+    }
+  },
+  "Sakiri": {
+    "charTags": "sakiri \\(neverness to everness\\), white hair, sidelocks, short hair with long locks, hairclip, blue eyes, gradient eyes, thick eyebrows, short eyebrows, skin-covered horns, single horn, oni, newsboy cap, hat ornament,",
+    "headwear": "",
+    "appearance_a": "blue bowtie, brooch, flat chest, collared shirt, white shirt, red jacket, open jacket, puffy long sleeves, button badge, backpack, black belt, pleated skirt, miniskirt, bandaid on leg, loose socks, white socks, black footwear, platform shoes, footwear bow, gradient eyes,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "早雾",
+    "japanese": "",
+    "bodyType": 5,
+    "personalityTone": "koakuma",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Sakiri",
+      "zh-cn": "早雾",
+      "ja": "早霧（さきり）"
+    },
+    "name_source": {
+      "english": "Sakiri",
+      "chinese": "早雾"
+    }
+  },
+  "Sandrone": {
+    "charTags": "sandrone \\(genshin impact\\), blue eyes, brown hair, long hair,",
+    "headwear": "",
+    "appearance_a": "dress, white pantyhose, white gloves, black dress, black footwear, high heels, detached sleeves, long sleeves, frills, bare shoulders, bonnet,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "桑多涅",
+    "japanese": "サンドローネ",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Sandrone",
+      "zh-cn": "桑多涅",
+      "ja": "サンドローネ"
+    },
+    "name_source": {
+      "english": "Sandrone",
+      "chinese": "桑多涅"
+    }
+  },
+  "Sangonomiya Kokomi": {
+    "charTags": "sangonomiya_kokomi_(genshin_impact), very long hair, pink hair, blue eyes,horns,",
+    "headwear": "",
+    "appearance_a": "white dress, detached sleeves, wide sleeves, shorts, white thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "珊瑚宫心海",
+    "japanese": "珊瑚宮心海",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Kokomi",
+      "zh-cn": "珊瑚宫心海",
+      "ja": "珊瑚宮心海"
+    },
+    "name_source": {
+      "english": "Sangonomiya Kokomi",
+      "chinese": "珊瑚宫心海"
+    }
+  },
+  "Sanhua": {
+    "charTags": "s4nhu4, mole under mouth, red eyes, mismatched pupils, grey hair, medium hair, braided bun,",
+    "headwear": "hair ribbon, black ribbon, single earring, hoop earrings, black beret, hat tassel, hat ornament,",
+    "appearance_a": "bead necklace, black crop top, mandarin collar, see-through cleavage, midriff, high-waist skirt, black overskirt, long skirt, showgirl skirt, black skirt, multiple belts, black pantyhose, thigh strap, black belt, black gloves, bead bracelet,",
+    "appearance_b": "white armband, armlet, mandarin collar, sleeveless dress, multicolored dress, white dress, black dress, aqua dress, cleavage cutout, black corset, o-ring, white showgirl skirt, gold trim, black pantyhose, thigh strap, bead bracelet, single vambrace, aqua vambrace, single glove, aqua gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "散华",
+    "japanese": "散華",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "wuwa",
+    "charTags_b": "s4nhu4, hair ribbon, blue ribbon, mask on head, gold necklace, earrings,",
+    "display_names": {
+      "en": "Sanhua",
+      "zh-cn": "散华",
+      "ja": "散華"
+    },
+    "name_source": {
+      "english": "Sanhua",
+      "chinese": "散华"
+    }
+  },
+  "Sayu": {
+    "charTags": "sayu_(genshin_impact), beige hair, red eyes, short hair,",
+    "headwear": "animal hood,hood,",
+    "appearance_a": "japanese clothes, short sleeves, shorts, black scarf, gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "早柚",
+    "japanese": "早柚",
+    "bodyType": 5,
+    "personalityTone": "shy",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Sayu",
+      "zh-cn": "早柚",
+      "ja": "早柚"
+    },
+    "name_source": {
+      "english": "Sayu",
+      "chinese": "早柚"
+    }
+  },
+  "Seed": {
+    "charTags": "zsd, aqua eyes, aqua hair, ahoge, swept bangs, long hair, braided ponytail, clover hair ornament,",
+    "headwear": "",
+    "appearance_a": "metal collar, bare shoulders, sleeveless dress, multicolored dress, white dress, grey dress, black dress, see-through cleavage, white thighhighs, stirrup legwear, thigh cutout, armlet, multicolored gloves, white gloves, grey gloves, yellow gloves, elbow gloves, wrist cuffs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "席德",
+    "japanese": "シード",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Seed",
+      "zh-cn": "席德",
+      "ja": "シード"
+    },
+    "name_source": {
+      "english": "Seed",
+      "chinese": "席德 / 芙罗拉"
+    }
+  },
+  "Seele": {
+    "charTags": "seele_(honkai_star_rail), very long hair, purple hair, purple eyes,",
+    "headwear": "",
+    "appearance_a": "black shorts, bodysuit, detached sleeves, purple scarf, thigh strap, boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "希儿",
+    "japanese": "ゼーレ",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Seele",
+      "zh-cn": "希儿",
+      "ja": "ゼーレ"
+    },
+    "name_source": {
+      "english": "Seele",
+      "chinese": "希儿"
+    }
+  },
+  "Serval": {
+    "charTags": "ServalHSR, blonde hair, blue hair, multicolored hair, blue eyes, bangs, hair between eyes, streaked hair, gradient hair, earrings,",
+    "headwear": "",
+    "appearance_a": "white blue jacket, black pantyhose, blue dress, jewelry, choker, thighhighs, navel, skirt, detached sleeves, cross earrings, midriff, tattoo,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "希露瓦",
+    "japanese": "セーバル",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Serval",
+      "zh-cn": "希露瓦",
+      "ja": "セーバル"
+    },
+    "name_source": {
+      "english": "Serval",
+      "chinese": "希露瓦"
+    }
+  },
+  "Shenhe": {
+    "charTags": "shenhe_(genshin_impact), very long hair, (hair ornament), white hair, grey eyes,",
+    "headwear": "",
+    "appearance_a": "black bodysuit, detached sleeves, puffy sleeves, black gloves, breast curtain,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "申鹤",
+    "japanese": "申鶴",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Shenhe",
+      "zh-cn": "申鹤",
+      "ja": "申鶴"
+    },
+    "name_source": {
+      "english": "Shenhe",
+      "chinese": "申鹤"
+    }
+  },
+  "Shinku": {
+    "charTags": "shinkunte, long hair, multicolored hair, black hair, red hair, streaked hair, pink eyes, horns, tail,",
+    "headwear": "",
+    "appearance_a": "white shirt, white thighhighs, shoes,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "真红",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Shinku",
+      "zh-cn": "真红",
+      "ja": "真紅（しんく）"
+    },
+    "name_source": {
+      "english": "Shinku",
+      "chinese": "真红"
+    }
+  },
+  "Shorekeeper": {
+    "charTags": "shorekeeper \\(wuthering waves\\),purple eyes, long hair, veil, hair between eyes, ",
+    "headwear": "",
+    "appearance_a": "dress, alternate costume, sandals, armlet, white dress, high heels, white dress, butterfly,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "守岸人",
+    "japanese": "ショアキーパー",
+    "bodyType": 2,
+    "personalityTone": "dandere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Shorekeeper",
+      "zh-cn": "守岸人",
+      "ja": "ショアキーパー"
+    },
+    "name_source": {
+      "english": "Shorekeeper",
+      "chinese": "守岸人"
+    }
+  },
+  "Si": {
+    "charTags": "Si (Arknights), light green hair, black hair, streaked hair, double bun, low_twintails, metal headpiece, hair intakes, blue eyes, red eyeliner, long earrings, pointed ears, dragon horns, dragon tail,",
+    "headwear": "",
+    "appearance_a": "thigh strap,  gradient arms,colored extremities, chest jewelry,   halterneck,sleeveless dress, layered skirt ,chest cutout,   detached sleeves,wide sleeves, yellow bead bracelet,  white thigh strap, gradient socks,ankle socks,  black boots,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "祀",
+    "japanese": "スー",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Si",
+      "zh-cn": "祀",
+      "ja": "スー"
+    },
+    "name_source": {
+      "english": "Si",
+      "chinese": "祀"
+    }
+  },
+  "Sigewinne": {
+    "charTags": "sigewinne, sigewinne (genshin impact), hair ornament, red eyes, animal ears, twintails, blue hair, purple hair, multicolored hair, gradient hair, low twintails, short twintails, pom pom hair ornament, hat, white headwear,",
+    "headwear": "",
+    "appearance_a": "long sleeves, gloves, dress, bow, pantyhose, puffy sleeves, white gloves, bowtie, apron, blue dress, pink bow, white apron, white pantyhose, pom pom (clothes), nurse cap, pink bowtie, aqua dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "希格雯",
+    "japanese": "シグウィン",
+    "bodyType": 5,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Sigewinne",
+      "zh-cn": "希格雯",
+      "ja": "シグウィン"
+    },
+    "name_source": {
+      "english": "Sigewinne",
+      "chinese": "希格雯"
+    }
+  },
+  "Sigrid de L'Azur": {
+    "charTags": "sigridzzz char, blue eyes, blonde hair, very long hair, braid, side braid, hair ornament, 1girl, pointy ears, orange hair, long hair, multicolored eyes, white headwear,",
+    "headwear": "white headwear,",
+    "appearance_a": "armlet, gloves, armor, thighhighs, boobplate, necktie, blue necktie, bodystocking, garter straps, black gloves, single detached sleeve, bare shoulders, elbow gloves,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "希格莉德・德拉叙尔",
+    "japanese": "シグリッド・ドゥ・ラズール",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Sigrid",
+      "zh-cn": "希格莉德・德拉叙尔",
+      "ja": "シグリッド・ドゥ・ラズール"
+    },
+    "name_source": {
+      "english": "Sigrid de L'Azur",
+      "chinese": "希格莉德・德拉叙尔"
+    }
+  },
+  "Sigrika": {
+    "charTags": "Sigrika, pointy ears, orange hair, long hair, blue eyes, multicolored eyes, purple ribbon, white headwear,",
+    "headwear": "",
+    "appearance_a": "white shirt, white gloves, fingerless gloves, white dress, short shorts, thigh strap, black shorts, tassel, off-shoulder dress, single fingerless glove, bow, bracelet, blue shorts, purple shorts,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "西格莉卡",
+    "japanese": "シグリカ",
+    "bodyType": 4,
+    "personalityTone": "curious",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Sigrika",
+      "zh-cn": "西格莉卡",
+      "ja": "シグリカ"
+    },
+    "name_source": {
+      "english": "Sigrika",
+      "chinese": "西格莉卡"
+    }
+  },
+  "Silver Wolf": {
+    "charTags": "silver_wolf_(honkai_star_rail),hair bow,drill ponytail, grey hair, silver eyes, braid, hairband, short hair, black hairband, hair ornament, twin braids, hairband,",
+    "headwear": "eyewear on head,",
+    "appearance_a": "black jacket, crop top, black shorts, fingerless gloves, thigh strap, fishnet socks,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "银狼",
+    "japanese": "銀狼",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Silver Wolf",
+      "zh-cn": "银狼",
+      "ja": "銀狼"
+    },
+    "name_source": {
+      "english": "Silver Wolf",
+      "chinese": "银狼"
+    }
+  },
+  "Skirk": {
+    "charTags": "skirk \\(genshin impact\\), white hair, red eyes, very long hair, hair ornament, butterfly hair ornament, earrings,",
+    "headwear": "",
+    "appearance_a": "gloves, detached sleeves, gradient legwear,  jewelry,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "丝柯克",
+    "japanese": "スカーク",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Skirk",
+      "zh-cn": "丝柯克",
+      "ja": "スカーク"
+    },
+    "name_source": {
+      "english": "Skirk",
+      "chinese": "丝柯克"
+    }
+  },
+  "Soldier 0 - Anby": {
+    "charTags": "braid, short hair, hair ornament, twin braids, green eyes, silver hair, side ponytail, hair intakes,",
+    "headwear": "hairband, black hairband,",
+    "appearance_a": "ascot, gloves, fingerless gloves, thighhighs, black thighhighs, skirt, thighhighs, boots, high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "零号·安比 / 大安比",
+    "japanese": "0号・アンビー",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Soldier 0 - Anby",
+      "zh-cn": "零号·安比",
+      "ja": "0号・アンビー"
+    },
+    "name_source": {
+      "english": "Soldier 0 - Anby",
+      "chinese": "零号·安比 / 大安比"
+    }
+  },
+  "Soldier 11": {
+    "charTags": "soldier 11 \\(zenless zone zero\\), side ponytail, orange-tinted eyewear, tinted eyewear, goggles, hair intakes, scrunchie,",
+    "headwear": "",
+    "appearance_a": "gloves,black gloves,sleeveless,pants,sleeveless jacket,black pants, backpack, detached sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "11号",
+    "japanese": "11号",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Soldier 11",
+      "zh-cn": "11号",
+      "ja": "11号"
+    },
+    "name_source": {
+      "english": "Soldier 11",
+      "chinese": "11号"
+    }
+  },
+  "Soukaku": {
+    "charTags": "Soukaku, blue skin, white hair, sideburns, oni horns, oni ears, ear piercings, orange eyes, demon tail, eyelashes,",
+    "headwear": "",
+    "appearance_a": "green jacket, white shirt, black tie, choker, black metal wristbands, black skirt, thigh strap, black shoes,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "苍角",
+    "japanese": "蒼角",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Soukaku",
+      "zh-cn": "苍角",
+      "ja": "蒼角"
+    },
+    "name_source": {
+      "english": "Soukaku",
+      "chinese": "苍角"
+    }
+  },
+  "Sparkle": {
+    "charTags": "sparkle_(honkai_star_rail), twintails, very long hair,black hair, pink eyes, multicolored hair, braid, multicolored hair, grey hair, rabbit ears, hat, black headwear, white hair,",
+    "headwear": "mask on head, hat, black headwear,",
+    "appearance_a": "red kimono, detached sleeves, sash, obi, black gloves, sandals,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "花火",
+    "japanese": "スパークル",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Sparkle",
+      "zh-cn": "花火",
+      "ja": "スパークル"
+    },
+    "name_source": {
+      "english": "Sparkle",
+      "chinese": "花火"
+    }
+  },
+  "Sparxie": {
+    "charTags": "sparxiedef, very long hair, bangs, grey hair, braid, twintails, heart facial mark, diamond facial mark, white diamond, pink eyes, symbol-shaped pupils, frilled choker,",
+    "headwear": "mini hat, small hat, hat with rabbit ears, top hat, beret, black hat, heart-shaped eyewear, red-tinted eyewear,",
+    "appearance_a": "bow, single glove, black glove, long sleeves, shoulder cutout, white skirt, frilled choker, frilled skirt, japanese clothes, choker, wide sleeves, kimono, sash, bell, obi, red kimono,",
+    "appearance_b": "red shirt, plaid shirt, off shoulder, sleeveless shirt, long sleeves, bare shoulders, shirt ribbon, buttons, navel, red skirt, plaid skirt, miniskirt, belt, black jacket, fur-trimmed jacket, open jacket, fingerless gloves, black gloves, thigh strap, black thighhighs,",
+    "appearance_c": "black shirt, off-shoulder shirt, long sleeves, puffy long sleeves, miniskirt, pleated skirt, red skirt, grey ribbon on her waist, uneven legwear, kneehighs, fishnets, fishnet thighhighs, black leg warmers,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "火花",
+    "japanese": "火花（hibana）",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "hsr",
+    "charTags_b": "sparxiedan, very long braid, bangs, hair bun, red eyes, symbol-shaped pupils, grey hair, red hair, multicolored hair, heart facial mark, diamond facial mark, white diamond, small horns, pink horns, black horns,",
+    "charTags_c": "sparxiecand, very long hair, grey hair, bangs, twintails, braid, red eyes, symbol-shaped pupils, heart facial mark, diamond facial mark, white diamond, hairclip, x hair ornament, hair ribbon, black ribbon,",
+    "display_names": {
+      "en": "Sparxie",
+      "zh-cn": "火花",
+      "ja": "火花（hibana）"
+    },
+    "name_source": {
+      "english": "Sparxie",
+      "chinese": "火花"
+    }
+  },
+  "Stelle": {
+    "charTags": "ste-hs, yellow eyes, grey hair, long hair,",
+    "headwear": "",
+    "appearance_a": "def, gloves, black coat, sleeves rolled up, open clothes, white sweater, off shoulder sweater, black skirt, yellow trim, thigh strap, boots, black gloves, ribbon,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "星",
+    "japanese": "開拓者",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Stelle",
+      "zh-cn": "星",
+      "ja": "開拓者"
+    },
+    "name_source": {
+      "english": "Stelle",
+      "chinese": "星"
+    }
+  },
+  "Sucrose": {
+    "charTags": "sucrose_(genshin_impact), green hair, amber eyes, long hair,",
+    "headwear": "hat,eyewear,",
+    "appearance_a": "white jacket, blue skirt, fur collar, gloves, thighhighs,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "砂糖",
+    "japanese": "スクロース",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Sucrose",
+      "zh-cn": "砂糖",
+      "ja": "スクロース"
+    },
+    "name_source": {
+      "english": "Sucrose",
+      "chinese": "砂糖"
+    }
+  },
+  "Suisui": {
+    "charTags": "suisui \\(wuthering waves\\), blonde hair, forehead mark, hair ornament, yellow eyes, gold hairstick,",
+    "headwear": "",
+    "appearance_a": "earrings,jewelry,dark red gloves,dress,thigh ring,white dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "穗穗",
+    "japanese": "穂穂",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Suisui",
+      "zh-cn": "穗穗",
+      "ja": "穂穂"
+    },
+    "name_source": {
+      "english": "Suisui",
+      "chinese": "穗穗"
+    }
+  },
+  "Sunna": {
+    "charTags": "chinatsu, medium hair, green hair, ponytail, hair ornament, green eyes / pink eyes / multicolored eyes, small breasts,",
+    "headwear": "",
+    "appearance_a": "collarbone, nail polish,  white shirt, short sleeves, puffy short sleeves, detached sleeves, sleeves past wrists, layered sleeves, arm warmers, pink gloves, black skirt, thigh strap, single thighhigh, white thighhighs, striped thighhighs, socks, loose socks, leg warmers, asymmetrical legwear, torn legwear, red necktie, black choker, belt, frills, socks, jewelry, earrings, hairclip, pink footwear, shoes, backpack, wings,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "千夏蕾咪 / 千夏",
+    "japanese": "千夏(ちなつ)",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Sunna",
+      "zh-cn": "千夏蕾咪",
+      "ja": "千夏(ちなつ)"
+    },
+    "name_source": {
+      "english": "Sunna",
+      "chinese": "千夏蕾咪 / 千夏"
+    }
+  },
+  "Suoming": {
+    "charTags": "suoming \\(wuthering waves\\), twintails, hair ornament, pink hair, red eyes, red hair, double bun,",
+    "headwear": "",
+    "appearance_a": "black boots,tassel,detached sleeves,sleeveless dress,short dress,black dress,choker,jacket on shoulders,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "锁暝",
+    "japanese": "鎖暝",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Suoming",
+      "zh-cn": "锁暝",
+      "ja": "鎖暝"
+    },
+    "name_source": {
+      "english": "Suoming",
+      "chinese": "锁暝"
+    }
+  },
+  "Sushang": {
+    "charTags": "sushang_(honkai_star_rail), very long hair,hair flower,twintails, brown hair, brown eyes,",
+    "headwear": "",
+    "appearance_a": "dress, detached sleeves, shoulder cutout, thigh strap,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "素裳",
+    "japanese": "スーサン",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Sushang",
+      "zh-cn": "素裳",
+      "ja": "スーサン"
+    },
+    "name_source": {
+      "english": "Sushang",
+      "chinese": "素裳"
+    }
+  },
+  "Taffy": {
+    "charTags": "taffy (ananta), pink eyes, rabbit ears, ahoge, low twintails, arrow hair clip, white hair,",
+    "headwear": "",
+    "appearance_a": "print shirt, collar camera, fur-trimmed jacket, shoulder insignia,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "塔菲",
+    "japanese": "—",
+    "bodyType": 5,
+    "gameId": "ananta",
+    "display_names": {
+      "en": "Taffy",
+      "zh-cn": "塔菲",
+      "ja": "—"
+    },
+    "name_source": {
+      "english": "Taffy",
+      "chinese": "塔菲"
+    }
+  },
+  "Tangtang": {
+    "charTags": "tangtang_(arknights), blue eyes, grey hair, gradient hair, black hair, eyepatch, short hair, jagged hairclip, long sidelocks, ahoge, tiger ears, tiger tail, earrings, long ponytail,",
+    "headwear": "",
+    "appearance_a": "hood down, cropped  shrug, breast curtains, tassel , bead necklace , whistle, fingerless gloves , sideless shirt, short sleeves, transparent sleeves ,   black shorts, thigh holster, thigh strap ,  kneehighs, paw sneakers,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "汤汤",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Tangtang",
+      "zh-cn": "汤汤",
+      "ja": "タンタン"
+    },
+    "name_source": {
+      "english": "Tangtang",
+      "chinese": "汤汤"
+    }
+  },
+  "Taoqi": {
+    "charTags": "taoqi \\(wuthering waves\\), pink eyes, pink hair, hair over one eye, hair ornament, ahoge,",
+    "headwear": "",
+    "appearance_a": "gloves, black belt, black gloves, dress, black pantyhose, belt, pantyhose, tassel, white dress,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "桃祈",
+    "japanese": "桃祈",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Taoqi",
+      "zh-cn": "桃祈",
+      "ja": "桃祈"
+    },
+    "name_source": {
+      "english": "Taoqi",
+      "chinese": "桃祈"
+    }
+  },
+  "The Dahlia": {
+    "charTags": "constance \\(honkai star rail\\), purple eyes, au ra, mole, mole under eye, horns, hair between eyes, very long hair, black hair, demon tail, tail, brown hair, long hair, witch hat, hat, hat flower, hat ornament,",
+    "headwear": "hat, white headwear, sun hat, hat flower, witch hat, hat ornament,",
+    "appearance_a": "necklace, black tattoos, dress, white dress,gloves, white gloves, flower, thigh strap, elbow gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "大丽花 / 康士坦丝",
+    "japanese": "ダリア",
+    "bodyType": 2,
+    "personalityTone": "yandere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "The Dahlia",
+      "zh-cn": "大丽花",
+      "ja": "ダリア"
+    },
+    "name_source": {
+      "english": "The Dahlia",
+      "chinese": "大丽花 / 康士坦丝"
+    }
+  },
+  "The Herta": {
+    "charTags": "the herta, the herta (honkai: star rail), brown hair, long hair, purple eyes, witch hat, black hat, hat, hat flower, hat ornament,",
+    "headwear": "",
+    "appearance_a": "bare shoulders, black dress, detached sleeves, long sleeves, pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "大黑塔",
+    "japanese": "ヘルタ（真）",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "The Herta",
+      "zh-cn": "大黑塔",
+      "ja": "ヘルタ（真）"
+    },
+    "name_source": {
+      "english": "The Herta",
+      "chinese": "大黑塔"
+    }
+  },
+  "Tingyun": {
+    "charTags": "tingyun_(honkai_star_rail), very long hair, tail, fox tail,fox girl, brown hair, green eyes,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, sleeveless dress, detached sleeves, wide sleeves, black heels,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "停云",
+    "japanese": "ティンユン",
+    "bodyType": 4,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Tingyun",
+      "zh-cn": "停云",
+      "ja": "ティンユン"
+    },
+    "name_source": {
+      "english": "Tingyun",
+      "chinese": "停云"
+    }
+  },
+  "Topaz": {
+    "charTags": "topaz_(honkai_star_rail),hair ornament, grey hair, blue eyes, medium hair,",
+    "headwear": "",
+    "appearance_a": "white collared shirt, detached sleeves, black shorts, black gloves, belt, thigh strap, knee boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "托帕 & 帕姆比",
+    "japanese": "トパーズ & カブ",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Topaz",
+      "zh-cn": "托帕",
+      "ja": "トパーズ"
+    },
+    "name_source": {
+      "english": "Topaz",
+      "chinese": "托帕"
+    }
+  },
+  "Tribbie": {
+    "charTags": "tribbie, wings,",
+    "headwear": "",
+    "appearance_a": "detached collar, puffy long sleeves, black gloves, black and white boots,",
+    "appearance_b": "detached collar, puffy long sleeves, black gloves, black and white boots,",
+    "appearance_c": "detached collar, puffy long sleeves, black gloves, black and white boots,",
+    "appearance_d": "golden choker, off shoulder, bracelet, long dress, gold sandals,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "缇宝",
+    "japanese": "トリビー",
+    "bodyType": 5,
+    "personalityTone": "curious",
+    "gameId": "hsr",
+    "charTags_b": "trianne, hair over one eye, wings,",
+    "charTags_c": "trinnon, covered eyes, flower circlet, wings,",
+    "charTags_d": "tribios,",
+    "display_names": {
+      "en": "Tribbie",
+      "zh-cn": "缇宝",
+      "ja": "トリビー"
+    },
+    "name_source": {
+      "english": "Tribbie",
+      "chinese": "缇宝"
+    }
+  },
+  "Trigger": {
+    "charTags": "trigger \\(zenless zone zero\\), long hair, hair ornament, ponytail, mask, covered eyes, blindfold,",
+    "headwear": "",
+    "appearance_a": "gloves, fingerless gloves, black gloves, jacket, pants, bodysuit,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "扳机",
+    "japanese": "トリガー",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Trigger",
+      "zh-cn": "扳机",
+      "ja": "トリガー"
+    },
+    "name_source": {
+      "english": "Trigger",
+      "chinese": "扳机"
+    }
+  },
+  "Tsukishiro Yanagi": {
+    "charTags": "Yanagi, perfect curves, very long hair, pink hair, glasses, earphone, purple eyes, horned shoulder plate,",
+    "headwear": "",
+    "appearance_a": "office clothes, white shirt, black bowtie, shoulder plate, horned shoulder plate, long sleeves, black gloves, black sash, belts, gold sash ornaments, gold sash clasp, black skirt, thighs, high heels,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "月城柳",
+    "japanese": "月城柳",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Yanagi",
+      "zh-cn": "月城柳",
+      "ja": "月城柳"
+    },
+    "name_source": {
+      "english": "Tsukishiro Yanagi",
+      "chinese": "月城柳"
+    }
+  },
+  "Typhoeus": {
+    "charTags": "typhoeusdef, purple hair, long hair, drill hair, twin drills, sidelocks, hair ribbon, purple eyes, slit pupils, horns, dragon tail,",
+    "headwear": "",
+    "appearance_a": "black gloves, white shirt, sleeveless shirt, long sleeves, black sleeves, detached sleeves, black shorts underskirt, black skirt, high-waist skirt, black thighhighs, boots, shoes,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "提弗洛斯",
+    "japanese": "ティフォロス",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Typhoeus",
+      "zh-cn": "提弗洛斯",
+      "ja": "ティフォロス"
+    },
+    "name_source": {
+      "english": "Typhoeus",
+      "chinese": "提弗洛斯"
+    }
+  },
+  "Ukinami Yuzuha": {
+    "charTags": "ukinami yuzuha, green eyes, twin braids, hair bow, ahoge, red hair, long hair, braid, striped thighhighs, very long hair,",
+    "headwear": "",
+    "appearance_a": "skirt, bow, thighhighs, tail,boots, striped clothes, sailor collar, black footwear,white bow, thigh strap, black skirt, choker, black sailor collar, asymmetrical legwear, long sleeves, pleated skirt,bowtie, single thighhigh,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "浮波柚叶 / 柚叶",
+    "japanese": "浮波柚葉",
+    "bodyType": 4,
+    "personalityTone": "koakuma",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Yuzuha",
+      "zh-cn": "浮波柚叶",
+      "ja": "浮波柚葉"
+    },
+    "name_source": {
+      "english": "Ukinami Yuzuha",
+      "chinese": "浮波柚叶 / 柚叶"
+    }
+  },
+  "Varesa": {
+    "charTags": "v4r3s4, cow girl, cow horns, mismatched horns, multicolored horns, bandaid on horn, cow tail, pink tail, cow ears, purple eyes, two-tone hair, pink hair, aqua hair, streaked hair, ahoge, hair intakes, hair between eyes, crossed bangs, twintails, twin braids, x hair ornament, long hair, horn ornament, ear bell, neck tattoo, multicolored hairband, bandaid on cheek,",
+    "headwear": "",
+    "appearance_a": "multiple rings, two-tone bowtie, aqua bowtie, pink bowtie, fur-trimmed sweater, yellow sweater, tied sweater, cropped sweater, clothing cutout, black tank top, detached sleeves, long sleeves, yellow sleeves, arm ribbon, pink belt, black skirt, pleated skirt, miniskirt, bandaid on thigh, asymmetrical legwear, single thighhigh, white thighhighs, pink knee brace, white leg warmers,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "瓦雷莎",
+    "japanese": "ヴァレサ",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Varesa",
+      "zh-cn": "瓦雷莎",
+      "ja": "ヴァレサ"
+    },
+    "name_source": {
+      "english": "Varesa",
+      "chinese": "瓦雷莎"
+    }
+  },
+  "Velina": {
+    "charTags": "Velina_zzz, purple eyes, bang, bang over eye, sidelock, pointy ears, long hair, braid, bow on hair, white hair,",
+    "headwear": "",
+    "appearance_a": "blue dress,bare shoulders,collar,black belt,silver trim,white stockings,blue sleeves,black gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "维琳娜·艾嘉德",
+    "japanese": "ヴェリナ・エガード",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Velina",
+      "zh-cn": "维琳娜·艾嘉德",
+      "ja": "ヴェリナ・エガード"
+    },
+    "name_source": {
+      "english": "Velina",
+      "chinese": "维琳娜·艾嘉德"
+    }
+  },
+  "Verina": {
+    "charTags": "verina \\(wuthering waves\\), long hair, very long hair, twintails, low twintails, green bow, bow, green hairband, hair ornament,",
+    "headwear": "",
+    "appearance_a": "gloves, fingerless gloves, white gloves, dress, green footwear, sleeveless, black choker, shorts, socks, white shorts, sleeveless,",
+    "holding": "bow",
+    "animalFeatured": false,
+    "chinese": "维里奈",
+    "japanese": "ヴェリーナ",
+    "bodyType": 5,
+    "personalityTone": "earnest",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Verina",
+      "zh-cn": "维里奈",
+      "ja": "ヴェリーナ"
+    },
+    "name_source": {
+      "english": "Verina",
+      "chinese": "维里奈"
+    }
+  },
+  "Vesna": {
+    "charTags": "vesnadef, blonde hair, streaked hair, pointy ears, very long hair, ponytail, hair between eyes, drill hair, long sidelocks, aqua eyes, white pupils, hair bow, tiara, blue gem, hair ornament, fairy wings,",
+    "headwear": "",
+    "appearance_a": "white gloves, elbow gloves, official alternate costume, multicolored dress, aqua dress, light blue dress, gold trim, fur trim, single detached sleeves, frilled sleeves, long sleeves, detached collar, white skirt, miniskirt, white pantyhose, aqua boots, knee boots,",
+    "holding": "holding wand, wand,",
+    "animalFeatured": false,
+    "chinese": "",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Vesna",
+      "zh-cn": "薇斯纳",
+      "ja": "ヴェスナ"
+    },
+    "name_source": {
+      "english": "Vesna",
+      "chinese": "薇斯纳"
+    }
+  },
+  "Vivian Banshee": {
+    "charTags": "v1v1an, pointy ears, red eyes, mole under eye, multicolored hair, purple hair, white hair, streaked hair, ahoge, swept bangs, drill hair, drill sidelocks, long hair, two-tone hairband, black hairband, purple hairband, purple hair bow,",
+    "headwear": "",
+    "appearance_a": "black shoulder cape, short cape, purple gemstone, multiple bows, purple bowtie, black bowtie, purple ascot, frilled ascot, white dress, frilled dress, pleated dress, center frills, sideboob cutout, long sleeves, wide sleeves, frilled sleeves, black corset, two-tone skirt, black skirt, purple skirt, frilled skirt, layered skirt, black pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "薇薇安·班希 / 薇薇安",
+    "japanese": "ビビアン",
+    "bodyType": 4,
+    "personalityTone": "tsundere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Vivian",
+      "zh-cn": "薇薇安·班希",
+      "ja": "ビビアン"
+    },
+    "name_source": {
+      "english": "Vivian Banshee",
+      "chinese": "薇薇安·班希 / 薇薇安"
+    }
+  },
+  "Vodyanitsa": {
+    "charTags": "vodyanitsa \\(genshin impact\\), hair flower, green hair, purple eyes, head fins, hair ornament,very long hair,",
+    "headwear": "",
+    "appearance_a": "dress, white dress, sandals, jewelry, bare shoulders, shoulder tattoo, thigh tattoo,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "",
+    "japanese": "",
+    "bodyType": 4,
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Vodyanitsa",
+      "zh-cn": "沃雅妮莎",
+      "ja": "ヴォジャニーツァ"
+    },
+    "name_source": {
+      "english": "Vodyanitsa",
+      "chinese": "沃雅妮莎"
+    }
+  },
+  "Xaihi": {
+    "charTags": "xaihi, dragon_tail, green_tail,",
+    "headwear": "",
+    "appearance_a": "bare_shoulders, sideboob, multicolored_dress, black_dress, green_dress, white_dress, belt_pouch, frilled_sleeves, frills, long_sleeves, wide_sleeves, single_glove, black_gloves, pearl_bracelet, bracelet, pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "赛希",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Xaihi",
+      "zh-cn": "赛希",
+      "ja": "ザイヒ"
+    },
+    "name_source": {
+      "english": "Xaihi",
+      "chinese": "赛希"
+    }
+  },
+  "Xiangling": {
+    "charTags": "xiangling_(genshin_impact), dark blue hair, golden eyes, short hair, long hair, black hair, hair ornament, very long hair, blue hair, multicolored hair, green hair, two-tone hair, aqua eyes, aqua hair, colored inner hair,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, sleeveless dress, fingerless gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "香菱",
+    "japanese": "香菱",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Xiangling",
+      "zh-cn": "香菱",
+      "ja": "香菱"
+    },
+    "name_source": {
+      "english": "Xiangling",
+      "chinese": "香菱"
+    }
+  },
+  "Xianyun": {
+    "charTags": "xianyun, xianyun (genshin impact), long hair, black hair, hair ornament, very long hair, blue hair, multicolored hair, green hair, glasses, two-tone hair, aqua eyes, aqua hair, colored inner hair, tassel earrings, earrings, semi-rimless eyewear, red-framed eyewear,",
+    "headwear": "",
+    "appearance_a": "long sleeves, gloves, dress, jewelry, black gloves, black dress, tassel,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "闲云",
+    "japanese": "閑雲",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Xianyun",
+      "zh-cn": "闲云",
+      "ja": "閑雲"
+    },
+    "name_source": {
+      "english": "Xianyun",
+      "chinese": "闲云"
+    }
+  },
+  "Xilonen": {
+    "charTags": "xilonen \\(genshin impact\\), animal ears, tail, braid, long hair, jewelry, hair ornament, tiger ears, tiger girl, tiger tail,",
+    "headwear": "",
+    "appearance_a": "shorts, denim shorts, high heels, denim, short shorts,  jacket,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "希诺宁",
+    "japanese": "シロネン",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Xilonen",
+      "zh-cn": "希诺宁",
+      "ja": "シロネン"
+    },
+    "name_source": {
+      "english": "Xilonen",
+      "chinese": "希诺宁"
+    }
+  },
+  "Xinyan": {
+    "charTags": "xinyan_(genshin_impact), short_twintails, brown hair, amber eyes,",
+    "headwear": "",
+    "appearance_a": "black dress, shorts, detached sleeves, kneehighs, thigh strap, chinese clothes,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "辛焱",
+    "japanese": "辛炎",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Xinyan",
+      "zh-cn": "辛焱",
+      "ja": "辛炎"
+    },
+    "name_source": {
+      "english": "Xinyan",
+      "chinese": "辛焱"
+    }
+  },
+  "Xueyi": {
+    "charTags": "xueyi_(honkai_star_rail),black hair, red eyes, medium hair,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, white shirt, black shorts, black gloves, gauntlets, sash, white pantyhose,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "雪衣",
+    "japanese": "セツイ",
+    "bodyType": 4,
+    "personalityTone": "kuudere",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Xueyi",
+      "zh-cn": "雪衣",
+      "ja": "セツイ"
+    },
+    "name_source": {
+      "english": "Xueyi",
+      "chinese": "雪衣"
+    }
+  },
+  "Yae Miko": {
+    "charTags": "yae_miko_(genshin_impact), tail, fox tail, very long hair, hair ornament, pink hair, purple eyes,",
+    "headwear": "",
+    "appearance_a": "japanese clothes, white shirt, red skirt, detached sleeves, wide sleeves,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "八重神子",
+    "japanese": "八重神子",
+    "bodyType": 2,
+    "personalityTone": "koakuma",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Miko",
+      "zh-cn": "八重神子",
+      "ja": "八重神子"
+    },
+    "name_source": {
+      "english": "Yae Miko",
+      "chinese": "八重神子"
+    }
+  },
+  "Yanfei": {
+    "charTags": "yanfei_(genshin_impact), very long hair, orange hair, green eyes,",
+    "headwear": "hat,",
+    "appearance_a": "red vest, crop top, detached sleeves, long sleeves, red skirt, boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "烟绯",
+    "japanese": "煙緋",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Yanfei",
+      "zh-cn": "烟绯",
+      "ja": "煙緋"
+    },
+    "name_source": {
+      "english": "Yanfei",
+      "chinese": "烟绯"
+    }
+  },
+  "Yangyang": {
+    "charTags": "YangWuwa, forehead mark, black hair, long hair, black eyes, streaked hair, hair bow,",
+    "headwear": "",
+    "appearance_a": "YangWuwa, Yng_Def, forehead mark, black hair, long hair, black eyes, streaked hair, chinese clothes, sleeveless dress, blue dress, black belt, blue tassel, waist cape, black skirt, high-waist skirt, cleavage cutout, chinese knot, brown pantyhose, single half glove, black gloves, blue headwear, beret, black bow, hair bow, earrings, black footwear, ankle boots,",
+    "appearance_b": "YangWuwa, Yng_Idl, forehead mark, black hair, long hair, black eyes, streaked hair, frilled shirt, center frills, strapless shirt, collared jacket, white jacket, open jacket, puffy sleeves, short sleeves, white sleeves, blue bowtie, striped bow, gold trim, underbust, collarbone, detached collar, collared collar, black choker, black belt, multiple belts, white skirt, pleated skirt, white belt, loose belt, frilled wrist cuffs, black gloves, gloves, mini hat, top hat, blue hat, black shorts, black bow, cleavage, shorts under skirt, two-sided skirt, o-ring strap, chest strap, blue trim, black thigh strap, belt pouch, white knee boots,",
+    "appearance_c": "YangWuwa, Yng_Wtr, forehead mark, black hair, long hair, black eyes, streaked hair, frilled dress, enmaided, maid headdress, black dress, black corset, corset, frilled apron, maid apron, layered skirt, black skirt, blue neck ribbon, blue bow, chest harness, o-ring choker, white blouse, blouse, hair ribbon, blue ribbon, black coller, cleavage, center frills, frilled sleeves, black thighhighs, puffy short sleeves, white sleeves, sleeve garter, black gloves, fingerless gloves,",
+    "appearance_d": "YangWuwa, Yng_Cas, forehead mark, black hair, long hair, black eyes, streaked hair, halter dress, halterneck, pendant choker, hairclip, two-sided bow, black bow, hair bow, light blue ribbon, white dress, chest ribbon, cleavage, single earring, yellow bag, shoulder bag, white headwear, beret,",
+    "appearance_e": "YangWuwa, Yng_Paj, forehead mark, black hair, long hair, black eyes, streaked hair, frilled camisole, blue tassel, bra peek, spaghetti strap, dark blue camisole, gradient camisole, light blue shorts, shorts, pajamas, white hoodie, open hoodie, pin, puffy long sleeves, white sleeves, sleeves past wrists,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "秧秧",
+    "japanese": "秧秧",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Yangyang",
+      "zh-cn": "秧秧",
+      "ja": "秧秧"
+    },
+    "name_source": {
+      "english": "Yangyang",
+      "chinese": "秧秧"
+    }
+  },
+  "Yao Guang": {
+    "charTags": "yaoguang \\(honkai star rail\\), white hair, blue eyes, tassel earrings, red tassel, hair ornament, blue nails,",
+    "headwear": "",
+    "appearance_a": "bracelet,white dress,high heels,sleeveless dress,chinese clothes,blue dress,jewelry,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "爻光",
+    "japanese": "爻光（コウコウ）",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Guang",
+      "zh-cn": "爻光",
+      "ja": "爻光（コウコウ）"
+    },
+    "name_source": {
+      "english": "Yao Guang",
+      "chinese": "爻光"
+    }
+  },
+  "Yaoyao": {
+    "charTags": "yaoyao_(genshin_impact), brown hair, red eyes, medium hair,double buns,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, green dress, long sleeves, puffy long sleeves, bloomers, fur trim,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "瑶瑶",
+    "japanese": "ヨォーヨ",
+    "bodyType": 5,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Yaoyao",
+      "zh-cn": "瑶瑶",
+      "ja": "ヨォーヨ"
+    },
+    "name_source": {
+      "english": "Yaoyao",
+      "chinese": "瑶瑶"
+    }
+  },
+  "Ye Shunguang": {
+    "charTags": "ye shunguang, long hair, dress, red eyes, brown hair, very long hair, animal ears, hair intakes, hair ornament, leg tattoo, tail, hairband,",
+    "headwear": "",
+    "appearance_a": "white dress, chinese clothes, china dress, pelvic curtain, sleeveless, cleavage cutout, clothing cutout, bare shoulders, black footwear, sleeveless dress,",
+    "appearance_b": "ye shunguang \\(touch of dawnlight\\), red ribbon, ribbon, high heels, red footwear, white socks, dress, socks, bare shoulders, skirt, shirt, white shirt, off shoulder,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "叶瞬光",
+    "japanese": "葉瞬光",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Shunguang",
+      "zh-cn": "叶瞬光",
+      "ja": "葉瞬光"
+    },
+    "name_source": {
+      "english": "Ye Shunguang",
+      "chinese": "叶瞬光"
+    }
+  },
+  "Yelan": {
+    "charTags": "yelan_(genshin_impact), blue hair, green eyes, short hair,bob cut,",
+    "headwear": "",
+    "appearance_a": "blue-and-black bodysuit, asymmetrical skirt panel, fur-trimmed capelet, mismatched gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "夜兰",
+    "japanese": "夜蘭",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Yelan",
+      "zh-cn": "夜兰",
+      "ja": "夜蘭"
+    },
+    "name_source": {
+      "english": "Yelan",
+      "chinese": "夜兰"
+    }
+  },
+  "Yidhari Murphy": {
+    "charTags": "y1dh4ri, squid girl, purple tail, tentacle tail, multiple tails, mole under mouth, ringed eyes, multicolored eyes, purple eyes, yellow eyes, streaked hair, blonde hair, black hair, cowlick, hair between eyes, short hair,",
+    "headwear": "black beret,",
+    "appearance_a": "halter shirt, two-tone shirt, white shirt, black shirt, cleavage cutout, detached sleeves, two-tone sleeves, white sleeves, black sleeves, sleeve bow, high-waist shorts, black shorts, short shorts, half-skirt, yellow skirt, frilled skirt, layered skirt, single garter strap, single thighhigh, black thighhighs, torn thighhighs, single sock, black socks, holding weapon, huge weapon, war hammer,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "伊德海莉·墨菲 / 伊德海莉",
+    "japanese": "イドリー",
+    "bodyType": 4,
+    "personalityTone": "yandere",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Yidhari",
+      "zh-cn": "伊德海莉·墨菲",
+      "ja": "イドリー"
+    },
+    "name_source": {
+      "english": "Yidhari Murphy",
+      "chinese": "伊德海莉·墨菲 / 伊德海莉"
+    }
+  },
+  "Yinlin": {
+    "charTags": "yinlin \\(wuthering waves\\), very long hair, ponytail, hairband, black hairband, hair ornament, mole under eye, earrings, mole,",
+    "headwear": "",
+    "appearance_a": "chinese clothes, dress, black dress, black footwear, gloves,  jewelry, black gloves, elbow gloves, clothing cutout,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "吟霖",
+    "japanese": "吟霖",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Yinlin",
+      "zh-cn": "吟霖",
+      "ja": "吟霖"
+    },
+    "name_source": {
+      "english": "Yinlin",
+      "chinese": "吟霖"
+    }
+  },
+  "Yixuan": {
+    "charTags": "yxn, yellow eyes, white hair, very long hair, ahoge, swept bangs, single hair intake, sidelocks, hairclip,",
+    "headwear": "",
+    "appearance_a": "sleeveless coat, yellow coat, coattails, open coat, white collared shirt, cleavage cutout, sideboob, high-waist shorts, black shorts, thigh strap, single thighhigh, black thighhighs, armlet, uneven gloves, single elbow glove, single fingerless glove, black gloves,",
+    "appearance_b": "bare shoulders, white collared shirt, cleavage cutout, sideboob, high-waist shorts, black shorts, thigh strap, single thighhigh, black thighhighs, armlet, uneven gloves, single elbow glove, single fingerless glove, black gloves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "仪玄",
+    "japanese": "儀玄",
+    "bodyType": 2,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Yixuan",
+      "zh-cn": "仪玄",
+      "ja": "儀玄"
+    },
+    "name_source": {
+      "english": "Yixuan",
+      "chinese": "仪玄"
+    }
+  },
+  "Yoimiya": {
+    "charTags": "yoimiya_(genshin_impact), chest tattoo, blonde hair, golden eyes, medium hair,",
+    "headwear": "",
+    "appearance_a": "kimono, bandaged arm, fingerless gloves, sash, obi, pouch,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "宵宫",
+    "japanese": "宵宮",
+    "bodyType": 4,
+    "personalityTone": "genki",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Yoimiya",
+      "zh-cn": "宵宫",
+      "ja": "宵宮"
+    },
+    "name_source": {
+      "english": "Yoimiya",
+      "chinese": "宵宫"
+    }
+  },
+  "Youhu": {
+    "charTags": "youhu \\(wuthering waves\\), blue hair, blue eyes, virtual youtuber, ahoge, hair ornament, double bun, thick eyebrows, braid, hair between eyes,",
+    "headwear": "",
+    "appearance_a": "blue shirt, black footwear, boots, shorts, gloves, black shorts, sleeveless, thigh strap,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "釉瑚",
+    "japanese": "釉瑚",
+    "bodyType": 5,
+    "personalityTone": "koakuma",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Youhu",
+      "zh-cn": "釉瑚",
+      "ja": "釉瑚"
+    },
+    "name_source": {
+      "english": "Youhu",
+      "chinese": "釉瑚"
+    }
+  },
+  "Yukong": {
+    "charTags": "ykng, fox ears, fox tail, green hair, hair between eyes, purple eyes, hair ornament,",
+    "headwear": "",
+    "appearance_a": "multicolored dress, white dress, black dress, blue dress, bare shoulders, fur trim, tassel, cleavage cutout, clothing cutout, shoulder cutout, side cutout, navel cutout, red thong, black bridal gauntlets,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "驭空",
+    "japanese": "ユーコン",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Yukong",
+      "zh-cn": "驭空",
+      "ja": "ユーコン"
+    },
+    "name_source": {
+      "english": "Yukong",
+      "chinese": "驭空"
+    }
+  },
+  "Yumemizuki Mizuki": {
+    "charTags": "yumemizuki mizuki, long hair, pointy ears, blue hair, cone hair bun, pink eyes, hair bun, purple eyes, maid headdress,",
+    "headwear": "",
+    "appearance_a": "japanese clothes,detached sleeves,frills,apron,kimono,wide sleeves,maid,thigh strap,long sleeves,pink kimono,sash,white apron,heart,socks,obi,seiza,white socks,wa maid,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "梦见月瑞希",
+    "japanese": "夢見月瑞希",
+    "bodyType": 4,
+    "personalityTone": "dandere",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Mizuki",
+      "zh-cn": "梦见月瑞希",
+      "ja": "夢見月瑞希"
+    },
+    "name_source": {
+      "english": "Yumemizuki Mizuki",
+      "chinese": "梦见月瑞希"
+    }
+  },
+  "Yun Jin": {
+    "charTags": "yun_jin_(genshin_impact), very long hair, black hair, red eyes, long hair, hair ornament, blue hair, multicolored hair, green hair, two-tone hair, aqua eyes, aqua hair, colored inner hair,",
+    "headwear": "headwear,",
+    "appearance_a": "chinese clothes, dress, long sleeves, fur trim, capelet, knee boots,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "云堇",
+    "japanese": "雲菫",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Jin",
+      "zh-cn": "云堇",
+      "ja": "雲菫"
+    },
+    "name_source": {
+      "english": "Yun Jin",
+      "chinese": "云堇"
+    }
+  },
+  "Yunli": {
+    "charTags": "Yunli, black hair, orange eyes, low twintails, long hair, hair ornament, tiara,",
+    "headwear": "",
+    "appearance_a": "white dress, halter dress, sleeveless dress, short skirt, teal skirt, midriff cutout, side cutout, bare shoulders, detached sleeves, puffy short sleeves, pleated skirt, necklace, amulet, jewelry, criss-cross, bridal gauntlets, halter,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "云璃",
+    "japanese": "ユンリ",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "hsr",
+    "display_names": {
+      "en": "Yunli",
+      "zh-cn": "云璃",
+      "ja": "ユンリ"
+    },
+    "name_source": {
+      "english": "Yunli",
+      "chinese": "云璃"
+    }
+  },
+  "Yvonne": {
+    "charTags": "endfield style, Yvonne endfield, multicolored horns, black horns, pink horns, pink hair, blue highlights, ahoge, twin ponytails, long hair, hair ringlets, bangs, sideburns, multicolored eyes, yellow eyes, blue eyes, star pupils, pink pupils, short eyebrows, eye bags, green crocodile tail, pink tail-tip, tail strap,",
+    "headwear": "",
+    "appearance_a": "black collar, metal pendant, black and white top, crop top fold, half tucked-in clothes, detached sleeves, shoulder cut, pink transparent sleeves, black shoulder pads, black and pink gloves, black cuffs, midriff, navel, white pants, low-waisted pants, low waist, tilted belt, pants geometry pattern, black boots, pink boot fold,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "伊冯",
+    "japanese": "",
+    "bodyType": 2,
+    "personalityTone": "koakuma",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Yvonne",
+      "zh-cn": "伊冯",
+      "ja": "イヴォンヌ"
+    },
+    "name_source": {
+      "english": "Yvonne",
+      "chinese": "伊冯"
+    }
+  },
+  "Zani": {
+    "charTags": "zani \\(wuthering waves\\), horns, mole, red eyes, tail, demon tail, long hair, grey hair,",
+    "headwear": "",
+    "appearance_a": "gloves, shirt, white shirt, pants, black gloves, necktie, black pants, choker, red necktie, black choker, collared shirt, belt, long sleeves,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "赞妮",
+    "japanese": "ザンニー",
+    "bodyType": 2,
+    "personalityTone": "kuudere",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Zani",
+      "zh-cn": "赞妮",
+      "ja": "ザンニー"
+    },
+    "name_source": {
+      "english": "Zani",
+      "chinese": "赞妮"
+    }
+  },
+  "Zankou": {
+    "charTags": "zankoudef, multicolored eyes, green eyes, pink pupils, very long hair, white hair, high ponytail, hair ornament, swept bangs, purple hair bow,",
+    "headwear": "",
+    "appearance_a": "white kimono, tassel, asymmetrical sleeves, detached sleeves, wide sleeves, black gloves, fingerless gloves, obi, purple skirt, pelvic curtain, thigh strap, purple flower, red rope, okobo,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "残虹",
+    "japanese": "ざんこう",
+    "bodyType": 2,
+    "personalityTone": "yandere",
+    "gameId": "NevernessToEverness",
+    "display_names": {
+      "en": "Zankou",
+      "zh-cn": "残虹",
+      "ja": "ざんこう"
+    },
+    "name_source": {
+      "english": "Zankou",
+      "chinese": "残虹"
+    }
+  },
+  "Zhezhi": {
+    "charTags": "zhezhi \\(wuthering waves\\), jewelry, long hair, earrings, twintails, two side up, white bow, round eyewear, glasses,",
+    "headwear": "",
+    "appearance_a": "thighhighs, dress, white thighhighs, white pantyhose, pantyhose, chinese clothes, black footwear,dress,shoes,clothing cutout,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "折枝",
+    "japanese": "折枝",
+    "bodyType": 4,
+    "personalityTone": "shy",
+    "gameId": "wuwa",
+    "display_names": {
+      "en": "Zhezhi",
+      "zh-cn": "折枝",
+      "ja": "折枝"
+    },
+    "name_source": {
+      "english": "Zhezhi",
+      "chinese": "折枝"
+    }
+  },
+  "Zhu Yuan": {
+    "charTags": "EBYuan, long hair, black hair, multicolored hair, red hair, streaked hair, orange eyes, high ponytail, hair between eyes, metal hairband,",
+    "headwear": "",
+    "appearance_a": "necktie, belt, bodysuit, blue jacket, cropped jacket, holster, police uniform, policewoman, thigh pouch, white shirt, black gloves, collared shirt, open jacket, uniform, black pants, shoulder armor, black gloves, checkered necktie, high-waist pants, tight pants,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "朱鸢",
+    "japanese": "朱鳶",
+    "bodyType": 2,
+    "personalityTone": "earnest",
+    "gameId": "zzz",
+    "display_names": {
+      "en": "Yuan",
+      "zh-cn": "朱鸢",
+      "ja": "朱鳶"
+    },
+    "name_source": {
+      "english": "Zhu Yuan",
+      "chinese": "朱鸢"
+    }
+  },
+  "Zhuang Fangyi": {
+    "charTags": "zhuangfangyi, dragon girl, long black hair (turquoise gradient), green eyes, elf ears,",
+    "headwear": "",
+    "appearance_a": "white-green gradient tech-style sleeveless top,high waist belt,wide-leg pants,black mechanical arm armor,black gloves,black short boots,metal buckles,red decorative details,",
+    "holding": "",
+    "animalFeatured": true,
+    "chinese": "庄方宜",
+    "japanese": "",
+    "bodyType": 4,
+    "personalityTone": "earnest",
+    "gameId": "endfield",
+    "display_names": {
+      "en": "Fangyi",
+      "zh-cn": "庄方宜",
+      "ja": "ゾアン・ファンイ"
+    },
+    "name_source": {
+      "english": "Zhuang Fangyi",
+      "chinese": "庄方宜"
+    }
+  },
+  "Zibai": {
+    "charTags": "zibai \\(genshin impact\\), bright pupils, ponytail, braid, white hair, white pupils, yellow eyes, tassel earrings,",
+    "headwear": "",
+    "appearance_a": "white thighhighs, long sleeves, green dress, thigh boots, cleavage cutout, wide sleeves, chinese clothes, white dress, fur-trimmed sleeves,",
+    "holding": "",
+    "animalFeatured": false,
+    "chinese": "兹白",
+    "japanese": "兹白",
+    "bodyType": 2,
+    "personalityTone": "mature",
+    "gameId": "genshin",
+    "display_names": {
+      "en": "Zibai",
+      "zh-cn": "兹白",
+      "ja": "兹白（シハイク）"
+    },
+    "name_source": {
+      "english": "Zibai",
+      "chinese": "兹白"
+    }
+  }
+}

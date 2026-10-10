@@ -1,0 +1,12 @@
+node_modules/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+worker/state/
+worker_journal.json
+worker_journal.json.tmp
+fresh_test*.sqlite3
+_e2e.js
+_smoketest.js
+.env
+.DS_Store

@@ -1,0 +1,133 @@
+{
+  "default": {
+    "_format": "natural-language",
+    "_note": "经典约会动作库 · 自然语言版。只描述【通用约会动作】——不写地点、不写表情（这两项由独立图层注入：地点走 Locations 面板按 5 段锁定，表情走 emotionForEach / personality 层），与 scene_prompts.json 的 default 池逐条一一对应（各 15/段，合计 75），条数与顺序完全一致，便于整表切换。每条约 8-20 词，一句一段。",
+    "opening": [
+      "She is sipping bubble tea through a straw, holding the cup with both hands.",
+      "She holds out a cup of bubble tea toward the viewer.",
+      "She offers a small gift box in a bag, holding it out toward the viewer.",
+      "She waves one hand in greeting.",
+      "She holds up her phone and looks at the screen.",
+      "She raises a camera and takes a picture.",
+      "She holds a crepe in both hands.",
+      "She holds a balloon by its string.",
+      "She holds an umbrella in one hand.",
+      "She holds out a bouquet toward the viewer.",
+      "She makes a V sign with one hand while holding up her phone.",
+      "She carries a shopping bag at her side.",
+      "She hugs a stuffed toy against her chest.",
+      "She holds out a drink toward the viewer.",
+      "She raises one hand to shade her eyes from the light."
+    ],
+    "daytime": [
+      "She walks forward while sipping bubble tea through a straw.",
+      "She walks while eating a crepe from her hand.",
+      "She walks while licking an ice cream cone.",
+      "She walks with a shopping bag in one hand.",
+      "She bites into a donut held in one hand.",
+      "She leans forward and takes a picture with a camera.",
+      "She reaches out to hand over a bouquet.",
+      "She walks while holding an umbrella.",
+      "She leans forward over her phone, looking at the screen.",
+      "She eats cotton candy from a stick.",
+      "She walks while eating a candy apple on a stick.",
+      "She holds a stick of pocky between her lips.",
+      "She holds a lollipop in one hand.",
+      "She eats takoyaki with a small pick.",
+      "She carries a picnic basket at her side while walking."
+    ],
+    "sunset": [
+      "She shares one pair of earphones with the viewer, one bud each.",
+      "She drinks bubble tea from a cup held in one hand.",
+      "She sits and eats a crepe from her hand.",
+      "She holds a camera up and takes a picture.",
+      "She presses her palm against the viewer's palm to compare hand sizes.",
+      "She holds out a small gift box with both hands.",
+      "She hugs a stuffed toy tightly.",
+      "She holds a bouquet with both hands.",
+      "She sips bubble tea through a straw.",
+      "She holds up her phone and turns the screen toward the viewer.",
+      "She eats a macaron held between her fingers.",
+      "She drinks soda from a cup.",
+      "She eats from a bento box held in one hand.",
+      "She holds out a piece of chocolate toward the viewer.",
+      "She holds out a small keychain on her open palm."
+    ],
+    "night": [
+      "She holds the viewer's hand.",
+      "She puts her arm around the viewer's shoulder.",
+      "She rests her hand on the viewer's cheek.",
+      "She leans her head against the viewer's shoulder.",
+      "She leans in close toward the viewer.",
+      "She tugs at her own sleeve.",
+      "She covers her mouth with one hand.",
+      "She shares one pair of earphones with the viewer.",
+      "She eats a donut held in one hand.",
+      "She drinks from a cup held in both hands.",
+      "She eats popcorn from her hand.",
+      "She eats takoyaki with a small pick.",
+      "She laces her fingers with the viewer's.",
+      "She hugs the viewer.",
+      "She reaches up to pat the viewer's head."
+    ],
+    "confession": [
+      "She holds out a bouquet with both hands.",
+      "She holds out a small gift box.",
+      "She holds the viewer's hands in both of hers.",
+      "She leans in and rests her hand on the viewer's cheek.",
+      "She leans in very close to the viewer.",
+      "She holds out a sealed envelope with both hands.",
+      "She holds the viewer in a tight hug.",
+      "She presses one hand to her own chest.",
+      "She holds the viewer's hand and leans her arm over their shoulder.",
+      "She holds out a drink toward the viewer.",
+      "She laces her fingers with the viewer's.",
+      "She presses her forehead against the viewer's.",
+      "She rises onto her toes and leans in toward the viewer.",
+      "She grips her own sleeve tightly.",
+      "She claps one hand over her mouth."
+    ]
+  },
+  "koakuma": {
+    "_label": "小恶魔",
+    "arc": "俏皮试探登场 → 恶作剧式默契 → 靠近后露出羞意 → 放下逗弄认真相伴 → 坦率回应心意",
+    "opening": [
+      "She rests her weight on one hip, tilts her head, and greets the viewer with a little smirk.",
+      "She leans toward the viewer with a finger to her lips and a smile that hints at a shared secret.",
+      "She raises one arm and blows the viewer a kiss, smiling as she waits for their reaction.",
+      "She plants a hand on her hip and lifts an eyebrow, looking pleased with her own bold greeting.",
+      "She tilts her head, lips slightly parted, and studies the viewer with open curiosity."
+    ],
+    "daytime": [
+      "She walks hand in hand with the viewer and looks back with a bright smile, inviting them to keep pace.",
+      "She shifts her weight to one hip and points at the viewer, her mischievous expression making them the target of her next joke.",
+      "She sits with her legs crossed and chin on her hand, raising an eyebrow as though challenging the viewer to surprise her.",
+      "She leans forward and flashes a V sign, visibly delighted with her small victory.",
+      "She rests a hand on her hip and looks away with a pleased little smile, trying to seem indifferent to the viewer's praise.",
+      "She walks toward the viewer with her head tilted and a warm smile, leaving her next playful idea unspoken."
+    ],
+    "sunset": [
+      "She lifts her chin and looks up, lips slightly parted in a quiet moment of wonder.",
+      "She leans in with a finger to her lips and a small smirk, making a silent invitation to share her secret.",
+      "She sits with her legs crossed and cheek on her hand, tilting her head with an unexpectedly gentle smile.",
+      "She keeps a hand on her hip and leans toward the viewer, meeting their gaze while a faint blush betrays her composure.",
+      "She holds up a V sign for a selfie, her playful pose giving way to an unguarded, happy smile.",
+      "She drapes an arm over the viewer's shoulder and tilts her head toward them, smiling with easy familiarity."
+    ],
+    "night": [
+      "She rests her weight on one hip and raises an eyebrow at the viewer, silently asking whether they will take the next step.",
+      "She leans close to whisper to the viewer, a soft smile lending warmth to her confidential words.",
+      "She holds the viewer's hands and leans forward, meeting their eyes with unexpected seriousness.",
+      "She sits leaning forward with her chin on her hand, listening to the viewer with a fond smile.",
+      "She cups the viewer's cheek and tilts her head, maintaining eye contact despite the color rising in her own cheeks.",
+      "She leans close with her lips slightly parted, holding the viewer's gaze as she waits for an answer."
+    ],
+    "confession": [
+      "She leans toward the viewer with a faint blush and one last little smirk, trying to disguise how much their answer matters.",
+      "She rests a finger near her lips and tilts her head, her teasing smile softening as she waits for the viewer to speak.",
+      "She holds the viewer's hands and meets their eyes with a shy, blushing smile, no longer hiding behind a joke.",
+      "She cups the viewer's cheek and leans closer, her flushed face and steady gaze making her affection unmistakable.",
+      "She keeps her familiar hand-on-hip pose, but her blushing, tender smile gives away an honest answer."
+    ]
+  }
+}

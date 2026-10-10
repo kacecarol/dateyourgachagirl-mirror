@@ -1,0 +1,490 @@
+{
+  "1": {
+    "inputs": {
+      "ckpt_name": "waiNSFWIllustrious_v150.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint",
+      "position": [
+        100,
+        100
+      ]
+    }
+  },
+  "2": {
+    "inputs": {
+      "object_to_patch": "diffusion_model",
+      "residual_diff_threshold": 0.15,
+      "start": 0,
+      "end": 1,
+      "max_consecutive_cache_hits": -1,
+      "model": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "ApplyFBCacheOnModel",
+    "_meta": {
+      "title": "Apply First Block Cache",
+      "position": [
+        400,
+        100
+      ]
+    }
+  },
+  "3": {
+    "inputs": {
+      "lora_name": "Characterlora\\Honkai Star Rail\\cerydra (honkai star rail)_c1_ilv1.0-xl.safetensors",
+      "strength_model": 1,
+      "strength_clip": 1,
+      "model": [
+        "2",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Character LoRA",
+      "position": [
+        700,
+        100
+      ]
+    }
+  },
+  "5": {
+    "inputs": {
+      "lora_name": "Function\\lineless4ill.safetensors",
+      "strength_model": 0.95,
+      "strength_clip": 1.0,
+      "model": [
+        "3",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Style LoRA (lineless)",
+      "position": [
+        1000,
+        100
+      ]
+    }
+  },
+  "4": {
+    "inputs": {
+      "lora_name": "Function\\RealisticSkin_PornMaster-Pro_v1-000020.safetensors",
+      "strength_model": 0.6,
+      "strength_clip": 0.6,
+      "model": [
+        "5",
+        0
+      ],
+      "clip": [
+        "5",
+        1
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Skin LoRA",
+      "position": [
+        1300,
+        100
+      ]
+    }
+  },
+  "6": {
+    "inputs": {
+      "width": 768,
+      "height": 1408,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image",
+      "position": [
+        400,
+        400
+      ]
+    }
+  },
+  "7": {
+    "inputs": {
+      "seed": 97518143180467,
+      "steps": 30,
+      "cfg": 4,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "15",
+        0
+      ],
+      "negative": [
+        "16",
+        0
+      ],
+      "latent_image": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler",
+      "position": [
+        700,
+        400
+      ]
+    }
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "7",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode",
+      "position": [
+        1000,
+        400
+      ]
+    }
+  },
+  "9": {
+    "inputs": {
+      "guide_size": 512,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": 14158487079800,
+      "steps": 30,
+      "cfg": 4,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 0.4,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.65,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "tiled_encode": false,
+      "tiled_decode": true,
+      "image": [
+        "8",
+        0
+      ],
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "4",
+        1
+      ],
+      "vae": [
+        "1",
+        2
+      ],
+      "positive": [
+        "15",
+        0
+      ],
+      "negative": [
+        "16",
+        0
+      ],
+      "bbox_detector": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer (Hand)",
+      "position": [
+        1300,
+        300
+      ]
+    }
+  },
+  "10": {
+    "inputs": {
+      "guide_size": 512,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": 167021631820622,
+      "steps": 30,
+      "cfg": 4,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 0.4,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.65,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "9",
+        0
+      ],
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "4",
+        1
+      ],
+      "vae": [
+        "1",
+        2
+      ],
+      "positive": [
+        "15",
+        0
+      ],
+      "negative": [
+        "16",
+        0
+      ],
+      "bbox_detector": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer (Face)",
+      "position": [
+        1300,
+        500
+      ]
+    }
+  },
+  "11": {
+    "inputs": {
+      "model_name": "bbox/hand_yolov8s.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "Hand Detector",
+      "position": [
+        1300,
+        100
+      ]
+    }
+  },
+  "12": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "Face Detector",
+      "position": [
+        1600,
+        100
+      ]
+    }
+  },
+  "13": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "yes",
+      "text_a": "masterpiece, best quality, amazing quality, absurdres, highres, very aesthetic, 1girl, solo, slender, newest, yume kawaii,",
+      "text_b": "",
+      "text_c": ""
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "Prompt Builder",
+      "position": [
+        100,
+        700
+      ]
+    }
+  },
+  "15": {
+    "inputs": {
+      "text": [
+        "13",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive)",
+      "position": [
+        400,
+        700
+      ]
+    }
+  },
+  "16": {
+    "inputs": {
+      "text": "2girls, 3girls, worst quality, multiple_views, bad quality, low quality, lowres, jpeg artifacts, bad anatomy, error, ugly, signature, username, text, logo, extra limbs, extra digit, extra legs, extra legs and arms, disfigured, missing arms, too many fingers, fused fingers, missing fingers, too many toes, fused toes, missing toes, blur, film grain, noise, motion line, bar censor, black bar, mosaic censor, pixelated censor,",
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative)",
+      "position": [
+        400,
+        900
+      ]
+    }
+  },
+  "20": {
+    "inputs": {
+      "Text": "%character/%character"
+    },
+    "class_type": "DF_Text_Box",
+    "_meta": {
+      "title": "Filename Template",
+      "position": [
+        1900,
+        700
+      ]
+    }
+  },
+  "21": {
+    "inputs": {
+      "Text": "Clara"
+    },
+    "class_type": "DF_Text_Box",
+    "_meta": {
+      "title": "Character Name",
+      "position": [
+        1900,
+        900
+      ]
+    }
+  },
+  "19": {
+    "inputs": {
+      "find": "%character",
+      "replace": [
+        "21",
+        0
+      ],
+      "text": [
+        "20",
+        0
+      ]
+    },
+    "class_type": "Text Find and Replace",
+    "_meta": {
+      "title": "Text Find and Replace",
+      "position": [
+        1600,
+        700
+      ]
+    }
+  },
+  "18": {
+    "inputs": {
+      "filename_prefix": "relay/dateher",
+      "images": [
+        "51",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image",
+      "position": [
+        1600,
+        500
+      ]
+    }
+  },
+  "50": {
+    "inputs": {
+      "offload_model": false,
+      "offload_cache": true,
+      "anything": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "VRAMCleanup",
+    "_meta": {
+      "title": "VRAM Cleanup (Checkpoint)",
+      "position": [
+        250,
+        100
+      ]
+    }
+  },
+  "51": {
+    "inputs": {
+      "offload_model": false,
+      "offload_cache": true,
+      "anything": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "VRAMCleanup",
+    "_meta": {
+      "title": "VRAM Cleanup (Final)",
+      "position": [
+        1600,
+        400
+      ]
+    }
+  }
+}

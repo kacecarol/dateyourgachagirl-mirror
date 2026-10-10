@@ -1,0 +1,652 @@
+{
+  "_meta": {
+    "structure": "default | <tone> -> { _label, arc, opening, daytime, sunset, night, confession }",
+    "toneSource": "char_tags.json . personalityTone（库定义见 personality_face_tags.json）",
+    "usage": "选中角色后取 selectedChar.personalityTone 对应包；无对应包时回落 default"
+  },
+  "default": {
+    "opening": [
+      "drinking, bubble tea, drinking straw, holding cup,",
+      "holding cup, bubble tea, reaching out,",
+      "holding bag, gift box, reaching out,",
+      "waving,",
+      "holding phone, looking at phone,",
+      "holding camera, taking picture,",
+      "holding crepe,",
+      "holding balloon,",
+      "holding umbrella,",
+      "holding bouquet, reaching out,",
+      "v, holding phone,",
+      "holding bag, shopping bag,",
+      "hug, stuffed toy,",
+      "holding drink, reaching out,",
+      "hand up, shading eyes,"
+    ],
+    "daytime": [
+      "walking, drinking, bubble tea, drinking straw, holding cup,",
+      "walking, eating, holding crepe,",
+      "walking, ice cream cone, licking,",
+      "walking, holding bag, shopping bag,",
+      "eating, holding donut,",
+      "holding camera, taking picture, leaning forward,",
+      "reaching out, holding bouquet,",
+      "walking, holding umbrella,",
+      "leaning forward, holding phone, looking at phone,",
+      "eating, holding cotton candy,",
+      "walking, eating, holding candy apple,",
+      "holding pocky, eating,",
+      "holding lollipop,",
+      "eating, holding takoyaki,",
+      "carrying, holding picnic basket, walking,"
+    ],
+    "sunset": [
+      "sharing headphones,",
+      "drinking, holding cup, bubble tea,",
+      "sitting, eating, holding crepe,",
+      "holding camera, taking picture,",
+      "comparing hand sizes,",
+      "holding gift box, reaching out,",
+      "hug, stuffed toy,",
+      "holding bouquet,",
+      "drinking, bubble tea, drinking straw,",
+      "holding phone, looking at phone,",
+      "eating, holding macaron,",
+      "holding soda, drinking,",
+      "eating, holding bento,",
+      "holding chocolate, reaching out,",
+      "holding keychain, reaching out,"
+    ],
+    "night": [
+      "holding hands,",
+      "arm around shoulder,",
+      "hand on another's cheek,",
+      "head on another's shoulder,",
+      "leaning forward,",
+      "holding own sleeve,",
+      "covering own mouth,",
+      "sharing headphones,",
+      "eating, holding donut,",
+      "holding cup, drinking,",
+      "eating, holding popcorn,",
+      "eating, holding takoyaki,",
+      "interlocked fingers,",
+      "hug,",
+      "headpat,"
+    ],
+    "confession": [
+      "holding bouquet, reaching out,",
+      "holding gift box, reaching out,",
+      "holding hands,",
+      "hand on another's cheek, leaning forward,",
+      "leaning forward,",
+      "holding envelope, reaching out,",
+      "hug,",
+      "hand on own chest,",
+      "holding hands, arm around shoulder,",
+      "reaching out, holding drink,",
+      "interlocked fingers,",
+      "forehead-to-forehead,",
+      "tiptoes, leaning forward,",
+      "holding own sleeve,",
+      "covering own mouth,"
+    ]
+  },
+  "mature": {
+    "_label": "成熟",
+    "arc": "从容登场 → 并肩闲步 → 凭栏看落日 → 主动挽手 → 笃定告白",
+    "opening": [
+      "standing, crossed arms, light smile, looking at viewer,",
+      "standing, hand on own hip, light smile, looking at viewer,",
+      "standing, holding, light smile, looking at viewer,",
+      "standing, against wall, crossed arms, seductive smile,",
+      "standing, adjusting hair, looking at viewer,"
+    ],
+    "daytime": [
+      "walking, light smile, looking at viewer,",
+      "sitting, cafe, holding cup, crossed legs, hand on own chin, light smile,",
+      "sitting, chair, crossed legs, book on lap, serious,",
+      "standing, looking away, hand on own chin, thinking,",
+      "walking, holding hands, light smile, looking at viewer,",
+      "sitting, bench, crossed legs, hand on own chin, light smile,"
+    ],
+    "sunset": [
+      "standing, on railing, wine glass, looking up,",
+      "sitting, bench, crossed legs, hand on own chin, looking up,",
+      "standing, facing away, wind, looking up,",
+      "sitting, outdoors, holding cup, closed eyes, light smile,",
+      "standing, holding hands, looking up, light smile,",
+      "standing, on railing, hand on own chin, looking at viewer, seductive smile,"
+    ],
+    "night": [
+      "standing, holding hands, looking at viewer, light smile,",
+      "walking, city lights, light smile,",
+      "sitting, couch, crossed legs, holding cup, looking at viewer,",
+      "standing, hand on another's waist, looking at viewer, seductive smile,",
+      "sitting, head on another's shoulder, closed eyes,",
+      "standing, holding hands, looking at viewer,"
+    ],
+    "confession": [
+      "standing, eye contact, light smile,",
+      "standing, holding hands, looking at viewer, light smile,",
+      "standing, hand on own chest, closed eyes, light smile,",
+      "standing, looking at viewer, half-closed eyes,",
+      "standing, holding hands, looking at viewer, light smile,"
+    ]
+  },
+  "kuudere": {
+    "_label": "冷娇",
+    "arc": "面无表情 → 简短回应 → 视线停留 → 悄然靠肩 → 表情不变但耳根发红",
+    "opening": [
+      "standing, expressionless, looking at viewer,",
+      "standing, hands in pockets, expressionless, looking away,",
+      "standing, closed eyes, expressionless,",
+      "standing, head tilt, bored, looking at viewer,",
+      "standing, arms at sides, expressionless, nose_blush,"
+    ],
+    "daytime": [
+      "walking, expressionless, looking ahead,",
+      "sitting, bench, closed eyes, expressionless,",
+      "standing, looking away, thinking, expressionless,",
+      "sitting, chair, thinking, looking away,",
+      "standing, looking away, nose_blush, expressionless,",
+      "walking, hands in pockets, looking at viewer, expressionless,"
+    ],
+    "sunset": [
+      "standing, on railing, looking up, expressionless,",
+      "standing, wind, thinking, staring,",
+      "sitting, bench, closed eyes, hands on lap, expressionless,",
+      "standing, looking up, sigh, half-closed eyes,",
+      "standing, looking at viewer, nose_blush, expressionless,",
+      "standing, crossed arms, looking up, expressionless,"
+    ],
+    "night": [
+      "standing, holding hands, expressionless, looking away,",
+      "walking, expressionless, looking ahead,",
+      "sitting, sitting on stairs, head on another's shoulder, closed eyes,",
+      "sitting, head on another's shoulder, expressionless,",
+      "sitting, bench, head on another's shoulder, closed eyes, sigh,",
+      "standing, looking down, nose_blush,"
+    ],
+    "confession": [
+      "standing, looking away, nose_blush, expressionless,",
+      "standing, holding hands, looking down, nose_blush, expressionless,",
+      "standing, eye contact, parted lips, nose_blush,",
+      "standing, closed eyes, nose_blush,",
+      "standing, looking at viewer, half-closed eyes, nose_blush,"
+    ]
+  },
+  "genki": {
+    "_label": "元气",
+    "arc": "蹦跳挥手 → 拉着跑 → 转圈大笑 → 累了靠肩 → 大喊式告白",
+    "opening": [
+      "standing, waving, open mouth, happy, excited,",
+      "standing, jumping, v, open mouth, happy,",
+      "standing, leaning forward, wide-eyed, open mouth,",
+      "standing, arms up, happy, one eye closed,",
+      "running, spread arms, open mouth, happy,"
+    ],
+    "daytime": [
+      "walking, jumping, holding ice cream, happy,",
+      "standing, pointing at viewer, open mouth, excited,",
+      "sitting, swing, happy, open mouth,",
+      "walking, holding hands, looking back, happy,",
+      "standing, happy, wide-eyed,",
+      "running, wind, open mouth, excited,"
+    ],
+    "sunset": [
+      "standing, spread arms, spinning, wind, happy,",
+      "sitting, grass, leaning back, arms behind back, laughing,",
+      "standing, jumping, waving, open mouth, happy,",
+      "walking, happy, looking at viewer,",
+      "standing, pointing, wide-eyed, open mouth,",
+      "sitting, dock, arms up, happy,"
+    ],
+    "night": [
+      "standing, holding food, open mouth, excited,",
+      "sitting, sitting on stairs, head on another's shoulder, closed eyes, light smile,",
+      "standing, holding hands, happy,",
+      "walking, holding hands, looking at viewer, happy,",
+      "standing, leaning back, arms up, light smile,",
+      "sitting, bench, closed eyes, light smile,"
+    ],
+    "confession": [
+      "standing, spread arms, happy, open mouth, nose_blush,",
+      "standing, holding hands, leaning forward, happy, tears,",
+      "standing, jumping, arms up, open mouth, nose_blush,",
+      "standing, pointing at viewer, open mouth, nose_blush, happy,",
+      "standing, wide-eyed, open mouth, nose_blush,"
+    ]
+  },
+  "earnest": {
+    "_label": "认真",
+    "arc": "准时挺直 → 认真倾听 → 坦白想法 → 鼓起勇气牵手 → 郑重直视",
+    "opening": [
+      "standing, serious, looking at viewer,",
+      "standing, bowing, serious, light smile,",
+      "standing, arms at sides, determined, looking at viewer,",
+      "standing, holding bag, serious, looking at viewer,",
+      "standing, serious, light smile,"
+    ],
+    "daytime": [
+      "walking, serious, looking at viewer,",
+      "sitting, chair, writing, serious,",
+      "sitting, bench, hands on own knees, serious,",
+      "standing, talking, determined, open mouth,",
+      "walking, carrying, serious,",
+      "sitting, cafe, leaning forward, serious,"
+    ],
+    "sunset": [
+      "standing, looking up, serious,",
+      "sitting, bench, hands on own knees, looking up, determined,",
+      "standing, crossed arms, looking up, serious,",
+      "standing, looking at viewer, serious, nose_blush,",
+      "walking, serious, looking ahead,",
+      "standing, on railing, determined, looking up,"
+    ],
+    "night": [
+      "standing, holding hands, eye contact, determined,",
+      "walking, serious, looking at viewer,",
+      "sitting, bench, leaning forward, serious, nose_blush,",
+      "standing, own hands clasped, serious, nose_blush,",
+      "standing, walking, determined, serious,",
+      "sitting, serious, nose_blush,"
+    ],
+    "confession": [
+      "standing, eye contact, determined, serious, nose_blush,",
+      "standing, bowing, serious, nose_blush,",
+      "standing, holding hands, eye contact, serious,",
+      "standing, serious, nose_blush,",
+      "standing, hand on own chest, determined, nose_blush,"
+    ]
+  },
+  "dandere": {
+    "_label": "内向",
+    "arc": "躲在身后 → 小声搭话 → 攥紧袖口 → 贴近半步 → 几乎听不见",
+    "opening": [
+      "standing, hiding, nose_blush,",
+      "standing, own hands clasped, looking down, nose_blush,",
+      "standing, hand on own arm, looking away, nose_blush,",
+      "standing, looking down, nose_blush, own hands together,",
+      "standing, looking at viewer, own hands together, nose_blush,"
+    ],
+    "daytime": [
+      "sitting, bench, hands on lap, looking down, nose_blush,",
+      "walking, looking down, nose_blush,",
+      "standing, looking away, nose_blush,",
+      "sitting, chair, own hands together, nose_blush,",
+      "walking, from behind, holding own dress, looking down,",
+      "standing, fidgeting, looking down, nose_blush,"
+    ],
+    "sunset": [
+      "sitting, bench, knees up, looking down, nose_blush,",
+      "standing, looking at viewer, nose_blush,",
+      "sitting, grass, hands on lap, looking up, light smile,",
+      "standing, looking away, covering face, nose_blush,",
+      "sitting, looking down, nose_blush,",
+      "standing, holding own skirt, looking down, nose_blush,"
+    ],
+    "night": [
+      "sitting, head on another's shoulder, closed eyes,",
+      "standing, looking down, nose_blush,",
+      "walking, looking down, nose_blush,",
+      "sitting, bench, leaning forward, closed eyes, light smile,",
+      "standing, holding hands, looking down, nose_blush,",
+      "sitting, sitting on stairs, knees up, looking at viewer, nose_blush,"
+    ],
+    "confession": [
+      "standing, looking down, covering face, nose_blush,",
+      "standing, closed eyes, nose_blush,",
+      "standing, own hands clasped, looking up, nose_blush,",
+      "standing, looking down, nose_blush, tears,",
+      "standing, holding own skirt, looking at viewer, nose_blush,"
+    ]
+  },
+  "tsundere": {
+    "_label": "傲娇",
+    "arc": "五段独立的约会片段（不做弧线推进）：碰头 → 边走边玩 → 气氛软化 → 夜里靠近 → 表白",
+    "opening": [
+      "drinking, bubble tea, drinking straw, holding cup, looking to the side, pout, nose_blush,",
+      "holding cup, bubble tea, one eye closed, annoyed, nose_blush,",
+      "holding bag, gift, reaching out, looking to the side, pout, nose_blush,",
+      "holding cup, reaching out, looking to the side, nose_blush,",
+      "holding phone, looking at phone, annoyed, pout,",
+      "holding camera, taking picture, looking to the side, nose_blush,",
+      "holding crepe, looking to the side, nose_blush, pout,",
+      "holding balloon, looking to the side, one eye closed, nose_blush,"
+    ],
+    "daytime": [
+      "walking, drinking, holding cup, bubble tea, looking to the side, nose_blush,",
+      "walking, eating, holding crepe, light smile, nose_blush,",
+      "walking, ice cream, licking, looking to the side, nose_blush,",
+      "walking, holding bag, shopping bag, looking to the side, pout,",
+      "leaning forward, holding phone, looking at phone, annoyed, nose_blush,",
+      "reaching out, holding flower, looking to the side, nose_blush, pout,",
+      "eating, holding donut, looking to the side, light smile,",
+      "holding umbrella, walking, looking to the side, pout, nose_blush,"
+    ],
+    "sunset": [
+      "sharing headphones, closed eyes, light smile, nose_blush,",
+      "drinking, holding cup, bubble tea, looking up, light smile, nose_blush,",
+      "holding camera, taking picture, light smile, nose_blush,",
+      "eating, holding cotton candy, looking to the side, nose_blush,",
+      "comparing hand sizes, looking to the side, nose_blush, pout,",
+      "holding gift, reaching out, looking to the side, nose_blush,",
+      "hug, stuffed toy, light smile, nose_blush,",
+      "holding flower, looking down, nose_blush, pout,"
+    ],
+    "night": [
+      "holding hands, looking to the side, nose_blush, pout,",
+      "arm around shoulder, looking to the side, nose_blush,",
+      "hand on another's cheek, looking to the side, nose_blush, pout,",
+      "head on another's shoulder, closed eyes, nose_blush,",
+      "leaning forward, looking to the side, flustered, nose_blush,",
+      "holding own sleeve, looking down, nose_blush, pout,",
+      "covering own mouth, wide-eyed, nose_blush,",
+      "sharing headphones, closed eyes, nose_blush,"
+    ],
+    "confession": [
+      "holding flower, reaching out, looking to the side, nose_blush,",
+      "holding gift, looking down, nose_blush, tears,",
+      "holding hands, looking to the side, closed eyes, nose_blush,",
+      "hand on another's cheek, leaning forward, nose_blush,",
+      "leaning forward, looking to the side, flustered, nose_blush,",
+      "holding letter, looking down, nose_blush,",
+      "hug, closed eyes, nose_blush, tears,",
+      "hand on own chest, looking to the side, nose_blush, light smile,"
+    ]
+  },
+  "shy": {
+    "_label": "害羞",
+    "arc": "小声招呼 → 保持距离偷看 → 手足无措 → 指尖相碰 → 捂脸说出",
+    "opening": [
+      "standing, hands on own chest, looking down, nose_blush,",
+      "standing, covering face, nose_blush,",
+      "standing, holding own skirt, looking away, nose_blush,",
+      "standing, bowing, looking down, nose_blush,",
+      "standing, peeking through fingers, nose_blush,"
+    ],
+    "daytime": [
+      "walking, looking down, nose_blush,",
+      "sitting, bench, hands on lap, looking down, nose_blush,",
+      "standing, looking away, fidgeting, nose_blush,",
+      "sitting, chair, covering own mouth, nose_blush,",
+      "walking, from behind, looking down, nose_blush,",
+      "standing, hands on own cheeks, nose_blush,"
+    ],
+    "sunset": [
+      "sitting, bench, hand on own arm, looking down, nose_blush,",
+      "standing, looking away, covering own mouth, nose_blush,",
+      "standing, hands on own chest, closed eyes, nose_blush,",
+      "sitting, grass, hands on lap, looking at viewer, nose_blush,",
+      "standing, facing away, looking at viewer, nose_blush,",
+      "sitting, looking down, nose_blush,"
+    ],
+    "night": [
+      "sitting, looking down, nose_blush,",
+      "standing, holding hands, looking away, nose_blush,",
+      "walking, looking down, nose_blush,",
+      "sitting, bench, covering face, nose_blush,",
+      "standing, leaning forward, closed eyes, nose_blush,",
+      "sitting, sitting on stairs, hands on own knees, looking at viewer, nose_blush,"
+    ],
+    "confession": [
+      "standing, covering face, nose_blush,",
+      "standing, looking down, hands on own chest, nose_blush,",
+      "standing, covering own mouth, nose_blush,",
+      "standing, holding hands, closed eyes, nose_blush,",
+      "standing, peeking through fingers, nose_blush, tears,"
+    ]
+  },
+  "haughty": {
+    "_label": "高傲",
+    "arc": "抬下巴俯视 → 勉强同行别过脸 → 被景色软化 → 别扭允许靠近 → 命令式告白脸红",
+    "opening": [
+      "standing, crossed arms, smug, looking down,",
+      "standing, hand on own hip, raised eyebrow, smirk,",
+      "standing, looking down, one eye closed,",
+      "standing, hair flip, looking at viewer,",
+      "standing, crossed arms, facing away, disdain,"
+    ],
+    "daytime": [
+      "walking, looking away, smug,",
+      "sitting, chair, crossed legs, crossed arms, bored,",
+      "standing, looking away, raised eyebrow, smirk,",
+      "walking, raised eyebrow, looking at viewer,",
+      "sitting, bench, crossed legs, looking down, smug,",
+      "standing, crossed arms, looking away, nose_blush,"
+    ],
+    "sunset": [
+      "standing, on railing, looking up,",
+      "sitting, bench, crossed legs, looking up, surprised,",
+      "standing, crossed arms, looking up, nose_blush,",
+      "standing, facing away, looking at viewer, nose_blush,",
+      "sitting, outdoors, hand on own chin, looking up, thinking,",
+      "standing, looking at viewer, flustered,"
+    ],
+    "night": [
+      "standing, holding hands, looking away, nose_blush,",
+      "sitting, crossed arms, looking away, nose_blush,",
+      "standing, holding hands, looking at viewer, flustered,",
+      "walking, looking away, nose_blush,",
+      "sitting, couch, crossed legs, looking down, nose_blush,",
+      "standing, leaning forward, facing away, nose_blush, flustered,"
+    ],
+    "confession": [
+      "standing, looking away, nose_blush,",
+      "standing, crossed arms, looking down, nose_blush,",
+      "standing, looking away, flustered, nose_blush,",
+      "standing, holding hands, facing away, nose_blush,",
+      "standing, raised eyebrow, nose_blush, looking at viewer,"
+    ]
+  },
+  "gyaru": {
+    "_label": "辣妹",
+    "arc": "凑近打招呼比心 → 主动挽手逛店 → 俏皮自拍 → 贴很近逗你 → 直球告白",
+    "opening": [
+      "standing, leaning forward, v, one eye closed, smirk,",
+      "standing, waving, one eye closed, open mouth, happy,",
+      "standing, hand on own hip, smirk, looking at viewer,",
+      "standing, blowing kiss, one eye closed, naughty face,",
+      "standing, arm up, smirk,"
+    ],
+    "daytime": [
+      "walking, holding hands, looking at viewer, smirk,",
+      "standing, holding bag, happy,",
+      "sitting, cafe, leaning forward, hand on own chin, smirk,",
+      "walking, looking at viewer, one eye closed,",
+      "sitting, bench, crossed legs, holding phone, one eye closed,",
+      "standing, eating, open mouth, happy, one eye closed,"
+    ],
+    "sunset": [
+      "standing, on railing, looking up, smirk,",
+      "standing, selfie, v, one eye closed,",
+      "sitting, bench, crossed legs, head on another's shoulder, smirk,",
+      "standing, holding hands, looking up, happy,",
+      "standing, leaning forward, one eye closed, looking at viewer,",
+      "sitting, sitting on stairs, leaning back, arms behind back, smirk,"
+    ],
+    "night": [
+      "standing, leaning forward, finger to mouth, one eye closed,",
+      "walking, holding hands, city lights, smirk,",
+      "standing, holding drink, one eye closed,",
+      "sitting, head on another's shoulder, smirk,",
+      "standing, holding hands, looking at viewer, happy,",
+      "leaning forward, one eye closed, open mouth, smirk,"
+    ],
+    "confession": [
+      "standing, leaning forward, one eye closed, nose_blush, smirk,",
+      "standing, holding hands, looking at viewer, happy, nose_blush,",
+      "standing, one eye closed, nose_blush, parted lips,",
+      "standing, v, nose_blush, happy,",
+      "standing, arm around shoulder, looking at viewer, nose_blush,"
+    ]
+  },
+  "yandere": {
+    "_label": "病娇",
+    "arc": "贴身凝视 → 独占式挽手 → 手指抵唇 → 贴耳低语 → 偏执占有",
+    "opening": [
+      "standing, leaning forward, staring, looking at viewer,",
+      "standing, head tilt, crazy smile, staring,",
+      "standing, arms behind back, looking at viewer, evil smile,",
+      "standing, leaning forward, wide-eyed, smile,",
+      "standing, walking, staring, smirk,"
+    ],
+    "daytime": [
+      "walking, holding hands, smile, looking at viewer,",
+      "standing, staring, crazy smile,",
+      "sitting, bench, leaning forward, looking at viewer, evil smile,",
+      "standing, staring, wide-eyed,",
+      "walking, holding hands, smile,",
+      "sitting, hand on own cheek, staring,"
+    ],
+    "sunset": [
+      "standing, leaning forward, finger to mouth, staring,",
+      "standing, eye contact, crazy smile,",
+      "sitting, bench, head on another's shoulder, staring,",
+      "standing, holding hands, staring, smile,",
+      "sitting, head on another's shoulder, evil grin,",
+      "standing, facing away, looking back, staring,"
+    ],
+    "night": [
+      "standing, whispering, leaning forward, staring,",
+      "standing, finger to mouth, looking at viewer, crazy smile,",
+      "sitting, holding hands, closed eyes, smile,",
+      "standing, hand on another's cheek, eye contact, evil smile,",
+      "sitting, hug, staring, smile,",
+      "standing, leaning forward, staring, nose_blush,"
+    ],
+    "confession": [
+      "standing, staring, crazy smile,",
+      "standing, hug, looking at viewer, smile,",
+      "standing, hand on another's cheek, eye contact, evil grin, tears,",
+      "standing, holding hands, staring, nose_blush,",
+      "standing, leaning forward, finger to mouth, staring, smirk,"
+    ]
+  },
+  "curious": {
+    "_label": "好奇",
+    "arc": "东张西望 → 拉着去看看 → 歪头盯着你 → 凑近观察 → 好奇转成心动",
+    "opening": [
+      "standing, wide-eyed, open mouth,",
+      "standing, head tilt, open mouth, looking at viewer,",
+      "standing, leaning forward, wide-eyed, surprised,",
+      "standing, hand up, thinking, looking at viewer,",
+      "standing, wide-eyed, open mouth, head tilt,"
+    ],
+    "daytime": [
+      "walking, wide-eyed, happy,",
+      "standing, pointing, open mouth, excited,",
+      "sitting, chair, leaning forward, thinking,",
+      "standing, hand on own chin, thinking,",
+      "walking, holding hands, looking back, wide-eyed,",
+      "sitting, bench, head tilt, thinking, looking at viewer,"
+    ],
+    "sunset": [
+      "standing, looking up, wide-eyed, open mouth,",
+      "standing, head tilt, thinking, looking up,",
+      "sitting, bench, leaning forward, thinking,",
+      "standing, pointing, open mouth, surprised,",
+      "standing, looking at viewer, thinking, nose_blush,",
+      "sitting, grass, head tilt, staring, thinking,"
+    ],
+    "night": [
+      "standing, wide-eyed, surprised,",
+      "standing, leaning forward, looking at viewer, thinking,",
+      "walking, looking up, open mouth,",
+      "standing, head tilt, looking at viewer, nose_blush,",
+      "sitting, leaning forward, surprised, nose_blush,",
+      "standing, looking at viewer, thinking, nose_blush,"
+    ],
+    "confession": [
+      "standing, leaning forward, wide-eyed, nose_blush, parted lips,",
+      "standing, head tilt, staring, nose_blush,",
+      "standing, looking at viewer, surprised, nose_blush,",
+      "standing, holding hands, looking at viewer, wide-eyed, nose_blush,",
+      "standing, hand on own chest, thinking, nose_blush,"
+    ]
+  },
+  "android": {
+    "_label": "机械",
+    "arc": "待机静止 → 复述你的话 → 首次出现停顿 → 主动执行牵手 → 平静语调结论式告白",
+    "opening": [
+      "standing, expressionless, staring, looking at viewer,",
+      "standing, blinking, expressionless,",
+      "standing, head tilt, staring, parted lips,",
+      "standing, arms at sides, expressionless, staring,",
+      "standing, expressionless, looking at viewer,"
+    ],
+    "daytime": [
+      "walking, expressionless, looking ahead,",
+      "standing, looking at viewer, expressionless, head tilt,",
+      "sitting, bench, expressionless, staring,",
+      "standing, hand up, expressionless,",
+      "walking, expressionless, looking ahead,",
+      "sitting, chair, expressionless, staring,"
+    ],
+    "sunset": [
+      "standing, looking up, expressionless, staring,",
+      "standing, head tilt, thinking, expressionless,",
+      "sitting, bench, expressionless, looking up,",
+      "standing, looking at viewer, nose_blush,",
+      "standing, expressionless, staring, nose_blush,",
+      "sitting, outdoors, expressionless, staring,"
+    ],
+    "night": [
+      "standing, holding hands, expressionless, staring,",
+      "standing, looking at viewer, expressionless, nose_blush,",
+      "sitting, expressionless, staring,",
+      "standing, leaning forward, expressionless,",
+      "sitting, bench, leaning forward, expressionless, nose_blush,",
+      "standing, expressionless, looking at viewer,"
+    ],
+    "confession": [
+      "standing, staring, expressionless, nose_blush,",
+      "standing, eye contact, parted lips, expressionless,",
+      "standing, holding hands, expressionless, nose_blush,",
+      "standing, staring, expressionless, nose_blush,",
+      "standing, hand on own chest, expressionless, nose_blush,"
+    ]
+  },
+  "koakuma": {
+    "_label": "小恶魔",
+    "arc": "俏皮试探登场 → 恶作剧式默契 → 靠近后露出羞意 → 放下逗弄认真相伴 → 坦率回应心意",
+    "opening": [
+      "standing, contrapposto, hand on own hip, head tilt, smirk,",
+      "standing, leaning forward, finger to mouth, looking at viewer, smile,",
+      "standing, arm up, blowing kiss, smile,",
+      "standing, hand on own hip, raised eyebrow, doyagao,",
+      "standing, head tilt, looking at viewer, parted lips,"
+    ],
+    "daytime": [
+      "walking, holding hands, looking back, smile,",
+      "standing, contrapposto, pointing, naughty face,",
+      "sitting, crossed legs, hand on own chin, raised eyebrow,",
+      "standing, leaning forward, v, happy,",
+      "standing, hand on own hip, looking away, smug,",
+      "walking, head tilt, looking at viewer, smile,"
+    ],
+    "sunset": [
+      "standing, looking up, parted lips,",
+      "standing, leaning forward, finger to mouth, smirk,",
+      "sitting, crossed legs, hand on own cheek, head tilt, smile,",
+      "standing, hand on own hip, leaning forward, looking at viewer, nose_blush,",
+      "standing, selfie, v, happy,",
+      "standing, arm around shoulder, head tilt, looking at viewer, smile,"
+    ],
+    "night": [
+      "standing, contrapposto, hand on own hip, looking at viewer, raised eyebrow,",
+      "standing, whispering, leaning forward, smile,",
+      "standing, holding hands, leaning forward, looking at viewer, serious,",
+      "sitting, leaning forward, hand on own chin, looking at viewer, smile,",
+      "standing, hand on another's cheek, head tilt, looking at viewer, nose_blush,",
+      "standing, leaning forward, parted lips, looking at viewer,"
+    ],
+    "confession": [
+      "standing, leaning forward, looking at viewer, nose_blush, smirk,",
+      "standing, finger to mouth, head tilt, looking at viewer, smile,",
+      "standing, holding hands, looking at viewer, smile, nose_blush,",
+      "standing, hand on another's cheek, leaning forward, looking at viewer, nose_blush,",
+      "standing, contrapposto, hand on own hip, smile, nose_blush,"
+    ]
+  }
+}

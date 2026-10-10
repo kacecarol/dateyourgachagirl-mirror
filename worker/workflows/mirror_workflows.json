@@ -1,0 +1,30 @@
+[
+  {
+    "id": "dateher",
+    "name": "DateHer",
+    "template": "workflows/dateher_workflow.json",
+    "mappings": {
+      "width": [{ "node": "6", "input": "width" }],
+      "height": [{ "node": "6", "input": "height" }],
+      "steps": [{ "node": "7", "input": "steps" }],
+      "cfg": [{ "node": "7", "input": "cfg" }],
+      "seed": [{ "node": "7", "input": "seed" }, { "node": "9", "input": "seed" }, { "node": "10", "input": "seed" }],
+      "positive": [{ "node": "13", "input": "text_b" }],
+      "negative": [{ "node": "16", "input": "text" }]
+    },
+    "output_nodes": ["18"]
+  },
+  {
+    "id": "dateher_full",
+    "name": "Date your gacha girl",
+    "template": "workflows/dateher_full.json",
+    "adapter": "dateher",
+    "mappings": {
+      "seed": [{ "node": "7", "input": "seed" }, { "node": "9", "input": "seed" }, { "node": "10", "input": "seed" }],
+      "positive": [{ "node": "13", "input": "text_b" }],
+      "width": [{ "node": "6", "input": "width" }],
+      "height": [{ "node": "6", "input": "height" }]
+    },
+    "output_nodes": ["18"]
+  }
+]

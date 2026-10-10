@@ -1,0 +1,403 @@
+{
+  "_meta": {
+    "source": "tag_group:face_tags (danbooru)",
+    "count": 173,
+    "note": "Write tags with underscores in prompts (nose blush -> nose_blush).",
+    "usage": "shared tags recur across tones; per-tone list is the primary suggestion set.",
+    "emoji_semantics": "See danbooru_emoji_semantics.json for per-emoji confirmed meanings."
+  },
+  "shared": {
+    "blush": [
+      "loli",
+      "tsundere",
+      "dandere",
+      "genki",
+      "shy",
+      "curious",
+      "teen"
+    ],
+    "nose blush": [
+      "loli",
+      "tsundere",
+      "dandere",
+      "shy"
+    ],
+    "closed eyes": [
+      "lady",
+      "kuudere",
+      "android",
+      "mature",
+      "dandere",
+      "shy"
+    ],
+    "smile": [
+      "teen",
+      "loli",
+      "genki",
+      "dandere",
+      "shy",
+      "confident",
+      "earnest",
+      "koakuma"
+    ],
+    "open mouth": [
+      "teen",
+      "loli",
+      "genki",
+      "curious",
+      "gyaru",
+      "earnest",
+      "koakuma"
+    ],
+    "wide-eyed": [
+      "loli",
+      "teen",
+      "genki",
+      "dandere",
+      "yandere",
+      "earnest",
+      "shy",
+      "curious",
+      "koakuma"
+    ],
+    "parted lips": [
+      "lady",
+      "teen",
+      "kuudere",
+      "mature",
+      "android"
+    ],
+    "afterglow": [
+      "lady",
+      "teen",
+      "mature"
+    ],
+    "staring": [
+      "lady",
+      "kuudere",
+      "haughty",
+      "confident",
+      "android",
+      "yandere"
+    ],
+    "x3": [
+      "genki",
+      "dandere",
+      "shy"
+    ],
+    ">_<": [
+      "genki",
+      "dandere",
+      "shy",
+      "yandere"
+    ],
+    "XD": [
+      "genki",
+      "gyaru",
+      "confident"
+    ],
+    ":d": [
+      "genki",
+      "teen"
+    ],
+    "0w0": [
+      "genki",
+      "loli"
+    ],
+    "c:": [
+      "gyaru",
+      "haughty",
+      "mature",
+      "confident",
+      "koakuma"
+    ],
+    ":|": [
+      "kuudere",
+      "android"
+    ],
+    "o_o": [
+      "earnest",
+      "curious"
+    ],
+    "o3o": [
+      "loli",
+      "curious"
+    ]
+  },
+  "personality_face_tags": {
+    "lady": [
+      "light smile",
+      "seductive smile",
+      "smirk",
+      "smug",
+      "closed eyes",
+      "parted lips",
+      "afterglow",
+      "doyagao",
+      "raised eyebrow",
+      "serious",
+      "staring",
+      "happy"
+    ],
+    "teen": [
+      "excited",
+      "blush",
+      "open mouth",
+      "parted lips",
+      "wide-eyed",
+      "surprised",
+      "happy",
+      "smile",
+      "afterglow",
+      "nosebleed",
+      "thinking",
+      "pensive",
+      ":d",
+      "^_^"
+    ],
+    "loli": [
+      "wide-eyed",
+      "open mouth",
+      "surprised",
+      "pout",
+      "blush",
+      "nose blush",
+      "excited",
+      "happy",
+      "smile",
+      "thinking",
+      "round mouth",
+      "dot mouth",
+      "0w0",
+      "._.",
+      "o3o",
+      ">3<"
+    ],
+    "tsundere": [
+      "pout",
+      "blush",
+      "full-face blush",
+      "nose blush",
+      "embarrassed",
+      "flustered",
+      "annoyed",
+      "angry",
+      "anger vein",
+      "frown",
+      "scowl",
+      "clenched teeth",
+      "sulking",
+      "one eye closed",
+      ">:(",
+      "3:",
+      "3;",
+      ":<",
+      ";<",
+      ":t"
+    ],
+    "kuudere": [
+      "expressionless",
+      "bored",
+      "closed eyes",
+      "serious",
+      "sigh",
+      "staring",
+      "light smile",
+      "parted lips",
+      "pensive",
+      ":|",
+      ";|"
+    ],
+    "dandere": [
+      "blush",
+      "nose blush",
+      "embarrassed",
+      "flustered",
+      "pout",
+      "worried",
+      "surprised",
+      "closed eyes",
+      "smile",
+      "staring",
+      "x3",
+      ">_<"
+    ],
+    "genki": [
+      "happy",
+      "smile",
+      "excited",
+      "open mouth",
+      "wide-eyed",
+      "blush",
+      "^_^",
+      ":d",
+      "one eye closed",
+      "surprised",
+      "smirk",
+      "0w0",
+      "+_+",
+      "XD",
+      ">_<",
+      "x3"
+    ],
+    "gyaru": [
+      "smirk",
+      "seductive smile",
+      "one eye closed",
+      "smug",
+      "open mouth",
+      "excited",
+      "happy",
+      "blush",
+      "naughty face",
+      ":p",
+      ";p",
+      ":q",
+      ";q",
+      "c:",
+      ";>",
+      ":>",
+      "XD"
+    ],
+    "haughty": [
+      "smug",
+      "smirk",
+      "raised eyebrow",
+      "raised inner eyebrows",
+      "disdain",
+      "annoyed",
+      "bored",
+      "expressionless",
+      "one eye closed",
+      "staring",
+      "c:",
+      ";|"
+    ],
+    "yandere": [
+      "evil smile",
+      "crazy smile",
+      "evil grin",
+      "crazy",
+      "staring",
+      "wide-eyed",
+      "smile",
+      "ahegao",
+      "smug",
+      "serious",
+      ">:)",
+      ">:(",
+      ">_<"
+    ],
+    "mature": [
+      "light smile",
+      "seductive smile",
+      "smirk",
+      "smug",
+      "closed eyes",
+      "parted lips",
+      "afterglow",
+      "doyagao",
+      "happy",
+      "serious",
+      "c:"
+    ],
+    "earnest": [
+      "determined",
+      "serious",
+      "happy",
+      "smile",
+      "blush",
+      "open mouth",
+      "wide-eyed",
+      "surprised",
+      "thinking",
+      "pensive",
+      ":o",
+      ";o",
+      "o_o"
+    ],
+    "shy": [
+      "blush",
+      "nose blush",
+      "embarrassed",
+      "flustered",
+      "pout",
+      "closed eyes",
+      "worried",
+      "surprised",
+      "smile",
+      "wide-eyed",
+      "x3",
+      ">_<",
+      "._."
+    ],
+    "confident": [
+      "smirk",
+      "smug",
+      "seductive smile",
+      "one eye closed",
+      "raised eyebrow",
+      "staring",
+      "happy",
+      "smile",
+      "doyagao",
+      ":>",
+      ";>",
+      "c:",
+      ";d",
+      "XD"
+    ],
+    "curious": [
+      "surprised",
+      "wide-eyed",
+      "open mouth",
+      "thinking",
+      "pensive",
+      "one eye closed",
+      "excited",
+      "confused",
+      "blush",
+      "round mouth",
+      ":o",
+      ";o",
+      "o_o",
+      "0_0",
+      "<o>_<o>",
+      "o3o"
+    ],
+    "android": [
+      "expressionless",
+      "bored",
+      "staring",
+      "serious",
+      "closed eyes",
+      "pensive",
+      "sigh",
+      "parted lips",
+      ":|",
+      ";|",
+      "=_=",
+      "|_|"
+    ],
+    "koakuma": [
+      "smirk",
+      "smug",
+      "seductive smile",
+      "naughty face",
+      "one eye closed",
+      "raised eyebrow",
+      "half-closed eyes",
+      "doyagao",
+      "light smile",
+      "happy",
+      "tongue out",
+      ":p",
+      ";p",
+      ":q",
+      ";q",
+      "c:",
+      ":>",
+      ";>"
+    ]
+  }
+}

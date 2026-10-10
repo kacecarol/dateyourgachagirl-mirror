@@ -1,0 +1,3057 @@
+{
+  "version": 1,
+  "scenes": {
+    "opening": {
+      "drinking, bubble tea, drinking straw, holding cup": {
+        "en": "She is sipping bubble tea through a straw, holding the cup with both hands.",
+        "zh-cn": "她双手捧着杯子，用吸管喝珍珠奶茶。"
+      },
+      "she is sipping bubble tea through a straw, holding the cup with both hands.": {
+        "en": "She is sipping bubble tea through a straw, holding the cup with both hands.",
+        "zh-cn": "她双手捧着杯子，用吸管喝珍珠奶茶。"
+      },
+      "holding cup, bubble tea, reaching out": {
+        "en": "She holds out a cup of bubble tea toward the viewer.",
+        "zh-cn": "她向你递出一杯珍珠奶茶。"
+      },
+      "she holds out a cup of bubble tea toward the viewer.": {
+        "en": "She holds out a cup of bubble tea toward the viewer.",
+        "zh-cn": "她向你递出一杯珍珠奶茶。"
+      },
+      "holding bag, gift box, reaching out": {
+        "en": "She offers a small gift box in a bag, holding it out toward the viewer.",
+        "zh-cn": "她把装在袋子里的小礼物盒递给你。"
+      },
+      "she offers a small gift box in a bag, holding it out toward the viewer.": {
+        "en": "She offers a small gift box in a bag, holding it out toward the viewer.",
+        "zh-cn": "她把装在袋子里的小礼物盒递给你。"
+      },
+      "waving": {
+        "en": "She waves one hand in greeting.",
+        "zh-cn": "她挥手打招呼。"
+      },
+      "she waves one hand in greeting.": {
+        "en": "She waves one hand in greeting.",
+        "zh-cn": "她挥手打招呼。"
+      },
+      "holding phone, looking at phone": {
+        "en": "She holds up her phone and looks at the screen.",
+        "zh-cn": "她举起手机看屏幕。"
+      },
+      "she holds up her phone and looks at the screen.": {
+        "en": "She holds up her phone and looks at the screen.",
+        "zh-cn": "她举起手机看屏幕。"
+      },
+      "holding camera, taking picture": {
+        "en": "She raises a camera and takes a picture.",
+        "zh-cn": "她举起相机拍照。"
+      },
+      "she raises a camera and takes a picture.": {
+        "en": "She raises a camera and takes a picture.",
+        "zh-cn": "她举起相机拍照。"
+      },
+      "holding crepe": {
+        "en": "She holds a crepe in both hands.",
+        "zh-cn": "她双手拿着可丽饼。"
+      },
+      "she holds a crepe in both hands.": {
+        "en": "She holds a crepe in both hands.",
+        "zh-cn": "她双手拿着可丽饼。"
+      },
+      "holding balloon": {
+        "en": "She holds a balloon by its string.",
+        "zh-cn": "她拉着气球的绳子。"
+      },
+      "she holds a balloon by its string.": {
+        "en": "She holds a balloon by its string.",
+        "zh-cn": "她拉着气球的绳子。"
+      },
+      "holding umbrella": {
+        "en": "She holds an umbrella in one hand.",
+        "zh-cn": "她一手撑着伞。"
+      },
+      "she holds an umbrella in one hand.": {
+        "en": "She holds an umbrella in one hand.",
+        "zh-cn": "她一手撑着伞。"
+      },
+      "holding bouquet, reaching out": {
+        "en": "She holds out a bouquet toward the viewer.",
+        "zh-cn": "她向你递出一束花。"
+      },
+      "she holds out a bouquet toward the viewer.": {
+        "en": "She holds out a bouquet toward the viewer.",
+        "zh-cn": "她向你递出一束花。"
+      },
+      "v, holding phone": {
+        "en": "She makes a V sign with one hand while holding up her phone.",
+        "zh-cn": "她举着手机，另一只手比出胜利手势。"
+      },
+      "she makes a v sign with one hand while holding up her phone.": {
+        "en": "She makes a V sign with one hand while holding up her phone.",
+        "zh-cn": "她举着手机，另一只手比出胜利手势。"
+      },
+      "holding bag, shopping bag": {
+        "en": "She carries a shopping bag at her side.",
+        "zh-cn": "她提着购物袋。"
+      },
+      "she carries a shopping bag at her side.": {
+        "en": "She carries a shopping bag at her side.",
+        "zh-cn": "她提着购物袋。"
+      },
+      "hug, stuffed toy": {
+        "en": "She hugs a stuffed toy against her chest.",
+        "zh-cn": "她把毛绒玩具抱在胸前。"
+      },
+      "she hugs a stuffed toy against her chest.": {
+        "en": "She hugs a stuffed toy against her chest.",
+        "zh-cn": "她把毛绒玩具抱在胸前。"
+      },
+      "holding drink, reaching out": {
+        "en": "She holds out a drink toward the viewer.",
+        "zh-cn": "她向你递出一杯饮料。"
+      },
+      "she holds out a drink toward the viewer.": {
+        "en": "She holds out a drink toward the viewer.",
+        "zh-cn": "她向你递出一杯饮料。"
+      },
+      "hand up, shading eyes": {
+        "en": "She raises one hand to shade her eyes from the light.",
+        "zh-cn": "她抬手遮挡照向眼睛的光。"
+      },
+      "she raises one hand to shade her eyes from the light.": {
+        "en": "She raises one hand to shade her eyes from the light.",
+        "zh-cn": "她抬手遮挡照向眼睛的光。"
+      },
+      "standing, crossed arms, light smile, looking at viewer": {
+        "en": "She stands, and folds her arms, and smiles softly, and looks at you.",
+        "zh-cn": "她站着，双臂交叉，露出浅浅的笑容，看着你。"
+      },
+      "standing, hand on own hip, light smile, looking at viewer": {
+        "en": "She stands, and rests a hand on her hip, and smiles softly, and looks at you.",
+        "zh-cn": "她站着，把手放在腰间，露出浅浅的笑容，看着你。"
+      },
+      "standing, holding, light smile, looking at viewer": {
+        "en": "She stands, and holds something in her hands, and smiles softly, and looks at you.",
+        "zh-cn": "她站着，手里拿着东西，露出浅浅的笑容，看着你。"
+      },
+      "standing, against wall, crossed arms, seductive smile": {
+        "en": "She stands, and leans against a wall, and folds her arms, and smiles alluringly.",
+        "zh-cn": "她站着，靠着墙，双臂交叉，露出妩媚的笑容。"
+      },
+      "standing, adjusting hair, looking at viewer": {
+        "en": "She stands, and adjusts her hair, and looks at you.",
+        "zh-cn": "她站着，整理头发，看着你。"
+      },
+      "standing, expressionless, looking at viewer": {
+        "en": "She stands, and keeps a neutral expression, and looks at you.",
+        "zh-cn": "她站着，面无表情，看着你。"
+      },
+      "standing, hands in pockets, expressionless, looking away": {
+        "en": "She stands, and keeps her hands in her pockets, and keeps a neutral expression, and averts her gaze.",
+        "zh-cn": "她站着，双手插在口袋里，面无表情，移开视线。"
+      },
+      "standing, closed eyes, expressionless": {
+        "en": "She stands, and closes her eyes, and keeps a neutral expression.",
+        "zh-cn": "她站着，闭上眼睛，面无表情。"
+      },
+      "standing, head tilt, bored, looking at viewer": {
+        "en": "She stands, and tilts her head, and looks bored, and looks at you.",
+        "zh-cn": "她站着，歪着头，显得无聊，看着你。"
+      },
+      "standing, arms at sides, expressionless, nose_blush": {
+        "en": "She stands, and lets her arms hang at her sides, and keeps a neutral expression, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双臂垂在身侧，面无表情，鼻尖和脸颊泛红。"
+      },
+      "standing, waving, open mouth, happy, excited": {
+        "en": "She stands, and waves in greeting, and opens her mouth, and looks happy, and looks excited.",
+        "zh-cn": "她站着，挥手打招呼，张开嘴，显得开心，显得兴奋。"
+      },
+      "standing, jumping, v, open mouth, happy": {
+        "en": "She stands, and jumps, and makes a peace sign, and opens her mouth, and looks happy.",
+        "zh-cn": "她站着，跳起来，比出胜利手势，张开嘴，显得开心。"
+      },
+      "standing, leaning forward, wide-eyed, open mouth": {
+        "en": "She stands, and leans forward, and opens her eyes wide, and opens her mouth.",
+        "zh-cn": "她站着，向前倾身，睁大眼睛，张开嘴。"
+      },
+      "standing, arms up, happy, one eye closed": {
+        "en": "She stands, and raises both arms, and looks happy, and winks.",
+        "zh-cn": "她站着，举起双臂，显得开心，眨一只眼睛。"
+      },
+      "running, spread arms, open mouth, happy": {
+        "en": "She runs, and spreads her arms wide, and opens her mouth, and looks happy.",
+        "zh-cn": "她跑着，张开双臂，张开嘴，显得开心。"
+      },
+      "standing, serious, looking at viewer": {
+        "en": "She stands, and looks serious, and looks at you.",
+        "zh-cn": "她站着，神情认真，看着你。"
+      },
+      "standing, bowing, serious, light smile": {
+        "en": "She stands, and bows, and looks serious, and smiles softly.",
+        "zh-cn": "她站着，鞠躬，神情认真，露出浅浅的笑容。"
+      },
+      "standing, arms at sides, determined, looking at viewer": {
+        "en": "She stands, and lets her arms hang at her sides, and looks determined, and looks at you.",
+        "zh-cn": "她站着，双臂垂在身侧，神情坚定，看着你。"
+      },
+      "standing, holding bag, serious, looking at viewer": {
+        "en": "She stands, and holds a bag, and looks serious, and looks at you.",
+        "zh-cn": "她站着，提着袋子，神情认真，看着你。"
+      },
+      "standing, serious, light smile": {
+        "en": "She stands, and looks serious, and smiles softly.",
+        "zh-cn": "她站着，神情认真，露出浅浅的笑容。"
+      },
+      "standing, hiding, nose_blush": {
+        "en": "She stands, and hides herself from view, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，躲藏起来，鼻尖和脸颊泛红。"
+      },
+      "standing, own hands clasped, looking down, nose_blush": {
+        "en": "She stands, and clasps her hands together, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双手紧握，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, hand on own arm, looking away, nose_blush": {
+        "en": "She stands, and holds her own arm, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，握着自己的手臂，移开视线，鼻尖和脸颊泛红。"
+      },
+      "standing, looking down, nose_blush, own hands together": {
+        "en": "She stands, and looks down, and blushes across her nose and cheeks, and brings her hands together.",
+        "zh-cn": "她站着，低头看，鼻尖和脸颊泛红，把双手合在一起。"
+      },
+      "standing, looking at viewer, own hands together, nose_blush": {
+        "en": "She stands, and looks at you, and brings her hands together, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，把双手合在一起，鼻尖和脸颊泛红。"
+      },
+      "drinking, bubble tea, drinking straw, holding cup, looking to the side, pout, nose_blush": {
+        "en": "She takes a sip, and has a cup of bubble tea, and uses a straw to drink, and holds a cup, and looks to the side, and pouts, and blushes across her nose and cheeks.",
+        "zh-cn": "她喝了一口，拿着珍珠奶茶，用吸管喝饮料，拿着杯子，看向一旁，嘟起嘴，鼻尖和脸颊泛红。"
+      },
+      "holding cup, bubble tea, one eye closed, annoyed, nose_blush": {
+        "en": "She holds a cup, and has a cup of bubble tea, and winks, and looks annoyed, and blushes across her nose and cheeks.",
+        "zh-cn": "她拿着杯子，拿着珍珠奶茶，眨一只眼睛，显得恼怒，鼻尖和脸颊泛红。"
+      },
+      "holding bag, gift, reaching out, looking to the side, pout, nose_blush": {
+        "en": "She holds a bag, and has a gift ready, and reaches out toward you, and looks to the side, and pouts, and blushes across her nose and cheeks.",
+        "zh-cn": "她提着袋子，准备着礼物，向你伸手，看向一旁，嘟起嘴，鼻尖和脸颊泛红。"
+      },
+      "holding cup, reaching out, looking to the side, nose_blush": {
+        "en": "She holds a cup, and reaches out toward you, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她拿着杯子，向你伸手，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "holding phone, looking at phone, annoyed, pout": {
+        "en": "She holds her phone, and looks at her phone screen, and looks annoyed, and pouts.",
+        "zh-cn": "她拿着手机，看着手机屏幕，显得恼怒，嘟起嘴。"
+      },
+      "holding camera, taking picture, looking to the side, nose_blush": {
+        "en": "She holds a camera, and takes a photograph, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她拿着相机，拍着照片，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "holding crepe, looking to the side, nose_blush, pout": {
+        "en": "She holds a crepe, and looks to the side, and blushes across her nose and cheeks, and pouts.",
+        "zh-cn": "她拿着可丽饼，看向一旁，鼻尖和脸颊泛红，嘟起嘴。"
+      },
+      "holding balloon, looking to the side, one eye closed, nose_blush": {
+        "en": "She holds a balloon by its string, and looks to the side, and winks, and blushes across her nose and cheeks.",
+        "zh-cn": "她拉着气球的绳子，看向一旁，眨一只眼睛，鼻尖和脸颊泛红。"
+      },
+      "standing, hands on own chest, looking down, nose_blush": {
+        "en": "She stands, and rests both hands on her chest, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双手放在胸前，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, covering face, nose_blush": {
+        "en": "She stands, and covers her face, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，捂着脸，鼻尖和脸颊泛红。"
+      },
+      "standing, holding own skirt, looking away, nose_blush": {
+        "en": "She stands, and grasps her skirt, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，抓着裙摆，移开视线，鼻尖和脸颊泛红。"
+      },
+      "standing, bowing, looking down, nose_blush": {
+        "en": "She stands, and bows, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，鞠躬，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, peeking through fingers, nose_blush": {
+        "en": "She stands, and peeks through her fingers, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，从指缝间偷看，鼻尖和脸颊泛红。"
+      },
+      "standing, crossed arms, smug, looking down": {
+        "en": "She stands, and folds her arms, and looks pleased with herself, and looks down.",
+        "zh-cn": "她站着，双臂交叉，露出得意的神情，低头看。"
+      },
+      "standing, hand on own hip, raised eyebrow, smirk": {
+        "en": "She stands, and rests a hand on her hip, and raises an eyebrow, and gives a teasing smile.",
+        "zh-cn": "她站着，把手放在腰间，挑起眉毛，露出戏谑的笑容。"
+      },
+      "standing, looking down, one eye closed": {
+        "en": "She stands, and looks down, and winks.",
+        "zh-cn": "她站着，低头看，眨一只眼睛。"
+      },
+      "standing, hair flip, looking at viewer": {
+        "en": "She stands, and flicks her hair back, and looks at you.",
+        "zh-cn": "她站着，把头发向后甩，看着你。"
+      },
+      "standing, crossed arms, facing away, disdain": {
+        "en": "She stands, and folds her arms, and turns away, and looks disdainful.",
+        "zh-cn": "她站着，双臂交叉，背过身，露出不屑的神情。"
+      },
+      "standing, leaning forward, v, one eye closed, smirk": {
+        "en": "She stands, and leans forward, and makes a peace sign, and winks, and gives a teasing smile.",
+        "zh-cn": "她站着，向前倾身，比出胜利手势，眨一只眼睛，露出戏谑的笑容。"
+      },
+      "standing, waving, one eye closed, open mouth, happy": {
+        "en": "She stands, and waves in greeting, and winks, and opens her mouth, and looks happy.",
+        "zh-cn": "她站着，挥手打招呼，眨一只眼睛，张开嘴，显得开心。"
+      },
+      "standing, hand on own hip, smirk, looking at viewer": {
+        "en": "She stands, and rests a hand on her hip, and gives a teasing smile, and looks at you.",
+        "zh-cn": "她站着，把手放在腰间，露出戏谑的笑容，看着你。"
+      },
+      "standing, blowing kiss, one eye closed, naughty face": {
+        "en": "She stands, and blows a kiss, and winks, and looks mischievous.",
+        "zh-cn": "她站着，送出飞吻，眨一只眼睛，露出调皮的神情。"
+      },
+      "standing, arm up, smirk": {
+        "en": "She stands, and raises one arm, and gives a teasing smile.",
+        "zh-cn": "她站着，举起一只手臂，露出戏谑的笑容。"
+      },
+      "standing, leaning forward, staring, looking at viewer": {
+        "en": "She stands, and leans forward, and gazes intently, and looks at you.",
+        "zh-cn": "她站着，向前倾身，凝神注视，看着你。"
+      },
+      "standing, head tilt, crazy smile, staring": {
+        "en": "She stands, and tilts her head, and smiles with unsettling intensity, and gazes intently.",
+        "zh-cn": "她站着，歪着头，露出令人不安的强烈笑容，凝神注视。"
+      },
+      "standing, arms behind back, looking at viewer, evil smile": {
+        "en": "She stands, and holds her arms behind her back, and looks at you, and smiles ominously.",
+        "zh-cn": "她站着，双臂放在身后，看着你，露出阴沉的笑容。"
+      },
+      "standing, leaning forward, wide-eyed, smile": {
+        "en": "She stands, and leans forward, and opens her eyes wide, and smiles.",
+        "zh-cn": "她站着，向前倾身，睁大眼睛，微笑。"
+      },
+      "standing, walking, staring, smirk": {
+        "en": "She stands, and walks, and gazes intently, and gives a teasing smile.",
+        "zh-cn": "她站着，走着，凝神注视，露出戏谑的笑容。"
+      },
+      "standing, wide-eyed, open mouth": {
+        "en": "She stands, and opens her eyes wide, and opens her mouth.",
+        "zh-cn": "她站着，睁大眼睛，张开嘴。"
+      },
+      "standing, head tilt, open mouth, looking at viewer": {
+        "en": "She stands, and tilts her head, and opens her mouth, and looks at you.",
+        "zh-cn": "她站着，歪着头，张开嘴，看着你。"
+      },
+      "standing, leaning forward, wide-eyed, surprised": {
+        "en": "She stands, and leans forward, and opens her eyes wide, and looks surprised.",
+        "zh-cn": "她站着，向前倾身，睁大眼睛，显得惊讶。"
+      },
+      "standing, hand up, thinking, looking at viewer": {
+        "en": "She stands, and raises a hand, and is lost in thought, and looks at you.",
+        "zh-cn": "她站着，抬起一只手，陷入思考，看着你。"
+      },
+      "standing, wide-eyed, open mouth, head tilt": {
+        "en": "She stands, and opens her eyes wide, and opens her mouth, and tilts her head.",
+        "zh-cn": "她站着，睁大眼睛，张开嘴，歪着头。"
+      },
+      "standing, expressionless, staring, looking at viewer": {
+        "en": "She stands, and keeps a neutral expression, and gazes intently, and looks at you.",
+        "zh-cn": "她站着，面无表情，凝神注视，看着你。"
+      },
+      "standing, blinking, expressionless": {
+        "en": "She stands, and blinks, and keeps a neutral expression.",
+        "zh-cn": "她站着，眨着眼睛，面无表情。"
+      },
+      "standing, head tilt, staring, parted lips": {
+        "en": "She stands, and tilts her head, and gazes intently, and parts her lips slightly.",
+        "zh-cn": "她站着，歪着头，凝神注视，微微张开双唇。"
+      },
+      "standing, arms at sides, expressionless, staring": {
+        "en": "She stands, and lets her arms hang at her sides, and keeps a neutral expression, and gazes intently.",
+        "zh-cn": "她站着，双臂垂在身侧，面无表情，凝神注视。"
+      },
+      "standing, contrapposto, hand on own hip, head tilt, smirk": {
+        "en": "She rests her weight on one hip, tilts her head, and greets the viewer with a little smirk.",
+        "zh-cn": "她把重心偏向一侧，歪头看你，嘴角勾起一丝坏笑。"
+      },
+      "she stands with her weight cocked onto one hip, tilts her head, and smirks at the viewer.": {
+        "en": "She stands with her weight cocked onto one hip, tilts her head, and smirks at the viewer.",
+        "zh-cn": "她把重心放在一侧胯上，歪着头，朝你露出坏笑。"
+      },
+      "standing, leaning forward, finger to mouth, one eye closed, naughty face": {
+        "en": "She leans in, presses a finger to her lips, and winks with a mischievous grin.",
+        "zh-cn": "她凑近你，把手指抵在唇边，眨着一只眼，露出调皮的笑容。"
+      },
+      "she leans in, presses a finger to her lips, and winks with a mischievous grin.": {
+        "en": "She leans in, presses a finger to her lips, and winks with a mischievous grin.",
+        "zh-cn": "她凑近你，把手指抵在唇边，眨着一只眼，露出调皮的笑容。"
+      },
+      "standing, arm up, blowing kiss, one eye closed, smug": {
+        "en": "She blows the viewer a kiss with one arm raised and a smug wink.",
+        "zh-cn": "她举起一只手臂，朝你飞吻，得意地眨着一只眼。"
+      },
+      "she blows the viewer a kiss with one arm raised and a smug wink.": {
+        "en": "She blows the viewer a kiss with one arm raised and a smug wink.",
+        "zh-cn": "她举起一只手臂，朝你飞吻，得意地眨着一只眼。"
+      },
+      "standing, hand on own hip, raised eyebrow, doyagao": {
+        "en": "She plants a hand on her hip and lifts an eyebrow, looking pleased with her own bold greeting.",
+        "zh-cn": "她一手叉腰，挑起眉梢，似乎很满意自己这场大胆的开场。"
+      },
+      "she plants a hand on her hip, lifts one eyebrow, and gives the viewer a self-satisfied look.": {
+        "en": "She plants a hand on her hip, lifts one eyebrow, and gives the viewer a self-satisfied look.",
+        "zh-cn": "她一手叉腰，挑起一侧眉毛，得意地看着你。"
+      },
+      "standing, head tilt, looking at viewer, smirk": {
+        "en": "She tilts her head and smirks at the viewer, sizing them up.",
+        "zh-cn": "她歪着头，带着坏笑打量你。"
+      },
+      "she tilts her head and smirks at the viewer, sizing them up.": {
+        "en": "She tilts her head and smirks at the viewer, sizing them up.",
+        "zh-cn": "她歪着头，带着坏笑打量你。"
+      },
+      "she rests her weight on one hip, tilts her head, and greets the viewer with a little smirk.": {
+        "en": "She rests her weight on one hip, tilts her head, and greets the viewer with a little smirk.",
+        "zh-cn": "她把重心偏向一侧，歪头看你，嘴角勾起一丝坏笑。"
+      },
+      "standing, leaning forward, finger to mouth, looking at viewer, smile": {
+        "en": "She leans toward the viewer with a finger to her lips and a smile that hints at a shared secret.",
+        "zh-cn": "她向你凑近，指尖轻抵唇边，笑意像在邀请你保守一个小秘密。"
+      },
+      "she leans toward the viewer with a finger to her lips and a smile that hints at a shared secret.": {
+        "en": "She leans toward the viewer with a finger to her lips and a smile that hints at a shared secret.",
+        "zh-cn": "她向你凑近，指尖轻抵唇边，笑意像在邀请你保守一个小秘密。"
+      },
+      "standing, arm up, blowing kiss, smile": {
+        "en": "She raises one arm and blows the viewer a kiss, smiling as she waits for their reaction.",
+        "zh-cn": "她扬起手臂送来一个飞吻，笑着等你接招。"
+      },
+      "she raises one arm and blows the viewer a kiss, smiling as she waits for their reaction.": {
+        "en": "She raises one arm and blows the viewer a kiss, smiling as she waits for their reaction.",
+        "zh-cn": "她扬起手臂送来一个飞吻，笑着等你接招。"
+      },
+      "she plants a hand on her hip and lifts an eyebrow, looking pleased with her own bold greeting.": {
+        "en": "She plants a hand on her hip and lifts an eyebrow, looking pleased with her own bold greeting.",
+        "zh-cn": "她一手叉腰，挑起眉梢，似乎很满意自己这场大胆的开场。"
+      },
+      "standing, head tilt, looking at viewer, parted lips": {
+        "en": "She tilts her head, lips slightly parted, and studies the viewer with open curiosity.",
+        "zh-cn": "她偏着头，唇瓣微张，好奇地打量你，仿佛发现了一个有趣的谜题。"
+      },
+      "she tilts her head, lips slightly parted, and studies the viewer with open curiosity.": {
+        "en": "She tilts her head, lips slightly parted, and studies the viewer with open curiosity.",
+        "zh-cn": "她偏着头，唇瓣微张，好奇地打量你，仿佛发现了一个有趣的谜题。"
+      }
+    },
+    "daytime": {
+      "walking, drinking, bubble tea, drinking straw, holding cup": {
+        "en": "She walks forward while sipping bubble tea through a straw.",
+        "zh-cn": "她边走边用吸管喝珍珠奶茶。"
+      },
+      "she walks forward while sipping bubble tea through a straw.": {
+        "en": "She walks forward while sipping bubble tea through a straw.",
+        "zh-cn": "她边走边用吸管喝珍珠奶茶。"
+      },
+      "walking, eating, holding crepe": {
+        "en": "She walks while eating a crepe from her hand.",
+        "zh-cn": "她边走边吃手里的可丽饼。"
+      },
+      "she walks while eating a crepe from her hand.": {
+        "en": "She walks while eating a crepe from her hand.",
+        "zh-cn": "她边走边吃手里的可丽饼。"
+      },
+      "walking, ice cream cone, licking": {
+        "en": "She walks while licking an ice cream cone.",
+        "zh-cn": "她边走边舔冰淇淋甜筒。"
+      },
+      "she walks while licking an ice cream cone.": {
+        "en": "She walks while licking an ice cream cone.",
+        "zh-cn": "她边走边舔冰淇淋甜筒。"
+      },
+      "walking, holding bag, shopping bag": {
+        "en": "She walks with a shopping bag in one hand.",
+        "zh-cn": "她一手提着购物袋向前走。"
+      },
+      "she walks with a shopping bag in one hand.": {
+        "en": "She walks with a shopping bag in one hand.",
+        "zh-cn": "她一手提着购物袋向前走。"
+      },
+      "eating, holding donut": {
+        "en": "She bites into a donut held in one hand.",
+        "zh-cn": "她咬了一口手里的甜甜圈。"
+      },
+      "she bites into a donut held in one hand.": {
+        "en": "She bites into a donut held in one hand.",
+        "zh-cn": "她咬了一口手里的甜甜圈。"
+      },
+      "holding camera, taking picture, leaning forward": {
+        "en": "She leans forward and takes a picture with a camera.",
+        "zh-cn": "她向前倾身，用相机拍照。"
+      },
+      "she leans forward and takes a picture with a camera.": {
+        "en": "She leans forward and takes a picture with a camera.",
+        "zh-cn": "她向前倾身，用相机拍照。"
+      },
+      "reaching out, holding bouquet": {
+        "en": "She reaches out to hand over a bouquet.",
+        "zh-cn": "她伸手递出一束花。"
+      },
+      "she reaches out to hand over a bouquet.": {
+        "en": "She reaches out to hand over a bouquet.",
+        "zh-cn": "她伸手递出一束花。"
+      },
+      "walking, holding umbrella": {
+        "en": "She walks while holding an umbrella.",
+        "zh-cn": "她撑着伞走路。"
+      },
+      "she walks while holding an umbrella.": {
+        "en": "She walks while holding an umbrella.",
+        "zh-cn": "她撑着伞走路。"
+      },
+      "leaning forward, holding phone, looking at phone": {
+        "en": "She leans forward over her phone, looking at the screen.",
+        "zh-cn": "她俯身看手机屏幕。"
+      },
+      "she leans forward over her phone, looking at the screen.": {
+        "en": "She leans forward over her phone, looking at the screen.",
+        "zh-cn": "她俯身看手机屏幕。"
+      },
+      "eating, holding cotton candy": {
+        "en": "She eats cotton candy from a stick.",
+        "zh-cn": "她吃着竹签上的棉花糖。"
+      },
+      "she eats cotton candy from a stick.": {
+        "en": "She eats cotton candy from a stick.",
+        "zh-cn": "她吃着竹签上的棉花糖。"
+      },
+      "walking, eating, holding candy apple": {
+        "en": "She walks while eating a candy apple on a stick.",
+        "zh-cn": "她边走边吃糖苹果。"
+      },
+      "she walks while eating a candy apple on a stick.": {
+        "en": "She walks while eating a candy apple on a stick.",
+        "zh-cn": "她边走边吃糖苹果。"
+      },
+      "holding pocky, eating": {
+        "en": "She holds a stick of pocky between her lips.",
+        "zh-cn": "她把一根巧克力饼干棒含在唇间。"
+      },
+      "she holds a stick of pocky between her lips.": {
+        "en": "She holds a stick of pocky between her lips.",
+        "zh-cn": "她把一根巧克力饼干棒含在唇间。"
+      },
+      "holding lollipop": {
+        "en": "She holds a lollipop in one hand.",
+        "zh-cn": "她一手拿着棒棒糖。"
+      },
+      "she holds a lollipop in one hand.": {
+        "en": "She holds a lollipop in one hand.",
+        "zh-cn": "她一手拿着棒棒糖。"
+      },
+      "eating, holding takoyaki": {
+        "en": "She eats takoyaki with a small pick.",
+        "zh-cn": "她用小签子吃章鱼烧。"
+      },
+      "she eats takoyaki with a small pick.": {
+        "en": "She eats takoyaki with a small pick.",
+        "zh-cn": "她用小签子吃章鱼烧。"
+      },
+      "carrying, holding picnic basket, walking": {
+        "en": "She carries a picnic basket at her side while walking.",
+        "zh-cn": "她提着野餐篮走路。"
+      },
+      "she carries a picnic basket at her side while walking.": {
+        "en": "She carries a picnic basket at her side while walking.",
+        "zh-cn": "她提着野餐篮走路。"
+      },
+      "walking, light smile, looking at viewer": {
+        "en": "She walks, and smiles softly, and looks at you.",
+        "zh-cn": "她走着，露出浅浅的笑容，看着你。"
+      },
+      "sitting, cafe, holding cup, crossed legs, hand on own chin, light smile": {
+        "en": "She sits down, and is in a cafe, and holds a cup, and crosses her legs, and rests her hand on her chin, and smiles softly.",
+        "zh-cn": "她坐着，身处咖啡馆，拿着杯子，交叠双腿，托着下巴，露出浅浅的笑容。"
+      },
+      "sitting, chair, crossed legs, book on lap, serious": {
+        "en": "She sits down, and is on a chair, and crosses her legs, and rests a book on her lap, and looks serious.",
+        "zh-cn": "她坐着，坐在椅子上，交叠双腿，膝上放着一本书，神情认真。"
+      },
+      "standing, looking away, hand on own chin, thinking": {
+        "en": "She stands, and averts her gaze, and rests her hand on her chin, and is lost in thought.",
+        "zh-cn": "她站着，移开视线，托着下巴，陷入思考。"
+      },
+      "walking, holding hands, light smile, looking at viewer": {
+        "en": "She walks, and holds your hand, and smiles softly, and looks at you.",
+        "zh-cn": "她走着，牵着你的手，露出浅浅的笑容，看着你。"
+      },
+      "sitting, bench, crossed legs, hand on own chin, light smile": {
+        "en": "She sits down, and is on a bench, and crosses her legs, and rests her hand on her chin, and smiles softly.",
+        "zh-cn": "她坐着，坐在长椅上，交叠双腿，托着下巴，露出浅浅的笑容。"
+      },
+      "walking, expressionless, looking ahead": {
+        "en": "She walks, and keeps a neutral expression, and looks ahead.",
+        "zh-cn": "她走着，面无表情，看着前方。"
+      },
+      "sitting, bench, closed eyes, expressionless": {
+        "en": "She sits down, and is on a bench, and closes her eyes, and keeps a neutral expression.",
+        "zh-cn": "她坐着，坐在长椅上，闭上眼睛，面无表情。"
+      },
+      "standing, looking away, thinking, expressionless": {
+        "en": "She stands, and averts her gaze, and is lost in thought, and keeps a neutral expression.",
+        "zh-cn": "她站着，移开视线，陷入思考，面无表情。"
+      },
+      "sitting, chair, thinking, looking away": {
+        "en": "She sits down, and is on a chair, and is lost in thought, and averts her gaze.",
+        "zh-cn": "她坐着，坐在椅子上，陷入思考，移开视线。"
+      },
+      "standing, looking away, nose_blush, expressionless": {
+        "en": "She stands, and averts her gaze, and blushes across her nose and cheeks, and keeps a neutral expression.",
+        "zh-cn": "她站着，移开视线，鼻尖和脸颊泛红，面无表情。"
+      },
+      "walking, hands in pockets, looking at viewer, expressionless": {
+        "en": "She walks, and keeps her hands in her pockets, and looks at you, and keeps a neutral expression.",
+        "zh-cn": "她走着，双手插在口袋里，看着你，面无表情。"
+      },
+      "walking, jumping, holding ice cream, happy": {
+        "en": "She walks, and jumps, and holds an ice cream, and looks happy.",
+        "zh-cn": "她走着，跳起来，拿着冰淇淋，显得开心。"
+      },
+      "standing, pointing at viewer, open mouth, excited": {
+        "en": "She stands, and points toward you, and opens her mouth, and looks excited.",
+        "zh-cn": "她站着，指向你，张开嘴，显得兴奋。"
+      },
+      "sitting, swing, happy, open mouth": {
+        "en": "She sits down, and is on a swing, and looks happy, and opens her mouth.",
+        "zh-cn": "她坐着，坐在秋千上，显得开心，张开嘴。"
+      },
+      "walking, holding hands, looking back, happy": {
+        "en": "She walks, and holds your hand, and looks back, and looks happy.",
+        "zh-cn": "她走着，牵着你的手，回头看，显得开心。"
+      },
+      "standing, happy, wide-eyed": {
+        "en": "She stands, and looks happy, and opens her eyes wide.",
+        "zh-cn": "她站着，显得开心，睁大眼睛。"
+      },
+      "running, wind, open mouth, excited": {
+        "en": "She runs, and has the wind blowing around her, and opens her mouth, and looks excited.",
+        "zh-cn": "她跑着，身边吹着风，张开嘴，显得兴奋。"
+      },
+      "walking, serious, looking at viewer": {
+        "en": "She walks, and looks serious, and looks at you.",
+        "zh-cn": "她走着，神情认真，看着你。"
+      },
+      "sitting, chair, writing, serious": {
+        "en": "She sits down, and is on a chair, and writes something down, and looks serious.",
+        "zh-cn": "她坐着，坐在椅子上，写着字，神情认真。"
+      },
+      "sitting, bench, hands on own knees, serious": {
+        "en": "She sits down, and is on a bench, and rests her hands on her knees, and looks serious.",
+        "zh-cn": "她坐着，坐在长椅上，双手放在膝盖上，神情认真。"
+      },
+      "standing, talking, determined, open mouth": {
+        "en": "She stands, and speaks, and looks determined, and opens her mouth.",
+        "zh-cn": "她站着，说着话，神情坚定，张开嘴。"
+      },
+      "walking, carrying, serious": {
+        "en": "She walks, and carries something, and looks serious.",
+        "zh-cn": "她走着，携带着东西，神情认真。"
+      },
+      "sitting, cafe, leaning forward, serious": {
+        "en": "She sits down, and is in a cafe, and leans forward, and looks serious.",
+        "zh-cn": "她坐着，身处咖啡馆，向前倾身，神情认真。"
+      },
+      "sitting, bench, hands on lap, looking down, nose_blush": {
+        "en": "She sits down, and is on a bench, and rests her hands on her lap, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在长椅上，双手放在膝上，低头看，鼻尖和脸颊泛红。"
+      },
+      "walking, looking down, nose_blush": {
+        "en": "She walks, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她走着，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, looking away, nose_blush": {
+        "en": "She stands, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，移开视线，鼻尖和脸颊泛红。"
+      },
+      "sitting, chair, own hands together, nose_blush": {
+        "en": "She sits down, and is on a chair, and brings her hands together, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在椅子上，把双手合在一起，鼻尖和脸颊泛红。"
+      },
+      "walking, from behind, holding own dress, looking down": {
+        "en": "She walks, and is seen from behind, and grasps her dress, and looks down.",
+        "zh-cn": "她走着，背对镜头，抓着自己的裙子，低头看。"
+      },
+      "standing, fidgeting, looking down, nose_blush": {
+        "en": "She stands, and fidgets nervously, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，紧张地动着手指，低头看，鼻尖和脸颊泛红。"
+      },
+      "walking, drinking, holding cup, bubble tea, looking to the side, nose_blush": {
+        "en": "She walks, and takes a sip, and holds a cup, and has a cup of bubble tea, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她走着，喝了一口，拿着杯子，拿着珍珠奶茶，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "walking, eating, holding crepe, light smile, nose_blush": {
+        "en": "She walks, and takes a bite of her food, and holds a crepe, and smiles softly, and blushes across her nose and cheeks.",
+        "zh-cn": "她走着，吃了一口食物，拿着可丽饼，露出浅浅的笑容，鼻尖和脸颊泛红。"
+      },
+      "walking, ice cream, licking, looking to the side, nose_blush": {
+        "en": "She walks, and has some ice cream, and licks her treat, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她走着，拿着冰淇淋，舔着手里的甜点，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "walking, holding bag, shopping bag, looking to the side, pout": {
+        "en": "She walks, and holds a bag, and carries a shopping bag, and looks to the side, and pouts.",
+        "zh-cn": "她走着，提着袋子，提着购物袋，看向一旁，嘟起嘴。"
+      },
+      "leaning forward, holding phone, looking at phone, annoyed, nose_blush": {
+        "en": "She leans forward, and holds her phone, and looks at her phone screen, and looks annoyed, and blushes across her nose and cheeks.",
+        "zh-cn": "她向前倾身，拿着手机，看着手机屏幕，显得恼怒，鼻尖和脸颊泛红。"
+      },
+      "reaching out, holding flower, looking to the side, nose_blush, pout": {
+        "en": "She reaches out toward you, and holds a flower, and looks to the side, and blushes across her nose and cheeks, and pouts.",
+        "zh-cn": "她向你伸手，拿着一朵花，看向一旁，鼻尖和脸颊泛红，嘟起嘴。"
+      },
+      "eating, holding donut, looking to the side, light smile": {
+        "en": "She takes a bite of her food, and holds a donut, and looks to the side, and smiles softly.",
+        "zh-cn": "她吃了一口食物，拿着甜甜圈，看向一旁，露出浅浅的笑容。"
+      },
+      "holding umbrella, walking, looking to the side, pout, nose_blush": {
+        "en": "She holds an umbrella, and walks, and looks to the side, and pouts, and blushes across her nose and cheeks.",
+        "zh-cn": "她撑着伞，走着，看向一旁，嘟起嘴，鼻尖和脸颊泛红。"
+      },
+      "standing, looking away, fidgeting, nose_blush": {
+        "en": "She stands, and averts her gaze, and fidgets nervously, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，移开视线，紧张地动着手指，鼻尖和脸颊泛红。"
+      },
+      "sitting, chair, covering own mouth, nose_blush": {
+        "en": "She sits down, and is on a chair, and covers her mouth with her hand, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在椅子上，用手捂住嘴，鼻尖和脸颊泛红。"
+      },
+      "walking, from behind, looking down, nose_blush": {
+        "en": "She walks, and is seen from behind, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她走着，背对镜头，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, hands on own cheeks, nose_blush": {
+        "en": "She stands, and cups her cheeks with both hands, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双手捧着脸颊，鼻尖和脸颊泛红。"
+      },
+      "walking, looking away, smug": {
+        "en": "She walks, and averts her gaze, and looks pleased with herself.",
+        "zh-cn": "她走着，移开视线，露出得意的神情。"
+      },
+      "sitting, chair, crossed legs, crossed arms, bored": {
+        "en": "She sits down, and is on a chair, and crosses her legs, and folds her arms, and looks bored.",
+        "zh-cn": "她坐着，坐在椅子上，交叠双腿，双臂交叉，显得无聊。"
+      },
+      "standing, looking away, raised eyebrow, smirk": {
+        "en": "She stands, and averts her gaze, and raises an eyebrow, and gives a teasing smile.",
+        "zh-cn": "她站着，移开视线，挑起眉毛，露出戏谑的笑容。"
+      },
+      "walking, raised eyebrow, looking at viewer": {
+        "en": "She walks, and raises an eyebrow, and looks at you.",
+        "zh-cn": "她走着，挑起眉毛，看着你。"
+      },
+      "sitting, bench, crossed legs, looking down, smug": {
+        "en": "She sits down, and is on a bench, and crosses her legs, and looks down, and looks pleased with herself.",
+        "zh-cn": "她坐着，坐在长椅上，交叠双腿，低头看，露出得意的神情。"
+      },
+      "standing, crossed arms, looking away, nose_blush": {
+        "en": "She stands, and folds her arms, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双臂交叉，移开视线，鼻尖和脸颊泛红。"
+      },
+      "walking, holding hands, looking at viewer, smirk": {
+        "en": "She walks, and holds your hand, and looks at you, and gives a teasing smile.",
+        "zh-cn": "她走着，牵着你的手，看着你，露出戏谑的笑容。"
+      },
+      "standing, holding bag, happy": {
+        "en": "She stands, and holds a bag, and looks happy.",
+        "zh-cn": "她站着，提着袋子，显得开心。"
+      },
+      "sitting, cafe, leaning forward, hand on own chin, smirk": {
+        "en": "She sits down, and is in a cafe, and leans forward, and rests her hand on her chin, and gives a teasing smile.",
+        "zh-cn": "她坐着，身处咖啡馆，向前倾身，托着下巴，露出戏谑的笑容。"
+      },
+      "walking, looking at viewer, one eye closed": {
+        "en": "She walks, and looks at you, and winks.",
+        "zh-cn": "她走着，看着你，眨一只眼睛。"
+      },
+      "sitting, bench, crossed legs, holding phone, one eye closed": {
+        "en": "She sits down, and is on a bench, and crosses her legs, and holds her phone, and winks.",
+        "zh-cn": "她坐着，坐在长椅上，交叠双腿，拿着手机，眨一只眼睛。"
+      },
+      "standing, eating, open mouth, happy, one eye closed": {
+        "en": "She stands, and takes a bite of her food, and opens her mouth, and looks happy, and winks.",
+        "zh-cn": "她站着，吃了一口食物，张开嘴，显得开心，眨一只眼睛。"
+      },
+      "walking, holding hands, smile, looking at viewer": {
+        "en": "She walks, and holds your hand, and smiles, and looks at you.",
+        "zh-cn": "她走着，牵着你的手，微笑，看着你。"
+      },
+      "standing, staring, crazy smile": {
+        "en": "She stands, and gazes intently, and smiles with unsettling intensity.",
+        "zh-cn": "她站着，凝神注视，露出令人不安的强烈笑容。"
+      },
+      "sitting, bench, leaning forward, looking at viewer, evil smile": {
+        "en": "She sits down, and is on a bench, and leans forward, and looks at you, and smiles ominously.",
+        "zh-cn": "她坐着，坐在长椅上，向前倾身，看着你，露出阴沉的笑容。"
+      },
+      "standing, staring, wide-eyed": {
+        "en": "She stands, and gazes intently, and opens her eyes wide.",
+        "zh-cn": "她站着，凝神注视，睁大眼睛。"
+      },
+      "walking, holding hands, smile": {
+        "en": "She walks, and holds your hand, and smiles.",
+        "zh-cn": "她走着，牵着你的手，微笑。"
+      },
+      "sitting, hand on own cheek, staring": {
+        "en": "She sits down, and rests a hand on her cheek, and gazes intently.",
+        "zh-cn": "她坐着，把手放在自己的脸颊上，凝神注视。"
+      },
+      "walking, wide-eyed, happy": {
+        "en": "She walks, and opens her eyes wide, and looks happy.",
+        "zh-cn": "她走着，睁大眼睛，显得开心。"
+      },
+      "standing, pointing, open mouth, excited": {
+        "en": "She stands, and points something out, and opens her mouth, and looks excited.",
+        "zh-cn": "她站着，伸手指向某处，张开嘴，显得兴奋。"
+      },
+      "sitting, chair, leaning forward, thinking": {
+        "en": "She sits down, and is on a chair, and leans forward, and is lost in thought.",
+        "zh-cn": "她坐着，坐在椅子上，向前倾身，陷入思考。"
+      },
+      "standing, hand on own chin, thinking": {
+        "en": "She stands, and rests her hand on her chin, and is lost in thought.",
+        "zh-cn": "她站着，托着下巴，陷入思考。"
+      },
+      "walking, holding hands, looking back, wide-eyed": {
+        "en": "She walks, and holds your hand, and looks back, and opens her eyes wide.",
+        "zh-cn": "她走着，牵着你的手，回头看，睁大眼睛。"
+      },
+      "sitting, bench, head tilt, thinking, looking at viewer": {
+        "en": "She sits down, and is on a bench, and tilts her head, and is lost in thought, and looks at you.",
+        "zh-cn": "她坐着，坐在长椅上，歪着头，陷入思考，看着你。"
+      },
+      "standing, looking at viewer, expressionless, head tilt": {
+        "en": "She stands, and looks at you, and keeps a neutral expression, and tilts her head.",
+        "zh-cn": "她站着，看着你，面无表情，歪着头。"
+      },
+      "sitting, bench, expressionless, staring": {
+        "en": "She sits down, and is on a bench, and keeps a neutral expression, and gazes intently.",
+        "zh-cn": "她坐着，坐在长椅上，面无表情，凝神注视。"
+      },
+      "standing, hand up, expressionless": {
+        "en": "She stands, and raises a hand, and keeps a neutral expression.",
+        "zh-cn": "她站着，抬起一只手，面无表情。"
+      },
+      "sitting, chair, expressionless, staring": {
+        "en": "She sits down, and is on a chair, and keeps a neutral expression, and gazes intently.",
+        "zh-cn": "她坐着，坐在椅子上，面无表情，凝神注视。"
+      },
+      "walking, holding hands, looking back, one eye closed, smirk": {
+        "en": "She walks hand in hand with the viewer, glances back over her shoulder, and winks with a smirk.",
+        "zh-cn": "她牵着你的手走着，回头看你，带着坏笑眨着一只眼。"
+      },
+      "she walks hand in hand with the viewer, glances back over her shoulder, and winks with a smirk.": {
+        "en": "She walks hand in hand with the viewer, glances back over her shoulder, and winks with a smirk.",
+        "zh-cn": "她牵着你的手走着，回头看你，带着坏笑眨着一只眼。"
+      },
+      "standing, contrapposto, pointing, naughty face": {
+        "en": "She shifts her weight to one hip and points at the viewer, her mischievous expression making them the target of her next joke.",
+        "zh-cn": "她把重心偏向一侧，伸手指着你，调皮的神情宣告下一场玩笑轮到你了。"
+      },
+      "she stands with one hip cocked and points at the viewer with a teasing grin.": {
+        "en": "She stands with one hip cocked and points at the viewer with a teasing grin.",
+        "zh-cn": "她把重心放在一侧胯上，指着你，露出逗弄的笑容。"
+      },
+      "sitting, crossed legs, hand on own chin, head tilt, smirk": {
+        "en": "She sits with her legs crossed, chin propped on her hand, and smirks up at the viewer.",
+        "zh-cn": "她交叠着双腿坐着，用手托住下巴，抬眼朝你坏笑。"
+      },
+      "she sits with her legs crossed, chin propped on her hand, and smirks up at the viewer.": {
+        "en": "She sits with her legs crossed, chin propped on her hand, and smirks up at the viewer.",
+        "zh-cn": "她交叠着双腿坐着，用手托住下巴，抬眼朝你坏笑。"
+      },
+      "standing, leaning forward, v, one eye closed, happy": {
+        "en": "She leans forward, flashes a V sign, and winks cheerfully at the viewer.",
+        "zh-cn": "她身体前倾，比出胜利手势，开心地朝你眨着一只眼。"
+      },
+      "she leans forward, flashes a v sign, and winks cheerfully at the viewer.": {
+        "en": "She leans forward, flashes a V sign, and winks cheerfully at the viewer.",
+        "zh-cn": "她身体前倾，比出胜利手势，开心地朝你眨着一只眼。"
+      },
+      "standing, hand on own hip, looking away, smug": {
+        "en": "She rests a hand on her hip and looks away with a pleased little smile, trying to seem indifferent to the viewer's praise.",
+        "zh-cn": "她一手叉腰，故意把目光移开，得意的浅笑却藏不住对你夸奖的受用。"
+      },
+      "she rests a hand on her hip and looks away with a smug little smile.": {
+        "en": "She rests a hand on her hip and looks away with a smug little smile.",
+        "zh-cn": "她一手叉腰，移开视线，露出得意的浅笑。"
+      },
+      "walking, head tilt, looking at viewer, one eye closed, smirk": {
+        "en": "She walks toward the viewer, tilts her head, and winks with a knowing smirk.",
+        "zh-cn": "她朝你走来，歪着头，带着会意的坏笑眨着一只眼。"
+      },
+      "she walks toward the viewer, tilts her head, and winks with a knowing smirk.": {
+        "en": "She walks toward the viewer, tilts her head, and winks with a knowing smirk.",
+        "zh-cn": "她朝你走来，歪着头，带着会意的坏笑眨着一只眼。"
+      },
+      "walking, holding hands, looking back, smile": {
+        "en": "She walks hand in hand with the viewer and looks back with a bright smile, inviting them to keep pace.",
+        "zh-cn": "她牵着你的手向前走，回头明亮地一笑，催你跟上她的步调。"
+      },
+      "she walks hand in hand with the viewer and looks back with a bright smile, inviting them to keep pace.": {
+        "en": "She walks hand in hand with the viewer and looks back with a bright smile, inviting them to keep pace.",
+        "zh-cn": "她牵着你的手向前走，回头明亮地一笑，催你跟上她的步调。"
+      },
+      "she shifts her weight to one hip and points at the viewer, her mischievous expression making them the target of her next joke.": {
+        "en": "She shifts her weight to one hip and points at the viewer, her mischievous expression making them the target of her next joke.",
+        "zh-cn": "她把重心偏向一侧，伸手指着你，调皮的神情宣告下一场玩笑轮到你了。"
+      },
+      "sitting, crossed legs, hand on own chin, raised eyebrow": {
+        "en": "She sits with her legs crossed and chin on her hand, raising an eyebrow as though challenging the viewer to surprise her.",
+        "zh-cn": "她交叠着双腿坐着，托着下巴挑眉看你，像在等你拿出一点惊喜。"
+      },
+      "she sits with her legs crossed and chin on her hand, raising an eyebrow as though challenging the viewer to surprise her.": {
+        "en": "She sits with her legs crossed and chin on her hand, raising an eyebrow as though challenging the viewer to surprise her.",
+        "zh-cn": "她交叠着双腿坐着，托着下巴挑眉看你，像在等你拿出一点惊喜。"
+      },
+      "standing, leaning forward, v, happy": {
+        "en": "She leans forward and flashes a V sign, visibly delighted with her small victory.",
+        "zh-cn": "她向前倾身，比出胜利手势，小小的得胜让她难掩开心。"
+      },
+      "she leans forward and flashes a v sign, visibly delighted with her small victory.": {
+        "en": "She leans forward and flashes a V sign, visibly delighted with her small victory.",
+        "zh-cn": "她向前倾身，比出胜利手势，小小的得胜让她难掩开心。"
+      },
+      "she rests a hand on her hip and looks away with a pleased little smile, trying to seem indifferent to the viewer's praise.": {
+        "en": "She rests a hand on her hip and looks away with a pleased little smile, trying to seem indifferent to the viewer's praise.",
+        "zh-cn": "她一手叉腰，故意把目光移开，得意的浅笑却藏不住对你夸奖的受用。"
+      },
+      "walking, head tilt, looking at viewer, smile": {
+        "en": "She walks toward the viewer with her head tilted and a warm smile, leaving her next playful idea unspoken.",
+        "zh-cn": "她歪着头向你走来，笑容亲近，下一点鬼主意暂时留在心里。"
+      },
+      "she walks toward the viewer with her head tilted and a warm smile, leaving her next playful idea unspoken.": {
+        "en": "She walks toward the viewer with her head tilted and a warm smile, leaving her next playful idea unspoken.",
+        "zh-cn": "她歪着头向你走来，笑容亲近，下一点鬼主意暂时留在心里。"
+      }
+    },
+    "sunset": {
+      "sharing headphones": {
+        "en": "She shares one pair of earphones with the viewer, one bud each.",
+        "zh-cn": "她和你共用一副耳机，各戴一只耳塞。"
+      },
+      "she shares one pair of earphones with the viewer, one bud each.": {
+        "en": "She shares one pair of earphones with the viewer, one bud each.",
+        "zh-cn": "她和你共用一副耳机，各戴一只耳塞。"
+      },
+      "drinking, holding cup, bubble tea": {
+        "en": "She drinks bubble tea from a cup held in one hand.",
+        "zh-cn": "她拿着杯子喝珍珠奶茶。"
+      },
+      "she drinks bubble tea from a cup held in one hand.": {
+        "en": "She drinks bubble tea from a cup held in one hand.",
+        "zh-cn": "她拿着杯子喝珍珠奶茶。"
+      },
+      "sitting, eating, holding crepe": {
+        "en": "She sits and eats a crepe from her hand.",
+        "zh-cn": "她坐着吃手里的可丽饼。"
+      },
+      "she sits and eats a crepe from her hand.": {
+        "en": "She sits and eats a crepe from her hand.",
+        "zh-cn": "她坐着吃手里的可丽饼。"
+      },
+      "holding camera, taking picture": {
+        "en": "She holds a camera up and takes a picture.",
+        "zh-cn": "她举起相机拍照。"
+      },
+      "she holds a camera up and takes a picture.": {
+        "en": "She holds a camera up and takes a picture.",
+        "zh-cn": "她举起相机拍照。"
+      },
+      "comparing hand sizes": {
+        "en": "She presses her palm against the viewer's palm to compare hand sizes.",
+        "zh-cn": "她把手掌贴着你的手掌，比较手的大小。"
+      },
+      "she presses her palm against the viewer's palm to compare hand sizes.": {
+        "en": "She presses her palm against the viewer's palm to compare hand sizes.",
+        "zh-cn": "她把手掌贴着你的手掌，比较手的大小。"
+      },
+      "holding gift box, reaching out": {
+        "en": "She holds out a small gift box with both hands.",
+        "zh-cn": "她双手递出一个小礼物盒。"
+      },
+      "she holds out a small gift box with both hands.": {
+        "en": "She holds out a small gift box with both hands.",
+        "zh-cn": "她双手递出一个小礼物盒。"
+      },
+      "hug, stuffed toy": {
+        "en": "She hugs a stuffed toy tightly.",
+        "zh-cn": "她紧紧抱着毛绒玩具。"
+      },
+      "she hugs a stuffed toy tightly.": {
+        "en": "She hugs a stuffed toy tightly.",
+        "zh-cn": "她紧紧抱着毛绒玩具。"
+      },
+      "holding bouquet": {
+        "en": "She holds a bouquet with both hands.",
+        "zh-cn": "她双手捧着一束花。"
+      },
+      "she holds a bouquet with both hands.": {
+        "en": "She holds a bouquet with both hands.",
+        "zh-cn": "她双手捧着一束花。"
+      },
+      "drinking, bubble tea, drinking straw": {
+        "en": "She sips bubble tea through a straw.",
+        "zh-cn": "她用吸管喝珍珠奶茶。"
+      },
+      "she sips bubble tea through a straw.": {
+        "en": "She sips bubble tea through a straw.",
+        "zh-cn": "她用吸管喝珍珠奶茶。"
+      },
+      "holding phone, looking at phone": {
+        "en": "She holds up her phone and turns the screen toward the viewer.",
+        "zh-cn": "她举起手机，把屏幕转向你。"
+      },
+      "she holds up her phone and turns the screen toward the viewer.": {
+        "en": "She holds up her phone and turns the screen toward the viewer.",
+        "zh-cn": "她举起手机，把屏幕转向你。"
+      },
+      "eating, holding macaron": {
+        "en": "She eats a macaron held between her fingers.",
+        "zh-cn": "她吃着指间的马卡龙。"
+      },
+      "she eats a macaron held between her fingers.": {
+        "en": "She eats a macaron held between her fingers.",
+        "zh-cn": "她吃着指间的马卡龙。"
+      },
+      "holding soda, drinking": {
+        "en": "She drinks soda from a cup.",
+        "zh-cn": "她喝着杯子里的汽水。"
+      },
+      "she drinks soda from a cup.": {
+        "en": "She drinks soda from a cup.",
+        "zh-cn": "她喝着杯子里的汽水。"
+      },
+      "eating, holding bento": {
+        "en": "She eats from a bento box held in one hand.",
+        "zh-cn": "她一手拿着便当盒吃饭。"
+      },
+      "she eats from a bento box held in one hand.": {
+        "en": "She eats from a bento box held in one hand.",
+        "zh-cn": "她一手拿着便当盒吃饭。"
+      },
+      "holding chocolate, reaching out": {
+        "en": "She holds out a piece of chocolate toward the viewer.",
+        "zh-cn": "她向你递出一块巧克力。"
+      },
+      "she holds out a piece of chocolate toward the viewer.": {
+        "en": "She holds out a piece of chocolate toward the viewer.",
+        "zh-cn": "她向你递出一块巧克力。"
+      },
+      "holding keychain, reaching out": {
+        "en": "She holds out a small keychain on her open palm.",
+        "zh-cn": "她摊开手掌，向你递出一个小钥匙扣。"
+      },
+      "she holds out a small keychain on her open palm.": {
+        "en": "She holds out a small keychain on her open palm.",
+        "zh-cn": "她摊开手掌，向你递出一个小钥匙扣。"
+      },
+      "standing, on railing, wine glass, looking up": {
+        "en": "She stands, and leans against a railing, and has a wine glass beside her, and looks up.",
+        "zh-cn": "她站着，倚着栏杆，身旁有一只酒杯，抬头看。"
+      },
+      "sitting, bench, crossed legs, hand on own chin, looking up": {
+        "en": "She sits down, and is on a bench, and crosses her legs, and rests her hand on her chin, and looks up.",
+        "zh-cn": "她坐着，坐在长椅上，交叠双腿，托着下巴，抬头看。"
+      },
+      "standing, facing away, wind, looking up": {
+        "en": "She stands, and turns away, and has the wind blowing around her, and looks up.",
+        "zh-cn": "她站着，背过身，身边吹着风，抬头看。"
+      },
+      "sitting, outdoors, holding cup, closed eyes, light smile": {
+        "en": "She sits down, and is outside, and holds a cup, and closes her eyes, and smiles softly.",
+        "zh-cn": "她坐着，身处户外，拿着杯子，闭上眼睛，露出浅浅的笑容。"
+      },
+      "standing, holding hands, looking up, light smile": {
+        "en": "She stands, and holds your hand, and looks up, and smiles softly.",
+        "zh-cn": "她站着，牵着你的手，抬头看，露出浅浅的笑容。"
+      },
+      "standing, on railing, hand on own chin, looking at viewer, seductive smile": {
+        "en": "She stands, and leans against a railing, and rests her hand on her chin, and looks at you, and smiles alluringly.",
+        "zh-cn": "她站着，倚着栏杆，托着下巴，看着你，露出妩媚的笑容。"
+      },
+      "standing, on railing, looking up, expressionless": {
+        "en": "She stands, and leans against a railing, and looks up, and keeps a neutral expression.",
+        "zh-cn": "她站着，倚着栏杆，抬头看，面无表情。"
+      },
+      "standing, wind, thinking, staring": {
+        "en": "She stands, and has the wind blowing around her, and is lost in thought, and gazes intently.",
+        "zh-cn": "她站着，身边吹着风，陷入思考，凝神注视。"
+      },
+      "sitting, bench, closed eyes, hands on lap, expressionless": {
+        "en": "She sits down, and is on a bench, and closes her eyes, and rests her hands on her lap, and keeps a neutral expression.",
+        "zh-cn": "她坐着，坐在长椅上，闭上眼睛，双手放在膝上，面无表情。"
+      },
+      "standing, looking up, sigh, half-closed eyes": {
+        "en": "She stands, and looks up, and lets out a sigh, and half closes her eyes.",
+        "zh-cn": "她站着，抬头看，轻轻叹气，半闭着眼睛。"
+      },
+      "standing, looking at viewer, nose_blush, expressionless": {
+        "en": "She stands, and looks at you, and blushes across her nose and cheeks, and keeps a neutral expression.",
+        "zh-cn": "她站着，看着你，鼻尖和脸颊泛红，面无表情。"
+      },
+      "standing, crossed arms, looking up, expressionless": {
+        "en": "She stands, and folds her arms, and looks up, and keeps a neutral expression.",
+        "zh-cn": "她站着，双臂交叉，抬头看，面无表情。"
+      },
+      "standing, spread arms, spinning, wind, happy": {
+        "en": "She stands, and spreads her arms wide, and spins around, and has the wind blowing around her, and looks happy.",
+        "zh-cn": "她站着，张开双臂，转着圈，身边吹着风，显得开心。"
+      },
+      "sitting, grass, leaning back, arms behind back, laughing": {
+        "en": "She sits down, and is on the grass, and leans back, and holds her arms behind her back, and laughs.",
+        "zh-cn": "她坐着，身处草地，向后靠，双臂放在身后，笑出声。"
+      },
+      "standing, jumping, waving, open mouth, happy": {
+        "en": "She stands, and jumps, and waves in greeting, and opens her mouth, and looks happy.",
+        "zh-cn": "她站着，跳起来，挥手打招呼，张开嘴，显得开心。"
+      },
+      "walking, happy, looking at viewer": {
+        "en": "She walks, and looks happy, and looks at you.",
+        "zh-cn": "她走着，显得开心，看着你。"
+      },
+      "standing, pointing, wide-eyed, open mouth": {
+        "en": "She stands, and points something out, and opens her eyes wide, and opens her mouth.",
+        "zh-cn": "她站着，伸手指向某处，睁大眼睛，张开嘴。"
+      },
+      "sitting, dock, arms up, happy": {
+        "en": "She sits down, and is on a dock, and raises both arms, and looks happy.",
+        "zh-cn": "她坐着，身处码头，举起双臂，显得开心。"
+      },
+      "standing, looking up, serious": {
+        "en": "She stands, and looks up, and looks serious.",
+        "zh-cn": "她站着，抬头看，神情认真。"
+      },
+      "sitting, bench, hands on own knees, looking up, determined": {
+        "en": "She sits down, and is on a bench, and rests her hands on her knees, and looks up, and looks determined.",
+        "zh-cn": "她坐着，坐在长椅上，双手放在膝盖上，抬头看，神情坚定。"
+      },
+      "standing, crossed arms, looking up, serious": {
+        "en": "She stands, and folds her arms, and looks up, and looks serious.",
+        "zh-cn": "她站着，双臂交叉，抬头看，神情认真。"
+      },
+      "standing, looking at viewer, serious, nose_blush": {
+        "en": "She stands, and looks at you, and looks serious, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，神情认真，鼻尖和脸颊泛红。"
+      },
+      "walking, serious, looking ahead": {
+        "en": "She walks, and looks serious, and looks ahead.",
+        "zh-cn": "她走着，神情认真，看着前方。"
+      },
+      "standing, on railing, determined, looking up": {
+        "en": "She stands, and leans against a railing, and looks determined, and looks up.",
+        "zh-cn": "她站着，倚着栏杆，神情坚定，抬头看。"
+      },
+      "sitting, bench, knees up, looking down, nose_blush": {
+        "en": "She sits down, and is on a bench, and draws her knees up, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在长椅上，蜷起双膝，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, looking at viewer, nose_blush": {
+        "en": "She stands, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，鼻尖和脸颊泛红。"
+      },
+      "sitting, grass, hands on lap, looking up, light smile": {
+        "en": "She sits down, and is on the grass, and rests her hands on her lap, and looks up, and smiles softly.",
+        "zh-cn": "她坐着，身处草地，双手放在膝上，抬头看，露出浅浅的笑容。"
+      },
+      "standing, looking away, covering face, nose_blush": {
+        "en": "She stands, and averts her gaze, and covers her face, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，移开视线，捂着脸，鼻尖和脸颊泛红。"
+      },
+      "sitting, looking down, nose_blush": {
+        "en": "She sits down, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, holding own skirt, looking down, nose_blush": {
+        "en": "She stands, and grasps her skirt, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，抓着裙摆，低头看，鼻尖和脸颊泛红。"
+      },
+      "sharing headphones, closed eyes, light smile, nose_blush": {
+        "en": "She shares a pair of earphones with you, and closes her eyes, and smiles softly, and blushes across her nose and cheeks.",
+        "zh-cn": "她和你共用一副耳机，闭上眼睛，露出浅浅的笑容，鼻尖和脸颊泛红。"
+      },
+      "drinking, holding cup, bubble tea, looking up, light smile, nose_blush": {
+        "en": "She takes a sip, and holds a cup, and has a cup of bubble tea, and looks up, and smiles softly, and blushes across her nose and cheeks.",
+        "zh-cn": "她喝了一口，拿着杯子，拿着珍珠奶茶，抬头看，露出浅浅的笑容，鼻尖和脸颊泛红。"
+      },
+      "holding camera, taking picture, light smile, nose_blush": {
+        "en": "She holds a camera, and takes a photograph, and smiles softly, and blushes across her nose and cheeks.",
+        "zh-cn": "她拿着相机，拍着照片，露出浅浅的笑容，鼻尖和脸颊泛红。"
+      },
+      "eating, holding cotton candy, looking to the side, nose_blush": {
+        "en": "She takes a bite of her food, and holds cotton candy, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她吃了一口食物，拿着棉花糖，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "comparing hand sizes, looking to the side, nose_blush, pout": {
+        "en": "She compares her palm with yours, and looks to the side, and blushes across her nose and cheeks, and pouts.",
+        "zh-cn": "她和你比较手掌大小，看向一旁，鼻尖和脸颊泛红，嘟起嘴。"
+      },
+      "holding gift, reaching out, looking to the side, nose_blush": {
+        "en": "She holds a gift, and reaches out toward you, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她拿着礼物，向你伸手，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "hug, stuffed toy, light smile, nose_blush": {
+        "en": "She gives a hug, and holds a stuffed toy close, and smiles softly, and blushes across her nose and cheeks.",
+        "zh-cn": "她伸手拥抱，抱着毛绒玩具，露出浅浅的笑容，鼻尖和脸颊泛红。"
+      },
+      "holding flower, looking down, nose_blush, pout": {
+        "en": "She holds a flower, and looks down, and blushes across her nose and cheeks, and pouts.",
+        "zh-cn": "她拿着一朵花，低头看，鼻尖和脸颊泛红，嘟起嘴。"
+      },
+      "sitting, bench, hand on own arm, looking down, nose_blush": {
+        "en": "She sits down, and is on a bench, and holds her own arm, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在长椅上，握着自己的手臂，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, looking away, covering own mouth, nose_blush": {
+        "en": "She stands, and averts her gaze, and covers her mouth with her hand, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，移开视线，用手捂住嘴，鼻尖和脸颊泛红。"
+      },
+      "standing, hands on own chest, closed eyes, nose_blush": {
+        "en": "She stands, and rests both hands on her chest, and closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双手放在胸前，闭上眼睛，鼻尖和脸颊泛红。"
+      },
+      "sitting, grass, hands on lap, looking at viewer, nose_blush": {
+        "en": "She sits down, and is on the grass, and rests her hands on her lap, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，身处草地，双手放在膝上，看着你，鼻尖和脸颊泛红。"
+      },
+      "standing, facing away, looking at viewer, nose_blush": {
+        "en": "She stands, and turns away, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，背过身，看着你，鼻尖和脸颊泛红。"
+      },
+      "standing, on railing, looking up": {
+        "en": "She stands, and leans against a railing, and looks up.",
+        "zh-cn": "她站着，倚着栏杆，抬头看。"
+      },
+      "sitting, bench, crossed legs, looking up, surprised": {
+        "en": "She sits down, and is on a bench, and crosses her legs, and looks up, and looks surprised.",
+        "zh-cn": "她坐着，坐在长椅上，交叠双腿，抬头看，显得惊讶。"
+      },
+      "standing, crossed arms, looking up, nose_blush": {
+        "en": "She stands, and folds her arms, and looks up, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双臂交叉，抬头看，鼻尖和脸颊泛红。"
+      },
+      "sitting, outdoors, hand on own chin, looking up, thinking": {
+        "en": "She sits down, and is outside, and rests her hand on her chin, and looks up, and is lost in thought.",
+        "zh-cn": "她坐着，身处户外，托着下巴，抬头看，陷入思考。"
+      },
+      "standing, looking at viewer, flustered": {
+        "en": "She stands, and looks at you, and looks flustered.",
+        "zh-cn": "她站着，看着你，显得慌乱。"
+      },
+      "standing, on railing, looking up, smirk": {
+        "en": "She stands, and leans against a railing, and looks up, and gives a teasing smile.",
+        "zh-cn": "她站着，倚着栏杆，抬头看，露出戏谑的笑容。"
+      },
+      "standing, selfie, v, one eye closed": {
+        "en": "She stands, and takes a selfie, and makes a peace sign, and winks.",
+        "zh-cn": "她站着，拍着自拍照，比出胜利手势，眨一只眼睛。"
+      },
+      "sitting, bench, crossed legs, head on another's shoulder, smirk": {
+        "en": "She sits down, and is on a bench, and crosses her legs, and rests her head on your shoulder, and gives a teasing smile.",
+        "zh-cn": "她坐着，坐在长椅上，交叠双腿，把头靠在你的肩上，露出戏谑的笑容。"
+      },
+      "standing, holding hands, looking up, happy": {
+        "en": "She stands, and holds your hand, and looks up, and looks happy.",
+        "zh-cn": "她站着，牵着你的手，抬头看，显得开心。"
+      },
+      "standing, leaning forward, one eye closed, looking at viewer": {
+        "en": "She stands, and leans forward, and winks, and looks at you.",
+        "zh-cn": "她站着，向前倾身，眨一只眼睛，看着你。"
+      },
+      "sitting, sitting on stairs, leaning back, arms behind back, smirk": {
+        "en": "She sits down, and sits on the steps, and leans back, and holds her arms behind her back, and gives a teasing smile.",
+        "zh-cn": "她坐着，坐在台阶上，向后靠，双臂放在身后，露出戏谑的笑容。"
+      },
+      "standing, leaning forward, finger to mouth, staring": {
+        "en": "She stands, and leans forward, and brings a finger to her lips, and gazes intently.",
+        "zh-cn": "她站着，向前倾身，把手指放在唇边，凝神注视。"
+      },
+      "standing, eye contact, crazy smile": {
+        "en": "She stands, and meets your eyes, and smiles with unsettling intensity.",
+        "zh-cn": "她站着，与你对视，露出令人不安的强烈笑容。"
+      },
+      "sitting, bench, head on another's shoulder, staring": {
+        "en": "She sits down, and is on a bench, and rests her head on your shoulder, and gazes intently.",
+        "zh-cn": "她坐着，坐在长椅上，把头靠在你的肩上，凝神注视。"
+      },
+      "standing, holding hands, staring, smile": {
+        "en": "She stands, and holds your hand, and gazes intently, and smiles.",
+        "zh-cn": "她站着，牵着你的手，凝神注视，微笑。"
+      },
+      "sitting, head on another's shoulder, evil grin": {
+        "en": "She sits down, and rests her head on your shoulder, and grins ominously.",
+        "zh-cn": "她坐着，把头靠在你的肩上，露出阴沉的咧嘴笑容。"
+      },
+      "standing, facing away, looking back, staring": {
+        "en": "She stands, and turns away, and looks back, and gazes intently.",
+        "zh-cn": "她站着，背过身，回头看，凝神注视。"
+      },
+      "standing, looking up, wide-eyed, open mouth": {
+        "en": "She stands, and looks up, and opens her eyes wide, and opens her mouth.",
+        "zh-cn": "她站着，抬头看，睁大眼睛，张开嘴。"
+      },
+      "standing, head tilt, thinking, looking up": {
+        "en": "She stands, and tilts her head, and is lost in thought, and looks up.",
+        "zh-cn": "她站着，歪着头，陷入思考，抬头看。"
+      },
+      "sitting, bench, leaning forward, thinking": {
+        "en": "She sits down, and is on a bench, and leans forward, and is lost in thought.",
+        "zh-cn": "她坐着，坐在长椅上，向前倾身，陷入思考。"
+      },
+      "standing, pointing, open mouth, surprised": {
+        "en": "She stands, and points something out, and opens her mouth, and looks surprised.",
+        "zh-cn": "她站着，伸手指向某处，张开嘴，显得惊讶。"
+      },
+      "standing, looking at viewer, thinking, nose_blush": {
+        "en": "She stands, and looks at you, and is lost in thought, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，陷入思考，鼻尖和脸颊泛红。"
+      },
+      "sitting, grass, head tilt, staring, thinking": {
+        "en": "She sits down, and is on the grass, and tilts her head, and gazes intently, and is lost in thought.",
+        "zh-cn": "她坐着，身处草地，歪着头，凝神注视，陷入思考。"
+      },
+      "standing, looking up, expressionless, staring": {
+        "en": "She stands, and looks up, and keeps a neutral expression, and gazes intently.",
+        "zh-cn": "她站着，抬头看，面无表情，凝神注视。"
+      },
+      "standing, head tilt, thinking, expressionless": {
+        "en": "She stands, and tilts her head, and is lost in thought, and keeps a neutral expression.",
+        "zh-cn": "她站着，歪着头，陷入思考，面无表情。"
+      },
+      "sitting, bench, expressionless, looking up": {
+        "en": "She sits down, and is on a bench, and keeps a neutral expression, and looks up.",
+        "zh-cn": "她坐着，坐在长椅上，面无表情，抬头看。"
+      },
+      "standing, expressionless, staring, nose_blush": {
+        "en": "She stands, and keeps a neutral expression, and gazes intently, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，面无表情，凝神注视，鼻尖和脸颊泛红。"
+      },
+      "sitting, outdoors, expressionless, staring": {
+        "en": "She sits down, and is outside, and keeps a neutral expression, and gazes intently.",
+        "zh-cn": "她坐着，身处户外，面无表情，凝神注视。"
+      },
+      "standing, looking up, one eye closed, smirk": {
+        "en": "She looks up with a wink and a smirk, chin lifted.",
+        "zh-cn": "她抬起下巴，向上看去，带着坏笑眨着一只眼。"
+      },
+      "she looks up with a wink and a smirk, chin lifted.": {
+        "en": "She looks up with a wink and a smirk, chin lifted.",
+        "zh-cn": "她抬起下巴，向上看去，带着坏笑眨着一只眼。"
+      },
+      "standing, leaning forward, finger to mouth, half-closed eyes": {
+        "en": "She leans in with a finger to her lips, eyes half-lidded and teasing.",
+        "zh-cn": "她凑近你，把手指抵在唇边，半垂着眼，流露出逗弄的神情。"
+      },
+      "she leans in with a finger to her lips, eyes half-lidded and teasing.": {
+        "en": "She leans in with a finger to her lips, eyes half-lidded and teasing.",
+        "zh-cn": "她凑近你，把手指抵在唇边，半垂着眼，流露出逗弄的神情。"
+      },
+      "sitting, crossed legs, hand on own cheek, head tilt, smirk": {
+        "en": "She sits cross-legged, cheek resting on her hand, head tilted, and smirks.",
+        "zh-cn": "她盘腿坐着，一手托腮，歪着头，露出坏笑。"
+      },
+      "she sits cross-legged, cheek resting on her hand, head tilted, and smirks.": {
+        "en": "She sits cross-legged, cheek resting on her hand, head tilted, and smirks.",
+        "zh-cn": "她盘腿坐着，一手托腮，歪着头，露出坏笑。"
+      },
+      "standing, hand on own hip, leaning forward, one eye closed, nose_blush": {
+        "en": "She props a hand on her hip, leans toward the viewer, and winks, faintly flushed.",
+        "zh-cn": "她一手叉腰，向你倾身，脸颊微红，眨着一只眼。"
+      },
+      "she props a hand on her hip, leans toward the viewer, and winks, faintly flushed.": {
+        "en": "She props a hand on her hip, leans toward the viewer, and winks, faintly flushed.",
+        "zh-cn": "她一手叉腰，向你倾身，脸颊微红，眨着一只眼。"
+      },
+      "standing, selfie, v, one eye closed, naughty face": {
+        "en": "She takes a selfie, throws a V sign, and winks with a naughty grin.",
+        "zh-cn": "她自拍时比出胜利手势，带着调皮的笑容眨着一只眼。"
+      },
+      "she takes a selfie, throws a v sign, and winks with a naughty grin.": {
+        "en": "She takes a selfie, throws a V sign, and winks with a naughty grin.",
+        "zh-cn": "她自拍时比出胜利手势，带着调皮的笑容眨着一只眼。"
+      },
+      "standing, arm around shoulder, head tilt, looking at viewer, smirk": {
+        "en": "She drapes an arm over the viewer's shoulder, tilts her head, and smirks at them.",
+        "zh-cn": "她把手臂搭在你的肩上，歪着头，朝你露出坏笑。"
+      },
+      "she drapes an arm over the viewer's shoulder, tilts her head, and smirks at them.": {
+        "en": "She drapes an arm over the viewer's shoulder, tilts her head, and smirks at them.",
+        "zh-cn": "她把手臂搭在你的肩上，歪着头，朝你露出坏笑。"
+      },
+      "standing, looking up, parted lips": {
+        "en": "She lifts her chin and looks up, lips slightly parted in a quiet moment of wonder.",
+        "zh-cn": "她抬起下巴向上望去，唇瓣轻启，难得把逗弄换成片刻出神。"
+      },
+      "she lifts her chin and looks up, lips slightly parted in a quiet moment of wonder.": {
+        "en": "She lifts her chin and looks up, lips slightly parted in a quiet moment of wonder.",
+        "zh-cn": "她抬起下巴向上望去，唇瓣轻启，难得把逗弄换成片刻出神。"
+      },
+      "standing, leaning forward, finger to mouth, smirk": {
+        "en": "She leans in with a finger to her lips and a small smirk, making a silent invitation to share her secret.",
+        "zh-cn": "她凑近你，指尖抵着唇边，带着一丝坏笑邀你分享她的秘密。"
+      },
+      "she leans in with a finger to her lips and a small smirk, making a silent invitation to share her secret.": {
+        "en": "She leans in with a finger to her lips and a small smirk, making a silent invitation to share her secret.",
+        "zh-cn": "她凑近你，指尖抵着唇边，带着一丝坏笑邀你分享她的秘密。"
+      },
+      "sitting, crossed legs, hand on own cheek, head tilt, smile": {
+        "en": "She sits with her legs crossed and cheek on her hand, tilting her head with an unexpectedly gentle smile.",
+        "zh-cn": "她交叠着双腿坐着，托腮偏头，笑容比你预想的温柔。"
+      },
+      "she sits with her legs crossed and cheek on her hand, tilting her head with an unexpectedly gentle smile.": {
+        "en": "She sits with her legs crossed and cheek on her hand, tilting her head with an unexpectedly gentle smile.",
+        "zh-cn": "她交叠着双腿坐着，托腮偏头，笑容比你预想的温柔。"
+      },
+      "standing, hand on own hip, leaning forward, looking at viewer, nose_blush": {
+        "en": "She keeps a hand on her hip and leans toward the viewer, meeting their gaze while a faint blush betrays her composure.",
+        "zh-cn": "她仍一手叉腰，倾身迎上你的目光，淡淡的红晕却泄露了故作镇定。"
+      },
+      "she keeps a hand on her hip and leans toward the viewer, meeting their gaze while a faint blush betrays her composure.": {
+        "en": "She keeps a hand on her hip and leans toward the viewer, meeting their gaze while a faint blush betrays her composure.",
+        "zh-cn": "她仍一手叉腰，倾身迎上你的目光，淡淡的红晕却泄露了故作镇定。"
+      },
+      "standing, selfie, v, happy": {
+        "en": "She holds up a V sign for a selfie, her playful pose giving way to an unguarded, happy smile.",
+        "zh-cn": "她自拍时举起胜利手势，俏皮的姿态里露出毫不掩饰的开心。"
+      },
+      "she holds up a v sign for a selfie, her playful pose giving way to an unguarded, happy smile.": {
+        "en": "She holds up a V sign for a selfie, her playful pose giving way to an unguarded, happy smile.",
+        "zh-cn": "她自拍时举起胜利手势，俏皮的姿态里露出毫不掩饰的开心。"
+      },
+      "standing, arm around shoulder, head tilt, looking at viewer, smile": {
+        "en": "She drapes an arm over the viewer's shoulder and tilts her head toward them, smiling with easy familiarity.",
+        "zh-cn": "她把手臂搭上你的肩，偏头靠向你，笑得熟稔而自在。"
+      },
+      "she drapes an arm over the viewer's shoulder and tilts her head toward them, smiling with easy familiarity.": {
+        "en": "She drapes an arm over the viewer's shoulder and tilts her head toward them, smiling with easy familiarity.",
+        "zh-cn": "她把手臂搭上你的肩，偏头靠向你，笑得熟稔而自在。"
+      }
+    },
+    "night": {
+      "holding hands": {
+        "en": "She holds the viewer's hand.",
+        "zh-cn": "她牵着你的手。"
+      },
+      "she holds the viewer's hand.": {
+        "en": "She holds the viewer's hand.",
+        "zh-cn": "她牵着你的手。"
+      },
+      "arm around shoulder": {
+        "en": "She puts her arm around the viewer's shoulder.",
+        "zh-cn": "她把手臂搭在你的肩上。"
+      },
+      "she puts her arm around the viewer's shoulder.": {
+        "en": "She puts her arm around the viewer's shoulder.",
+        "zh-cn": "她把手臂搭在你的肩上。"
+      },
+      "hand on another's cheek": {
+        "en": "She rests her hand on the viewer's cheek.",
+        "zh-cn": "她把手放在你的脸颊上。"
+      },
+      "she rests her hand on the viewer's cheek.": {
+        "en": "She rests her hand on the viewer's cheek.",
+        "zh-cn": "她把手放在你的脸颊上。"
+      },
+      "head on another's shoulder": {
+        "en": "She leans her head against the viewer's shoulder.",
+        "zh-cn": "她把头靠在你的肩上。"
+      },
+      "she leans her head against the viewer's shoulder.": {
+        "en": "She leans her head against the viewer's shoulder.",
+        "zh-cn": "她把头靠在你的肩上。"
+      },
+      "leaning forward": {
+        "en": "She leans in close toward the viewer.",
+        "zh-cn": "她向你靠近。"
+      },
+      "she leans in close toward the viewer.": {
+        "en": "She leans in close toward the viewer.",
+        "zh-cn": "她向你靠近。"
+      },
+      "holding own sleeve": {
+        "en": "She tugs at her own sleeve.",
+        "zh-cn": "她拉着自己的袖口。"
+      },
+      "she tugs at her own sleeve.": {
+        "en": "She tugs at her own sleeve.",
+        "zh-cn": "她拉着自己的袖口。"
+      },
+      "covering own mouth": {
+        "en": "She covers her mouth with one hand.",
+        "zh-cn": "她一手捂着嘴。"
+      },
+      "she covers her mouth with one hand.": {
+        "en": "She covers her mouth with one hand.",
+        "zh-cn": "她一手捂着嘴。"
+      },
+      "sharing headphones": {
+        "en": "She shares one pair of earphones with the viewer.",
+        "zh-cn": "她和你共用一副耳机。"
+      },
+      "she shares one pair of earphones with the viewer.": {
+        "en": "She shares one pair of earphones with the viewer.",
+        "zh-cn": "她和你共用一副耳机。"
+      },
+      "eating, holding donut": {
+        "en": "She eats a donut held in one hand.",
+        "zh-cn": "她吃着手里的甜甜圈。"
+      },
+      "she eats a donut held in one hand.": {
+        "en": "She eats a donut held in one hand.",
+        "zh-cn": "她吃着手里的甜甜圈。"
+      },
+      "holding cup, drinking": {
+        "en": "She drinks from a cup held in both hands.",
+        "zh-cn": "她双手捧杯喝饮料。"
+      },
+      "she drinks from a cup held in both hands.": {
+        "en": "She drinks from a cup held in both hands.",
+        "zh-cn": "她双手捧杯喝饮料。"
+      },
+      "eating, holding popcorn": {
+        "en": "She eats popcorn from her hand.",
+        "zh-cn": "她吃着手里的爆米花。"
+      },
+      "she eats popcorn from her hand.": {
+        "en": "She eats popcorn from her hand.",
+        "zh-cn": "她吃着手里的爆米花。"
+      },
+      "eating, holding takoyaki": {
+        "en": "She eats takoyaki with a small pick.",
+        "zh-cn": "她用小签子吃章鱼烧。"
+      },
+      "she eats takoyaki with a small pick.": {
+        "en": "She eats takoyaki with a small pick.",
+        "zh-cn": "她用小签子吃章鱼烧。"
+      },
+      "interlocked fingers": {
+        "en": "She laces her fingers with the viewer's.",
+        "zh-cn": "她与你十指相扣。"
+      },
+      "she laces her fingers with the viewer's.": {
+        "en": "She laces her fingers with the viewer's.",
+        "zh-cn": "她与你十指相扣。"
+      },
+      "hug": {
+        "en": "She hugs the viewer.",
+        "zh-cn": "她拥抱你。"
+      },
+      "she hugs the viewer.": {
+        "en": "She hugs the viewer.",
+        "zh-cn": "她拥抱你。"
+      },
+      "headpat": {
+        "en": "She reaches up to pat the viewer's head.",
+        "zh-cn": "她伸手轻拍你的头。"
+      },
+      "she reaches up to pat the viewer's head.": {
+        "en": "She reaches up to pat the viewer's head.",
+        "zh-cn": "她伸手轻拍你的头。"
+      },
+      "standing, holding hands, looking at viewer, light smile": {
+        "en": "She stands, and holds your hand, and looks at you, and smiles softly.",
+        "zh-cn": "她站着，牵着你的手，看着你，露出浅浅的笑容。"
+      },
+      "walking, city lights, light smile": {
+        "en": "She walks, and is surrounded by city lights, and smiles softly.",
+        "zh-cn": "她走着，周围亮着城市灯光，露出浅浅的笑容。"
+      },
+      "sitting, couch, crossed legs, holding cup, looking at viewer": {
+        "en": "She sits down, and is on a couch, and crosses her legs, and holds a cup, and looks at you.",
+        "zh-cn": "她坐着，坐在沙发上，交叠双腿，拿着杯子，看着你。"
+      },
+      "standing, hand on another's waist, looking at viewer, seductive smile": {
+        "en": "She stands, and rests her hand on your waist, and looks at you, and smiles alluringly.",
+        "zh-cn": "她站着，把手放在你的腰间，看着你，露出妩媚的笑容。"
+      },
+      "sitting, head on another's shoulder, closed eyes": {
+        "en": "She sits down, and rests her head on your shoulder, and closes her eyes.",
+        "zh-cn": "她坐着，把头靠在你的肩上，闭上眼睛。"
+      },
+      "standing, holding hands, looking at viewer": {
+        "en": "She stands, and holds your hand, and looks at you.",
+        "zh-cn": "她站着，牵着你的手，看着你。"
+      },
+      "standing, holding hands, expressionless, looking away": {
+        "en": "She stands, and holds your hand, and keeps a neutral expression, and averts her gaze.",
+        "zh-cn": "她站着，牵着你的手，面无表情，移开视线。"
+      },
+      "walking, expressionless, looking ahead": {
+        "en": "She walks, and keeps a neutral expression, and looks ahead.",
+        "zh-cn": "她走着，面无表情，看着前方。"
+      },
+      "sitting, sitting on stairs, head on another's shoulder, closed eyes": {
+        "en": "She sits down, and sits on the steps, and rests her head on your shoulder, and closes her eyes.",
+        "zh-cn": "她坐着，坐在台阶上，把头靠在你的肩上，闭上眼睛。"
+      },
+      "sitting, head on another's shoulder, expressionless": {
+        "en": "She sits down, and rests her head on your shoulder, and keeps a neutral expression.",
+        "zh-cn": "她坐着，把头靠在你的肩上，面无表情。"
+      },
+      "sitting, bench, head on another's shoulder, closed eyes, sigh": {
+        "en": "She sits down, and is on a bench, and rests her head on your shoulder, and closes her eyes, and lets out a sigh.",
+        "zh-cn": "她坐着，坐在长椅上，把头靠在你的肩上，闭上眼睛，轻轻叹气。"
+      },
+      "standing, looking down, nose_blush": {
+        "en": "She stands, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, holding food, open mouth, excited": {
+        "en": "She stands, and holds some food, and opens her mouth, and looks excited.",
+        "zh-cn": "她站着，拿着食物，张开嘴，显得兴奋。"
+      },
+      "sitting, sitting on stairs, head on another's shoulder, closed eyes, light smile": {
+        "en": "She sits down, and sits on the steps, and rests her head on your shoulder, and closes her eyes, and smiles softly.",
+        "zh-cn": "她坐着，坐在台阶上，把头靠在你的肩上，闭上眼睛，露出浅浅的笑容。"
+      },
+      "standing, holding hands, happy": {
+        "en": "She stands, and holds your hand, and looks happy.",
+        "zh-cn": "她站着，牵着你的手，显得开心。"
+      },
+      "walking, holding hands, looking at viewer, happy": {
+        "en": "She walks, and holds your hand, and looks at you, and looks happy.",
+        "zh-cn": "她走着，牵着你的手，看着你，显得开心。"
+      },
+      "standing, leaning back, arms up, light smile": {
+        "en": "She stands, and leans back, and raises both arms, and smiles softly.",
+        "zh-cn": "她站着，向后靠，举起双臂，露出浅浅的笑容。"
+      },
+      "sitting, bench, closed eyes, light smile": {
+        "en": "She sits down, and is on a bench, and closes her eyes, and smiles softly.",
+        "zh-cn": "她坐着，坐在长椅上，闭上眼睛，露出浅浅的笑容。"
+      },
+      "standing, holding hands, eye contact, determined": {
+        "en": "She stands, and holds your hand, and meets your eyes, and looks determined.",
+        "zh-cn": "她站着，牵着你的手，与你对视，神情坚定。"
+      },
+      "walking, serious, looking at viewer": {
+        "en": "She walks, and looks serious, and looks at you.",
+        "zh-cn": "她走着，神情认真，看着你。"
+      },
+      "sitting, bench, leaning forward, serious, nose_blush": {
+        "en": "She sits down, and is on a bench, and leans forward, and looks serious, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在长椅上，向前倾身，神情认真，鼻尖和脸颊泛红。"
+      },
+      "standing, own hands clasped, serious, nose_blush": {
+        "en": "She stands, and clasps her hands together, and looks serious, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双手紧握，神情认真，鼻尖和脸颊泛红。"
+      },
+      "standing, walking, determined, serious": {
+        "en": "She stands, and walks, and looks determined, and looks serious.",
+        "zh-cn": "她站着，走着，神情坚定，神情认真。"
+      },
+      "sitting, serious, nose_blush": {
+        "en": "She sits down, and looks serious, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，神情认真，鼻尖和脸颊泛红。"
+      },
+      "walking, looking down, nose_blush": {
+        "en": "She walks, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她走着，低头看，鼻尖和脸颊泛红。"
+      },
+      "sitting, bench, leaning forward, closed eyes, light smile": {
+        "en": "She sits down, and is on a bench, and leans forward, and closes her eyes, and smiles softly.",
+        "zh-cn": "她坐着，坐在长椅上，向前倾身，闭上眼睛，露出浅浅的笑容。"
+      },
+      "standing, holding hands, looking down, nose_blush": {
+        "en": "She stands, and holds your hand, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，低头看，鼻尖和脸颊泛红。"
+      },
+      "sitting, sitting on stairs, knees up, looking at viewer, nose_blush": {
+        "en": "She sits down, and sits on the steps, and draws her knees up, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在台阶上，蜷起双膝，看着你，鼻尖和脸颊泛红。"
+      },
+      "holding hands, looking to the side, nose_blush, pout": {
+        "en": "She holds your hand, and looks to the side, and blushes across her nose and cheeks, and pouts.",
+        "zh-cn": "她牵着你的手，看向一旁，鼻尖和脸颊泛红，嘟起嘴。"
+      },
+      "arm around shoulder, looking to the side, nose_blush": {
+        "en": "She puts her arm around your shoulder, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她把手臂搭在你的肩上，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "hand on another's cheek, looking to the side, nose_blush, pout": {
+        "en": "She rests her hand on your cheek, and looks to the side, and blushes across her nose and cheeks, and pouts.",
+        "zh-cn": "她把手放在你的脸颊上，看向一旁，鼻尖和脸颊泛红，嘟起嘴。"
+      },
+      "head on another's shoulder, closed eyes, nose_blush": {
+        "en": "She rests her head on your shoulder, and closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她把头靠在你的肩上，闭上眼睛，鼻尖和脸颊泛红。"
+      },
+      "leaning forward, looking to the side, flustered, nose_blush": {
+        "en": "She leans forward, and looks to the side, and looks flustered, and blushes across her nose and cheeks.",
+        "zh-cn": "她向前倾身，看向一旁，显得慌乱，鼻尖和脸颊泛红。"
+      },
+      "holding own sleeve, looking down, nose_blush, pout": {
+        "en": "She tugs at her sleeve, and looks down, and blushes across her nose and cheeks, and pouts.",
+        "zh-cn": "她拉着自己的袖口，低头看，鼻尖和脸颊泛红，嘟起嘴。"
+      },
+      "covering own mouth, wide-eyed, nose_blush": {
+        "en": "She covers her mouth with her hand, and opens her eyes wide, and blushes across her nose and cheeks.",
+        "zh-cn": "她用手捂住嘴，睁大眼睛，鼻尖和脸颊泛红。"
+      },
+      "sharing headphones, closed eyes, nose_blush": {
+        "en": "She shares a pair of earphones with you, and closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她和你共用一副耳机，闭上眼睛，鼻尖和脸颊泛红。"
+      },
+      "sitting, looking down, nose_blush": {
+        "en": "She sits down, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, looking away, nose_blush": {
+        "en": "She stands, and holds your hand, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，移开视线，鼻尖和脸颊泛红。"
+      },
+      "sitting, bench, covering face, nose_blush": {
+        "en": "She sits down, and is on a bench, and covers her face, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在长椅上，捂着脸，鼻尖和脸颊泛红。"
+      },
+      "standing, leaning forward, closed eyes, nose_blush": {
+        "en": "She stands, and leans forward, and closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，向前倾身，闭上眼睛，鼻尖和脸颊泛红。"
+      },
+      "sitting, sitting on stairs, hands on own knees, looking at viewer, nose_blush": {
+        "en": "She sits down, and sits on the steps, and rests her hands on her knees, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在台阶上，双手放在膝盖上，看着你，鼻尖和脸颊泛红。"
+      },
+      "sitting, crossed arms, looking away, nose_blush": {
+        "en": "She sits down, and folds her arms, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，双臂交叉，移开视线，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, looking at viewer, flustered": {
+        "en": "She stands, and holds your hand, and looks at you, and looks flustered.",
+        "zh-cn": "她站着，牵着你的手，看着你，显得慌乱。"
+      },
+      "walking, looking away, nose_blush": {
+        "en": "She walks, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她走着，移开视线，鼻尖和脸颊泛红。"
+      },
+      "sitting, couch, crossed legs, looking down, nose_blush": {
+        "en": "She sits down, and is on a couch, and crosses her legs, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在沙发上，交叠双腿，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, leaning forward, facing away, nose_blush, flustered": {
+        "en": "She stands, and leans forward, and turns away, and blushes across her nose and cheeks, and looks flustered.",
+        "zh-cn": "她站着，向前倾身，背过身，鼻尖和脸颊泛红，显得慌乱。"
+      },
+      "standing, leaning forward, finger to mouth, one eye closed": {
+        "en": "She stands, and leans forward, and brings a finger to her lips, and winks.",
+        "zh-cn": "她站着，向前倾身，把手指放在唇边，眨一只眼睛。"
+      },
+      "walking, holding hands, city lights, smirk": {
+        "en": "She walks, and holds your hand, and is surrounded by city lights, and gives a teasing smile.",
+        "zh-cn": "她走着，牵着你的手，周围亮着城市灯光，露出戏谑的笑容。"
+      },
+      "standing, holding drink, one eye closed": {
+        "en": "She stands, and holds a drink, and winks.",
+        "zh-cn": "她站着，拿着饮料，眨一只眼睛。"
+      },
+      "sitting, head on another's shoulder, smirk": {
+        "en": "She sits down, and rests her head on your shoulder, and gives a teasing smile.",
+        "zh-cn": "她坐着，把头靠在你的肩上，露出戏谑的笑容。"
+      },
+      "standing, holding hands, looking at viewer, happy": {
+        "en": "She stands, and holds your hand, and looks at you, and looks happy.",
+        "zh-cn": "她站着，牵着你的手，看着你，显得开心。"
+      },
+      "leaning forward, one eye closed, open mouth, smirk": {
+        "en": "She leans forward, and winks, and opens her mouth, and gives a teasing smile.",
+        "zh-cn": "她向前倾身，眨一只眼睛，张开嘴，露出戏谑的笑容。"
+      },
+      "standing, whispering, leaning forward, staring": {
+        "en": "She stands, and whispers softly, and leans forward, and gazes intently.",
+        "zh-cn": "她站着，轻声耳语，向前倾身，凝神注视。"
+      },
+      "standing, finger to mouth, looking at viewer, crazy smile": {
+        "en": "She stands, and brings a finger to her lips, and looks at you, and smiles with unsettling intensity.",
+        "zh-cn": "她站着，把手指放在唇边，看着你，露出令人不安的强烈笑容。"
+      },
+      "sitting, holding hands, closed eyes, smile": {
+        "en": "She sits down, and holds your hand, and closes her eyes, and smiles.",
+        "zh-cn": "她坐着，牵着你的手，闭上眼睛，微笑。"
+      },
+      "standing, hand on another's cheek, eye contact, evil smile": {
+        "en": "She stands, and rests her hand on your cheek, and meets your eyes, and smiles ominously.",
+        "zh-cn": "她站着，把手放在你的脸颊上，与你对视，露出阴沉的笑容。"
+      },
+      "sitting, hug, staring, smile": {
+        "en": "She sits down, and gives a hug, and gazes intently, and smiles.",
+        "zh-cn": "她坐着，伸手拥抱，凝神注视，微笑。"
+      },
+      "standing, leaning forward, staring, nose_blush": {
+        "en": "She stands, and leans forward, and gazes intently, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，向前倾身，凝神注视，鼻尖和脸颊泛红。"
+      },
+      "standing, wide-eyed, surprised": {
+        "en": "She stands, and opens her eyes wide, and looks surprised.",
+        "zh-cn": "她站着，睁大眼睛，显得惊讶。"
+      },
+      "standing, leaning forward, looking at viewer, thinking": {
+        "en": "She stands, and leans forward, and looks at you, and is lost in thought.",
+        "zh-cn": "她站着，向前倾身，看着你，陷入思考。"
+      },
+      "walking, looking up, open mouth": {
+        "en": "She walks, and looks up, and opens her mouth.",
+        "zh-cn": "她走着，抬头看，张开嘴。"
+      },
+      "standing, head tilt, looking at viewer, nose_blush": {
+        "en": "She stands, and tilts her head, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，歪着头，看着你，鼻尖和脸颊泛红。"
+      },
+      "sitting, leaning forward, surprised, nose_blush": {
+        "en": "She sits down, and leans forward, and looks surprised, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，向前倾身，显得惊讶，鼻尖和脸颊泛红。"
+      },
+      "standing, looking at viewer, thinking, nose_blush": {
+        "en": "She stands, and looks at you, and is lost in thought, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，陷入思考，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, expressionless, staring": {
+        "en": "She stands, and holds your hand, and keeps a neutral expression, and gazes intently.",
+        "zh-cn": "她站着，牵着你的手，面无表情，凝神注视。"
+      },
+      "standing, looking at viewer, expressionless, nose_blush": {
+        "en": "She stands, and looks at you, and keeps a neutral expression, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，面无表情，鼻尖和脸颊泛红。"
+      },
+      "sitting, expressionless, staring": {
+        "en": "She sits down, and keeps a neutral expression, and gazes intently.",
+        "zh-cn": "她坐着，面无表情，凝神注视。"
+      },
+      "standing, leaning forward, expressionless": {
+        "en": "She stands, and leans forward, and keeps a neutral expression.",
+        "zh-cn": "她站着，向前倾身，面无表情。"
+      },
+      "sitting, bench, leaning forward, expressionless, nose_blush": {
+        "en": "She sits down, and is on a bench, and leans forward, and keeps a neutral expression, and blushes across her nose and cheeks.",
+        "zh-cn": "她坐着，坐在长椅上，向前倾身，面无表情，鼻尖和脸颊泛红。"
+      },
+      "standing, expressionless, looking at viewer": {
+        "en": "She stands, and keeps a neutral expression, and looks at you.",
+        "zh-cn": "她站着，面无表情，看着你。"
+      },
+      "standing, contrapposto, hand on own hip, half-closed eyes, smirk": {
+        "en": "She stands with one hip cocked and a hand on her hip, eyes half-lidded, smirking.",
+        "zh-cn": "她把重心放在一侧胯上，一手叉腰，半垂着眼，露出坏笑。"
+      },
+      "she stands with one hip cocked and a hand on her hip, eyes half-lidded, smirking.": {
+        "en": "She stands with one hip cocked and a hand on her hip, eyes half-lidded, smirking.",
+        "zh-cn": "她把重心放在一侧胯上，一手叉腰，半垂着眼，露出坏笑。"
+      },
+      "standing, whispering, leaning forward, one eye closed, smirk": {
+        "en": "She leans close and whispers to the viewer, winking with a smirk.",
+        "zh-cn": "她凑近你，轻声耳语，带着坏笑眨着一只眼。"
+      },
+      "she leans close and whispers to the viewer, winking with a smirk.": {
+        "en": "She leans close and whispers to the viewer, winking with a smirk.",
+        "zh-cn": "她凑近你，轻声耳语，带着坏笑眨着一只眼。"
+      },
+      "standing, holding hands, leaning forward, naughty face": {
+        "en": "She holds the viewer's hands, leans in, and gives them a naughty look.",
+        "zh-cn": "她握住你的双手，凑近你，露出调皮的神情。"
+      },
+      "she holds the viewer's hands, leans in, and gives them a naughty look.": {
+        "en": "She holds the viewer's hands, leans in, and gives them a naughty look.",
+        "zh-cn": "她握住你的双手，凑近你，露出调皮的神情。"
+      },
+      "sitting, leaning forward, hand on own chin, looking at viewer, smirk": {
+        "en": "She sits leaning forward, chin on her hand, and smirks at the viewer.",
+        "zh-cn": "她坐着向前倾身，用手托住下巴，朝你露出坏笑。"
+      },
+      "she sits leaning forward, chin on her hand, and smirks at the viewer.": {
+        "en": "She sits leaning forward, chin on her hand, and smirks at the viewer.",
+        "zh-cn": "她坐着向前倾身，用手托住下巴，朝你露出坏笑。"
+      },
+      "standing, hand on another's cheek, head tilt, one eye closed, nose_blush": {
+        "en": "She cups the viewer's cheek, tilts her head, and winks with pinked cheeks.",
+        "zh-cn": "她捧住你的脸颊，歪着头，脸颊泛红，眨着一只眼。"
+      },
+      "she cups the viewer's cheek, tilts her head, and winks with pinked cheeks.": {
+        "en": "She cups the viewer's cheek, tilts her head, and winks with pinked cheeks.",
+        "zh-cn": "她捧住你的脸颊，歪着头，脸颊泛红，眨着一只眼。"
+      },
+      "standing, leaning forward, parted lips, half-closed eyes": {
+        "en": "She leans in close, lips parted, eyes half-lidded and inviting.",
+        "zh-cn": "她靠近你，微张着嘴唇，半垂着眼，流露出邀请的神情。"
+      },
+      "she leans in close, lips parted, eyes half-lidded and inviting.": {
+        "en": "She leans in close, lips parted, eyes half-lidded and inviting.",
+        "zh-cn": "她靠近你，微张着嘴唇，半垂着眼，流露出邀请的神情。"
+      },
+      "standing, contrapposto, hand on own hip, looking at viewer, raised eyebrow": {
+        "en": "She rests her weight on one hip and raises an eyebrow at the viewer, silently asking whether they will take the next step.",
+        "zh-cn": "她一手叉腰，偏着重心挑眉看你，无声地问这一次你会不会主动。"
+      },
+      "she rests her weight on one hip and raises an eyebrow at the viewer, silently asking whether they will take the next step.": {
+        "en": "She rests her weight on one hip and raises an eyebrow at the viewer, silently asking whether they will take the next step.",
+        "zh-cn": "她一手叉腰，偏着重心挑眉看你，无声地问这一次你会不会主动。"
+      },
+      "standing, whispering, leaning forward, smile": {
+        "en": "She leans close to whisper to the viewer, a soft smile lending warmth to her confidential words.",
+        "zh-cn": "她靠近你轻声耳语，唇边柔和的笑意让悄悄话多了几分亲近。"
+      },
+      "she leans close to whisper to the viewer, a soft smile lending warmth to her confidential words.": {
+        "en": "She leans close to whisper to the viewer, a soft smile lending warmth to her confidential words.",
+        "zh-cn": "她靠近你轻声耳语，唇边柔和的笑意让悄悄话多了几分亲近。"
+      },
+      "standing, holding hands, leaning forward, looking at viewer, serious": {
+        "en": "She holds the viewer's hands and leans forward, meeting their eyes with unexpected seriousness.",
+        "zh-cn": "她握住你的双手向前倾身，认真迎上你的目光，这次没有拿玩笑遮掩。"
+      },
+      "she holds the viewer's hands and leans forward, meeting their eyes with unexpected seriousness.": {
+        "en": "She holds the viewer's hands and leans forward, meeting their eyes with unexpected seriousness.",
+        "zh-cn": "她握住你的双手向前倾身，认真迎上你的目光，这次没有拿玩笑遮掩。"
+      },
+      "sitting, leaning forward, hand on own chin, looking at viewer, smile": {
+        "en": "She sits leaning forward with her chin on her hand, listening to the viewer with a fond smile.",
+        "zh-cn": "她坐着向前倾身，托着下巴听你说话，笑意里透着专注的喜欢。"
+      },
+      "she sits leaning forward with her chin on her hand, listening to the viewer with a fond smile.": {
+        "en": "She sits leaning forward with her chin on her hand, listening to the viewer with a fond smile.",
+        "zh-cn": "她坐着向前倾身，托着下巴听你说话，笑意里透着专注的喜欢。"
+      },
+      "standing, hand on another's cheek, head tilt, looking at viewer, nose_blush": {
+        "en": "She cups the viewer's cheek and tilts her head, maintaining eye contact despite the color rising in her own cheeks.",
+        "zh-cn": "她捧住你的脸颊，偏头与你对视，自己的脸红了也没有移开目光。"
+      },
+      "she cups the viewer's cheek and tilts her head, maintaining eye contact despite the color rising in her own cheeks.": {
+        "en": "She cups the viewer's cheek and tilts her head, maintaining eye contact despite the color rising in her own cheeks.",
+        "zh-cn": "她捧住你的脸颊，偏头与你对视，自己的脸红了也没有移开目光。"
+      },
+      "standing, leaning forward, parted lips, looking at viewer": {
+        "en": "She leans close with her lips slightly parted, holding the viewer's gaze as she waits for an answer.",
+        "zh-cn": "她靠近你，唇瓣微张，目光停在你身上，安静地等一个回应。"
+      },
+      "she leans close with her lips slightly parted, holding the viewer's gaze as she waits for an answer.": {
+        "en": "She leans close with her lips slightly parted, holding the viewer's gaze as she waits for an answer.",
+        "zh-cn": "她靠近你，唇瓣微张，目光停在你身上，安静地等一个回应。"
+      }
+    },
+    "confession": {
+      "holding bouquet, reaching out": {
+        "en": "She holds out a bouquet with both hands.",
+        "zh-cn": "她双手向你递出一束花。"
+      },
+      "she holds out a bouquet with both hands.": {
+        "en": "She holds out a bouquet with both hands.",
+        "zh-cn": "她双手向你递出一束花。"
+      },
+      "holding gift box, reaching out": {
+        "en": "She holds out a small gift box.",
+        "zh-cn": "她向你递出一个小礼物盒。"
+      },
+      "she holds out a small gift box.": {
+        "en": "She holds out a small gift box.",
+        "zh-cn": "她向你递出一个小礼物盒。"
+      },
+      "holding hands": {
+        "en": "She holds the viewer's hands in both of hers.",
+        "zh-cn": "她用双手握住你的双手。"
+      },
+      "she holds the viewer's hands in both of hers.": {
+        "en": "She holds the viewer's hands in both of hers.",
+        "zh-cn": "她用双手握住你的双手。"
+      },
+      "hand on another's cheek, leaning forward": {
+        "en": "She leans in and rests her hand on the viewer's cheek.",
+        "zh-cn": "她靠近你，把手放在你的脸颊上。"
+      },
+      "she leans in and rests her hand on the viewer's cheek.": {
+        "en": "She leans in and rests her hand on the viewer's cheek.",
+        "zh-cn": "她靠近你，把手放在你的脸颊上。"
+      },
+      "leaning forward": {
+        "en": "She leans in very close to the viewer.",
+        "zh-cn": "她向你靠得很近。"
+      },
+      "she leans in very close to the viewer.": {
+        "en": "She leans in very close to the viewer.",
+        "zh-cn": "她向你靠得很近。"
+      },
+      "holding envelope, reaching out": {
+        "en": "She holds out a sealed envelope with both hands.",
+        "zh-cn": "她双手递出一个封好的信封。"
+      },
+      "she holds out a sealed envelope with both hands.": {
+        "en": "She holds out a sealed envelope with both hands.",
+        "zh-cn": "她双手递出一个封好的信封。"
+      },
+      "hug": {
+        "en": "She holds the viewer in a tight hug.",
+        "zh-cn": "她紧紧拥抱你。"
+      },
+      "she holds the viewer in a tight hug.": {
+        "en": "She holds the viewer in a tight hug.",
+        "zh-cn": "她紧紧拥抱你。"
+      },
+      "hand on own chest": {
+        "en": "She presses one hand to her own chest.",
+        "zh-cn": "她把一只手按在胸前。"
+      },
+      "she presses one hand to her own chest.": {
+        "en": "She presses one hand to her own chest.",
+        "zh-cn": "她把一只手按在胸前。"
+      },
+      "holding hands, arm around shoulder": {
+        "en": "She holds the viewer's hand and leans her arm over their shoulder.",
+        "zh-cn": "她牵着你的手，把另一只手臂搭在你的肩上。"
+      },
+      "she holds the viewer's hand and leans her arm over their shoulder.": {
+        "en": "She holds the viewer's hand and leans her arm over their shoulder.",
+        "zh-cn": "她牵着你的手，把另一只手臂搭在你的肩上。"
+      },
+      "reaching out, holding drink": {
+        "en": "She holds out a drink toward the viewer.",
+        "zh-cn": "她向你递出一杯饮料。"
+      },
+      "she holds out a drink toward the viewer.": {
+        "en": "She holds out a drink toward the viewer.",
+        "zh-cn": "她向你递出一杯饮料。"
+      },
+      "interlocked fingers": {
+        "en": "She laces her fingers with the viewer's.",
+        "zh-cn": "她与你十指相扣。"
+      },
+      "she laces her fingers with the viewer's.": {
+        "en": "She laces her fingers with the viewer's.",
+        "zh-cn": "她与你十指相扣。"
+      },
+      "forehead-to-forehead": {
+        "en": "She presses her forehead against the viewer's.",
+        "zh-cn": "她把额头贴在你的额头上。"
+      },
+      "she presses her forehead against the viewer's.": {
+        "en": "She presses her forehead against the viewer's.",
+        "zh-cn": "她把额头贴在你的额头上。"
+      },
+      "tiptoes, leaning forward": {
+        "en": "She rises onto her toes and leans in toward the viewer.",
+        "zh-cn": "她踮起脚尖向你靠近。"
+      },
+      "she rises onto her toes and leans in toward the viewer.": {
+        "en": "She rises onto her toes and leans in toward the viewer.",
+        "zh-cn": "她踮起脚尖向你靠近。"
+      },
+      "holding own sleeve": {
+        "en": "She grips her own sleeve tightly.",
+        "zh-cn": "她紧紧抓着自己的袖口。"
+      },
+      "she grips her own sleeve tightly.": {
+        "en": "She grips her own sleeve tightly.",
+        "zh-cn": "她紧紧抓着自己的袖口。"
+      },
+      "covering own mouth": {
+        "en": "She claps one hand over her mouth.",
+        "zh-cn": "她一手捂住嘴。"
+      },
+      "she claps one hand over her mouth.": {
+        "en": "She claps one hand over her mouth.",
+        "zh-cn": "她一手捂住嘴。"
+      },
+      "standing, eye contact, light smile": {
+        "en": "She stands, and meets your eyes, and smiles softly.",
+        "zh-cn": "她站着，与你对视，露出浅浅的笑容。"
+      },
+      "standing, holding hands, looking at viewer, light smile": {
+        "en": "She stands, and holds your hand, and looks at you, and smiles softly.",
+        "zh-cn": "她站着，牵着你的手，看着你，露出浅浅的笑容。"
+      },
+      "standing, hand on own chest, closed eyes, light smile": {
+        "en": "She stands, and rests a hand on her chest, and closes her eyes, and smiles softly.",
+        "zh-cn": "她站着，把一只手放在胸前，闭上眼睛，露出浅浅的笑容。"
+      },
+      "standing, looking at viewer, half-closed eyes": {
+        "en": "She stands, and looks at you, and half closes her eyes.",
+        "zh-cn": "她站着，看着你，半闭着眼睛。"
+      },
+      "standing, looking away, nose_blush, expressionless": {
+        "en": "She stands, and averts her gaze, and blushes across her nose and cheeks, and keeps a neutral expression.",
+        "zh-cn": "她站着，移开视线，鼻尖和脸颊泛红，面无表情。"
+      },
+      "standing, holding hands, looking down, nose_blush, expressionless": {
+        "en": "She stands, and holds your hand, and looks down, and blushes across her nose and cheeks, and keeps a neutral expression.",
+        "zh-cn": "她站着，牵着你的手，低头看，鼻尖和脸颊泛红，面无表情。"
+      },
+      "standing, eye contact, parted lips, nose_blush": {
+        "en": "She stands, and meets your eyes, and parts her lips slightly, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，与你对视，微微张开双唇，鼻尖和脸颊泛红。"
+      },
+      "standing, closed eyes, nose_blush": {
+        "en": "She stands, and closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，闭上眼睛，鼻尖和脸颊泛红。"
+      },
+      "standing, looking at viewer, half-closed eyes, nose_blush": {
+        "en": "She stands, and looks at you, and half closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，半闭着眼睛，鼻尖和脸颊泛红。"
+      },
+      "standing, spread arms, happy, open mouth, nose_blush": {
+        "en": "She stands, and spreads her arms wide, and looks happy, and opens her mouth, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，张开双臂，显得开心，张开嘴，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, leaning forward, happy, tears": {
+        "en": "She stands, and holds your hand, and leans forward, and looks happy, and has tears in her eyes.",
+        "zh-cn": "她站着，牵着你的手，向前倾身，显得开心，眼里含着泪。"
+      },
+      "standing, jumping, arms up, open mouth, nose_blush": {
+        "en": "She stands, and jumps, and raises both arms, and opens her mouth, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，跳起来，举起双臂，张开嘴，鼻尖和脸颊泛红。"
+      },
+      "standing, pointing at viewer, open mouth, nose_blush, happy": {
+        "en": "She stands, and points toward you, and opens her mouth, and blushes across her nose and cheeks, and looks happy.",
+        "zh-cn": "她站着，指向你，张开嘴，鼻尖和脸颊泛红，显得开心。"
+      },
+      "standing, wide-eyed, open mouth, nose_blush": {
+        "en": "She stands, and opens her eyes wide, and opens her mouth, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，睁大眼睛，张开嘴，鼻尖和脸颊泛红。"
+      },
+      "standing, eye contact, determined, serious, nose_blush": {
+        "en": "She stands, and meets your eyes, and looks determined, and looks serious, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，与你对视，神情坚定，神情认真，鼻尖和脸颊泛红。"
+      },
+      "standing, bowing, serious, nose_blush": {
+        "en": "She stands, and bows, and looks serious, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，鞠躬，神情认真，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, eye contact, serious": {
+        "en": "She stands, and holds your hand, and meets your eyes, and looks serious.",
+        "zh-cn": "她站着，牵着你的手，与你对视，神情认真。"
+      },
+      "standing, serious, nose_blush": {
+        "en": "She stands, and looks serious, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，神情认真，鼻尖和脸颊泛红。"
+      },
+      "standing, hand on own chest, determined, nose_blush": {
+        "en": "She stands, and rests a hand on her chest, and looks determined, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，把一只手放在胸前，神情坚定，鼻尖和脸颊泛红。"
+      },
+      "standing, looking down, covering face, nose_blush": {
+        "en": "She stands, and looks down, and covers her face, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，低头看，捂着脸，鼻尖和脸颊泛红。"
+      },
+      "standing, own hands clasped, looking up, nose_blush": {
+        "en": "She stands, and clasps her hands together, and looks up, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双手紧握，抬头看，鼻尖和脸颊泛红。"
+      },
+      "standing, looking down, nose_blush, tears": {
+        "en": "She stands, and looks down, and blushes across her nose and cheeks, and has tears in her eyes.",
+        "zh-cn": "她站着，低头看，鼻尖和脸颊泛红，眼里含着泪。"
+      },
+      "standing, holding own skirt, looking at viewer, nose_blush": {
+        "en": "She stands, and grasps her skirt, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，抓着裙摆，看着你，鼻尖和脸颊泛红。"
+      },
+      "holding flower, reaching out, looking to the side, nose_blush": {
+        "en": "She holds a flower, and reaches out toward you, and looks to the side, and blushes across her nose and cheeks.",
+        "zh-cn": "她拿着一朵花，向你伸手，看向一旁，鼻尖和脸颊泛红。"
+      },
+      "holding gift, looking down, nose_blush, tears": {
+        "en": "She holds a gift, and looks down, and blushes across her nose and cheeks, and has tears in her eyes.",
+        "zh-cn": "她拿着礼物，低头看，鼻尖和脸颊泛红，眼里含着泪。"
+      },
+      "holding hands, looking to the side, closed eyes, nose_blush": {
+        "en": "She holds your hand, and looks to the side, and closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她牵着你的手，看向一旁，闭上眼睛，鼻尖和脸颊泛红。"
+      },
+      "hand on another's cheek, leaning forward, nose_blush": {
+        "en": "She rests her hand on your cheek, and leans forward, and blushes across her nose and cheeks.",
+        "zh-cn": "她把手放在你的脸颊上，向前倾身，鼻尖和脸颊泛红。"
+      },
+      "leaning forward, looking to the side, flustered, nose_blush": {
+        "en": "She leans forward, and looks to the side, and looks flustered, and blushes across her nose and cheeks.",
+        "zh-cn": "她向前倾身，看向一旁，显得慌乱，鼻尖和脸颊泛红。"
+      },
+      "holding letter, looking down, nose_blush": {
+        "en": "She holds a letter, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她拿着一封信，低头看，鼻尖和脸颊泛红。"
+      },
+      "hug, closed eyes, nose_blush, tears": {
+        "en": "She gives a hug, and closes her eyes, and blushes across her nose and cheeks, and has tears in her eyes.",
+        "zh-cn": "她伸手拥抱，闭上眼睛，鼻尖和脸颊泛红，眼里含着泪。"
+      },
+      "hand on own chest, looking to the side, nose_blush, light smile": {
+        "en": "She rests a hand on her chest, and looks to the side, and blushes across her nose and cheeks, and smiles softly.",
+        "zh-cn": "她把一只手放在胸前，看向一旁，鼻尖和脸颊泛红，露出浅浅的笑容。"
+      },
+      "standing, covering face, nose_blush": {
+        "en": "She stands, and covers her face, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，捂着脸，鼻尖和脸颊泛红。"
+      },
+      "standing, looking down, hands on own chest, nose_blush": {
+        "en": "She stands, and looks down, and rests both hands on her chest, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，低头看，双手放在胸前，鼻尖和脸颊泛红。"
+      },
+      "standing, covering own mouth, nose_blush": {
+        "en": "She stands, and covers her mouth with her hand, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，用手捂住嘴，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, closed eyes, nose_blush": {
+        "en": "She stands, and holds your hand, and closes her eyes, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，闭上眼睛，鼻尖和脸颊泛红。"
+      },
+      "standing, peeking through fingers, nose_blush, tears": {
+        "en": "She stands, and peeks through her fingers, and blushes across her nose and cheeks, and has tears in her eyes.",
+        "zh-cn": "她站着，从指缝间偷看，鼻尖和脸颊泛红，眼里含着泪。"
+      },
+      "standing, looking away, nose_blush": {
+        "en": "She stands, and averts her gaze, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，移开视线，鼻尖和脸颊泛红。"
+      },
+      "standing, crossed arms, looking down, nose_blush": {
+        "en": "She stands, and folds her arms, and looks down, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，双臂交叉，低头看，鼻尖和脸颊泛红。"
+      },
+      "standing, looking away, flustered, nose_blush": {
+        "en": "She stands, and averts her gaze, and looks flustered, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，移开视线，显得慌乱，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, facing away, nose_blush": {
+        "en": "She stands, and holds your hand, and turns away, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，背过身，鼻尖和脸颊泛红。"
+      },
+      "standing, raised eyebrow, nose_blush, looking at viewer": {
+        "en": "She stands, and raises an eyebrow, and blushes across her nose and cheeks, and looks at you.",
+        "zh-cn": "她站着，挑起眉毛，鼻尖和脸颊泛红，看着你。"
+      },
+      "standing, leaning forward, one eye closed, nose_blush, smirk": {
+        "en": "She leans toward the viewer, winks, and smirks through a faint blush.",
+        "zh-cn": "她向你倾身，脸颊微红，带着坏笑眨着一只眼。"
+      },
+      "standing, holding hands, looking at viewer, happy, nose_blush": {
+        "en": "She stands, and holds your hand, and looks at you, and looks happy, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，看着你，显得开心，鼻尖和脸颊泛红。"
+      },
+      "standing, one eye closed, nose_blush, parted lips": {
+        "en": "She stands, and winks, and blushes across her nose and cheeks, and parts her lips slightly.",
+        "zh-cn": "她站着，眨一只眼睛，鼻尖和脸颊泛红，微微张开双唇。"
+      },
+      "standing, v, nose_blush, happy": {
+        "en": "She stands, and makes a peace sign, and blushes across her nose and cheeks, and looks happy.",
+        "zh-cn": "她站着，比出胜利手势，鼻尖和脸颊泛红，显得开心。"
+      },
+      "standing, arm around shoulder, looking at viewer, nose_blush": {
+        "en": "She stands, and puts her arm around your shoulder, and looks at you, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，把手臂搭在你的肩上，看着你，鼻尖和脸颊泛红。"
+      },
+      "standing, staring, crazy smile": {
+        "en": "She stands, and gazes intently, and smiles with unsettling intensity.",
+        "zh-cn": "她站着，凝神注视，露出令人不安的强烈笑容。"
+      },
+      "standing, hug, looking at viewer, smile": {
+        "en": "She stands, and gives a hug, and looks at you, and smiles.",
+        "zh-cn": "她站着，伸手拥抱，看着你，微笑。"
+      },
+      "standing, hand on another's cheek, eye contact, evil grin, tears": {
+        "en": "She stands, and rests her hand on your cheek, and meets your eyes, and grins ominously, and has tears in her eyes.",
+        "zh-cn": "她站着，把手放在你的脸颊上，与你对视，露出阴沉的咧嘴笑容，眼里含着泪。"
+      },
+      "standing, holding hands, staring, nose_blush": {
+        "en": "She stands, and holds your hand, and gazes intently, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，凝神注视，鼻尖和脸颊泛红。"
+      },
+      "standing, leaning forward, finger to mouth, staring, smirk": {
+        "en": "She stands, and leans forward, and brings a finger to her lips, and gazes intently, and gives a teasing smile.",
+        "zh-cn": "她站着，向前倾身，把手指放在唇边，凝神注视，露出戏谑的笑容。"
+      },
+      "standing, leaning forward, wide-eyed, nose_blush, parted lips": {
+        "en": "She stands, and leans forward, and opens her eyes wide, and blushes across her nose and cheeks, and parts her lips slightly.",
+        "zh-cn": "她站着，向前倾身，睁大眼睛，鼻尖和脸颊泛红，微微张开双唇。"
+      },
+      "standing, head tilt, staring, nose_blush": {
+        "en": "She stands, and tilts her head, and gazes intently, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，歪着头，凝神注视，鼻尖和脸颊泛红。"
+      },
+      "standing, looking at viewer, surprised, nose_blush": {
+        "en": "She stands, and looks at you, and looks surprised, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，看着你，显得惊讶，鼻尖和脸颊泛红。"
+      },
+      "standing, holding hands, looking at viewer, wide-eyed, nose_blush": {
+        "en": "She stands, and holds your hand, and looks at you, and opens her eyes wide, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，看着你，睁大眼睛，鼻尖和脸颊泛红。"
+      },
+      "standing, hand on own chest, thinking, nose_blush": {
+        "en": "She stands, and rests a hand on her chest, and is lost in thought, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，把一只手放在胸前，陷入思考，鼻尖和脸颊泛红。"
+      },
+      "standing, staring, expressionless, nose_blush": {
+        "en": "She stands, and gazes intently, and keeps a neutral expression, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，凝神注视，面无表情，鼻尖和脸颊泛红。"
+      },
+      "standing, eye contact, parted lips, expressionless": {
+        "en": "She stands, and meets your eyes, and parts her lips slightly, and keeps a neutral expression.",
+        "zh-cn": "她站着，与你对视，微微张开双唇，面无表情。"
+      },
+      "standing, holding hands, expressionless, nose_blush": {
+        "en": "She stands, and holds your hand, and keeps a neutral expression, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，牵着你的手，面无表情，鼻尖和脸颊泛红。"
+      },
+      "standing, hand on own chest, expressionless, nose_blush": {
+        "en": "She stands, and rests a hand on her chest, and keeps a neutral expression, and blushes across her nose and cheeks.",
+        "zh-cn": "她站着，把一只手放在胸前，面无表情，鼻尖和脸颊泛红。"
+      },
+      "she leans toward the viewer, winks, and smirks through a faint blush.": {
+        "en": "She leans toward the viewer, winks, and smirks through a faint blush.",
+        "zh-cn": "她向你倾身，脸颊微红，带着坏笑眨着一只眼。"
+      },
+      "standing, finger to mouth, head tilt, looking at viewer, naughty face": {
+        "en": "She presses a finger to her lips, tilts her head, and gives the viewer a naughty grin.",
+        "zh-cn": "她把手指抵在唇边，歪着头，朝你露出调皮的笑容。"
+      },
+      "she presses a finger to her lips, tilts her head, and gives the viewer a naughty grin.": {
+        "en": "She presses a finger to her lips, tilts her head, and gives the viewer a naughty grin.",
+        "zh-cn": "她把手指抵在唇边，歪着头，朝你露出调皮的笑容。"
+      },
+      "standing, holding hands, looking at viewer, smirk, nose_blush": {
+        "en": "She holds the viewer's hands and smirks at them, blushing softly.",
+        "zh-cn": "她握住你的双手，轻轻脸红，朝你露出坏笑。"
+      },
+      "she holds the viewer's hands and smirks at them, blushing softly.": {
+        "en": "She holds the viewer's hands and smirks at them, blushing softly.",
+        "zh-cn": "她握住你的双手，轻轻脸红，朝你露出坏笑。"
+      },
+      "standing, hand on another's cheek, leaning forward, one eye closed, nose_blush": {
+        "en": "She cups the viewer's cheek, leans in, and winks with flushed cheeks.",
+        "zh-cn": "她捧住你的脸颊，凑近你，脸颊泛红，眨着一只眼。"
+      },
+      "she cups the viewer's cheek, leans in, and winks with flushed cheeks.": {
+        "en": "She cups the viewer's cheek, leans in, and winks with flushed cheeks.",
+        "zh-cn": "她捧住你的脸颊，凑近你，脸颊泛红，眨着一只眼。"
+      },
+      "standing, contrapposto, hand on own hip, naughty face, nose_blush": {
+        "en": "She stands with one hip cocked and a hand on her hip, grinning naughtily through a blush.",
+        "zh-cn": "她把重心放在一侧胯上，一手叉腰，红着脸露出调皮的笑容。"
+      },
+      "she stands with one hip cocked and a hand on her hip, grinning naughtily through a blush.": {
+        "en": "She stands with one hip cocked and a hand on her hip, grinning naughtily through a blush.",
+        "zh-cn": "她把重心放在一侧胯上，一手叉腰，红着脸露出调皮的笑容。"
+      },
+      "standing, leaning forward, looking at viewer, nose_blush, smirk": {
+        "en": "She leans toward the viewer with a faint blush and one last little smirk, trying to disguise how much their answer matters.",
+        "zh-cn": "她红着脸向你倾身，最后还逞强地露出一点坏笑，想藏住自己对答案的在意。"
+      },
+      "she leans toward the viewer with a faint blush and one last little smirk, trying to disguise how much their answer matters.": {
+        "en": "She leans toward the viewer with a faint blush and one last little smirk, trying to disguise how much their answer matters.",
+        "zh-cn": "她红着脸向你倾身，最后还逞强地露出一点坏笑，想藏住自己对答案的在意。"
+      },
+      "standing, finger to mouth, head tilt, looking at viewer, smile": {
+        "en": "She rests a finger near her lips and tilts her head, her teasing smile softening as she waits for the viewer to speak.",
+        "zh-cn": "她把指尖停在唇边，歪头等你开口，逗弄的笑意渐渐变得柔软。"
+      },
+      "she rests a finger near her lips and tilts her head, her teasing smile softening as she waits for the viewer to speak.": {
+        "en": "She rests a finger near her lips and tilts her head, her teasing smile softening as she waits for the viewer to speak.",
+        "zh-cn": "她把指尖停在唇边，歪头等你开口，逗弄的笑意渐渐变得柔软。"
+      },
+      "standing, holding hands, looking at viewer, smile, nose_blush": {
+        "en": "She holds the viewer's hands and meets their eyes with a shy, blushing smile, no longer hiding behind a joke.",
+        "zh-cn": "她握住你的双手，红着脸与你对视，羞涩地笑了，这一次没有再借玩笑躲开。"
+      },
+      "she holds the viewer's hands and meets their eyes with a shy, blushing smile, no longer hiding behind a joke.": {
+        "en": "She holds the viewer's hands and meets their eyes with a shy, blushing smile, no longer hiding behind a joke.",
+        "zh-cn": "她握住你的双手，红着脸与你对视，羞涩地笑了，这一次没有再借玩笑躲开。"
+      },
+      "standing, hand on another's cheek, leaning forward, looking at viewer, nose_blush": {
+        "en": "She cups the viewer's cheek and leans closer, her flushed face and steady gaze making her affection unmistakable.",
+        "zh-cn": "她捧着你的脸颊靠近，脸颊泛红，目光却坚定，喜欢已不必再猜。"
+      },
+      "she cups the viewer's cheek and leans closer, her flushed face and steady gaze making her affection unmistakable.": {
+        "en": "She cups the viewer's cheek and leans closer, her flushed face and steady gaze making her affection unmistakable.",
+        "zh-cn": "她捧着你的脸颊靠近，脸颊泛红，目光却坚定，喜欢已不必再猜。"
+      },
+      "standing, contrapposto, hand on own hip, smile, nose_blush": {
+        "en": "She keeps her familiar hand-on-hip pose, but her blushing, tender smile gives away an honest answer.",
+        "zh-cn": "她还摆着熟悉的叉腰姿势，红着脸露出的温柔笑容却给出了坦率的答案。"
+      },
+      "she keeps her familiar hand-on-hip pose, but her blushing, tender smile gives away an honest answer.": {
+        "en": "She keeps her familiar hand-on-hip pose, but her blushing, tender smile gives away an honest answer.",
+        "zh-cn": "她还摆着熟悉的叉腰姿势，红着脸露出的温柔笑容却给出了坦率的答案。"
+      }
+    }
+  },
+  "tags": {
+    "standing": {
+      "en": "stands",
+      "zh-cn": "站着"
+    },
+    "walking": {
+      "en": "walks",
+      "zh-cn": "走着"
+    },
+    "running": {
+      "en": "runs",
+      "zh-cn": "跑着"
+    },
+    "sitting": {
+      "en": "sits down",
+      "zh-cn": "坐着"
+    },
+    "jumping": {
+      "en": "jumps",
+      "zh-cn": "跳起来"
+    },
+    "leaning forward": {
+      "en": "leans forward",
+      "zh-cn": "向前倾身"
+    },
+    "leaning back": {
+      "en": "leans back",
+      "zh-cn": "向后靠"
+    },
+    "crossed arms": {
+      "en": "folds her arms",
+      "zh-cn": "双臂交叉"
+    },
+    "crossed legs": {
+      "en": "crosses her legs",
+      "zh-cn": "交叠双腿"
+    },
+    "adjusting hair": {
+      "en": "adjusts her hair",
+      "zh-cn": "整理头发"
+    },
+    "against wall": {
+      "en": "leans against a wall",
+      "zh-cn": "靠着墙"
+    },
+    "hand on own hip": {
+      "en": "rests a hand on her hip",
+      "zh-cn": "把手放在腰间"
+    },
+    "holding": {
+      "en": "holds something in her hands",
+      "zh-cn": "手里拿着东西"
+    },
+    "light smile": {
+      "en": "smiles softly",
+      "zh-cn": "露出浅浅的笑容"
+    },
+    "looking at viewer": {
+      "en": "looks at you",
+      "zh-cn": "看着你"
+    },
+    "seductive smile": {
+      "en": "smiles alluringly",
+      "zh-cn": "露出妩媚的笑容"
+    },
+    "cafe": {
+      "en": "is in a cafe",
+      "zh-cn": "身处咖啡馆"
+    },
+    "holding cup": {
+      "en": "holds a cup",
+      "zh-cn": "拿着杯子"
+    },
+    "hand on own chin": {
+      "en": "rests her hand on her chin",
+      "zh-cn": "托着下巴"
+    },
+    "chair": {
+      "en": "is on a chair",
+      "zh-cn": "坐在椅子上"
+    },
+    "book on lap": {
+      "en": "rests a book on her lap",
+      "zh-cn": "膝上放着一本书"
+    },
+    "serious": {
+      "en": "looks serious",
+      "zh-cn": "神情认真"
+    },
+    "looking away": {
+      "en": "averts her gaze",
+      "zh-cn": "移开视线"
+    },
+    "thinking": {
+      "en": "is lost in thought",
+      "zh-cn": "陷入思考"
+    },
+    "holding hands": {
+      "en": "holds your hand",
+      "zh-cn": "牵着你的手"
+    },
+    "bench": {
+      "en": "is on a bench",
+      "zh-cn": "坐在长椅上"
+    },
+    "on railing": {
+      "en": "leans against a railing",
+      "zh-cn": "倚着栏杆"
+    },
+    "wine glass": {
+      "en": "has a wine glass beside her",
+      "zh-cn": "身旁有一只酒杯"
+    },
+    "looking up": {
+      "en": "looks up",
+      "zh-cn": "抬头看"
+    },
+    "facing away": {
+      "en": "turns away",
+      "zh-cn": "背过身"
+    },
+    "wind": {
+      "en": "has the wind blowing around her",
+      "zh-cn": "身边吹着风"
+    },
+    "outdoors": {
+      "en": "is outside",
+      "zh-cn": "身处户外"
+    },
+    "closed eyes": {
+      "en": "closes her eyes",
+      "zh-cn": "闭上眼睛"
+    },
+    "city lights": {
+      "en": "is surrounded by city lights",
+      "zh-cn": "周围亮着城市灯光"
+    },
+    "couch": {
+      "en": "is on a couch",
+      "zh-cn": "坐在沙发上"
+    },
+    "hand on another's waist": {
+      "en": "rests her hand on your waist",
+      "zh-cn": "把手放在你的腰间"
+    },
+    "head on another's shoulder": {
+      "en": "rests her head on your shoulder",
+      "zh-cn": "把头靠在你的肩上"
+    },
+    "eye contact": {
+      "en": "meets your eyes",
+      "zh-cn": "与你对视"
+    },
+    "hand on own chest": {
+      "en": "rests a hand on her chest",
+      "zh-cn": "把一只手放在胸前"
+    },
+    "half-closed eyes": {
+      "en": "half closes her eyes",
+      "zh-cn": "半闭着眼睛"
+    },
+    "expressionless": {
+      "en": "keeps a neutral expression",
+      "zh-cn": "面无表情"
+    },
+    "hands in pockets": {
+      "en": "keeps her hands in her pockets",
+      "zh-cn": "双手插在口袋里"
+    },
+    "head tilt": {
+      "en": "tilts her head",
+      "zh-cn": "歪着头"
+    },
+    "bored": {
+      "en": "looks bored",
+      "zh-cn": "显得无聊"
+    },
+    "arms at sides": {
+      "en": "lets her arms hang at her sides",
+      "zh-cn": "双臂垂在身侧"
+    },
+    "nose_blush": {
+      "en": "blushes across her nose and cheeks",
+      "zh-cn": "鼻尖和脸颊泛红"
+    },
+    "looking ahead": {
+      "en": "looks ahead",
+      "zh-cn": "看着前方"
+    },
+    "staring": {
+      "en": "gazes intently",
+      "zh-cn": "凝神注视"
+    },
+    "hands on lap": {
+      "en": "rests her hands on her lap",
+      "zh-cn": "双手放在膝上"
+    },
+    "sigh": {
+      "en": "lets out a sigh",
+      "zh-cn": "轻轻叹气"
+    },
+    "sitting on stairs": {
+      "en": "sits on the steps",
+      "zh-cn": "坐在台阶上"
+    },
+    "looking down": {
+      "en": "looks down",
+      "zh-cn": "低头看"
+    },
+    "parted lips": {
+      "en": "parts her lips slightly",
+      "zh-cn": "微微张开双唇"
+    },
+    "waving": {
+      "en": "waves in greeting",
+      "zh-cn": "挥手打招呼"
+    },
+    "open mouth": {
+      "en": "opens her mouth",
+      "zh-cn": "张开嘴"
+    },
+    "happy": {
+      "en": "looks happy",
+      "zh-cn": "显得开心"
+    },
+    "excited": {
+      "en": "looks excited",
+      "zh-cn": "显得兴奋"
+    },
+    "v": {
+      "en": "makes a peace sign",
+      "zh-cn": "比出胜利手势"
+    },
+    "wide-eyed": {
+      "en": "opens her eyes wide",
+      "zh-cn": "睁大眼睛"
+    },
+    "arms up": {
+      "en": "raises both arms",
+      "zh-cn": "举起双臂"
+    },
+    "one eye closed": {
+      "en": "winks",
+      "zh-cn": "眨一只眼睛"
+    },
+    "spread arms": {
+      "en": "spreads her arms wide",
+      "zh-cn": "张开双臂"
+    },
+    "holding ice cream": {
+      "en": "holds an ice cream",
+      "zh-cn": "拿着冰淇淋"
+    },
+    "pointing at viewer": {
+      "en": "points toward you",
+      "zh-cn": "指向你"
+    },
+    "swing": {
+      "en": "is on a swing",
+      "zh-cn": "坐在秋千上"
+    },
+    "looking back": {
+      "en": "looks back",
+      "zh-cn": "回头看"
+    },
+    "spinning": {
+      "en": "spins around",
+      "zh-cn": "转着圈"
+    },
+    "grass": {
+      "en": "is on the grass",
+      "zh-cn": "身处草地"
+    },
+    "arms behind back": {
+      "en": "holds her arms behind her back",
+      "zh-cn": "双臂放在身后"
+    },
+    "laughing": {
+      "en": "laughs",
+      "zh-cn": "笑出声"
+    },
+    "dock": {
+      "en": "is on a dock",
+      "zh-cn": "身处码头"
+    },
+    "pointing": {
+      "en": "points something out",
+      "zh-cn": "伸手指向某处"
+    },
+    "holding food": {
+      "en": "holds some food",
+      "zh-cn": "拿着食物"
+    },
+    "tears": {
+      "en": "has tears in her eyes",
+      "zh-cn": "眼里含着泪"
+    },
+    "bowing": {
+      "en": "bows",
+      "zh-cn": "鞠躬"
+    },
+    "determined": {
+      "en": "looks determined",
+      "zh-cn": "神情坚定"
+    },
+    "holding bag": {
+      "en": "holds a bag",
+      "zh-cn": "提着袋子"
+    },
+    "writing": {
+      "en": "writes something down",
+      "zh-cn": "写着字"
+    },
+    "hands on own knees": {
+      "en": "rests her hands on her knees",
+      "zh-cn": "双手放在膝盖上"
+    },
+    "talking": {
+      "en": "speaks",
+      "zh-cn": "说着话"
+    },
+    "carrying": {
+      "en": "carries something",
+      "zh-cn": "携带着东西"
+    },
+    "own hands clasped": {
+      "en": "clasps her hands together",
+      "zh-cn": "双手紧握"
+    },
+    "hiding": {
+      "en": "hides herself from view",
+      "zh-cn": "躲藏起来"
+    },
+    "hand on own arm": {
+      "en": "holds her own arm",
+      "zh-cn": "握着自己的手臂"
+    },
+    "own hands together": {
+      "en": "brings her hands together",
+      "zh-cn": "把双手合在一起"
+    },
+    "from behind": {
+      "en": "is seen from behind",
+      "zh-cn": "背对镜头"
+    },
+    "holding own dress": {
+      "en": "grasps her dress",
+      "zh-cn": "抓着自己的裙子"
+    },
+    "fidgeting": {
+      "en": "fidgets nervously",
+      "zh-cn": "紧张地动着手指"
+    },
+    "knees up": {
+      "en": "draws her knees up",
+      "zh-cn": "蜷起双膝"
+    },
+    "covering face": {
+      "en": "covers her face",
+      "zh-cn": "捂着脸"
+    },
+    "holding own skirt": {
+      "en": "grasps her skirt",
+      "zh-cn": "抓着裙摆"
+    },
+    "bubble tea": {
+      "en": "has a cup of bubble tea",
+      "zh-cn": "拿着珍珠奶茶"
+    },
+    "drinking": {
+      "en": "takes a sip",
+      "zh-cn": "喝了一口"
+    },
+    "drinking straw": {
+      "en": "uses a straw to drink",
+      "zh-cn": "用吸管喝饮料"
+    },
+    "looking to the side": {
+      "en": "looks to the side",
+      "zh-cn": "看向一旁"
+    },
+    "pout": {
+      "en": "pouts",
+      "zh-cn": "嘟起嘴"
+    },
+    "annoyed": {
+      "en": "looks annoyed",
+      "zh-cn": "显得恼怒"
+    },
+    "gift": {
+      "en": "has a gift ready",
+      "zh-cn": "准备着礼物"
+    },
+    "gift box": {
+      "en": "has a gift box ready",
+      "zh-cn": "准备着礼物盒"
+    },
+    "reaching out": {
+      "en": "reaches out toward you",
+      "zh-cn": "向你伸手"
+    },
+    "holding phone": {
+      "en": "holds her phone",
+      "zh-cn": "拿着手机"
+    },
+    "looking at phone": {
+      "en": "looks at her phone screen",
+      "zh-cn": "看着手机屏幕"
+    },
+    "holding camera": {
+      "en": "holds a camera",
+      "zh-cn": "拿着相机"
+    },
+    "taking picture": {
+      "en": "takes a photograph",
+      "zh-cn": "拍着照片"
+    },
+    "holding crepe": {
+      "en": "holds a crepe",
+      "zh-cn": "拿着可丽饼"
+    },
+    "holding balloon": {
+      "en": "holds a balloon by its string",
+      "zh-cn": "拉着气球的绳子"
+    },
+    "eating": {
+      "en": "takes a bite of her food",
+      "zh-cn": "吃了一口食物"
+    },
+    "ice cream": {
+      "en": "has some ice cream",
+      "zh-cn": "拿着冰淇淋"
+    },
+    "ice cream cone": {
+      "en": "has an ice cream cone",
+      "zh-cn": "拿着冰淇淋甜筒"
+    },
+    "licking": {
+      "en": "licks her treat",
+      "zh-cn": "舔着手里的甜点"
+    },
+    "shopping bag": {
+      "en": "carries a shopping bag",
+      "zh-cn": "提着购物袋"
+    },
+    "holding flower": {
+      "en": "holds a flower",
+      "zh-cn": "拿着一朵花"
+    },
+    "holding donut": {
+      "en": "holds a donut",
+      "zh-cn": "拿着甜甜圈"
+    },
+    "holding umbrella": {
+      "en": "holds an umbrella",
+      "zh-cn": "撑着伞"
+    },
+    "sharing headphones": {
+      "en": "shares a pair of earphones with you",
+      "zh-cn": "和你共用一副耳机"
+    },
+    "holding cotton candy": {
+      "en": "holds cotton candy",
+      "zh-cn": "拿着棉花糖"
+    },
+    "comparing hand sizes": {
+      "en": "compares her palm with yours",
+      "zh-cn": "和你比较手掌大小"
+    },
+    "holding gift": {
+      "en": "holds a gift",
+      "zh-cn": "拿着礼物"
+    },
+    "hug": {
+      "en": "gives a hug",
+      "zh-cn": "伸手拥抱"
+    },
+    "stuffed toy": {
+      "en": "holds a stuffed toy close",
+      "zh-cn": "抱着毛绒玩具"
+    },
+    "arm around shoulder": {
+      "en": "puts her arm around your shoulder",
+      "zh-cn": "把手臂搭在你的肩上"
+    },
+    "hand on another's cheek": {
+      "en": "rests her hand on your cheek",
+      "zh-cn": "把手放在你的脸颊上"
+    },
+    "flustered": {
+      "en": "looks flustered",
+      "zh-cn": "显得慌乱"
+    },
+    "holding own sleeve": {
+      "en": "tugs at her sleeve",
+      "zh-cn": "拉着自己的袖口"
+    },
+    "covering own mouth": {
+      "en": "covers her mouth with her hand",
+      "zh-cn": "用手捂住嘴"
+    },
+    "holding letter": {
+      "en": "holds a letter",
+      "zh-cn": "拿着一封信"
+    },
+    "hands on own chest": {
+      "en": "rests both hands on her chest",
+      "zh-cn": "双手放在胸前"
+    },
+    "peeking through fingers": {
+      "en": "peeks through her fingers",
+      "zh-cn": "从指缝间偷看"
+    },
+    "hands on own cheeks": {
+      "en": "cups her cheeks with both hands",
+      "zh-cn": "双手捧着脸颊"
+    },
+    "smug": {
+      "en": "looks pleased with herself",
+      "zh-cn": "露出得意的神情"
+    },
+    "raised eyebrow": {
+      "en": "raises an eyebrow",
+      "zh-cn": "挑起眉毛"
+    },
+    "smirk": {
+      "en": "gives a teasing smile",
+      "zh-cn": "露出戏谑的笑容"
+    },
+    "disdain": {
+      "en": "looks disdainful",
+      "zh-cn": "露出不屑的神情"
+    },
+    "hair flip": {
+      "en": "flicks her hair back",
+      "zh-cn": "把头发向后甩"
+    },
+    "blowing kiss": {
+      "en": "blows a kiss",
+      "zh-cn": "送出飞吻"
+    },
+    "naughty face": {
+      "en": "looks mischievous",
+      "zh-cn": "露出调皮的神情"
+    },
+    "arm up": {
+      "en": "raises one arm",
+      "zh-cn": "举起一只手臂"
+    },
+    "selfie": {
+      "en": "takes a selfie",
+      "zh-cn": "拍着自拍照"
+    },
+    "finger to mouth": {
+      "en": "brings a finger to her lips",
+      "zh-cn": "把手指放在唇边"
+    },
+    "holding drink": {
+      "en": "holds a drink",
+      "zh-cn": "拿着饮料"
+    },
+    "crazy smile": {
+      "en": "smiles with unsettling intensity",
+      "zh-cn": "露出令人不安的强烈笑容"
+    },
+    "evil smile": {
+      "en": "smiles ominously",
+      "zh-cn": "露出阴沉的笑容"
+    },
+    "smile": {
+      "en": "smiles",
+      "zh-cn": "微笑"
+    },
+    "evil grin": {
+      "en": "grins ominously",
+      "zh-cn": "露出阴沉的咧嘴笑容"
+    },
+    "hand on own cheek": {
+      "en": "rests a hand on her cheek",
+      "zh-cn": "把手放在自己的脸颊上"
+    },
+    "whispering": {
+      "en": "whispers softly",
+      "zh-cn": "轻声耳语"
+    },
+    "surprised": {
+      "en": "looks surprised",
+      "zh-cn": "显得惊讶"
+    },
+    "blinking": {
+      "en": "blinks",
+      "zh-cn": "眨着眼睛"
+    },
+    "holding bento": {
+      "en": "holds a bento box",
+      "zh-cn": "拿着便当盒"
+    },
+    "holding bouquet": {
+      "en": "holds a bouquet",
+      "zh-cn": "捧着一束花"
+    },
+    "holding candy apple": {
+      "en": "holds a candy apple",
+      "zh-cn": "拿着糖苹果"
+    },
+    "holding chocolate": {
+      "en": "holds a piece of chocolate",
+      "zh-cn": "拿着巧克力"
+    },
+    "holding envelope": {
+      "en": "holds an envelope",
+      "zh-cn": "拿着信封"
+    },
+    "holding gift box": {
+      "en": "holds a gift box",
+      "zh-cn": "拿着礼物盒"
+    },
+    "holding keychain": {
+      "en": "holds a keychain",
+      "zh-cn": "拿着钥匙扣"
+    },
+    "holding lollipop": {
+      "en": "holds a lollipop",
+      "zh-cn": "拿着棒棒糖"
+    },
+    "holding macaron": {
+      "en": "holds a macaron",
+      "zh-cn": "拿着马卡龙"
+    },
+    "holding picnic basket": {
+      "en": "carries a picnic basket",
+      "zh-cn": "提着野餐篮"
+    },
+    "holding pocky": {
+      "en": "holds a chocolate biscuit stick",
+      "zh-cn": "拿着巧克力饼干棒"
+    },
+    "holding popcorn": {
+      "en": "holds some popcorn",
+      "zh-cn": "拿着爆米花"
+    },
+    "holding soda": {
+      "en": "holds a soda",
+      "zh-cn": "拿着汽水"
+    },
+    "holding takoyaki": {
+      "en": "holds some takoyaki",
+      "zh-cn": "拿着章鱼烧"
+    },
+    "headpat": {
+      "en": "reaches up to pat your head",
+      "zh-cn": "伸手轻拍你的头"
+    },
+    "forehead-to-forehead": {
+      "en": "rests her forehead against yours",
+      "zh-cn": "把额头贴在你的额头上"
+    },
+    "interlocked fingers": {
+      "en": "laces her fingers with yours",
+      "zh-cn": "与你十指相扣"
+    },
+    "tiptoes": {
+      "en": "rises onto her toes",
+      "zh-cn": "踮起脚尖"
+    },
+    "shading eyes": {
+      "en": "shades her eyes with her hand",
+      "zh-cn": "抬手遮挡眼前的光"
+    },
+    "hand up": {
+      "en": "raises a hand",
+      "zh-cn": "抬起一只手"
+    },
+    "contrapposto": {
+      "en": "rests her weight on one hip",
+      "zh-cn": "把重心放在一侧胯上"
+    },
+    "doyagao": {
+      "en": "gives you a self-satisfied look",
+      "zh-cn": "露出得意的神情"
+    }
+  }
+}

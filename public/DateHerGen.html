@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="browser_compat.js?v=20261003-mobile3"></script>
+<script src="compat/ui_theme.js?v=20261003-mobile3"></script>
+<script src="compat/ui_locale.js?v=20261003-mobile3" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date your gacha girl</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="drawing.css">
+</head>
+<body>
+<div id="pageBoot" role="status" style="position:fixed;inset:0;z-index:99999;background:var(--bg,#fff);color:var(--text,#222);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center">
+  <p id="pageBootMessage" style="white-space:pre-wrap">Loading… / 正在加载…</p>
+  <div id="pageBootActions" hidden><button id="pageBootRetry" type="button">Reload</button> <a id="pageBootLogin" href="/">Back to login</a></div>
+</div>
+<script src="compat/page_boot.js?v=20261003-mobile3"></script>
+<div id="buildWarn" style="display:none;background:#ffcc00;color:#000;padding:6px 10px;font-size:12px;font-weight:bold"></div>
+<h1>Date your gacha girl</h1>
+<div id="accountBalance" class="account-balance" data-ui-raw role="status" aria-live="polite" hidden></div>
+<div id="serverStatus" class="account-balance" data-ui-raw role="status" aria-live="polite">Server status: unknown</div>
+
+<div class="section">
+  <div class="section-title">Character</div>
+  <div class="tabs" id="gameTabs">
+    <button class="tab-btn active" onclick="switchGame('genshin',this)">Genshin</button>
+    <button class="tab-btn" onclick="switchGame('hsr',this)">HSR</button>
+    <button class="tab-btn" onclick="switchGame('zzz',this)">ZZZ</button>
+    <button class="tab-btn" onclick="switchGame('wuwa',this)">WuWa</button>
+    <button class="tab-btn" onclick="switchGame('endfield',this)">Endfield</button>
+    <button class="tab-btn" onclick="switchGame('NevernessToEverness',this)">NevernessToEverness</button>
+    <button class="tab-btn" onclick="switchGame('ananta',this)">Ananta</button>
+  </div>
+  <div class="char-grid" id="charGrid"></div>
+  <div class="info" id="charInfo">Click a character.</div>
+  <div class="appearance-preview" id="appearancePreview" style="display:none"></div>
+  <div class="personality-row" id="personalityRow" style="display:none">
+    <label style="font-size:12px;margin:0"><input type="checkbox" id="personalityEnabled" checked> Personality</label>
+    <input type="number" id="personalityChance" value="50" min="0" max="100"> <span style="font-size:12px;color:#888">% chance</span>
+    <span class="tone-label" id="toneLabel"></span>
+    <span class="tags-hint" id="tagsHint"></span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Art Style</div>
+  <div class="radio-group">
+    <label><input type="radio" name="artStyle" value="anime_normal"> Anime Normal</label>
+    <label><input type="radio" name="artStyle" value="anime_special" checked> Anime Special</label>
+    <label id="real-style-option" hidden><input type="radio" name="artStyle" value="real" disabled> Cosplayer Photo</label>
+  </div>
+  <div class="info">Choose an available art style.</div>
+</div>
+
+<div class="section">
+  <div class="section-title">Locations <span style="float:right;color:#888;font-size:13px">5 segments · auto by time, or lock below</span></div>
+  <div id="locationArea"></div>
+</div>
+
+<div class="section">
+  <div class="section-title">Scene Config <span id="sceneTotal" style="float:right;color:#888;font-size:13px">0/20 scenes</span></div>
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:10px">
+    <span style="font-size:13px;color:#e94560;font-weight:bold">Story style</span>
+    <label style="font-size:13px"><input type="radio" name="storyStyle" value="auto" checked onchange="onStoryStyleChange()"> Follow tone</label>
+    <label style="font-size:13px"><input type="radio" name="storyStyle" value="default" onchange="onStoryStyleChange()"> Unified</label>
+    <label style="font-size:13px"><input type="radio" name="storyStyle" value="manual" onchange="onStoryStyleChange()"> Manual</label>
+    <select id="storyToneSelect" style="display:none" onchange="onStoryToneChange()"></select>
+    <span id="storyHint" style="font-size:12px;color:#888"></span>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:10px">
+    <span style="font-size:13px;color:#e94560;font-weight:bold">Prompt lang</span>
+    <label style="font-size:13px"><input type="radio" name="promptLang" value="tag" checked onchange="onPromptLangChange()"> Danbooru tags</label>
+    <label style="font-size:13px"><input type="radio" name="promptLang" value="nl" onchange="onPromptLangChange()"> Natural language</label>
+    <span style="font-size:12px;color:#888">自然语言版与 tags 版逐条一一对应（换底模时用）</span>
+  </div>
+  <div id="sceneConfigArea"></div>
+</div>
+
+<div class="section">
+  <div class="section-title">Pose Mode</div>
+  <div class="radio-group">
+    <label><input type="radio" name="poseMode" value="fixed" checked onchange="onPoseModeChange()"> Fixed (dating poses)</label>
+    <label><input type="radio" name="poseMode" value="random" onchange="onPoseModeChange()"> Random (from library)</label>
+  </div>
+  <div class="info">Fixed: preset dating poses from scene prompts. Random: DailySoloGirl pose library.</div>
+</div>
+
+<div class="section">
+  <div class="section-title">Expression Mode</div>
+  <div class="radio-group">
+    <label><input type="radio" name="exprMode" value="fixed" checked onchange="onExprModeChange()"> Fixed (from scene)</label>
+    <label><input type="radio" name="exprMode" value="random" onchange="onExprModeChange()"> Random (from library)</label>
+  </div>
+  <div class="info">Fixed: expression from scene prompt. Random: DailySoloGirl expression library + personalTone.</div>
+</div>
+
+<div class="section">
+  <div class="section-title">Clothing Mode</div>
+  <div class="radio-group">
+    <label><input type="radio" name="clothingMode" value="original" checked onchange="onClothingModeChange()"> Original</label>
+    <label><input type="radio" name="clothingMode" value="random" onchange="onClothingModeChange()"> Random</label>
+    <label><input type="radio" name="clothingMode" value="select" onchange="onClothingModeChange()"> Select</label>
+  </div>
+  <div id="originalVariantWrap" style="display:none;margin-top:8px">
+    <div class="section-title" style="font-size:13px;margin-bottom:4px">Original Variant</div>
+    <div class="radio-group" id="originalVariantOptions"></div>
+  </div>
+  <div id="colorPickerWrap" style="display:none;margin-top:8px">
+    <span style="font-size:12px;color:#888">Color:</span>
+    <select id="colorPicker"></select>
+  </div>
+  <div id="clothingSelectPanel" class="select-panel">
+    <div class="select-panel-header">
+      <input type="text" id="clothingSearch" placeholder="Search..." class="select-search">
+      <span id="clothingSelectedLabel" class="select-sel-label"></span>
+    </div>
+    <div id="clothingList" class="select-list"></div>
+  </div>
+  <div class="info" id="clothingHint">All pages use appearance_a</div>
+</div>
+
+<div class="section">
+  <div class="section-title">Footwear</div>
+  <div style="margin-bottom:6px">
+    <label style="font-size:12px;color:#ccc;cursor:pointer"><input type="checkbox" id="shoeEnabled"> Shoe</label>
+  </div>
+  <div id="shoeTypeRow" style="display:none">
+    <div class="radio-group">
+      <label><input type="radio" name="shoeType" value="shoe" checked> Shoe</label>
+      <label><input type="radio" name="shoeType" value="pantyhose"> Pantyhose</label>
+      <label><input type="radio" name="shoeType" value="thighhigh"> Thighhigh</label>
+    </div>
+    <div id="shoeModeRow" style="display:none;margin-top:6px">
+      <div class="radio-group">
+        <label><input type="radio" name="shoeMode" value="random" checked> Random</label>
+        <label><input type="radio" name="shoeMode" value="select"> Select</label>
+      </div>
+    </div>
+    <div id="thighhighColorRow" style="display:none;margin-top:6px">
+      <span style="font-size:12px;color:#888">Color:</span>
+      <select id="thighhighColor">
+        <option value="black">black</option>
+        <option value="white">white</option>
+      </select>
+    </div>
+    <div id="shoeSelectPanel" class="select-panel">
+      <div class="select-panel-header">
+        <input type="text" id="shoeSearch" placeholder="Search..." class="select-search">
+        <span id="shoeSelectedLabel" class="select-sel-label"></span>
+      </div>
+      <div id="shoeList" class="select-list"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Camera</div>
+  <div class="radio-group">
+    <label><input type="radio" name="cameraMode" value="random" checked onchange="onCameraModeChange()"> Random per scene</label>
+    <label><input type="radio" name="cameraMode" value="fixed" onchange="onCameraModeChange()"> Fixed (same for all)</label>
+  </div>
+  <div id="fixedCameraRow" style="display:none;margin-top:6px">
+    <select id="fixedCameraSelect" style="width:100%;padding:4px;background:#1b2030;color:#e8e8e8;border:1px solid #333a4d;border-radius:4px;font-size:12px" onchange="onFixedCameraChange()"></select>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Shot <span style="float:right;color:#888;font-size:13px">framing for every scene</span></div>
+  <select id="shotDefault" style="width:100%;padding:4px;background:#1b2030;color:#e8e8e8;border:1px solid #333a4d;border-radius:4px;font-size:12px" onchange="onShotDefaultChange()">
+    <option value="full body" selected>full body</option>
+    <option value="cowboy shot">cowboy shot</option>
+    <option value="upper body">upper body</option>
+    <option value="close-up">close-up</option>
+    <option value="">none</option>
+  </select>
+  <div style="color:#777;font-size:11px;margin-top:4px">full body keeps the lower half in frame — safer for img2video.</div>
+</div>
+
+<div class="section">
+  <div class="section-title">Image Size</div>
+  <div class="radio-group">
+    <label><input type="radio" name="sizeMode" value="portrait" checked onchange="onSizeChange()"> Portrait (768x1408)</label>
+    <label><input type="radio" name="sizeMode" value="landscape" onchange="onSizeChange()"> Landscape (1366x768)</label>
+    <label><input type="radio" name="sizeMode" value="square" onchange="onSizeChange()"> Square (768x768)</label>
+    <label><input type="radio" name="sizeMode" value="custom" onchange="onSizeChange()"> Custom</label>
+  </div>
+  <div id="customSizeRow" style="display:none;margin-top:8px">
+    <label>Width: <input type="number" id="customWidth" value="768" min="256" max="2048" style="width:100px;background:#0a0a1a;border:1px solid #333;color:#e0e0e0;padding:4px;border-radius:4px"></label>
+    <label style="margin-left:12px">Height: <input type="number" id="customHeight" value="1408" min="256" max="2048" style="width:100px;background:#0a0a1a;border:1px solid #333;color:#e0e0e0;padding:4px;border-radius:4px"></label>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Slots (<span id="slotCount">0</span>/20)</div>
+  <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;flex-wrap:wrap">
+    <button class="btn" id="refreshBtn" onclick="refreshSessions()" style="padding:4px 10px;font-size:11px">Refresh</button><button class="btn" id="downloadAllBtn" onclick="downloadAll()" style="padding:4px 10px;font-size:11px">Download loaded</button>
+  </div>
+  <div class="slot-grid" id="slotGrid"></div>
+</div>
+
+<div class="section">
+  <div class="section-title">Preview</div>
+  <button class="btn" onclick="showPreview()" style="padding:6px 16px;font-size:13px">Show Preview</button>
+  <div class="preview-box" id="previewBox"></div>
+</div>
+
+<div class="btn-row"><button class="btn" onclick="logout()">Log out</button> 
+  <button class="btn" id="submitBtn" onclick="submitAll()">Submit</button>
+</div>
+
+<div id="statusBar" class="status" style="display:none"></div>
+
+<script src="compat/prompt_display.js?v=20261004-koakuma1" defer></script>
+<script src="compat/drawing.js?v=20261004-status1" defer></script>
+</body>
+</html>
