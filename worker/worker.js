@@ -47,6 +47,8 @@ const RELAY_URL = (process.env.RELAY_URL || 'https://date-your-gacha-girl.pages.
 const RELAY_TOKEN = process.env.RELAY_TOKEN || '';
 const COMFY_URL = (process.env.COMFY_URL || 'http://127.0.0.1:8189').replace(/\/$/, '');
 const WORKER_ID = process.env.WORKER_ID || 'local-studio-1';
+// 优先级：两台绘图机同时在线时，云端优先把任务派给 priority 大的那台（相同再比心跳新旧）。
+const WORKER_PRIORITY = Number.isSafeInteger(parseInt(process.env.WORKER_PRIORITY || '0', 10)) ? parseInt(process.env.WORKER_PRIORITY || '0', 10) : 0;
 const GATEWAY_PORT = parseInt(process.env.GATEWAY_PORT || '8790', 10);
 const CLOUDFLARED = process.env.CLOUDFLARED || 'C:\\Program Files (x86)\\cloudflared\\cloudflared.exe';
 const HTTP_TIMEOUT = 30000;
@@ -388,7 +390,7 @@ async function heartbeatRender() {
       lastQueueQuery = now;
     } catch { /* 读不到就沿用上次的缓存值，不重试、不轮询 */ }
   }
-  send(ws, { type: 'hello', worker_id: WORKER_ID, ready, workflows: manifest(), queue_waiting: cachedWaiting, queue_running: cachedRunning });
+  send(ws, { type: 'hello', worker_id: WORKER_ID, priority: WORKER_PRIORITY, ready, workflows: manifest(), queue_waiting: cachedWaiting, queue_running: cachedRunning });
   lastHeartbeat = now;
 }
 async function handleRenderMessage(str) {
@@ -675,7 +677,7 @@ function relayRequest(method, p, payload) {
 let lastCfHeartbeat = 0, lastCfClaim = 0;
 async function cloudflareHeartbeat() {
   const ready = await comfyReady();
-  const body = { worker_id: WORKER_ID, ready, workflows: manifest(), image_url: cfTunnelUrl, queue_waiting: 0, queue_running: state ? 1 : 0 };
+  const body = { worker_id: WORKER_ID, priority: WORKER_PRIORITY, ready, workflows: manifest(), image_url: cfTunnelUrl, queue_waiting: 0, queue_running: state ? 1 : 0 };
   try { await relayRequest('POST', '/api/worker/heartbeat', body); lastCfHeartbeat = Date.now(); }
   catch (e) { console.error('[cloudflare] heartbeat 失败:', e.message); }
 }

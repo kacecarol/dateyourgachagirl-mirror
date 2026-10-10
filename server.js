@@ -39,7 +39,8 @@ function tx(fn) { db.exec('BEGIN'); try { const r = fn(); db.exec('COMMIT'); ret
 db.exec(`
 CREATE TABLE IF NOT EXISTS workers (
   id TEXT PRIMARY KEY, ready INTEGER NOT NULL DEFAULT 0, workflows TEXT NOT NULL,
-  last_seen INTEGER NOT NULL, image_url TEXT, queue_waiting INTEGER, queue_running INTEGER
+  last_seen INTEGER NOT NULL, image_url TEXT, queue_waiting INTEGER, queue_running INTEGER,
+  priority INTEGER NOT NULL DEFAULT 0
 );
 CREATE TABLE IF NOT EXISTS jobs (
   id TEXT PRIMARY KEY, request_id TEXT NOT NULL UNIQUE, workflow_id TEXT NOT NULL,
@@ -87,6 +88,8 @@ CREATE TABLE IF NOT EXISTS credit_ledger (
   PRIMARY KEY(account_id,operation,request_id)
 );
 `);
+// 兼容旧库：为已存在的 workers 表补 priority 列（新建库已含该列，重复添加会被忽略）。
+try { db.exec('ALTER TABLE workers ADD COLUMN priority INTEGER NOT NULL DEFAULT 0'); } catch {}
 
 // 首次启动：种入 asus 账号（与主站同一个账号），并授予初始积分。
 // 口令来自环境变量 ADMIN_PASSWORD；没配就随机生成并打印一次（本地开发用）。
@@ -234,7 +237,7 @@ function jobDetail(id, userId, missingStatus = 404) {
     results: results.map(r => ({ ...r, url: `/api/jobs/${id}/results/${r.idx}` })) };
 }
 function workflowList(now) {
-  const workers = db.prepare('SELECT * FROM workers ORDER BY last_seen DESC').all();
+  const workers = db.prepare('SELECT * FROM workers ORDER BY priority DESC,last_seen DESC').all();
   const found = new Map();
   for (const w of workers) {
     for (const wf of JSON.parse(w.workflows)) {
@@ -246,8 +249,10 @@ function workflowList(now) {
   return { workflows: [...found.values()], worker_online: workers.some(w => w.ready === 1 && w.last_seen > now - (REQUEST_ONLY ? 300_000 : ONLINE_MS)) };
 }
 function localOnline() {
-  const w = db.prepare('SELECT * FROM workers WHERE ready=1 ORDER BY last_seen DESC LIMIT 1').get();
-  if (!w || w.last_seen <= Date.now() - 300_000) throw { status: 503, message: 'Local relay is offline. Start the local relay and retry the same request.' };
+  // 优先 priority 大者，其次心跳最新者；过期（>300s 未心跳）的一律不选，便于后备机器顶上。
+  const w = db.prepare('SELECT * FROM workers WHERE ready=1 AND last_seen>? ORDER BY priority DESC,last_seen DESC LIMIT 1')
+    .get(Date.now() - 300_000);
+  if (!w) throw { status: 503, message: 'Local relay is offline. Start the local relay and retry the same request.' };
   return w;
 }
 
@@ -407,7 +412,7 @@ app.post('/api/credits/quote', (req, res) => {
 app.get('/api/workflows', (req, res) => ok(res, workflowList(Date.now())));
 app.get('/api/status', (req, res) => {
   const now = Date.now();
-  const w = db.prepare('SELECT ready,last_seen,queue_waiting,queue_running FROM workers ORDER BY last_seen DESC LIMIT 1').get();
+  const w = db.prepare('SELECT ready,last_seen,queue_waiting,queue_running FROM workers ORDER BY (ready=1 AND last_seen>?) DESC,priority DESC,last_seen DESC LIMIT 1').get(now - 300_000);
   const fresh = !!w && w.last_seen > now - 300_000;
   const server = { online: fresh && w.ready === 1, reported_at: w?.last_seen ?? null, waiting: fresh ? w.queue_waiting : null, running: fresh ? w.queue_running : null, report_interval_seconds: 120, offline_after_seconds: 300 };
   const wl = workflowList(now);
@@ -695,9 +700,10 @@ app.post('/api/worker/heartbeat', (req, res) => {
     const input = req.body || {};
     if (!isName(input.worker_id || '') || typeof input.ready !== 'boolean') throw { status: 400, message: '执行程序信息错误' };
     const workflows = manifest(input.workflows);
-    db.prepare(`INSERT INTO workers(id,ready,workflows,last_seen,image_url,queue_waiting,queue_running)
-      VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ready=excluded.ready,workflows=excluded.workflows,last_seen=excluded.last_seen,image_url=excluded.image_url,queue_waiting=excluded.queue_waiting,queue_running=excluded.queue_running`)
-      .run(input.worker_id, input.ready ? 1 : 0, JSON.stringify(workflows), Date.now(), '', input.queue_waiting ?? null, input.queue_running ?? null);
+    const priority = Number.isSafeInteger(input.priority) && input.priority >= 0 && input.priority <= 1000000 ? input.priority : 0;
+    db.prepare(`INSERT INTO workers(id,ready,workflows,last_seen,image_url,queue_waiting,queue_running,priority)
+      VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ready=excluded.ready,workflows=excluded.workflows,last_seen=excluded.last_seen,image_url=excluded.image_url,queue_waiting=excluded.queue_waiting,queue_running=excluded.queue_running,priority=excluded.priority`)
+      .run(input.worker_id, input.ready ? 1 : 0, JSON.stringify(workflows), Date.now(), '', input.queue_waiting ?? null, input.queue_running ?? null, priority);
     return ok(res, {});
   } catch (e) { return apiError(res, e.status || 400, e.message); }
 });
@@ -780,9 +786,10 @@ wss.on('connection', (ws, req) => {
     if (msg.type === 'hello') {
       workerId = msg.worker_id;
       const workflows = manifest(msg.workflows);
-      db.prepare(`INSERT INTO workers(id,ready,workflows,last_seen,image_url,queue_waiting,queue_running)
-        VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ready=excluded.ready,workflows=excluded.workflows,last_seen=excluded.last_seen,image_url='',queue_waiting=excluded.queue_waiting,queue_running=excluded.queue_running`)
-        .run(workerId, msg.ready ? 1 : 0, JSON.stringify(workflows), Date.now(), '', msg.queue_waiting ?? null, msg.queue_running ?? null);
+      const priority = Number.isSafeInteger(msg.priority) && msg.priority >= 0 && msg.priority <= 1000000 ? msg.priority : 0;
+      db.prepare(`INSERT INTO workers(id,ready,workflows,last_seen,image_url,queue_waiting,queue_running,priority)
+        VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ready=excluded.ready,workflows=excluded.workflows,last_seen=excluded.last_seen,image_url='',queue_waiting=excluded.queue_waiting,queue_running=excluded.queue_running,priority=excluded.priority`)
+        .run(workerId, msg.ready ? 1 : 0, JSON.stringify(workflows), Date.now(), '', msg.queue_waiting ?? null, msg.queue_running ?? null, priority);
       workerSockets.set(workerId, ws);
       try { ws.send(JSON.stringify({ type: 'hello_ack', ts: Date.now() })); } catch {}
       console.log('[ws] worker 连入:', workerId, 'workflows:', workflows.map(w => w.id).join(','));
