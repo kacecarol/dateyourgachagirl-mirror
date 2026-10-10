@@ -375,15 +375,22 @@ function authUser(req) {
   try { return authenticateUser(req); } catch (e) { throw e; }
 }
 
-// 统一鉴权中间件（除 login 外）
+// 进程启动时刻：用于确认线上部署的代码版本（每次部署/重启都会变）。
+const STARTED_AT = Date.now();
+
+// 统一鉴权中间件（除 login 与只读构建标记外）
 app.use('/api', (req, res, next) => {
   if (req.path.startsWith('/auth/login')) return next();
+  if (req.path === '/build') return next();
   try {
     if (req.path.startsWith('/worker/')) { authenticateWorker(req); return next(); }
     req.user = authenticateUser(req);
     next();
   } catch (e) { return apiError(res, e.status || 401, e.message || '请登录'); }
 });
+
+// 只读构建标记：确认线上运行的是哪个版本（无需登录，不含任何敏感信息）。
+app.get('/api/build', (req, res) => ok(res, { features: ['worker_priority'], workers_priority_column: true, started_at: STARTED_AT, uptime_seconds: Math.round(process.uptime()) }));
 
 // 用户相关
 app.get('/api/auth/me', (req, res) => ok(res, { user: { username: req.user.username }, credit_policy: creditPolicy(), balance: creditBalance(req.user.id) }));
