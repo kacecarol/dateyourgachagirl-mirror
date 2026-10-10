@@ -12,3 +12,7 @@ _smoketest.js
 .DS_Store
 
 _itest.js
+_unified_test.js
+worker.env
+_unified_server.log
+_unified_worker.log

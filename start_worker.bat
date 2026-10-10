@@ -2,31 +2,29 @@
 chcp 65001 >nul
 cd /d %~dp0
 
-REM ===== 配置（一般无需改动）=====
-set WORKER_TOKEN=1185196011f42e241c94b59b65faeb3562e617c0661293c4
-set CLOUD_WS=wss://dateyourgachagirl-mirror.onrender.com/ws
-set COMFY_URL=http://127.0.0.1:8189
-
 echo ============================================
-echo  dateyourgachagirl 镜像 —— 本机出图程序
+echo  统一出图程序（同时服务 Render 镜像 + Cloudflare 原站）
 echo ============================================
-echo 要求：本机已运行 ComfyUI（默认 %COMFY_URL%）
+echo  要求：本机已运行 ComfyUI（默认 127.0.0.1:8189）
 echo.
 
 where node >nul 2>nul
 if errorlevel 1 (
-  echo [错误] 没有找到 node。请先安装 Node.js（https://nodejs.org，选 LTS 版）。
+  echo [错误] 没有找到 node。请先安装 Node.js（https://nodejs.org，选 LTS 版，需 22 或更高）。
   pause
   exit /b 1
 )
 
-if not exist node_modules (
-  echo [首次运行] 正在安装依赖（只需一次，可能要几分钟）...
-  call npm install
-  if errorlevel 1 ( echo [错误] 依赖安装失败。 pause & exit /b 1 )
+if not exist worker.env (
+  echo [提示] 未找到 worker.env。正在从示例复制一份，请打开它填入你的密钥后再运行。
+  copy /y worker.env.example worker.env >nul
+  echo.
+  echo 已生成 worker.env —— 用记事本打开它，填入 RENDER_TOKEN，保存后重新双击本文件。
+  pause
+  exit /b 1
 )
 
-echo [启动] 正在连出到云端镜像，并把画图请求交给本机 ComfyUI...
+echo [启动] 正在连出到云端，并把画图请求交给本机 ComfyUI...
 echo 保持此窗口开着；关闭它 = 停止出图。
 echo.
 node worker/worker.js
