@@ -107,6 +107,7 @@ function seedAccount() {
   }
 }
 seedAccount();
+backfillActiveSessions();
 
 // ---------- 工具 ----------
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
@@ -428,9 +429,48 @@ app.post('/api/session', (req, res) => {
     const config = JSON.stringify(canonical(input.config));
     db.prepare('INSERT INTO session_requests(owner_id,request_id,session_id,config,replace_session,created_at) VALUES(?,?,?,?,?,?) ON CONFLICT DO NOTHING')
       .run(req.user.id, input.request_id, input.session_id, config, input.replace ? 1 : 0, now);
+    const stored = db.prepare('SELECT * FROM session_requests WHERE owner_id=? AND request_id=?').get(req.user.id, input.request_id);
+    if (!stored || stored.session_id !== input.session_id || stored.replace_session !== (input.replace ? 1 : 0))
+      throw { status: 409, message: '会话冲突，请确认替换当前批次并使用新的 request_id' };
+    // 主站靠 SQLite 触发器（cloudflare/migrations/0004、0005）维护 active_sessions；
+    // 这里漏了触发器，导致 sessionView 永远返回 session_id=null，
+    // 前端 drawing.js:1307 就会抛 "Batch was replaced elsewhere"。
+    applySession(req.user.id, input.session_id, config, now);
     return ok(res, sessionView(req.user));
   } catch (e) { return apiError(res, e.status || 400, e.message); }
 });
+
+// = 主站触发器 apply_session 的等价实现：登记会话历史、切换 active_sessions、让上一批次的可见任务失效。
+function applySession(userId, sessionId, configJson, now) {
+  db.prepare('INSERT INTO session_history(owner_id,session_id) VALUES(?,?) ON CONFLICT DO NOTHING').run(userId, sessionId);
+  const prev = db.prepare('SELECT session_id FROM active_sessions WHERE owner_id=?').get(userId);
+  if (!prev || prev.session_id !== sessionId) {
+    db.prepare(`INSERT INTO active_sessions(owner_id,session_id,config,frozen_parameters,workflow_id) VALUES(?,?,?,NULL,NULL)
+      ON CONFLICT(owner_id) DO UPDATE SET session_id=excluded.session_id,config=excluded.config,frozen_parameters=NULL,workflow_id=NULL`)
+      .run(userId, sessionId, configJson);
+  }
+  db.prepare("UPDATE jobs SET visible=0,status=IIF(status='queued','cancelled',status),updated_at=MAX(updated_at+1,?) WHERE owner_id=? AND visible=1 AND COALESCE(json_extract(parameters,'$.session_id'),'')!=?")
+    .run(now, userId, sessionId);
+}
+
+// 启动时兜底：历史数据里若已提交过任务却没有 active_sessions 记录，
+// 用最近一条任务所属的会话补上，避免刷新/载入失效（等价 migration 0004 的回填）。
+function backfillActiveSessions() {
+  const rows = db.prepare(`SELECT j.owner_id AS owner_id, json_extract(j.parameters,'$.session_id') AS sid,
+      json_extract(j.parameters,'$.session_config') AS cfg
+    FROM jobs j
+    WHERE json_type(j.parameters,'$.session_id')='text'
+      AND NOT EXISTS(SELECT 1 FROM active_sessions a WHERE a.owner_id=j.owner_id)
+    ORDER BY j.created_at DESC, j.id DESC`).all();
+  const done = new Set();
+  for (const r of rows) {
+    if (done.has(r.owner_id)) continue;
+    done.add(r.owner_id);
+    db.prepare('INSERT INTO active_sessions(owner_id,session_id,config,frozen_parameters,workflow_id) VALUES(?,?,?,NULL,NULL) ON CONFLICT(owner_id) DO NOTHING')
+      .run(r.owner_id, r.sid, r.cfg || '{}');
+    console.log('[session] 回填 active_sessions：', r.owner_id.slice(0, 8), r.sid.slice(0, 8));
+  }
+}
 
 function sessionView(user) {
   const active = db.prepare('SELECT * FROM active_sessions WHERE owner_id=?').get(user.id);
@@ -441,8 +481,6 @@ function sessionView(user) {
     session_id: active?.session_id ?? null, config: active ? JSON.parse(active.config) : null, has_images: hasImages, jobs: jobs.map(publicJob) };
 }
 function loadSession(user) {
-  const active = db.prepare('SELECT * FROM active_sessions WHERE owner_id=?').get(user.id);
-  if (!active) return;
   const running = db.prepare("SELECT * FROM jobs WHERE owner_id=? AND visible=1 AND status='running'").all(user.id);
   if (!running.length) return;
   const w = localOnline();
