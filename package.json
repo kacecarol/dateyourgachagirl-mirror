@@ -1,19 +1,18 @@
 {
   "name": "dateyourgachagirl-render-mirror",
   "version": "1.0.0",
-  "description": "dateyourgachagirl 的 Render 海外镜像（去 Cloudflare 化）：大脑为 Node+SQLite Web 服务，本机 Worker 主动连出，替代 Cloudflare 隧道。",
+  "description": "dateyourgachagirl 的 Render 海外镜像（去 Cloudflare 化）：大脑为 Node + 内置 node:sqlite Web 服务，本机 Worker 主动连出，替代 Cloudflare 隧道。",
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node --experimental-sqlite server.js",
     "worker": "node worker/worker.js"
   },
   "dependencies": {
-    "better-sqlite3": "^11.3.0",
     "express": "^4.19.2",
     "ws": "^8.18.0"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }

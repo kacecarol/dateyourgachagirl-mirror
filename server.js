@@ -4,7 +4,7 @@
 // 前端 public/ 原样复用，所以用户看到的交互与原来一模一样。
 
 import express from 'express';
-import Database from 'better-sqlite3';
+import { DatabaseSync } from 'node:sqlite';
 import crypto from 'node:crypto';
 import http from 'node:http';
 import { WebSocketServer } from 'ws';
@@ -26,9 +26,12 @@ const IMAGE_LIMIT = 16 * 1024 * 1024;
 const DB_PATH = process.env.DATEHER_DB || path.join(__dirname, 'relay.sqlite3');
 
 // ---------- 数据库 ----------
-const db = new Database(DB_PATH);
-db.pragma('journal_mode = WAL');
-db.pragma('foreign_keys = ON');
+// 使用 Node 内置 node:sqlite，避免原生模块（better-sqlite3）在 Render 等平台编译失败。
+const db = new DatabaseSync(DB_PATH);
+db.exec('PRAGMA journal_mode = WAL');
+db.exec('PRAGMA foreign_keys = ON');
+// 简单事务封装（node:sqlite 无内建 transaction）
+function tx(fn) { db.exec('BEGIN'); try { const r = fn(); db.exec('COMMIT'); return r; } catch (e) { db.exec('ROLLBACK'); throw e; } }
 
 db.exec(`
 CREATE TABLE IF NOT EXISTS workers (
@@ -138,14 +141,14 @@ function charge(userId, operation, requestId, resourceId, fingerprint, qty = 1) 
     .get(userId, operation, requestId);
   if (existing && existing.fingerprint !== fp) throw { status: 409, message: 'Credit request changed' };
   try {
-    db.transaction(() => {
+    tx(() => {
       db.prepare(`INSERT INTO credit_ledger(account_id,operation,request_id,resource_id,fingerprint,delta,created_at)
         VALUES(?,?,?,?,?,?,?) ON CONFLICT(account_id,operation,request_id) DO UPDATE SET fingerprint=excluded.fingerprint`)
         .run(userId, operation, requestId, resourceId, fp, -cost, Date.now());
       const upd = db.prepare('UPDATE credit_wallets SET balance=balance+(SELECT delta FROM credit_ledger WHERE account_id=? AND operation=? AND request_id=?) WHERE account_id=? AND balance+(SELECT delta FROM credit_ledger WHERE account_id=? AND operation=? AND request_id=?)>=0')
         .run(userId, operation, requestId, userId, userId, operation, requestId);
       if (upd.changes === 0) throw { status: 402, message: 'Insufficient points' };
-    })();
+    });
   } catch (e) { if (e.status) throw e; throw { status: 402, message: 'Insufficient points' }; }
   return { charged: true, balance: creditBalance(userId) };
 }
@@ -285,14 +288,13 @@ function workerMarkFail(workerId, msg) {
 function workerStoreResults(workerId, msg) {
   const job = db.prepare('SELECT * FROM jobs WHERE id=?').get(msg.job_id);
   if (!job || job.status !== 'running' || job.worker_id !== workerId) return;
-  const tx = db.transaction(() => {
+  tx(() => {
     for (const r of msg.results) {
       if (r.index >= 8 || !['image/png', 'image/jpeg', 'image/webp'].includes(r.content_type) || r.size <= 0 || r.size > IMAGE_LIMIT || !/^[0-9a-f]{64}$/.test(r.sha256) || r.object_key !== msg.job_id + '_' + r.index) continue;
       db.prepare(`INSERT INTO results(job_id,result_index,object_key,content_type,size,sha256) VALUES(?,?,?,?,?,?)
         ON CONFLICT(job_id,result_index) DO NOTHING`).run(msg.job_id, r.index, r.object_key, r.content_type, r.size, r.sha256);
     }
   });
-  tx();
 }
 function workerLoadResult(workerId, msg) {
   for (const item of (msg.jobs || [])) {
@@ -300,7 +302,7 @@ function workerLoadResult(workerId, msg) {
     if (!job || job.status !== 'running' || job.worker_id !== workerId) continue;
     if (item.error) { db.prepare("UPDATE jobs SET status='failed',error=?,updated_at=? WHERE id=?").run(String(item.error).slice(0, 1000), Date.now(), item.id); continue; }
     if (!Array.isArray(item.results)) continue;
-    const tx = db.transaction(() => {
+    tx(() => {
       for (const r of item.results) {
         if (r.index >= 8 || !['image/png', 'image/jpeg', 'image/webp'].includes(r.content_type) || r.size <= 0 || r.size > IMAGE_LIMIT || !/^[0-9a-f]{64}$/.test(r.sha256) || r.object_key !== item.id + '_' + r.index) continue;
         db.prepare(`INSERT INTO results(job_id,result_index,object_key,content_type,size,sha256) VALUES(?,?,?,?,?,?)
@@ -308,7 +310,6 @@ function workerLoadResult(workerId, msg) {
       }
       db.prepare("UPDATE jobs SET status='succeeded',updated_at=? WHERE id=? AND status='running'").run(Date.now(), item.id);
     });
-    tx();
   }
 }
 
