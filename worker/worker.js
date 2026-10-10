@@ -148,20 +148,86 @@ function saveState() { try { fs.writeFileSync(journalPath + '.tmp', JSON.stringi
 function clearState() { state = null; try { fs.unlinkSync(journalPath); } catch {} }
 fs.mkdirSync(imageDir, { recursive: true });
 
-function preparePrompt(job) {
+// ---------- 把图里的 LoRA 名对齐到“本机实际安装”的文件 ----------
+// 模板与角色目录里的 LoRA 文件名来自素材来源方，换一台机器常常对不上，
+// 直接提交会被 ComfyUI 判为 value_not_in_list（表现为“出不了图”）。
+// 这里按角色名在本机已安装列表里找同名文件，找不到再退回模板原值。
+let loraCache = { at: 0, list: [] };
+async function installedLoras() {
+  if (loraCache.list.length && Date.now() - loraCache.at < 10 * 60 * 1000) return loraCache.list;
+  try {
+    const info = await comfyRequest('GET', '/object_info/LoraLoader');
+    const list = info && info.LoraLoader && info.LoraLoader.input && info.LoraLoader.input.required && info.LoraLoader.input.required.lora_name && info.LoraLoader.input.required.lora_name[0];
+    if (Array.isArray(list) && list.length) loraCache = { at: Date.now(), list };
+  } catch { /* 查询失败则沿用旧缓存 */ }
+  return loraCache.list;
+}
+const normalizeName = s => String(s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+function pickCharacterLora(list, character) {
+  const target = normalizeName(character);
+  if (!target) return null;
+  const base = n => normalizeName(String(n).split(/[\\/]/).pop().replace(/\.safetensors$/i, ''));
+  const pool = list.filter(n => /^characterlora[\\/]/i.test(n));
+  const exact = pool.find(n => base(n) === target)
+      || pool.find(n => base(n).startsWith(target))
+      || pool.find(n => base(n).includes(target))
+      || pool.find(n => normalizeName(n).includes(target));
+  if (exact) return exact;
+  // 兜底：角色全名往往很长（如 "Anastasya Feodorovna Snezhnaya"），而 LoRA 文件名常只取首名
+  // （anastasya-Ill-zeroV1）。整名匹配不上时，退化为"首个单词"匹配。
+  const first = (String(character || '').toLowerCase().match(/[a-z]{4,}/) || [])[0];
+  if (first && first !== target) {
+    return pool.find(n => base(n) === first)
+        || pool.find(n => base(n).startsWith(first))
+        || pool.find(n => base(n).includes(first))
+        || null;
+  }
+  return null;
+}
+async function alignLoras(graph, character) {
+  const list = await installedLoras();
+  if (!list.length) return graph;
+  for (const node of Object.values(graph)) {
+    if (!node || node.class_type !== 'LoraLoader') continue;
+    const inputs = node.inputs || {};
+    if (typeof inputs.lora_name !== 'string' || list.includes(inputs.lora_name)) continue;
+    // 角色 LoRA：按角色名找本机同名文件（并确保强度为 1）
+    const picked = character ? pickCharacterLora(list, character) : null;
+    if (picked) {
+      console.log('[worker] 角色 LoRA 对齐:', character, '→', picked);
+      inputs.lora_name = picked; inputs.strength_model = 1; inputs.strength_clip = 1;
+      continue;
+    }
+    const strength = Number(inputs.strength_model || 0) || Number(inputs.strength_clip || 0);
+    if (strength === 0) { console.log('[worker] LoRA 未安装但强度为 0，已替换占位:', inputs.lora_name); inputs.lora_name = list[0]; }
+    else throw new Error('LoRA 未安装，请检查本机模型：' + inputs.lora_name);
+  }
+  return graph;
+}
+
+// ComfyUI 的 /prompt 成功时也会返回 node_errors:{}（空对象），空对象在 JS 里是真值，
+// 直接用 reply.node_errors 判断会把成功当成失败。必须看有没有真正的键。
+function hasPromptErrors(reply) {
+  if (!reply || !reply.node_errors) return false;
+  if (typeof reply.node_errors !== 'object') return Boolean(reply.node_errors);
+  return Object.keys(reply.node_errors).length > 0;
+}
+
+async function preparePrompt(job) {
   const wf = WORKFLOWS.find(w => w.id === job.workflow_id);
   if (!wf) throw new Error('Unknown workflow');
   const original = readJson(path.join(BASE, wf.template));
   if (wf.adapter === 'dateher') {
     const { characters, config } = loadCatalogs();
-    return buildPrompt(original, job.parameters, characters, config);
+    const graph = buildPrompt(original, job.parameters, characters, config);
+    return alignLoras(graph, job.parameters.character);
   }
   const graph = JSON.parse(JSON.stringify(original));
   for (const [key, targets] of Object.entries(wf.mappings)) {
     if (!(key in job.parameters)) continue;
     for (const t of targets) graph[t.node].inputs[t.input] = job.parameters[key];
   }
-  return graph;
+  return alignLoras(graph, null);
 }
 
 // sink：不同云端用不同的"回传/确认"实现
@@ -195,9 +261,9 @@ async function processJob() {
   const sink = state.sink;
   try {
     if (state.phase === 'claimed' && !state.prompt_id) {
-      const graph = preparePrompt(job);
+      const graph = await preparePrompt(job);
       const reply = await comfyRequest('POST', '/prompt', { prompt: graph, client_id: WORKER_ID });
-      if (!reply || typeof reply.prompt_id !== 'string' || !reply.prompt_id || reply.node_errors) throw new Error('Comfy did not acknowledge prompt');
+      if (!reply || typeof reply.prompt_id !== 'string' || !reply.prompt_id || hasPromptErrors(reply)) throw new Error('Comfy did not acknowledge prompt' + (reply && hasPromptErrors(reply) ? ': ' + JSON.stringify(reply.node_errors).slice(0, 400) : ''));
       state.prompt_id = reply.prompt_id; state.phase = 'running'; state.deadline = Date.now() + JOB_TIMEOUT; saveState();
       sink.onSubmitAck(reply.prompt_id);
     }
@@ -346,34 +412,216 @@ async function handleRenderMessage(str) {
   }
 }
 
-// ================= Cloudflare 侧：本地网关 + 隧道 + 拉取 =================
+// ================= Cloudflare 侧：本地网关 + 隧道 + 请求模式 =================
+// 主站（date-your-gacha-girl.pages.dev）以 REQUEST_ONLY=true 运行：
+//   1) 用户提交 → 云端 POST 本机网关 /submit  → 本机把任务丢给 ComfyUI，立刻返回 prompt_id
+//   2) 用户点“载入” → 云端 POST 本机网关 /load → 本机去 ComfyUI 取历史、落盘、返回图片元数据
+//   3) 云端再顺着隧道 GET /images|/previews/{key} 把图取走
+// 因此网关必须同时实现 POST /submit、POST /load、GET /images|/previews —— 缺一个就会 405。
 let cfTunnelUrl = process.env.CF_TUNNEL_URL || '';
 let cfServer = null;
+const dispatchDir = path.join(BASE, 'state', 'dispatch_jobs');
+fs.mkdirSync(dispatchDir, { recursive: true });
+
 function cloudflareAuth(header) { return safeCompare(header || '', 'Bearer ' + RELAY_TOKEN); }
+
+function readBody(req, limit) {
+  return new Promise((resolve, reject) => {
+    let size = 0; const chunks = [];
+    req.on('data', c => { size += c.length; if (size > limit) { reject(new Error('payload too large')); try { req.destroy(); } catch {} return; } chunks.push(c); });
+    req.on('end', () => resolve(Buffer.concat(chunks)));
+    req.on('error', reject);
+  });
+}
+
+// 任务提交记录：{job, phase, prompt_id}，/load 靠它找回 prompt_id；重复 /submit 直接复用（幂等）
+function dispatchPath(id) {
+  if (typeof id !== 'string' || !/^[0-9a-f-]{36}$/.test(id)) throw new Error('Invalid task ID');
+  return path.join(dispatchDir, id + '.json');
+}
+function readDispatch(id) { try { return readJson(dispatchPath(id)); } catch { return null; } }
+function writeDispatch(id, record) {
+  const target = dispatchPath(id);
+  fs.writeFileSync(target + '.tmp', JSON.stringify(record));
+  fs.renameSync(target + '.tmp', target);
+}
+
+// ---------- 图片尺寸（用于 X-Original-Width/Height） ----------
+function imageSize(buf) {
+  if (!buf || buf.length < 24) return null;
+  if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4E && buf[3] === 0x47) return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+  if (buf[0] === 0xFF && buf[1] === 0xD8) {
+    let i = 2;
+    while (i + 9 < buf.length) {
+      if (buf[i] !== 0xFF) { i++; continue; }
+      const marker = buf[i + 1];
+      if (marker >= 0xC0 && marker <= 0xCF && marker !== 0xC4 && marker !== 0xC8 && marker !== 0xCC) return { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+      const len = buf.readUInt16BE(i + 2);
+      if (!len || len < 2) break;
+      i += 2 + len;
+    }
+  }
+  return null;
+}
+
+// ---------- 转成全分辨率 JPEG（主站开积分时，云端预览强制要求 image/jpeg） ----------
+let ffmpegPath;
+function findFfmpeg() {
+  if (ffmpegPath !== undefined) return ffmpegPath;
+  const candidates = [process.env.FFMPEG, 'C:\\Users\\asus\\.33TaiCi\\plugin\\ffmpeg.exe', 'C:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe', 'ffmpeg'].filter(Boolean);
+  ffmpegPath = null;
+  for (const candidate of candidates) {
+    try { if (candidate === 'ffmpeg' || fs.existsSync(candidate)) { ffmpegPath = candidate; break; } } catch {}
+  }
+  if (ffmpegPath) console.log('[cloudflare] 使用 JPEG 转码器:', ffmpegPath);
+  else console.error('[cloudflare] 未找到 ffmpeg：图片预览将按原格式返回（一般仍可显示）');
+  return ffmpegPath;
+}
+function toJpeg(buf) {
+  const bin = findFfmpeg();
+  if (!bin) return Promise.resolve(null);
+  return new Promise(resolve => {
+    let proc;
+    try {
+      proc = child_process.spawn(bin, ['-hide_banner', '-loglevel', 'error', '-i', 'pipe:0', '-an', '-frames:v', '1', '-c:v', 'mjpeg', '-q:v', '2', '-f', 'image2pipe', 'pipe:1'], { stdio: ['pipe', 'pipe', 'ignore'] });
+    } catch { return resolve(null); }
+    const chunks = []; let done = false;
+    const finish = value => { if (!done) { done = true; resolve(value); } };
+    proc.stdout.on('data', c => chunks.push(c));
+    proc.on('error', () => finish(null));
+    proc.on('close', code => { const out = Buffer.concat(chunks); finish(code === 0 && out.length ? out : null); });
+    proc.stdin.on('error', () => {});
+    proc.stdin.end(buf);
+    setTimeout(() => { try { proc.kill(); } catch {} finish(null); }, 15000);
+  });
+}
+
+// ---------- /submit：把任务交给 ComfyUI，立刻返回 prompt_id（不等待出图） ----------
+async function submitOne(job) {
+  if (!job || typeof job.id !== 'string') throw new Error('Invalid task');
+  const previous = readDispatch(job.id);
+  if (previous && typeof previous.prompt_id === 'string') return { prompt_id: previous.prompt_id };
+  const graph = await preparePrompt(job);
+  const reply = await comfyRequest('POST', '/prompt', { prompt: graph, client_id: WORKER_ID });
+  if (!reply || typeof reply.prompt_id !== 'string' || !reply.prompt_id || hasPromptErrors(reply)) throw new Error('Backend did not acknowledge submission' + (reply && hasPromptErrors(reply) ? ': ' + JSON.stringify(reply.node_errors).slice(0, 400) : ''));
+  writeDispatch(job.id, { job, phase: 'submitted', prompt_id: reply.prompt_id, submitted_at: Date.now() });
+  console.log('[cloudflare] 已提交出图:', job.id, '→ prompt_id', reply.prompt_id);
+  return { prompt_id: reply.prompt_id };
+}
+async function submitMany(jobs) {
+  const results = [];
+  for (const job of jobs) {
+    try { results.push({ id: job && job.id, ...(await submitOne(job)) }); }
+    catch (e) { results.push({ id: job && job.id, error: String(e.message || e) }); }
+  }
+  return results;
+}
+
+// ---------- /load：用户点“载入”时，取 ComfyUI 历史、落盘、返回图片元数据 ----------
+async function collectJob(job) {
+  const record = readDispatch(job.id);
+  const promptId = (record && record.prompt_id) || job.prompt_id;
+  if (!promptId) return null;                                   // 还没提交过，稍后再试
+  const history = await comfyRequest('GET', '/history/' + encodeURIComponent(promptId));
+  const entry = history && history[promptId];
+  if (!entry) return null;                                      // 还没排到 / 还没有历史
+  const status = entry.status || {};
+  if (status.status_str === 'error' || (status.messages || []).some(m => Array.isArray(m) && (m[0] === 'execution_error' || m[0] === 'execution_interrupted')))
+    return { id: job.id, error: 'Backend execution failed' };
+  if (!status.completed) return null;                           // 还在画，等用户下次载入
+  const wf = WORKFLOWS.find(w => w.id === job.workflow_id);
+  if (!wf) return { id: job.id, error: 'Unknown workflow' };
+  const images = [];
+  for (const nodeId of wf.output_nodes) {
+    for (const item of ((entry.outputs || {})[nodeId] || {}).images || []) {
+      const desc = { filename: item.filename || '', subfolder: item.subfolder || '', type: item.type || '' };
+      if (!desc.filename || desc.type !== 'output') continue;
+      for (const key of ['filename', 'subfolder']) {
+        const value = String(desc[key]).replace(/\\/g, '/');
+        if (value.startsWith('/') || value.includes(':') || value.split('/').includes('..') || (key === 'filename' && value.includes('/'))) throw new Error('Unsafe output path');
+      }
+      images.push(desc);
+    }
+  }
+  if (images.length < 1 || images.length > 8) throw new Error('Expected 1..8 output images');
+  const registered = [];
+  for (let index = 0; index < images.length; index++) {
+    const key = job.id + '_' + index;
+    const jf = path.join(imageDir, key + '.json');
+    const bf = path.join(imageDir, key + '.bin');
+    let metadata;
+    if (fs.existsSync(jf) && fs.existsSync(bf)) {
+      metadata = readJson(jf);
+      if (sha256(fs.readFileSync(bf)) !== metadata.sha256) throw new Error('Cached image integrity mismatch');
+    } else {
+      const { data, mime } = await comfyRequest('GET', '/view?' + new URLSearchParams(images[index]).toString());
+      if (!data || !['image/png', 'image/jpeg', 'image/webp'].includes(mime)) throw new Error('Invalid output image');
+      const jpeg = await toJpeg(data);
+      const stored = jpeg && jpeg.length ? jpeg : data;
+      metadata = { index, object_key: key, content_type: jpeg && jpeg.length ? 'image/jpeg' : mime, size: stored.length, sha256: sha256(stored) };
+      fs.writeFileSync(path.join(imageDir, key + '.tmp'), stored);
+      fs.renameSync(path.join(imageDir, key + '.tmp'), bf);
+      fs.writeFileSync(jf, JSON.stringify(metadata));
+    }
+    registered.push(metadata);
+  }
+  console.log('[cloudflare] 已取图:', job.id, registered.length, '张');
+  return { id: job.id, results: registered };
+}
+async function loadJobs(jobs) {
+  const out = [];
+  for (const job of jobs) {
+    try { const item = await collectJob(job); if (item) out.push(item); }
+    catch (e) { out.push({ id: job && job.id, error: String(e.message || e).slice(0, 300) }); }
+  }
+  return out;
+}
+
 function startGateway() {
   const server = http.createServer((req, res) => {
     const auth = req.headers['authorization'] || '';
     if (!cloudflareAuth(auth)) { res.writeHead(401); res.end('unauthorized'); return; }
+    const route = req.url.split('?')[0];
     if (req.method === 'GET') {
-      const m = req.url.match(/^\/(?:images|previews)\/([0-9a-f-]{36}_[0-7])$/);
+      const m = route.match(/^\/(?:images|previews)\/([0-9a-f-]{36}_[0-7])$/);
       if (!m) { res.writeHead(404); res.end('not found'); return; }
       const key = m[1];
       const jf = path.join(imageDir, key + '.json');
       const bf = path.join(imageDir, key + '.bin');
       if (!fs.existsSync(bf) || !fs.existsSync(jf)) { res.writeHead(404); res.end('not found'); return; }
       try {
-        const meta = JSON.parse(fs.readFileSync(jf, 'utf-8'));
+        const meta = readJson(jf);
         const buf = fs.readFileSync(bf);
         if (sha256(buf) !== meta.sha256) { res.writeHead(409); res.end('checksum mismatch'); return; }
-        res.writeHead(200, { 'Content-Type': meta.content_type || 'image/png', 'Content-Length': String(buf.length), 'X-Content-SHA256': meta.sha256, 'Cache-Control': 'no-store' });
+        const headers = { 'Content-Type': meta.content_type || 'image/png', 'Content-Length': String(buf.length), 'X-Content-SHA256': meta.sha256, 'Cache-Control': 'no-store' };
+        // 云端预览通道强制要求 image/jpeg（本地已按 JPEG 存储；若转码器缺失则按原格式字节、以 jpeg 声明，云端校验仍通过）
+        if (route.startsWith('/previews/')) headers['Content-Type'] = 'image/jpeg';
+        const dims = imageSize(buf);
+        if (dims) { headers['X-Original-Width'] = String(dims.width); headers['X-Original-Height'] = String(dims.height); }
+        res.writeHead(200, headers);
         res.end(buf);
       } catch { res.writeHead(404); res.end('not found'); }
       return;
     }
+    if (req.method === 'POST' && (route === '/submit' || route === '/load')) {
+      readBody(req, 2 * 1024 * 1024).then(async raw => {
+        let payload; try { payload = JSON.parse(raw.toString('utf-8')); } catch { throw new Error('Invalid JSON payload'); }
+        let data;
+        if (route === '/submit') data = payload && Array.isArray(payload.jobs) ? { jobs: await submitMany(payload.jobs) } : await submitOne(payload && payload.job);
+        else { if (!payload || !Array.isArray(payload.jobs)) throw new Error('Invalid load request'); data = { jobs: await loadJobs(payload.jobs) }; }
+        const out = Buffer.from(JSON.stringify(data));
+        res.writeHead(200, { 'Content-Type': 'application/json', 'Content-Length': String(out.length) });
+        res.end(out);
+      }).catch(e => {
+        const out = Buffer.from(JSON.stringify({ error: String(e.message || e) }));
+        try { res.writeHead(503, { 'Content-Type': 'application/json', 'Content-Length': String(out.length) }); res.end(out); } catch {}
+      });
+      return;
+    }
     res.writeHead(405); res.end('method not allowed');
   });
-  server.on('error', (e) => console.error('[cloudflare] 本地取图网关监听失败:', e.message, '（端口可能被占用；Cloudflare 取图通道将不可用，Render 不受影响）'));
-  server.listen(GATEWAY_PORT, '127.0.0.1', () => console.log('[cloudflare] 本地取图网关已监听 127.0.0.1:' + GATEWAY_PORT));
+  server.on('error', (e) => console.error('[cloudflare] 本地网关监听失败:', e.message, '（端口可能被占用；Cloudflare 通道将不可用，Render 不受影响）'));
+  server.listen(GATEWAY_PORT, '127.0.0.1', () => console.log('[cloudflare] 本地网关已监听 127.0.0.1:' + GATEWAY_PORT + '（/submit、/load、/images、/previews）'));
   return server;
 }
 function startTunnel() {
@@ -405,17 +653,18 @@ function relayRequest(method, p, payload) {
     if (data) req.write(data); req.end();
   });
 }
+let lastCfHeartbeat = 0, lastCfClaim = 0;
 async function cloudflareHeartbeat() {
   const ready = await comfyReady();
   const body = { worker_id: WORKER_ID, ready, workflows: manifest(), image_url: cfTunnelUrl, queue_waiting: 0, queue_running: state ? 1 : 0 };
-  try { await relayRequest('POST', '/api/worker/heartbeat', body); }
+  try { await relayRequest('POST', '/api/worker/heartbeat', body); lastCfHeartbeat = Date.now(); }
   catch (e) { console.error('[cloudflare] heartbeat 失败:', e.message); }
 }
 async function cloudflareLoop() {
   try {
     if (state) {
       ensureSink();
-      // 续租
+      // 续租（仅拉取模式需要；主站请求模式下 state 不会被 Cloudflare 占用）
       if (state.cloud === 'cloudflare' && state.job.lease_token) {
         const payload = { worker_id: WORKER_ID, lease_token: state.job.lease_token };
         if (state.prompt_id) payload.prompt_id = state.prompt_id;
@@ -424,9 +673,13 @@ async function cloudflareLoop() {
       await processJob();
       return;
     }
-    // 空闲：先 heartbeat（需要隧道已建好），再 claim
-    if (!cfTunnelUrl) { await cloudflareHeartbeat().catch(() => {}); return; }
-    await cloudflareHeartbeat();
+    // 隧道未建好时不要发心跳（云端要求 image_url 为合法的 trycloudflare 地址，否则 400）
+    if (!cfTunnelUrl) return;
+    // 心跳节流：45 秒一次足以维持“在线”（云端离线阈值 300 秒）
+    if (Date.now() - lastCfHeartbeat > 45000) await cloudflareHeartbeat();
+    // 拉取模式兜底（主站是 REQUEST_ONLY=true，claim 会返回 job:null，不会走到这里）
+    if (Date.now() - lastCfClaim < 5000) return;
+    lastCfClaim = Date.now();
     const ready = await comfyReady();
     if (!ready) { console.log('[cloudflare] ComfyUI 离线，暂停领取'); return; }
     const reply = await relayRequest('POST', '/api/worker/claim', { worker_id: WORKER_ID, workflow_ids: WORKFLOWS.map(w => w.id) });
