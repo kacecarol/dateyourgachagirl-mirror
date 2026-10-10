@@ -33,6 +33,8 @@ const DATEHER_NAMES = [...PARAM_NAMES, 'character', 'art_style', 'shot', 'person
 function sha256(buf) { return crypto.createHash('sha256').update(buf).digest('hex'); }
 function isUuid(v) { return typeof v === 'string' && /^[0-9a-f]{8}-[9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(v); }
 function isName(v) { return typeof v === 'string' && /^[a-zA-Z0-9_-]{1,64}$/.test(v); }
+// Node 不支持 'utf-8-sig' 编码，这里等价实现：读 utf8 并去掉 BOM
+function readJson(p) { let s = fs.readFileSync(p, 'utf8'); if (s.charCodeAt(0) === 0xFEFF) s = s.slice(1); return JSON.parse(s); }
 
 // dateher_adapter.build_prompt 移植（仅 dateher_full 用到）
 function dedupPrompt(text) {
@@ -49,8 +51,8 @@ function dedupPrompt(text) {
 const GAME_SUFFIXES = { genshin: 'genshin_impact', hsr: 'honkai_star_rail', zzz: 'zenless_zone_zero', wuwa: 'wuthering_waves', endfield: 'arknights_endfield', NevernessToEverness: 'neverness_to_everness', ananta: 'ananta' };
 function loadCatalogs() {
   const dir = path.join(BASE, 'workflows');
-  const characters = JSON.parse(fs.readFileSync(path.join(dir, 'dateher_char_catalog.json'), 'utf-8-sig'));
-  const config = JSON.parse(fs.readFileSync(path.join(dir, 'dateher_prompt_config.json'), 'utf-8-sig'));
+  const characters = readJson(path.join(dir, 'dateher_char_catalog.json'));
+  const config = readJson(path.join(dir, 'dateher_prompt_config.json'));
   return { characters, config };
 }
 function buildPrompt(original, values, characters, config) {
@@ -112,7 +114,7 @@ function clearState() { state = null; try { fs.unlinkSync(journalPath); } catch 
 function preparePrompt(job) {
   const wf = WORKFLOWS.find(w => w.id === job.workflow_id);
   if (!wf) throw new Error('Unknown workflow');
-  const original = JSON.parse(fs.readFileSync(path.join(BASE, wf.template), 'utf-8-sig'));
+  const original = readJson(path.join(BASE, wf.template));
   if (wf.adapter === 'dateher') {
     const { characters, config } = loadCatalogs();
     return buildPrompt(original, job.parameters, characters, config);
@@ -169,7 +171,7 @@ async function processJob(ws, msgId) {
       const origPath = path.join(origDir, job.id + '_' + index + ext);
       if (!fs.existsSync(origPath)) fs.writeFileSync(origPath, data);
       const key = job.id + '_' + index;
-      const metadata = { object_key: key, content_type: mime, size: data.length, sha256: digest };
+      const metadata = { index, object_key: key, content_type: mime, size: data.length, sha256: digest };
       // 通过 WS 回传图片结果元数据
       send(ws, { type: 'results', job_id: job.id, results: [metadata] });
       results.push(metadata);
