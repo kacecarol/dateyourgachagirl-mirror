@@ -316,7 +316,13 @@ function workerLoadResult(workerId, msg) {
 // ---------- Express ----------
 const app = express();
 app.use(express.json({ limit: '24mb' }));
-app.use(express.static(path.join(__dirname, 'public')));
+// 与 Cloudflare Pages 行为一致：/DateHerGen 这类“无扩展名地址”自动映射到 DateHerGen.html
+app.use(express.static(path.join(__dirname, 'public'), { extensions: ['html'] }));
+// 兜底：把不带扩展名的页面路径也交给静态目录按 .html 解析
+app.get(/^\/[A-Za-z0-9_-]+$/, (req, res, next) => {
+  if (req.path.startsWith('/api')) return next();
+  res.sendFile(path.join(__dirname, 'public', req.path + '.html'), err => { if (err) next(); });
+});
 
 app.post('/api/auth/login', (req, res) => {
   try {
